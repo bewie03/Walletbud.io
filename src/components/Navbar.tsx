@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import WalletbudLogo from '../assets/Walletbudlogo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <motion.img
-              src="/images/Walletbudlogo.png"
+              src={WalletbudLogo}
               alt="WalletBud Logo"
               className="h-10 w-10"
               whileHover={{ scale: 1.1 }}
