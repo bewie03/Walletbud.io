@@ -9,7 +9,26 @@ interface AnimatedElementProps {
   animation?: 'fadeIn' | 'slideUp' | 'slideDown' | 'slideLeft' | 'slideRight' | 'scale' | 'bounce';
 }
 
-const animations = {
+interface AnimationVariant {
+  initial: {
+    opacity: number;
+    y?: number;
+    x?: number;
+    scale?: number;
+  };
+  animate: {
+    opacity: number;
+    y?: number;
+    x?: number;
+    scale?: number;
+  };
+  transition?: {
+    type?: string;
+    bounce?: number;
+  };
+}
+
+const animations: Record<string, AnimationVariant> = {
   fadeIn: {
     initial: { opacity: 0 },
     animate: { opacity: 1 },

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
-import { motion } from 'framer-motion';
 
 interface FAQItem {
   question: string;
