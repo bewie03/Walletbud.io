@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
+import Swap from '@dexhunterio/swaps';
+import '@dexhunterio/swaps/lib/assets/style.css';
 
 const BONE = () => {
-  const [iframeLoading, setIframeLoading] = useState(true);
+  const [] = useState(true);
 
   return (
     <div className="min-h-screen bg-blue-900 py-12">
@@ -72,23 +74,28 @@ const BONE = () => {
                 <h3 className="text-xl font-semibold text-blue-100 mb-3">Benefits for All Users</h3>
                 <div className="grid grid-cols-1 gap-4">
                   <div className="bg-blue-800/50 p-4 rounded-lg">
-                    <p className="text-blue-100 mb-3">
+                    <p className="text-blue-100 mb-4">
                       <span className="font-semibold">Early Adopters:</span><br />
                       • Potential profit from token value increase<br />
                       • First access to new features<br />
-                      • Ability to sell excess tokens while maintaining service access
+                      • Ability to sell excess tokens while maintaining service access<br />
+                      • Priority support and community roles<br />
+                      • Early access to beta features
                     </p>
-                    <p className="text-blue-100 mb-3">
+                    <p className="text-blue-100 mb-4">
                       <span className="font-semibold">New Users:</span><br />
                       • Consistent, fair entry price<br />
                       • Immediate access to all features<br />
-                      • Equal opportunity for future growth
+                      • Equal opportunity for future growth<br />
+                      • No complicated staking requirements<br />
+                      • Transparent token mechanics
                     </p>
                     <p className="text-blue-100">
-                      <span className="font-semibold">Community Benefits:</span><br />
-                      • Natural token distribution<br />
-                      • Stable, sustainable tokenomics<br />
-                      • Growing ecosystem value
+                      <span className="font-semibold">Long-term Advantages:</span><br />
+                      • Deflationary token mechanism<br />
+                      • Continuous platform development<br />
+                      • Cross-chain expansion opportunities<br />
+                      • Sustainable growth model<br />
                     </p>
                   </div>
                 </div>
@@ -99,26 +106,25 @@ const BONE = () => {
             <div>
               {/* DEX Widget */}
               <AnimatedElement animation="slideRight" delay={0.2}>
-                <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 h-[500px] mb-8 transform hover:shadow-xl transition-all duration-300 relative">
-                  {iframeLoading && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-blue-900/80 rounded-lg">
-                      <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-white"></div>
-                    </div>
-                  )}
-                  <iframe 
-                    src="https://dexhunter.io/swap?base=ADA&quote=BONE"
-                    className="w-full h-full rounded-lg overflow-hidden"
-                    title="DEXHunter Swap Widget"
-                    onLoad={() => setIframeLoading(false)}
-                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-                  />
-                  <style>
-                    {`
-                      iframe::-webkit-scrollbar {
-                        display: none;
-                      }
-                    `}
-                  </style>
+                <div className="bg-blue-900 rounded-lg p-6 transform hover:shadow-xl transition-all duration-300 relative mb-8 border border-blue-700 ring-1 ring-blue-700/50">
+                  <div className="mx-auto flex justify-center">
+                    <Swap
+                      orderTypes={["SWAP","LIMIT"]}
+                      colors={{
+                        background: "#1E3A8A",
+                        containers: "#1E3A8A",
+                        subText: "#D9E3F0",
+                        mainText: "#D9E3F0",
+                        buttonText: "#FFFFFF",
+                        accent: "#6A86E2"
+                      }}
+                      theme="light"
+                      width="500"
+                      partnerCode="walletbud616464723171387a7275786c76747377366c326a647064643235656e336d393967676d74727678346b68723866346a396e353064356d3770357566716d7a3730797a706e66646336397a647067746a347032326b673364397639646a6b67706d71706735723637da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                      partnerName="Walletbud"
+                      displayType="DEFAULT"
+                    />
+                  </div>
                 </div>
               </AnimatedElement>
 
