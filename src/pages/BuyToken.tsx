@@ -33,7 +33,7 @@ const BONE = () => {
               <div className="mb-6">
                 <h3 className="text-xl font-semibold text-blue-100 mb-3">Fair Entry for Everyone</h3>
                 <p className="text-blue-100">
-                  Our innovative token system ensures fair access for all users. The entry cost remains stable at approximately 20 ADA per wallet, regardless of when you join. This system automatically adjusts the required token amount based on market conditions, maintaining accessibility while rewarding early adopters.
+                  Our innovative token system ensures fair access for all users. The entry cost remains stable at approximately 20 ADA per wallet, regardless of when you join. This system is manually adjusted based on market conditions, maintaining accessibility while rewarding early adopters.
                 </p>
               </div>
 
@@ -44,58 +44,70 @@ const BONE = () => {
                   <div className="mb-4">
                     <p className="text-white font-semibold mb-2">Early Users:</p>
                     <p className="text-blue-100 ml-4">
-                      • Purchase required BONE tokens (approximately 20 ADA worth)<br />
-                      • Get early adopter benefits<br />
-                      • Potential for token value appreciation
+                      • Get in early with ~20 ADA worth of BONE tokens<br />
+                      • Track up to 5 wallets with your tokens<br />
+                      • As token value grows, keep what you need for tracking<br />
+                      • Sell excess tokens for profit while maintaining service access
                     </p>
                   </div>
                   <div className="mb-4">
                     <p className="text-white font-semibold mb-2">As Market Grows:</p>
                     <p className="text-blue-100 ml-4">
-                      • Required token amount adjusts with market value<br />
-                      • Early users can sell excess tokens<br />
-                      • New users still pay ~20 ADA equivalent<br />
-                      • Market stays balanced and accessible
+                      • Token requirement adjusts as market cap increases<br />
+                      • Early users can sell excess tokens to new users<br />
+                      • New users join at lower token requirements<br />
+                      • Natural token distribution across more holders
                     </p>
                   </div>
                   <div>
-                    <p className="text-white font-semibold mb-2">Future Growth:</p>
+                    <p className="text-white font-semibold mb-2">Benefits For Everyone:</p>
                     <p className="text-blue-100 ml-4">
-                      • Token requirement continues adjusting with market value<br />
-                      • Service remains affordable for newcomers<br />
-                      • Early supporters benefit from natural market growth
+                      • Early adopters profit while keeping service access<br />
+                      • New users get cheaper entry as system grows<br />
+                      • Tokens naturally spread across more users<br />
+                      • Sustainable growth with balanced tokenomics
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Benefits Section */}
+              {/* Token Requirement System Section */}
               <div>
-                <h3 className="text-xl font-semibold text-blue-100 mb-3">Benefits for All Users</h3>
+                <h3 className="text-xl font-semibold text-blue-100 mb-3">Token Requirement System</h3>
                 <div className="grid grid-cols-1 gap-4">
+                  <div className="bg-blue-800/50 p-4 rounded-lg mb-6">
+                    <p className="text-blue-100 mb-4">
+                      As our market cap grows, the required number of tokens to use the service decreases, while maintaining an approximate value of 20 ADA:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-blue-100">
+                      <div>
+                        <p className="mb-2">Early Stage:</p>
+                        <ul className="list-disc pl-4 space-y-1">
+                          <li>$1M MCAP: 20,000 BONE</li>
+                          <li>$2M MCAP: 10,000 BONE</li>
+                          <li>$5M MCAP: 4,000 BONE</li>
+                          <li>$10M MCAP: 2,000 BONE</li>
+                          <li>$15M MCAP: 1,300 BONE</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="mb-2">Growth Stage:</p>
+                        <ul className="list-disc pl-4 space-y-1">
+                          <li>$20M MCAP: 1,000 BONE</li>
+                          <li>$30M MCAP: 650 BONE</li>
+                          <li>$50M MCAP: 400 BONE</li>
+                          <li>$75M MCAP: 265 BONE</li>
+                          <li>$100M MCAP: 200 BONE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="bg-blue-800/50 p-4 rounded-lg">
                     <p className="text-blue-100 mb-4">
-                      <span className="font-semibold">Early Adopters:</span><br />
-                      • Potential profit from token value increase<br />
-                      • First access to new features<br />
-                      • Ability to sell excess tokens while maintaining service access<br />
-                      • Priority support and community roles<br />
-                      • Early access to beta features
-                    </p>
-                    <p className="text-blue-100 mb-4">
-                      <span className="font-semibold">New Users:</span><br />
-                      • Consistent, fair entry price<br />
-                      • Immediate access to all features<br />
-                      • Equal opportunity for future growth<br />
-                      • No complicated staking requirements<br />
-                      • Transparent token mechanics
-                    </p>
-                    <p className="text-blue-100">
-                      <span className="font-semibold">Long-term Advantages:</span><br />
-                      • Deflationary token mechanism<br />
-                      • Continuous platform development<br />
-                      • Cross-chain expansion opportunities<br />
-                      • Sustainable growth model<br />
+                      <span className="font-semibold">TOKEN REQUIREMENT NEVER GOES BACK UP</span><br />
+                      For more information<br />
+                      Read One-Way Token Requirements System<br />
                     </p>
                   </div>
                 </div>
