@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { 
-  FaBook, 
   FaChartLine, 
   FaCogs, 
   FaBolt, 
@@ -41,12 +40,11 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
+          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+            <FaRocket className="text-white" />
+            Welcome to WalletBud
+          </h2>
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaRocket className="text-blue-400" />
-              Welcome to WalletBud
-            </h3>
-
             <div className="space-y-6 text-blue-100">
               <p className="text-lg">
                 Currently, Cardano users have no easy way to track specific wallet addresses and receive notifications about their activity. This makes it difficult to monitor investments, track project treasuries, or stay updated on important transactions.
@@ -76,11 +74,6 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaLightbulb className="text-blue-400" />
-              Our Inspiration
-            </h3>
-
             <div className="space-y-6 text-blue-100">
               <p className="text-lg">
                 We were inspired by an earlier project called WalletBud that attempted to create a wallet monitoring solution for Cardano. While innovative, it faced significant challenges: users had to repeatedly add their wallets after system restarts, and there was no sustainable way to fund the service's ongoing development and server costs.
@@ -110,17 +103,12 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaChartLine className="text-blue-400" />
-              Market Analysis
-            </h3>
-            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="grid grid-rows-2 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaSearchDollar className="text-blue-400" /> What Cardano Has
+                    <FaSearchDollar className="text-white" /> What Cardano Has
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -140,7 +128,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-blue-400" /> Current Limitations
+                    <FaUsers className="text-white" /> Current Limitations
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -163,7 +151,7 @@ const Whitepaper = () => {
               <div className="grid grid-rows-2 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> What Cardano Needs
+                    <FaBolt className="text-white" /> What Cardano Needs
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -183,7 +171,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartBar className="text-blue-400" /> Our Solution
+                    <FaChartBar className="text-white" /> Our Solution
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -218,17 +206,12 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaCogs className="text-blue-400" />
-              Technical Architecture
-            </h3>
-            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="space-y-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-blue-400" /> Backend Infrastructure
+                    <FaServer className="text-white" /> Backend Infrastructure
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -248,7 +231,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartLine className="text-blue-400" /> Performance Metrics
+                    <FaChartLine className="text-white" /> Performance Metrics
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -271,7 +254,7 @@ const Whitepaper = () => {
               <div className="space-y-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaRobot className="text-blue-400" /> Bot Architecture
+                    <FaRobot className="text-white" /> Bot Architecture
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -291,7 +274,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaShieldAlt className="text-blue-400" /> Security Measures
+                    <FaShieldAlt className="text-white" /> Security Measures
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -326,17 +309,12 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaRocket className="text-blue-400" />
-              Features and Functionality
-            </h3>
-            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="space-y-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBell className="text-blue-400" /> Notification System
+                    <FaBell className="text-white" /> Notification System
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -360,7 +338,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaSearch className="text-blue-400" /> Tracking Features
+                    <FaSearch className="text-white" /> Tracking Features
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -387,7 +365,7 @@ const Whitepaper = () => {
               <div className="space-y-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaRobot className="text-blue-400" /> Bot Commands
+                    <FaRobot className="text-white" /> Bot Commands
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -411,7 +389,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaShieldAlt className="text-blue-400" /> Privacy Features
+                    <FaShieldAlt className="text-white" /> Privacy Features
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -450,17 +428,12 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaCoins className="text-blue-400" />
-              Token Distribution
-            </h3>
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="grid grid-rows-2 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCoins className="text-blue-400" /> Total Supply
+                    <FaCoins className="text-white" /> Total Supply
                   </h5>
                   <div className="space-y-2">
                     <div className="text-3xl font-bold text-white">1B</div>
@@ -470,7 +443,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartPie className="text-blue-400" /> Distribution
+                    <FaChartPie className="text-white" /> Distribution
                   </h5>
                   <div className="space-y-2 text-blue-100">
                     <div className="flex items-center justify-between">
@@ -495,7 +468,7 @@ const Whitepaper = () => {
               <div className="grid grid-rows-2 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-blue-400" /> Public Distribution
+                    <FaUsers className="text-white" /> Public Distribution
                   </h5>
                   <div className="space-y-2">
                     <div className="text-2xl font-semibold text-white">900,000,000 $BONE</div>
@@ -507,7 +480,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCog className="text-blue-400" /> Development Fund
+                    <FaCog className="text-white" /> Development Fund
                   </h5>
                   <div className="space-y-2">
                     <div className="text-2xl font-semibold text-white">100,000,000 $BONE</div>
@@ -534,17 +507,12 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaChartBar className="text-blue-400" />
-              System Capacity
-            </h3>
-            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="grid grid-rows-3 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-blue-400" /> Enterprise Database
+                    <FaDatabase className="text-white" /> Enterprise Database
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -564,7 +532,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> Processing Power
+                    <FaBolt className="text-white" /> Processing Power
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -584,7 +552,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-blue-400" /> Storage Capacity
+                    <FaServer className="text-white" /> Storage Capacity
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -607,7 +575,7 @@ const Whitepaper = () => {
               <div className="grid grid-rows-3 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-blue-400" /> System Scale
+                    <FaUsers className="text-white" /> System Scale
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -627,7 +595,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBell className="text-blue-400" /> Notifications
+                    <FaBell className="text-white" /> Notifications
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -647,7 +615,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCog className="text-blue-400" /> Monitoring
+                    <FaCog className="text-white" /> Monitoring
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -668,15 +636,10 @@ const Whitepaper = () => {
             </div>
             
             <div className="mt-8 bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-              <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-                <FaServer className="text-blue-400" />
-                Infrastructure Scalability
-              </h3>
-
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-blue-400" /> Auto-scaling
+                    <FaDatabase className="text-white" /> Auto-scaling
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -696,7 +659,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBalanceScale className="text-blue-400" /> Load Balancing
+                    <FaBalanceScale className="text-white" /> Load Balancing
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -716,7 +679,7 @@ const Whitepaper = () => {
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> High Performance
+                    <FaBolt className="text-white" /> High Performance
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -751,15 +714,10 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaRoad className="text-blue-400" />
-              Future Development
-            </h3>
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaCogs className="text-blue-400" /> Infrastructure
+                  <FaCogs className="text-white" /> Infrastructure
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -779,7 +737,7 @@ const Whitepaper = () => {
 
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaUsers className="text-blue-400" /> Community Growth
+                  <FaUsers className="text-white" /> Community Growth
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -817,15 +775,10 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
-            <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <FaChartPie className="text-blue-400" />
-              Advanced Use Cases
-            </h3>
-            
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaEye className="text-blue-400" /> Whale Watching
+                  <FaEye className="text-white" /> Whale Watching
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -845,7 +798,7 @@ const Whitepaper = () => {
 
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaProjectDiagram className="text-blue-400" /> Project Analysis
+                  <FaProjectDiagram className="text-white" /> Project Analysis
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -865,7 +818,7 @@ const Whitepaper = () => {
 
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaChartLine className="text-blue-400" /> Trading Insights
+                  <FaChartLine className="text-white" /> Trading Insights
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -885,7 +838,7 @@ const Whitepaper = () => {
 
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaPalette className="text-blue-400" /> NFT Opportunities
+                  <FaPalette className="text-white" /> NFT Opportunities
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -905,7 +858,7 @@ const Whitepaper = () => {
 
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaSearch className="text-blue-400" /> Early Detection
+                  <FaSearch className="text-white" /> Early Detection
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -925,7 +878,7 @@ const Whitepaper = () => {
 
               <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaNetworkWired className="text-blue-400" /> Market Analysis
+                  <FaNetworkWired className="text-white" /> Market Analysis
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
