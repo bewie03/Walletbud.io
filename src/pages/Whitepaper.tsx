@@ -40,23 +40,21 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <FaRocket className="text-white" />
-            Welcome to WalletBud
-          </h2>
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
-              <p className="text-lg">
-                Currently, Cardano users have no easy way to track specific wallet addresses and receive notifications about their activity. This makes it difficult to monitor investments, track project treasuries, or stay updated on important transactions.
-              </p>
-              
-              <p className="text-lg">
-                WalletBud solves this by providing a simple Discord bot that monitors any Cardano wallet address you're interested in. Get instant notifications when wallets send or receive ADA, tokens, or NFTs. Track multiple addresses at once and never miss an important transaction.
-              </p>
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                <p className="text-lg">
+                  Currently, Cardano users have no easy way to track specific wallet addresses and receive notifications about their activity. This makes it difficult to monitor investments, track project treasuries, or stay updated on important transactions.
+                </p>
+                
+                <p className="text-lg">
+                  WalletBud solves this by providing a simple Discord bot that monitors any Cardano wallet address you're interested in. Get instant notifications when wallets send or receive ADA, tokens, or NFTs. Track multiple addresses at once and never miss an important transaction.
+                </p>
 
-              <p className="text-lg">
-                Whether you're watching your own wallets, monitoring a project's treasury, or tracking whale movements, WalletBud keeps you informed with real-time Discord notifications about all wallet activity.
-              </p>
+                <p className="text-lg">
+                  Whether you're watching your own wallets, monitoring a project's treasury, or tracking whale movements, WalletBud keeps you informed with real-time Discord notifications about all wallet activity.
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -73,19 +71,21 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
-              <p className="text-lg">
-                We were inspired by an earlier project called WalletBud that attempted to create a wallet monitoring solution for Cardano. While innovative, it faced significant challenges: users had to repeatedly add their wallets after system restarts, and there was no sustainable way to fund the service's ongoing development and server costs.
-              </p>
-              
-              <p className="text-lg">
-                As a new team taking on this challenge, we've built our version of WalletBud from scratch with solutions to these core issues. Wallets are now permanently stored in our enterprise-grade database, ensuring they persist through any system updates or restarts. And with our $BONE token, we've created a sustainable economic model that funds ongoing development while rewarding our users.
-              </p>
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                <p className="text-lg">
+                  We were inspired by an earlier project called WalletBud that attempted to create a wallet monitoring solution for Cardano. While innovative, it faced significant challenges: users had to repeatedly add their wallets after system restarts, and there was no sustainable way to fund the service's ongoing development and server costs.
+                </p>
+                
+                <p className="text-lg">
+                  As a new team taking on this challenge, we've built our version of WalletBud from scratch with solutions to these core issues. Wallets are now permanently stored in our enterprise-grade database, ensuring they persist through any system updates or restarts. And with our $BONE token, we've created a sustainable economic model that funds ongoing development while rewarding our users.
+                </p>
 
-              <p className="text-lg">
-                While we share the name and vision of the original project, we're a completely new team with a fresh implementation. Our goal is to deliver what the Cardano community has always needed  a reliable, user friendly monitoring solution with a sustainable future.
-              </p>
+                <p className="text-lg">
+                  While we share the name and vision of the original project, we're a completely new team with a fresh implementation. Our goal is to deliver what the Cardano community has always needed  a reliable, user friendly monitoring solution with a sustainable future.
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -102,13 +102,13 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaSearchDollar className="text-white" /> What Cardano Has
+                    <FaSearchDollar className="text-blue-400" /> What Cardano Has
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -126,9 +126,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-white" /> Current Limitations
+                    <FaUsers className="text-blue-400" /> Current Limitations
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -149,9 +149,9 @@ const Whitepaper = () => {
 
               {/* Right Column */}
               <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-white" /> What Cardano Needs
+                    <FaBolt className="text-blue-400" /> What Cardano Needs
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -169,9 +169,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartBar className="text-white" /> Our Solution
+                    <FaChartBar className="text-blue-400" /> Our Solution
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -205,13 +205,13 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="space-y-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-white" /> Backend Infrastructure
+                    <FaServer className="text-blue-400" /> Backend Infrastructure
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -229,9 +229,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartLine className="text-white" /> Performance Metrics
+                    <FaChartLine className="text-blue-400" /> Performance Metrics
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -252,9 +252,9 @@ const Whitepaper = () => {
 
               {/* Right Column */}
               <div className="space-y-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaRobot className="text-white" /> Bot Architecture
+                    <FaRobot className="text-blue-400" /> Bot Architecture
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -272,9 +272,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaShieldAlt className="text-white" /> Security Measures
+                    <FaShieldAlt className="text-blue-400" /> Security Measures
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -308,13 +308,13 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="space-y-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBell className="text-white" /> Notification System
+                    <FaBell className="text-blue-400" /> Notification System
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -336,9 +336,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaSearch className="text-white" /> Tracking Features
+                    <FaSearch className="text-blue-400" /> Tracking Features
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -363,9 +363,9 @@ const Whitepaper = () => {
 
               {/* Right Column */}
               <div className="space-y-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaRobot className="text-white" /> Bot Commands
+                    <FaRobot className="text-blue-400" /> Bot Commands
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -387,9 +387,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaShieldAlt className="text-white" /> Privacy Features
+                    <FaShieldAlt className="text-blue-400" /> Privacy Features
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -427,13 +427,13 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCoins className="text-white" /> Total Supply
+                    <FaCoins className="text-blue-400" /> Total Supply
                   </h5>
                   <div className="space-y-2">
                     <div className="text-3xl font-bold text-white">1B</div>
@@ -441,9 +441,9 @@ const Whitepaper = () => {
                   </div>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartPie className="text-white" /> Distribution
+                    <FaChartPie className="text-blue-400" /> Distribution
                   </h5>
                   <div className="space-y-2 text-blue-100">
                     <div className="flex items-center justify-between">
@@ -466,9 +466,9 @@ const Whitepaper = () => {
 
               {/* Right Column */}
               <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-white" /> Public Distribution
+                    <FaUsers className="text-blue-400" /> Public Distribution
                   </h5>
                   <div className="space-y-2">
                     <div className="text-2xl font-semibold text-white">900,000,000 $BONE</div>
@@ -478,9 +478,9 @@ const Whitepaper = () => {
                   </div>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCog className="text-white" /> Development Fund
+                    <FaCog className="text-blue-400" /> Development Fund
                   </h5>
                   <div className="space-y-2">
                     <div className="text-2xl font-semibold text-white">100,000,000 $BONE</div>
@@ -506,13 +506,13 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column */}
               <div className="grid grid-rows-3 gap-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-white" /> Enterprise Database
+                    <FaDatabase className="text-blue-400" /> Enterprise Database
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -530,9 +530,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-white" /> Processing Power
+                    <FaBolt className="text-blue-400" /> Processing Power
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -550,9 +550,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-white" /> Storage Capacity
+                    <FaServer className="text-blue-400" /> Storage Capacity
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -573,9 +573,9 @@ const Whitepaper = () => {
 
               {/* Right Column */}
               <div className="grid grid-rows-3 gap-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-white" /> System Scale
+                    <FaUsers className="text-blue-400" /> System Scale
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -593,9 +593,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBell className="text-white" /> Notifications
+                    <FaBell className="text-blue-400" /> Notifications
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -613,9 +613,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCog className="text-white" /> Monitoring
+                    <FaCog className="text-blue-400" /> Monitoring
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -635,11 +635,11 @@ const Whitepaper = () => {
               </div>
             </div>
             
-            <div className="mt-8 bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+            <div className="mt-8 bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-white" /> Auto-scaling
+                    <FaDatabase className="text-blue-400" /> Auto-scaling
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -657,9 +657,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBalanceScale className="text-white" /> Load Balancing
+                    <FaBalanceScale className="text-blue-400" /> Load Balancing
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -677,9 +677,9 @@ const Whitepaper = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-white" /> High Performance
+                    <FaBolt className="text-blue-400" /> High Performance
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -713,11 +713,11 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaCogs className="text-white" /> Infrastructure
+                  <FaCogs className="text-blue-400" /> Infrastructure
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -735,9 +735,9 @@ const Whitepaper = () => {
                 </ul>
               </div>
 
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaUsers className="text-white" /> Community Growth
+                  <FaUsers className="text-blue-400" /> Community Growth
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -774,11 +774,11 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-800/30 rounded-lg p-8 backdrop-blur-sm border border-blue-700/50">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaEye className="text-white" /> Whale Watching
+                  <FaEye className="text-blue-400" /> Whale Watching
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -796,9 +796,9 @@ const Whitepaper = () => {
                 </ul>
               </div>
 
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaProjectDiagram className="text-white" /> Project Analysis
+                  <FaProjectDiagram className="text-blue-400" /> Project Analysis
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -816,9 +816,9 @@ const Whitepaper = () => {
                 </ul>
               </div>
 
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaChartLine className="text-white" /> Trading Insights
+                  <FaChartLine className="text-blue-400" /> Trading Insights
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -836,9 +836,9 @@ const Whitepaper = () => {
                 </ul>
               </div>
 
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaPalette className="text-white" /> NFT Opportunities
+                  <FaPalette className="text-blue-400" /> NFT Opportunities
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -856,9 +856,9 @@ const Whitepaper = () => {
                 </ul>
               </div>
 
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaSearch className="text-white" /> Early Detection
+                  <FaSearch className="text-blue-400" /> Early Detection
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -876,9 +876,9 @@ const Whitepaper = () => {
                 </ul>
               </div>
 
-              <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaNetworkWired className="text-white" /> Market Analysis
+                  <FaNetworkWired className="text-blue-400" /> Market Analysis
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
@@ -903,28 +903,42 @@ const Whitepaper = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-blue-900">
-      {/* Main content with proper spacing */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="space-y-16">
-          {sections.map((section, index) => (
-            <AnimatedElement
-              key={section.id}
-              animation={index % 2 === 0 ? "slideRight" : "slideLeft"}
-              delay={0.2 + index * 0.1}
-            >
-              <div
-                id={section.id}
-                className="scroll-mt-32"
+    <div className="min-h-screen bg-blue-900 py-12">
+      {/* Hero Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+        <div className="text-center transform hover:scale-[1.02] transition-transform duration-300">
+          <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl animate-fade">
+            WalletBud Whitepaper
+          </h1>
+          <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl animate-fade-delay">
+            Technical Documentation and Vision
+          </p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="bg-blue-800 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-8">
+            {sections.map((section, index) => (
+              <AnimatedElement
+                key={section.id}
+                animation={index % 2 === 0 ? "slideRight" : "slideLeft"}
+                delay={0.2 + index * 0.1}
               >
-                <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-                  {section.icon}
-                  {section.title}
-                </h2>
-                {section.content}
-              </div>
-            </AnimatedElement>
-          ))}
+                <div
+                  id={section.id}
+                  className="scroll-mt-32"
+                >
+                  <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                    {section.icon}
+                    {section.title}
+                  </h2>
+                  {section.content}
+                </div>
+              </AnimatedElement>
+            ))}
+          </div>
         </div>
       </div>
     </div>

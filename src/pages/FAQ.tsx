@@ -81,69 +81,53 @@ const FAQ = () => {
               <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl">
                 Frequently Asked Questions
               </h1>
+              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl">
+                Everything you need to know about WalletBud
+              </p>
             </div>
           </AnimatedElement>
         </div>
       </div>
 
-      <div className="w-full">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <div className="w-full bg-blue-800">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-blue-800 rounded-lg border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 hover:shadow-lg"
-                style={{
-                  opacity: 0,
-                  animation: `fadeSlideIn 0.5s ease-out ${index * 0.1}s forwards`
-                }}
-              >
-                <button
-                  className="w-full px-6 py-4 text-left focus:outline-none"
-                  onClick={() => toggleFAQ(index)}
-                >
-                  <div className="flex items-center justify-between">
-                    <h2 className="text-xl font-semibold text-white">{faq.question}</h2>
-                    <span 
-                      className="text-white transform transition-transform duration-300"
-                      style={{
-                        transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)'
-                      }}
-                    >
-                      ▼
-                    </span>
-                  </div>
-                </button>
+              <AnimatedElement key={index} animation="fadeIn" delay={index * 0.1}>
                 <div
-                  className="overflow-hidden transition-all duration-300 ease-in-out"
-                  style={{
-                    maxHeight: openIndex === index ? '500px' : '0',
-                    opacity: openIndex === index ? 1 : 0
-                  }}
+                  className="bg-blue-900 rounded-lg border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 hover:shadow-lg"
                 >
-                  <div className="px-6 pb-4">
-                    <p className="text-blue-100">{faq.answer}</p>
+                  <button
+                    className="w-full px-6 py-4 text-left focus:outline-none"
+                    onClick={() => toggleFAQ(index)}
+                  >
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-xl font-semibold text-white">{faq.question}</h2>
+                      <span 
+                        className="text-blue-400 transform transition-transform duration-300"
+                        style={{
+                          transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)'
+                        }}
+                      >
+                        ▼
+                      </span>
+                    </div>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-6 pb-4">
+                      <p className="text-blue-100">{faq.answer}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </AnimatedElement>
             ))}
           </div>
         </div>
       </div>
-      <style>
-        {`
-          @keyframes fadeSlideIn {
-            from {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-        `}
-      </style>
     </div>
   );
 };

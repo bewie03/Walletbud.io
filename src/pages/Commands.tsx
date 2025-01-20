@@ -93,13 +93,13 @@ const Commands = () => {
       ],
     },
     {
-      name: 'More Commands',
-      command: 'Future Commands',
-      description: 'New features and commands are being developed.',
+      name: 'Search',
+      command: '/search <query>',
+      description: 'Search for wallets and usernames across the platform.',
       details: [
-        'Enhanced tracking features',
-        'Advanced analytics',
-        'Community requested features',
+        'Search for verified usernames',
+        'Find specific wallet addresses',
+        'Quick access to wallet information',
       ],
     },
   ];
