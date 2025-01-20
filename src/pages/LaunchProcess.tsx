@@ -1,5 +1,5 @@
 import AnimatedElement from '../components/AnimatedElement';
-import { FaRocket, FaCog, FaCheckCircle, FaExclamationTriangle, FaDiscord, FaTwitter, FaGlobe, FaArrowDown } from 'react-icons/fa';
+import { FaExclamationTriangle, FaDiscord, FaTwitter, FaGlobe, FaArrowDown } from 'react-icons/fa';
 
 const LaunchProcess = () => {
   return (
