@@ -11,16 +11,12 @@ const FAQ = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "What are the token requirements?",
-      answer: "You need BONE tokens to use WalletBud. The required amount adjusts with market value but will always cost approximately 20 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
-    },
-    {
-      question: "Will the token requirement change?",
-      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost of about 20 ADA worth of tokens. This means early adopters can benefit from token value growth while new users can always join at a fair price."
-    },
-    {
       question: "What is WalletBud?",
       answer: "WalletBud is a Discord bot that monitors Cardano wallet addresses and sends you instant notifications about their activity. We were inspired by an earlier project of the same name, but we're a new team that has built everything from scratch with improved reliability and sustainability."
+    },
+    {
+      question: "What are the token requirements?",
+      answer: "You need BONE tokens to use WalletBud. The required amount adjusts with market value but will always cost approximately 20 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
     },
     {
       question: "How do I add my wallet?",
@@ -35,12 +31,20 @@ const FAQ = () => {
       answer: "Yes! We take security seriously. All commands work only in private messages, we never ask for or store sensitive info, and we only need your public wallet address. We also limit how often commands can be used to prevent abuse."
     },
     {
-      question: "How reliable is the notification system?",
-      answer: "Our system sends updates quickly and stays online consistently. We manage the number of notifications to prevent spam and make sure important updates get through first."
-    },
-    {
       question: "Can I track multiple wallets?",
       answer: "Yes! You can currently track up to 5 wallets at once if you have enough BONE tokens. This limit may adjust in the future based on platform usage. Use /add for each wallet and give them different names. Use /list to see all your wallets, and /removeall to stop tracking all of them."
+    },
+    {
+      question: "What happens if I don't have enough tokens?",
+      answer: "Your wallet is checked for tokens every 6 hours. If you don't have the required amount, your wallet will be automatically removed from tracking and you'll receive a notification. You'll need to add your wallet again with the required token amount to resume tracking."
+    },
+    {
+      question: "Will the token requirement change?",
+      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost of about 20 ADA worth of tokens. This means early adopters can benefit from token value growth while new users can always join at a fair price."
+    },
+    {
+      question: "How reliable is the notification system?",
+      answer: "Our system sends updates quickly and stays online consistently. We manage the number of notifications to prevent spam and make sure important updates get through first."
     },
     {
       question: "What other features are available?",
@@ -49,10 +53,6 @@ const FAQ = () => {
     {
       question: "How do I get support?",
       answer: "Join our Discord server for help. You can also use /help in a DM with the bot to see all available commands and how to use them."
-    },
-    {
-      question: "What happens if I don't have enough tokens?",
-      answer: "Your wallet is checked for tokens every 6 hours. If you don't have the required amount, your wallet will be automatically removed from tracking and you'll receive a notification. You'll need to add your wallet again with the required token amount to resume tracking."
     },
     {
       question: "Is there a limit on how often I can use commands?",

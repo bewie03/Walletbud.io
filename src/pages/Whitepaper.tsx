@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaBook, 
@@ -30,9 +29,6 @@ import {
 import AnimatedElement from '../components/AnimatedElement';
 
 const Whitepaper = () => {
-  const [activeSection, setActiveSection] = useState<string>('introduction');
-  const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-
   const sections = [
     {
       id: 'introduction',
@@ -124,40 +120,40 @@ const Whitepaper = () => {
               <div className="grid grid-rows-2 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaSearchDollar className="text-blue-400" /> Market Problem
+                    <FaSearchDollar className="text-blue-400" /> What Cardano Has
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Wallet data lost on restarts
+                      4.7M+ active wallet addresses
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      No sustainable funding
+                      57K+ daily transactions
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Manual monitoring needed
+                      Robust blockchain explorer
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-blue-400" /> Target Users
+                    <FaUsers className="text-blue-400" /> Current Limitations
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Active Cardano traders and investors
+                      Manual wallet monitoring only
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      DeFi protocol users
+                      No automated notifications
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      NFT collectors and traders
+                      Missed important transactions
                     </li>
                   </ul>
                 </div>
@@ -167,12 +163,32 @@ const Whitepaper = () => {
               <div className="grid grid-rows-2 gap-6">
                 <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> Our Solution
+                    <FaBolt className="text-blue-400" /> What Cardano Needs
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Real-time Discord notifications
+                      Reliable wallet monitoring
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                      Instant transaction alerts
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                      Multi-wallet tracking solution
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaChartBar className="text-blue-400" /> Our Solution
+                  </h5>
+                  <ul className="space-y-2 text-blue-100">
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                      Discord-based notifications
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -181,26 +197,6 @@ const Whitepaper = () => {
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
                       Token & NFT monitoring
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-800/40 rounded-xl p-6 backdrop-blur-sm border border-blue-700/30 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartBar className="text-blue-400" /> Market Advantage
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Permanent wallet storage
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Sustainable token model
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Enterprise infrastructure
                     </li>
                   </ul>
                 </div>
@@ -953,153 +949,8 @@ const Whitepaper = () => {
     }
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = sectionRefs.current[sectionId];
-    if (element) {
-      const offset = 100; // Adjust this value to fine-tune the scroll position
-      const elementRect = element.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.pageYOffset;
-      const middle = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2) - offset;
-      
-      window.scrollTo({
-        top: middle,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-      
-      let currentSection = 'introduction';
-      Object.entries(sectionRefs.current).forEach(([id, element]) => {
-        if (element) {
-          const { top, bottom } = element.getBoundingClientRect();
-          const elementTop = top + window.scrollY;
-          const elementBottom = bottom + window.scrollY;
-          
-          if (scrollPosition >= elementTop && scrollPosition <= elementBottom) {
-            currentSection = id;
-          }
-        }
-      });
-      
-      setActiveSection(currentSection);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <div className="min-h-screen bg-blue-900">
-      {/* Navigation */}
-      <nav className="sticky top-16 bg-blue-900/95 backdrop-blur-sm border-b border-blue-800 z-[100]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => scrollToSection('introduction')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'introduction'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaBook className="w-5 h-5" /> Introduction
-            </button>
-
-            <button
-              onClick={() => scrollToSection('inspiration')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'inspiration'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaLightbulb className="w-5 h-5" /> Inspiration
-            </button>
-
-            <button
-              onClick={() => scrollToSection('market')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'market'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaChartLine className="w-5 h-5" /> Market
-            </button>
-
-            <button
-              onClick={() => scrollToSection('technical')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'technical'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaCogs className="w-5 h-5" /> Technical
-            </button>
-
-            <button
-              onClick={() => scrollToSection('features')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'features'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaBolt className="w-5 h-5" /> Features
-            </button>
-
-            <button
-              onClick={() => scrollToSection('tokenomics')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'tokenomics'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaCoins className="w-5 h-5" /> Tokenomics
-            </button>
-
-            <button
-              onClick={() => scrollToSection('requirements')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'requirements'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaChartBar className="w-5 h-5" /> System
-            </button>
-
-            <button
-              onClick={() => scrollToSection('future')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'future'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaRocket className="w-5 h-5" /> Future
-            </button>
-
-            <button
-              onClick={() => scrollToSection('advanced-use-cases')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-                activeSection === 'advanced-use-cases'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-900/30 text-blue-200 hover:bg-blue-800/50'
-              }`}
-            >
-              <FaChartPie className="w-5 h-5" /> Advanced Use Cases
-            </button>
-          </div>
-        </div>
-      </nav>
-
       {/* Main content with proper spacing */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="space-y-16">
@@ -1110,7 +961,6 @@ const Whitepaper = () => {
               delay={0.2 + index * 0.1}
             >
               <div
-                ref={el => sectionRefs.current[section.id] = el}
                 id={section.id}
                 className="scroll-mt-32"
               >
