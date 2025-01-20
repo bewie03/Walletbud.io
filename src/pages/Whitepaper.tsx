@@ -308,108 +308,106 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Left Column */}
-              <div className="space-y-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBell className="text-blue-400" /> Notification System
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Instant transaction alerts
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Token balance changes
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      NFT movement tracking
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Custom alert thresholds
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaSearch className="text-blue-400" /> Tracking Features
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Multi-wallet monitoring
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Real-time balance updates
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Transaction history
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Portfolio analytics
-                    </li>
-                  </ul>
-                </div>
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Wallet Management */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaRobot className="text-blue-400" /> Core Commands
+                </h3>
+                <ul className="space-y-2 text-blue-100">
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Add/Remove wallet tracking
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Wallet verification system
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    List tracked wallets
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Balance inquiries
+                  </li>
+                </ul>
               </div>
 
-              {/* Right Column */}
-              <div className="space-y-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaRobot className="text-blue-400" /> Bot Commands
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Wallet registration
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Balance inquiries
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Alert customization
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Transaction lookup
-                    </li>
-                  </ul>
-                </div>
+              {/* Tracking Features */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaSearch className="text-blue-400" /> Advanced Features
+                </h3>
+                <ul className="space-y-2 text-blue-100">
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Multi-wallet monitoring (up to 5)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Real-time transaction alerts
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Top watched wallets tracking
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Platform-wide wallet search
+                  </li>
+                </ul>
+              </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaShieldAlt className="text-blue-400" /> Privacy Features
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Private DM notifications
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Secure data handling
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Encrypted storage
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Access controls
-                    </li>
-                  </ul>
-                </div>
+              {/* System Features */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaChartPie className="text-blue-400" /> System Features
+                </h3>
+                <ul className="space-y-2 text-blue-100">
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Global statistics tracking
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Token balance monitoring
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Comprehensive help system
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Private DM interactions
+                  </li>
+                </ul>
+              </div>
+
+              {/* Security Features */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaShieldAlt className="text-blue-400" /> Security & Privacy
+                </h3>
+                <ul className="space-y-2 text-blue-100">
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Secure wallet verification
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Private Discord notifications
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Token-based access control
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                    Persistent wallet storage
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -418,7 +416,7 @@ const Whitepaper = () => {
     },
     {
       id: 'tokenomics',
-      title: 'Token Economics',
+      title: 'Tokenomics',
       icon: <FaCoins className="w-6 h-6" />,
       content: (
         <motion.div 
@@ -486,6 +484,126 @@ const Whitepaper = () => {
                     <div className="text-2xl font-semibold text-white">100,000,000 $BONE</div>
                     <div className="text-blue-200">
                       Reserved for development, marketing, and community events to ensure long-term sustainability.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'bone-token',
+      title: '$BONE Token',
+      icon: <FaCoins className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700">
+            <div className="space-y-8">
+              {/* Purpose and Utility */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaBolt className="text-blue-400" /> Purpose & Utility
+                </h3>
+                <div className="space-y-4 text-blue-100">
+                  <p>
+                    $BONE is the utility token that powers the WalletBud ecosystem. It serves as both an access key to our services 
+                    and a mechanism for ensuring sustainable development. Unlike traditional subscription models, $BONE gives users 
+                    perpetual access to services while maintaining their asset value.
+                  </p>
+                  <p>
+                    To use WalletBud's services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
+                    requirement ensures fair access regardless of token price fluctuations, while rewarding early adopters as the 
+                    token value grows.
+                  </p>
+                </div>
+              </div>
+
+              {/* How It Works */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaCog className="text-blue-400" /> How It Works
+                </h3>
+                <ul className="space-y-3 text-blue-100">
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                    <span>Hold $BONE tokens in your wallet to access WalletBud services</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                    <span>Track up to 5 wallets with sufficient token balance</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                    <span>Token requirement adjusts with market value to maintain consistent ~20 ADA entry point</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                    <span>Tokens retain value and can be sold when no longer needed</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Long-term Sustainability */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaBalanceScale className="text-blue-400" /> Long-term Sustainability
+                </h3>
+                <div className="space-y-4 text-blue-100">
+                  <p>
+                    Our token model ensures long-term sustainability through several mechanisms:
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                      <span>Development fund ensures continuous improvement and maintenance</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                      <span>Token-based access creates natural demand as user base grows</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                      <span>Fair launch and public distribution promotes healthy token economics</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                      <span>No presale or private allocations ensures community-first approach</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Getting Started */}
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaRocket className="text-blue-400" /> Getting Started with $BONE
+                </h3>
+                <div className="space-y-4">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-blue-800 p-4 rounded-lg">
+                      <div className="text-white font-semibold mb-2">1. Acquire Tokens</div>
+                      <p className="text-blue-100 text-sm">
+                        Purchase $BONE tokens through our supported DEX platforms
+                      </p>
+                    </div>
+                    <div className="bg-blue-800 p-4 rounded-lg">
+                      <div className="text-white font-semibold mb-2">2. Hold Required Amount</div>
+                      <p className="text-blue-100 text-sm">
+                        Maintain ~20 ADA worth of $BONE in your wallet
+                      </p>
+                    </div>
+                    <div className="bg-blue-800 p-4 rounded-lg">
+                      <div className="text-white font-semibold mb-2">3. Start Using WalletBud</div>
+                      <p className="text-blue-100 text-sm">
+                        Add wallets to track and receive notifications
+                      </p>
                     </div>
                   </div>
                 </div>

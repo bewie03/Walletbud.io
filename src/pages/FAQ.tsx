@@ -16,15 +16,15 @@ const FAQ = () => {
     },
     {
       question: "What are the token requirements?",
-      answer: "You need BONE tokens to use WalletBud. The required amount adjusts with market value but will always cost approximately 20 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
+      answer: "You need $BONE tokens to use WalletBud. The required amount adjusts with market value but will always cost approximately 20 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
     },
     {
       question: "How do I add my wallet?",
-      answer: "Send the bot a private message (DM) with /add followed by your wallet address and a name you choose. For example: /add addr1... MyWallet. We only accept commands through DMs to keep your information private."
+      answer: "Send the bot a DM with /add followed by your wallet address and a name you choose. For example: /add addr1... MyWallet. We only accept commands through DMs to keep your information private."
     },
     {
       question: "What types of notifications can I receive?",
-      answer: "You get private Discord messages when: ADA moves in or out of your wallet, tokens transfer, NFTs change hands, or if your BONE balance gets too low. Everything is sent through private DMs for security."
+      answer: "You get DM notifications when: ADA moves in or out of your wallet, tokens transfer, NFTs change hands, or if your $BONE balance gets too low. Everything is sent through DMs for security."
     },
     {
       question: "Is WalletBud secure?",
@@ -32,15 +32,15 @@ const FAQ = () => {
     },
     {
       question: "Can I track multiple wallets?",
-      answer: "Yes! You can currently track up to 5 wallets at once if you have enough BONE tokens. This limit may adjust in the future based on platform usage. Use /add for each wallet and give them different names. Use /list to see all your wallets, and /removeall to stop tracking all of them."
+      answer: "Yes! You can track up to 5 wallets at once if you have enough $BONE tokens (approximately 20 ADA worth per wallet). Use /add for each wallet and give them different names. Use /list to see all your wallets, and /removeall to stop tracking all of them."
     },
     {
       question: "What happens if I don't have enough tokens?",
-      answer: "Your wallet is checked for tokens every 6 hours. If you don't have the required amount, your wallet will be automatically removed from tracking and you'll receive a notification. You'll need to add your wallet again with the required token amount to resume tracking."
+      answer: "Your wallet is checked for $BONE tokens every 6 hours. If you don't have approximately 20 ADA worth of tokens, your wallet will be automatically removed from tracking and you'll receive a DM notification. You'll need to add your wallet again with the required token amount to resume tracking."
     },
     {
       question: "Will the token requirement change?",
-      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost of about 20 ADA worth of tokens. This means early adopters can benefit from token value growth while new users can always join at a fair price."
+      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost of approximately 20 ADA worth of $BONE tokens. This means early adopters can benefit from token value growth while new users can always join at a fair price."
     },
     {
       question: "How reliable is the notification system?",

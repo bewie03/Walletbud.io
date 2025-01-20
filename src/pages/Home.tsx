@@ -13,7 +13,7 @@ const Home = () => {
                 Your Personal Cardano Wallet Assistant
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Get real-time DM notifications for your Cardano wallet. Track ADA transactions, token transfers, and NFT movements directly through Discord.
+                Get real-time DM notifications for your Cardano wallet. Track ADA transactions, token transfers, and NFT movements directly through DM.
               </p>
             </div>
           </AnimatedElement>
@@ -24,12 +24,12 @@ const Home = () => {
       <div className="w-full bg-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* DM Notifications */}
+            {/* Instant Notifications */}
             <AnimatedElement animation="slideUp" delay={0.4}>
               <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-white mb-4">Private DM Notifications</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Instant DM Alerts</h3>
                 <p className="text-blue-100">
-                  All interactions happen through Discord DMs for complete privacy. Get instant notifications about wallet activity while keeping your information secure.
+                  Get immediate DM notifications for all your wallet activity. Never miss an important transaction or movement in your Cardano wallet.
                 </p>
               </div>
             </AnimatedElement>
@@ -37,9 +37,9 @@ const Home = () => {
             {/* Real-Time Updates */}
             <AnimatedElement animation="slideUp" delay={0.6}>
               <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-white mb-4">Real-Time Updates</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Comprehensive Tracking</h3>
                 <p className="text-blue-100">
-                  Stay informed with instant notifications for ADA transactions, token transfers, and NFT movements. Never miss important wallet activity.
+                  Monitor everything from ADA transactions to token transfers and NFT movements. Get detailed insights about all your wallet activity in real-time.
                 </p>
               </div>
             </AnimatedElement>
@@ -47,9 +47,9 @@ const Home = () => {
             {/* Security */}
             <AnimatedElement animation="slideUp" delay={0.8}>
               <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-white mb-4">Secure & Private</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Enhanced Security</h3>
                 <p className="text-blue-100">
-                  Your privacy comes first. All commands work only in DMs, and we never store sensitive data. Smart rate limiting protects against spam and abuse.
+                  Built with security-first design. Private DM-only commands, no sensitive data storage, and smart rate limiting to protect against abuse.
                 </p>
               </div>
             </AnimatedElement>
@@ -76,9 +76,9 @@ const Home = () => {
                   <div className="absolute -top-4 -left-4 bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center border-2 border-white">
                     <span className="text-white font-bold">1</span>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4">Get BONE Tokens</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Get $BONE Tokens</h3>
                   <p className="text-blue-100 mb-4">
-                    Hold BONE tokens in your Cardano wallet to access the service.
+                    Hold $BONE tokens (approximately 20 ADA worth) in your Cardano wallet to access the service.
                   </p>
                   <Link
                     to="/bone"

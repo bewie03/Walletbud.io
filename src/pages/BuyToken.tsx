@@ -15,7 +15,7 @@ const BONE = () => {
             $BONE
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl animate-fade-delay">
-            The WalletBud Utility Token - Always ~20 ADA to Use
+            The WalletBud Utility Token - Always Approximately 20 ADA to Use
           </p>
         </div>
       </div>
@@ -44,7 +44,7 @@ const BONE = () => {
                   <div className="mb-4">
                     <p className="text-white font-semibold mb-2">Early Users:</p>
                     <p className="text-blue-100 ml-4">
-                      • Get in early with ~20 ADA worth of BONE tokens<br />
+                      • Get in early with ~20 ADA worth of $BONE tokens<br />
                       • Track up to 5 wallets with your tokens<br />
                       • As token value grows, keep what you need for tracking<br />
                       • Sell excess tokens for profit while maintaining service access
@@ -83,21 +83,21 @@ const BONE = () => {
                       <div>
                         <p className="mb-2">Early Stage:</p>
                         <ul className="list-disc pl-4 space-y-1">
-                          <li>$1M MCAP: 20,000 BONE</li>
-                          <li>$2M MCAP: 10,000 BONE</li>
-                          <li>$5M MCAP: 4,000 BONE</li>
-                          <li>$10M MCAP: 2,000 BONE</li>
-                          <li>$15M MCAP: 1,300 BONE</li>
+                          <li>$1M MCAP: 20,000 $BONE</li>
+                          <li>$2M MCAP: 10,000 $BONE</li>
+                          <li>$5M MCAP: 4,000 $BONE</li>
+                          <li>$10M MCAP: 2,000 $BONE</li>
+                          <li>$15M MCAP: 1,300 $BONE</li>
                         </ul>
                       </div>
                       <div>
                         <p className="mb-2">Growth Stage:</p>
                         <ul className="list-disc pl-4 space-y-1">
-                          <li>$20M MCAP: 1,000 BONE</li>
-                          <li>$30M MCAP: 650 BONE</li>
-                          <li>$50M MCAP: 400 BONE</li>
-                          <li>$75M MCAP: 265 BONE</li>
-                          <li>$100M MCAP: 200 BONE</li>
+                          <li>$20M MCAP: 1,000 $BONE</li>
+                          <li>$30M MCAP: 650 $BONE</li>
+                          <li>$50M MCAP: 400 $BONE</li>
+                          <li>$75M MCAP: 265 $BONE</li>
+                          <li>$100M MCAP: 200 $BONE</li>
                         </ul>
                       </div>
                     </div>
@@ -201,7 +201,7 @@ const BONE = () => {
                   <h3 className="text-xl font-bold text-white mb-4">One-Way Token Requirement System</h3>
                   <div className="space-y-4">
                     <p className="text-blue-100">
-                      <span className="font-semibold">Always Decreasing:</span> Our token requirement only moves in one direction - down. As the market cap grows, we lower the required amount of BONE tokens needed for tracking.
+                      <span className="font-semibold">Always Decreasing:</span> Our token requirement only moves in one direction - down. As the market cap grows, we lower the required amount of $BONE tokens needed for tracking.
                     </p>
                     <p className="text-blue-100">
                       <span className="font-semibold">Permanent Adjustments:</span> Once we decrease the token requirement, it stays at that lower amount - even if the market cap temporarily drops. We never increase the requirement back up.

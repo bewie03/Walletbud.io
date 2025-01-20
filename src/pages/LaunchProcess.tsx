@@ -99,7 +99,7 @@ const LaunchProcess = () => {
                     <p className="text-yellow-100">Bot will be offline for approximately 1 hour after launch for final setup</p>
                   </div>
                   <ul className="list-disc text-blue-100 space-y-2">
-                    <li>Integration of official token policy ID</li>
+                    <li>Integration of official $BONE token policy ID</li>
                     <li>Configuration of live token tracking</li>
                     <li>Bot resumes normal operation</li>
                   </ul>
