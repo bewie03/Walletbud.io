@@ -122,6 +122,7 @@ const BONE = () => {
                   <div className="mx-auto flex justify-center">
                     <Swap
                       orderTypes={["SWAP","LIMIT"]}
+                      defaultToken="YOUR_TOKEN_ID_HERE"
                       colors={{
                         background: "#1E3A8A",
                         containers: "#1E3A8A",
@@ -132,7 +133,7 @@ const BONE = () => {
                       }}
                       theme="light"
                       width="500"
-                      partnerCode="walletbud616464723171387a7275786c76747377366c326a647064643235656e336d393967676d74727678346b68723866346a396e353064356d3770357566716d7a3730797a706e66646336397a647067746a347032326b673364397639646a6b67706d71706735723637da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                      partnerCode="walletbud6164647231717835727434726c76396e7061366e383539366575616773677a66757a6337713835726b39796b6c646b7070666334726e74356865777832676c7178683039386b396175366366777a6d666e3630636a6d34346170617a6d63386e71797934377065da39a3ee5e6b4b0d3255bfef95601890afd80709"
                       partnerName="Walletbud"
                       displayType="DEFAULT"
                     />
