@@ -78,7 +78,7 @@ const Home = () => {
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">Get $BONE Tokens</h3>
                   <p className="text-blue-100 mb-4">
-                    Hold $BONE tokens (approximately 20 ADA worth) in your Cardano wallet to access the service.
+                    Hold required  $BONE tokens in your Cardano wallet to access the service.
                   </p>
                   <Link
                     to="/bone"
