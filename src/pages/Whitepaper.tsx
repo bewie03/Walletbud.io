@@ -1,3 +1,4 @@
+// Whitepaper page - Updated 21 Jan 2025
 import { motion } from 'framer-motion';
 import { 
   FaChartLine, 

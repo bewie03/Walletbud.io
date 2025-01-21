@@ -1,3 +1,4 @@
+// BuyToken page - Updated 21 Jan 2025
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import Swap from '@dexhunterio/swaps';

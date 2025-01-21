@@ -1,3 +1,4 @@
+// Home page - Updated 21 Jan 2025
 import { Link } from 'react-router-dom';
 import AnimatedElement from '../components/AnimatedElement';
 

@@ -1,3 +1,4 @@
+// Commands page - Updated 21 Jan 2025
 import AnimatedElement from '../components/AnimatedElement';
 
 const Commands = () => {
