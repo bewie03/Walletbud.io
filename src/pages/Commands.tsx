@@ -7,7 +7,7 @@ const Commands = () => {
       command: '/add <address>',
       description: 'Add a Cardano wallet address to your tracking list',
       details: [
-        'Add any Cardano wallet address to your tracking list.',
+        'Add any Cardano wallet with reqruied BONE to your tracking list.',
         'Requires approximately 20 ADA worth of BONE tokens',
         'Track up to 5 wallets with sufficient token balance',
       ],
@@ -15,7 +15,7 @@ const Commands = () => {
     {
       name: 'Verify Wallet',
       command: '/verifywallet <address> <name>',
-      description: 'Verify your wallet to get a custom unique name',
+      description: 'Verify your wallet to get a custom name',
       details: [
         'Send exact ADA amount specified by bot',
         'Custom name (up to 32 characters)',
@@ -57,9 +57,9 @@ const Commands = () => {
       command: '/stats',
       description: 'View global WalletBud statistics.',
       details: [
-        'See total tracked wallets',
-        'View active users',
-        'Check your token balance',
+        'Total global users tracking wallets',
+        'Total wallets being tracked',
+        'Total transactions monitored',
       ],
     },
     {

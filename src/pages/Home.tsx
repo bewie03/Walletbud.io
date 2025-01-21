@@ -3,12 +3,12 @@ import AnimatedElement from '../components/AnimatedElement';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-blue-900">
-      {/* Hero Section */}
-      <div className="w-full">
+    <div className="min-h-screen bg-[#1e40af]">
+      {/* Header Section with darker blue */}
+      <div className="w-full bg-blue-900 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
-            <div className="text-center pt-32 pb-16">
+            <div className="text-center pt-32 pb-8">
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
                 Your Personal Cardano Wallet Assistant
               </h1>
@@ -17,43 +17,6 @@ const Home = () => {
               </p>
             </div>
           </AnimatedElement>
-        </div>
-      </div>
-
-      {/* Feature Section */}
-      <div className="w-full bg-blue-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Instant Notifications */}
-            <AnimatedElement animation="slideUp" delay={0.4}>
-              <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-white mb-4">Instant DM Alerts</h3>
-                <p className="text-blue-100">
-                  Get immediate DM notifications for all your wallet activity. Never miss an important transaction or movement in your Cardano wallet.
-                </p>
-              </div>
-            </AnimatedElement>
-
-            {/* Real-Time Updates */}
-            <AnimatedElement animation="slideUp" delay={0.6}>
-              <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-white mb-4">Comprehensive Tracking</h3>
-                <p className="text-blue-100">
-                  Monitor everything from ADA transactions to token transfers and NFT movements. Get detailed insights about all your wallet activity in real-time.
-                </p>
-              </div>
-            </AnimatedElement>
-
-            {/* Security */}
-            <AnimatedElement animation="slideUp" delay={0.8}>
-              <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                <h3 className="text-xl font-bold text-white mb-4">Enhanced Security</h3>
-                <p className="text-blue-100">
-                  Built with security first design. Private DM only commands, no sensitive data storage, and smart rate limiting to protect against abuse.
-                </p>
-              </div>
-            </AnimatedElement>
-          </div>
         </div>
       </div>
 
@@ -71,66 +34,60 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Step 1 */}
             <AnimatedElement animation="slideRight" delay={1.2}>
-              <div className="relative">
-                <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                  <div className="absolute -top-4 -left-4 bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center border-2 border-white">
-                    <span className="text-white font-bold">1</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-4">Get $BONE Tokens</h3>
-                  <p className="text-blue-100 mb-4">
-                    Hold required $BONE tokens in your Cardano wallet to access the service.
-                  </p>
-                  <Link
-                    to="/bone"
-                    className="inline-flex items-center text-white hover:text-blue-200"
-                  >
-                    Learn More →
-                  </Link>
+              <div className="relative bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-lg">1</span>
                 </div>
+                <h3 className="text-2xl font-bold text-white mb-6">Get $BONE Tokens</h3>
+                <p className="text-blue-100 mb-8 text-lg">
+                  Hold required $BONE tokens in your Cardano wallet to access the service.
+                </p>
+                <Link
+                  to="/bone"
+                  className="text-white hover:text-blue-200 text-lg font-medium"
+                >
+                  Learn More →
+                </Link>
               </div>
             </AnimatedElement>
 
             {/* Step 2 */}
             <AnimatedElement animation="slideUp" delay={1.4}>
-              <div className="relative">
-                <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                  <div className="absolute -top-4 -left-4 bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center border-2 border-white">
-                    <span className="text-white font-bold">2</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-4">Join Discord</h3>
-                  <p className="text-blue-100 mb-4">
-                    Join our Discord server and start a DM with the WalletBud bot.
-                  </p>
-                  <a
-                    href="https://discord.gg/hnwJFkuU"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-white hover:text-blue-200"
-                  >
-                    Join Discord →
-                  </a>
+              <div className="relative bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-lg">2</span>
                 </div>
+                <h3 className="text-2xl font-bold text-white mb-6">Join Discord</h3>
+                <p className="text-blue-100 mb-8 text-lg">
+                  Join our Discord server and start a DM with the WalletBud bot.
+                </p>
+                <a
+                  href="https://discord.gg/hnwJFkuU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-blue-200 text-lg font-medium"
+                >
+                  Join Discord →
+                </a>
               </div>
             </AnimatedElement>
 
             {/* Step 3 */}
             <AnimatedElement animation="slideLeft" delay={1.6}>
-              <div className="relative">
-                <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
-                  <div className="absolute -top-4 -left-4 bg-blue-600 rounded-full w-8 h-8 flex items-center justify-center border-2 border-white">
-                    <span className="text-white font-bold">3</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-4">Add Your Wallet</h3>
-                  <p className="text-blue-100 mb-4">
-                    Use the /add command in a DM to start tracking your wallet.
-                  </p>
-                  <Link
-                    to="/commands"
-                    className="inline-flex items-center text-white hover:text-blue-200"
-                  >
-                    View Commands →
-                  </Link>
+              <div className="relative bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-lg">3</span>
                 </div>
+                <h3 className="text-2xl font-bold text-white mb-6">Add Your Wallet</h3>
+                <p className="text-blue-100 mb-8 text-lg">
+                  Use the /add command in a DM to start tracking your wallet.
+                </p>
+                <Link
+                  to="/commands"
+                  className="text-white hover:text-blue-200 text-lg font-medium"
+                >
+                  View Commands →
+                </Link>
               </div>
             </AnimatedElement>
           </div>
