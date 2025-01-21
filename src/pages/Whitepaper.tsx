@@ -48,11 +48,11 @@ const Whitepaper = () => {
                 </p>
                 
                 <p className="text-lg">
-                  WalletBud solves this by providing a simple Discord bot that monitors any Cardano wallet address you're interested in. Get instant notifications when wallets send or receive ADA, tokens, or NFTs. Track multiple addresses at once and never miss an important transaction.
+                  WalletBud solves this by providing a simple Discord bot that monitors any Cardano wallet address you are interested in. Get instant notifications when wallets send or receive ADA, tokens, or NFTs. Track multiple addresses at once and never miss an important transaction.
                 </p>
 
                 <p className="text-lg">
-                  Whether you're watching your own wallets, monitoring a project's treasury, or tracking whale movements, WalletBud keeps you informed with real-time Discord notifications about all wallet activity.
+                  Whether you are watching your own wallets, monitoring a project's treasury, or tracking whale movements, WalletBud keeps you informed with real time Discord notifications about all wallet activity.
                 </p>
               </div>
             </div>
@@ -79,11 +79,11 @@ const Whitepaper = () => {
                 </p>
                 
                 <p className="text-lg">
-                  As a new team taking on this challenge, we've built our version of WalletBud from scratch with solutions to these core issues. Wallets are now permanently stored in our enterprise-grade database, ensuring they persist through any system updates or restarts. And with our $BONE token, we've created a sustainable economic model that funds ongoing development while rewarding our users.
+                  As a new team taking on this challenge, we have built our version of WalletBud from scratch with solutions to these core issues. Wallets are now permanently stored in our enterprise grade database, ensuring they persist through any system updates or restarts. And with our $BONE token, we have created a sustainable economic model that funds ongoing development while rewarding our users.
                 </p>
 
                 <p className="text-lg">
-                  While we share the name and vision of the original project, we're a completely new team with a fresh implementation. Our goal is to deliver what the Cardano community has always needed  a reliable, user friendly monitoring solution with a sustainable future.
+                  While we share the name and vision of the original project, we are a completely new team with a fresh implementation. Our goal is to deliver what the Cardano community has always needed: a reliable, user friendly monitoring solution with a sustainable future.
                 </p>
               </div>
             </div>
@@ -518,7 +518,7 @@ const Whitepaper = () => {
                     perpetual access to services while maintaining their asset value.
                   </p>
                   <p>
-                    To use WalletBud's services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
+                    To use WalletBud services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
                     requirement ensures fair access regardless of token price fluctuations, while rewarding early adopters as the 
                     token value grows.
                   </p>

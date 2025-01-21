@@ -13,7 +13,7 @@ const Home = () => {
                 Your Personal Cardano Wallet Assistant
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Get real-time DM notifications for your Cardano wallet. Track ADA transactions, token transfers, and NFT movements directly through DM.
+                Get real time DM notifications for your Cardano wallet. Track ADA transactions, token transfers, and NFT movements directly through DM.
               </p>
             </div>
           </AnimatedElement>
@@ -49,7 +49,7 @@ const Home = () => {
               <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-105 transition-all duration-300 h-full">
                 <h3 className="text-xl font-bold text-white mb-4">Enhanced Security</h3>
                 <p className="text-blue-100">
-                  Built with security-first design. Private DM-only commands, no sensitive data storage, and smart rate limiting to protect against abuse.
+                  Built with security first design. Private DM only commands, no sensitive data storage, and smart rate limiting to protect against abuse.
                 </p>
               </div>
             </AnimatedElement>
@@ -78,7 +78,7 @@ const Home = () => {
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">Get $BONE Tokens</h3>
                   <p className="text-blue-100 mb-4">
-                    Hold required  $BONE tokens in your Cardano wallet to access the service.
+                    Hold required $BONE tokens in your Cardano wallet to access the service.
                   </p>
                   <Link
                     to="/bone"

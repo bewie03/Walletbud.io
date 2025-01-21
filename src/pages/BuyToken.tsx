@@ -44,7 +44,7 @@ const BONE = () => {
                   <div className="mb-4">
                     <p className="text-white font-semibold mb-2">Early Users:</p>
                     <p className="text-blue-100 ml-4">
-                      • Get in early with ~20 ADA worth of $BONE tokens<br />
+                      • Get in early with about 20 ADA worth of $BONE tokens<br />
                       • Track up to 5 wallets with your tokens<br />
                       • As token value grows, keep what you need for tracking<br />
                       • Sell excess tokens for profit while maintaining service access
@@ -107,7 +107,7 @@ const BONE = () => {
                     <p className="text-blue-100 mb-4">
                       <span className="font-semibold">TOKEN REQUIREMENT NEVER GOES BACK UP</span><br />
                       For more information<br />
-                      Read One-Way Token Requirements System<br />
+                      Read One Way Token Requirements System<br />
                     </p>
                   </div>
                 </div>

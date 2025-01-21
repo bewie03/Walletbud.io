@@ -5,7 +5,7 @@ const Commands = () => {
     {
       name: 'Add Wallet',
       command: '/add <address>',
-      description: 'Add a Cardano wallet address to your tracking list with a custom name.',
+      description: 'Add a Cardano wallet address to your tracking list',
       details: [
         'Add any Cardano wallet address to your tracking list.',
         'Requires approximately 20 ADA worth of BONE tokens',
@@ -15,7 +15,7 @@ const Commands = () => {
     {
       name: 'Verify Wallet',
       command: '/verifywallet <address> <name>',
-      description: 'Verify your wallet to get a custom unqiue name',
+      description: 'Verify your wallet to get a custom unique name',
       details: [
         'Send exact ADA amount specified by bot',
         'Custom name (up to 32 characters)',
