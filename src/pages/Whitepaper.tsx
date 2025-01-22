@@ -6,15 +6,13 @@ import {
   FaBolt, 
   FaCoins, 
   FaChartBar, 
-  FaRocket, 
+  FaRoad, 
   FaShieldAlt, 
   FaFeather, 
   FaUsers, 
   FaServer, 
   FaDatabase, 
-  FaRoad, 
   FaSearchDollar, 
-  FaBell, 
   FaCog,
   FaRobot,
   FaNetworkWired,
@@ -24,7 +22,10 @@ import {
   FaProjectDiagram,
   FaPalette,
   FaLightbulb,
-  FaBalanceScale
+  FaBalanceScale,
+  FaClock,
+  FaWallet,
+  FaDiscord
 } from 'react-icons/fa';
 import AnimatedElement from '../components/AnimatedElement';
 
@@ -33,7 +34,7 @@ const Whitepaper = () => {
     {
       id: 'introduction',
       title: 'Introduction',
-      icon: <FaRocket className="w-6 h-6" />,
+      icon: <FaRoad className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -43,17 +44,17 @@ const Whitepaper = () => {
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
                   Currently, Cardano users have no easy way to track specific wallet addresses and receive notifications about their activity. This makes it difficult to monitor investments, track project treasuries, or stay updated on important transactions.
                 </p>
                 
-                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
-                  WalletBud solves this by providing a simple Discord bot that monitors any Cardano wallet address you are interested in. Get instant notifications when wallets send or receive ADA, tokens, or NFTs. Track multiple addresses at once and never miss an important transaction.
+                <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
+                  WalletBud bridges this gap by connecting Discord with the Cardano blockchain. Our system securely links each user's Discord ID with their verified wallet addresses, creating a personalized monitoring experience. Through our Discord bot, users can easily track multiple wallets and get instant notifications about ADA, token, and NFT movements.
                 </p>
 
-                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
-                  Whether you are watching your own wallets, monitoring a project's treasury, or tracking whale movements, WalletBud keeps you informed with real time Discord notifications about all wallet activity.
+                <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
+                  This powerful Discord and blockchain connection ensures notifications go directly to users on their favorite platform. Whether you watch your own wallets, monitor project treasuries, or track whale movements, WalletBud keeps you informed with real time Discord notifications about all wallet activity.
                 </p>
               </div>
             </div>
@@ -74,17 +75,17 @@ const Whitepaper = () => {
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
-                  We were inspired by an earlier project called WalletBud that attempted to create a wallet monitoring solution for Cardano. While innovative, it faced significant challenges: users had to repeatedly add their wallets after system restarts, and there was no sustainable way to fund the service's ongoing development and server costs.
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
+                  We were inspired by an earlier project called WalletBud that attempted to create a wallet monitoring solution for Cardano. While innovative, it had many problems and limitations: users needed to add their wallets again after system restarts, notifications were unreliable, and the bot would frequently go offline. The service lacked important features like multi wallet tracking, token monitoring, and NFT support.
                 </p>
                 
-                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
-                  As a new team taking on this challenge, we have built our version of WalletBud from scratch with solutions to these core issues. Wallets are now permanently stored in our enterprise grade database, ensuring they persist through any system updates or restarts. And with our $BONE token, we have created a sustainable economic model that funds ongoing development while rewarding our users.
+                <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
+                  As a new team taking on this challenge, we have built our version of WalletBud from scratch to solve these core issues. Our robust infrastructure ensures constant uptime, reliable notifications, and permanent wallet storage. We've added comprehensive token and NFT tracking, multi wallet support, and detailed transaction analytics.
                 </p>
 
-                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
-                  While we share the name and vision of the original project, we are a completely new team with a fresh implementation. Our goal is to deliver what the Cardano community has always needed: a reliable, user friendly monitoring solution with a sustainable future.
+                <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
+                  While we share the name and vision of the original project, we are a completely new team delivering a much better implementation. Our goal is to give the Cardano community a reliable, complete monitoring solution they can depend on.
                 </p>
               </div>
             </div>
@@ -186,109 +187,6 @@ const Whitepaper = () => {
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
                       Token & NFT monitoring
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      )
-    },
-    {
-      id: 'technical',
-      title: 'Technical Architecture',
-      icon: <FaCogs className="w-6 h-6" />,
-      content: (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-6"
-        >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Left Column */}
-              <div className="space-y-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-blue-400" /> Backend Infrastructure
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      FastAPI for high-performance endpoints
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      PostgreSQL for reliable data storage
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Blockfrost API for blockchain data
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartLine className="text-blue-400" /> Performance Metrics
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      50+ transactions per second
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      500+ concurrent connections
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Ultra-fast query response (50-100ms)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Right Column */}
-              <div className="space-y-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaRobot className="text-blue-400" /> Bot Architecture
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Discord.py for reliable bot operations
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Async processing for notifications
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Command rate limiting and cooldowns
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaShieldAlt className="text-blue-400" /> Security Measures
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      End-to-end encryption
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Rate limiting and DDoS protection
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Secure Discord authentication
                     </li>
                   </ul>
                 </div>
@@ -472,7 +370,7 @@ const Whitepaper = () => {
                   <div className="space-y-2">
                     <div className="text-2xl font-semibold text-white">900,000,000 $BONE</div>
                     <div className="text-blue-200">
-                      Allocated for community, bot access, DEX trading, and providing liquidity. Fair launch with no presale.
+                      Allocated for community, bot access, DEX trading, and providing liquidity.
                     </div>
                   </div>
                 </div>
@@ -484,7 +382,7 @@ const Whitepaper = () => {
                   <div className="space-y-2">
                     <div className="text-2xl font-semibold text-white">100,000,000 $BONE</div>
                     <div className="text-blue-200">
-                      Reserved for development, marketing, and community events to ensure long-term sustainability.
+                      Reserved for development, and community events to ensure long-term sustainability.
                     </div>
                   </div>
                 </div>
@@ -513,16 +411,18 @@ const Whitepaper = () => {
                   <FaBolt className="text-blue-400" /> Purpose & Utility
                 </h3>
                 <div className="space-y-4 text-blue-100">
-                  <p className="hover:scale-[1.02] transition-transform duration-300">
-                    $BONE is the utility token that powers the WalletBud ecosystem. It serves as both an access key to our services 
-                    and a mechanism for ensuring sustainable development. Unlike traditional subscription models, $BONE gives users 
-                    perpetual access to services while maintaining their asset value.
-                  </p>
-                  <p className="hover:scale-[1.02] transition-transform duration-300">
-                    To use WalletBud services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
-                    requirement ensures fair access regardless of token price fluctuations, while rewarding early adopters as the 
-                    token value grows.
-                  </p>
+                  <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                    <p className="leading-relaxed hover:scale-[1.02] transition-transform duration-300">
+                      $BONE is the utility token that powers the WalletBud ecosystem. It serves as both an access key to our services 
+                      and a mechanism for ensuring sustainable development. Unlike traditional subscription models, $BONE gives users 
+                      perpetual access to services while maintaining their asset value.
+                    </p>
+                    <p className="leading-relaxed hover:scale-[1.02] transition-transform duration-300">
+                      To use WalletBud services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
+                      requirement ensures fair access regardless of token price fluctuations, while rewarding early adopters as the 
+                      token value grows.
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -582,30 +482,42 @@ const Whitepaper = () => {
               </div>
 
               {/* Getting Started */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <FaRocket className="text-blue-400" /> Getting Started with $BONE
+              <div className="mt-12">
+                <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
+                  <FaRoad className="text-blue-400 mr-3" /> Getting Started with $BONE
                 </h3>
-                <div className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-blue-800 p-4 rounded-lg">
-                      <div className="text-white font-semibold mb-2">1. Acquire Tokens</div>
-                      <p className="text-blue-100 text-sm hover:scale-[1.02] transition-transform duration-300">
-                        Purchase $BONE tokens through our supported DEX platforms
-                      </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {/* Step 1 */}
+                  <div className="flex flex-col">
+                    <div className="text-xl font-semibold text-white mb-4 flex items-center">
+                      <span className="text-blue-400 mr-2">1.</span>
+                      Acquire Tokens
                     </div>
-                    <div className="bg-blue-800 p-4 rounded-lg">
-                      <div className="text-white font-semibold mb-2">2. Hold Required Amount</div>
-                      <p className="text-blue-100 text-sm hover:scale-[1.02] transition-transform duration-300">
-                        Maintain ~20 ADA worth of $BONE in your wallet
-                      </p>
+                    <p className="text-blue-100">
+                      Purchase $BONE tokens through our supported DEX platforms
+                    </p>
+                  </div>
+
+                  {/* Step 2 */}
+                  <div className="flex flex-col">
+                    <div className="text-xl font-semibold text-white mb-4 flex items-center">
+                      <span className="text-blue-400 mr-2">2.</span>
+                      Hold Required Amount
                     </div>
-                    <div className="bg-blue-800 p-4 rounded-lg">
-                      <div className="text-white font-semibold mb-2">3. Start Using WalletBud</div>
-                      <p className="text-blue-100 text-sm hover:scale-[1.02] transition-transform duration-300">
-                        Add wallets to track and receive notifications
-                      </p>
+                    <p className="text-blue-100">
+                      Maintain ~20 ADA worth of $BONE in your wallet
+                    </p>
+                  </div>
+
+                  {/* Step 3 */}
+                  <div className="flex flex-col">
+                    <div className="text-xl font-semibold text-white mb-4 flex items-center">
+                      <span className="text-blue-400 mr-2">3.</span>
+                      Start Using WalletBud
                     </div>
+                    <p className="text-blue-100">
+                      Add wallets to track and receive notifications
+                    </p>
                   </div>
                 </div>
               </div>
@@ -616,7 +528,7 @@ const Whitepaper = () => {
     },
     {
       id: 'requirements',
-      title: 'System ',
+      title: 'Technical Architecture',
       icon: <FaChartBar className="w-6 h-6" />,
       content: (
         <motion.div 
@@ -631,60 +543,60 @@ const Whitepaper = () => {
               <div className="grid grid-rows-3 gap-6">
                 <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-blue-400" /> Enterprise Database
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      5,000+ operations per second
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Ultra-fast queries (50-100ms)
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Supports 500+ concurrent connections
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
                     <FaBolt className="text-blue-400" /> Processing Power
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      50+ transactions per second
+                      300 transactions per minute max
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Auto-scaling infrastructure
+                      API response {'<'}1 second
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Load balancing: 5,000+ ops/second
+                      4 notifications per second
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-blue-400" /> Storage Capacity
+                    <FaDatabase className="text-blue-400" /> Database Metrics
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      1.5M+ wallet records
+                      1GB total storage capacity
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      2M+ user associations
+                      20 max connections (5 active)
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      1M+ transaction records
+                      6 tables of 4,000 available
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaClock className="text-blue-400" /> Timing & Intervals
+                  </h5>
+                  <ul className="space-y-2 text-blue-100">
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                      Balance check every 6 hours
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                      Full scan (100k wallets): 5.5 hours
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                      250ms notification delay
                     </li>
                   </ul>
                 </div>
@@ -694,60 +606,60 @@ const Whitepaper = () => {
               <div className="grid grid-rows-3 gap-6">
                 <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-blue-400" /> System Scale
+                    <FaWallet className="text-blue-400" /> Wallet Capacity
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Support for 100,000+ active users
+                      108,000 max wallets per 6 hours
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Track 100,000+ wallets simultaneously
+                      5 wallets checked per second
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Process 4M+ daily transactions
+                      Recommended: 100,000 wallets
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBell className="text-blue-400" /> Notifications
+                    <FaServer className="text-blue-400" /> API Limits
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      345,600 notifications per day
+                      Blockfrost: 10 requests/second max
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Notify 1,000 users in ~4.2 minutes
+                      Burst limit: 500 requests
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Real-time Discord delivery
+                      50 second burst cooldown
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCog className="text-blue-400" /> Monitoring
+                    <FaDiscord className="text-blue-400" /> Discord Integration
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Check 5 wallets per second
+                      4 messages per second
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      108,000 wallets per cycle
+                      1 command per 3s per user
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      6-hour check intervals
+                      Unlimited servers and users
                     </li>
                   </ul>
                 </div>
@@ -758,7 +670,7 @@ const Whitepaper = () => {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-blue-400" /> Auto-scaling
+                    <FaDatabase className="text-blue-400" /> Auto scaling
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
@@ -767,11 +679,11 @@ const Whitepaper = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      500+ concurrent users
+                      20 max connections
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Dynamic scaling
+                      1GB storage capacity
                     </li>
                   </ul>
                 </div>
@@ -783,35 +695,33 @@ const Whitepaper = () => {
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      5000+ ops/second
+                      10 requests/second
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Smart request routing
+                      500 request burst limit
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      High availability
+                      50s burst cooldown
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                   <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> High Performance
+                    <FaBolt className="text-blue-400" /> Performance
                   </h5>
                   <ul className="space-y-2 text-blue-100">
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      50-100ms query speed
+                      Query speed: milliseconds
                     </li>
                     <li className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Optimized caching
+                      4  messages/second
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Fast response time
                     </li>
                   </ul>
                 </div>
@@ -834,50 +744,70 @@ const Whitepaper = () => {
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaCogs className="text-blue-400" /> Infrastructure
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Enhanced system reliability
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Improved backup systems
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Advanced monitoring tools
-                  </li>
-                </ul>
+              {/* Left Column */}
+              <div className="grid grid-rows-3 gap-6">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaCogs className="text-blue-400" /> Enhanced Bot Commands
+                  </h5>
+                  <p className="text-blue-200">
+                    We are expanding our command system to provide more detailed analytics, custom alerts, and advanced tracking features. Users will have greater control over how they monitor and analyze wallet activity.
+                  </p>
+                </div>
+
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaShieldAlt className="text-blue-400" /> Bug Bounty Program
+                  </h5>
+                  <p className="text-blue-200">
+                    Join our community bug hunting contest where users can earn rewards for finding and reporting issues. Help us make WalletBud more secure and reliable while earning rewards for your contributions.
+                  </p>
+                </div>
+
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaPalette className="text-blue-400" /> Community Engagement
+                  </h5>
+                  <p className="text-blue-200">
+                    Regular art and meme competitions will bring creativity and fun to our community. Winners will receive special rewards and recognition within the WalletBud ecosystem.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaUsers className="text-blue-400" /> Community Growth
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    DEX integrations
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    NFT marketplace support
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Project partnerships
-                  </li>
-                </ul>
+              {/* Right Column */}
+              <div className="grid grid-rows-3 gap-6">
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaRobot className="text-blue-400" /> Discord Server Features
+                  </h5>
+                  <p className="text-blue-200">
+                    New server features will enhance community interaction and provide more value to our users. This includes specialized channels, automated roles, and interactive community events.
+                  </p>
+                </div>
+
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaProjectDiagram className="text-blue-400" /> Project Collaborations
+                  </h5>
+                  <p className="text-blue-200">
+                    We are actively seeking partnerships with Cardano projects to create unique monitoring solutions. Projects will have access to custom bot features and specialized tracking tools for their communities.
+                  </p>
+                </div>
+
+                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <FaServer className="text-blue-400" /> System Improvements
+                  </h5>
+                  <p className="text-blue-200">
+                    Continuous updates to our core systems will improve speed, reliability, and functionality. We are developing token specific tracking features to provide detailed insights for different assets.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="mt-6 text-blue-200 text-sm italic">
-              Note: These features represent possible future directions. Development priorities may adjust based on community needs.
-            </div>
+            <p className="text-sm text-blue-200 mt-6 text-center">
+              Note: These development plans are subject to change based on community feedback and market conditions. We will prioritize features that bring the most value to our users.
+            </p>
           </div>
         </motion.div>
       )
@@ -1022,45 +952,57 @@ const Whitepaper = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-blue-900 py-12">
-      {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-        <div className="text-center transform hover:scale-[1.02] transition-transform duration-300">
-          <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl animate-fade">
-            WalletBud Whitepaper
-          </h1>
-          <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl animate-fade-delay">
-            Technical Documentation and Vision
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen bg-[#1e3b94] py-16">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="bg-blue-900/40 backdrop-blur-sm rounded-xl shadow-2xl border border-blue-700/30">
+          {/* Cover */}
+          <div className="bg-[#1e3a8a]/50 rounded-t-xl text-center py-16 px-4">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              WalletBud Whitepaper
+            </h1>
+            <p className="text-xl md:text-2xl text-blue-100 mb-4">
+              A Comprehensive Guide to the WalletBud Ecosystem
+            </p>
+            <p className="text-sm text-blue-200">
+              Version 1.0 - January 2025
+            </p>
+          </div>
 
-      {/* Main Content */}
-      <div className="bg-blue-800 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-8">
-            {sections.map((section, index) => (
-              <AnimatedElement
-                key={section.id}
-                animation={index % 2 === 0 ? "slideRight" : "slideLeft"}
-                delay={0.2 + index * 0.1}
-              >
-                <div
-                  id={section.id}
-                  className="scroll-mt-32"
+          {/* Content */}
+          <div className="px-8 py-16">
+            <div className="max-w-4xl mx-auto space-y-16">
+              {sections.map((section, index) => (
+                <AnimatedElement
+                  key={section.id}
+                  animation="fadeIn"
+                  delay={0.2 + index * 0.1}
                 >
-                  <div className="flex items-center space-x-3 mb-6">
-                    <span className="text-blue-400 hover:scale-110 transition-transform duration-300">
-                      {section.icon}
-                    </span>
-                    <h2 className="text-2xl font-bold text-white hover:scale-105 transition-transform duration-300">
-                      {section.title}
-                    </h2>
+                  <div 
+                    id={section.id}
+                    className="scroll-mt-32"
+                  >
+                    <div className="flex items-center space-x-3 mb-8 border-b border-blue-700 pb-4">
+                      <span className="text-blue-400 text-2xl">
+                        {section.icon}
+                      </span>
+                      <h2 className="text-3xl font-bold text-white">
+                        {section.title}
+                      </h2>
+                    </div>
+                    <div className="prose prose-invert prose-blue max-w-none prose-p:text-blue-100 prose-headings:text-white prose-strong:text-white">
+                      {section.content}
+                    </div>
                   </div>
-                  {section.content}
-                </div>
-              </AnimatedElement>
-            ))}
+                </AnimatedElement>
+              ))}
+            </div>
+          </div>
+
+          {/* Footer */}
+          <div className="border-t border-blue-700 py-8 text-center rounded-b-xl">
+            <p className="text-blue-200 text-sm">
+              &copy; 2025 WalletBud | All rights reserved
+            </p>
           </div>
         </div>
       </div>
