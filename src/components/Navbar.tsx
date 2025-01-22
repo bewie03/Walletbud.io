@@ -34,38 +34,38 @@ const Navbar = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             />
-            <span className="text-2xl font-bold text-white">WalletBud</span>
+            <span className="text-2xl font-bold text-white hover:scale-105 transition-transform duration-300">WalletBud</span>
           </Link>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/bone"
-              className="text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
               $BONE
             </Link>
             <Link
               to="/commands"
-              className="text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
               Commands
             </Link>
             <Link
               to="/whitepaper"
-              className="text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
               Whitepaper
             </Link>
             <Link
               to="/launch"
-              className="text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
               Launch
             </Link>
             <Link
               to="/faq"
-              className="text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
               FAQ
             </Link>

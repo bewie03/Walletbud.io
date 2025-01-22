@@ -9,10 +9,10 @@ const LaunchProcess = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-16">
-              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
                 Launch Process
               </h1>
-              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl">
+              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
                 Clear steps for our launch on Snek.fun
               </p>
             </div>
@@ -31,7 +31,9 @@ const LaunchProcess = () => {
                   <div className="bg-blue-700 rounded-full p-2 w-10 h-10 flex items-center justify-center text-white font-bold">
                     1
                   </div>
-                  <h3 className="text-xl font-semibold text-white">Website and Social Launch</h3>
+                  <h3 className="text-xl font-semibold text-white hover:scale-105 transition-transform duration-300">
+                    Website and Social Launch
+                  </h3>
                 </div>
                 <div className="ml-14">
                   <ul className="list-disc text-blue-100 space-y-2">
@@ -65,7 +67,9 @@ const LaunchProcess = () => {
                   <div className="bg-blue-700 rounded-full p-2 w-10 h-10 flex items-center justify-center text-white font-bold">
                     2
                   </div>
-                  <h3 className="text-xl font-semibold text-white">Token Launch on Snek.fun</h3>
+                  <h3 className="text-xl font-semibold text-white hover:scale-105 transition-transform duration-300">
+                    Token Launch on Snek.fun
+                  </h3>
                 </div>
                 <div className="ml-14">
                   <ul className="list-disc text-blue-100 space-y-2">
@@ -88,7 +92,9 @@ const LaunchProcess = () => {
                   <div className="bg-blue-700 rounded-full p-2 w-10 h-10 flex items-center justify-center text-white font-bold">
                     3
                   </div>
-                  <h3 className="text-xl font-semibold text-white">Bot Integration</h3>
+                  <h3 className="text-xl font-semibold text-white hover:scale-105 transition-transform duration-300">
+                    Bot Integration
+                  </h3>
                 </div>
                 <div className="ml-14">
                   <div className="bg-yellow-900/30 border border-yellow-700/50 rounded p-4 mb-4">
@@ -110,34 +116,36 @@ const LaunchProcess = () => {
             {/* Why Snek.fun Section */}
             <AnimatedElement animation="fadeIn" delay={0.8}>
               <div className="mt-12 bg-blue-900 rounded-lg p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                <h2 className="text-2xl font-bold text-white mb-6">Why We Chose Snek.fun</h2>
+                <h2 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">
+                  Why We Chose Snek.fun
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4 text-blue-100">
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 w-6 h-6 text-blue-400">•</div>
-                      <p>Secure and proven launch platform</p>
+                      <p className="hover:scale-105 transition-transform duration-300">Secure and proven launch platform</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 w-6 h-6 text-blue-400">•</div>
-                      <p>Built-in anti-bot protection</p>
+                      <p className="hover:scale-105 transition-transform duration-300">Built-in anti-bot protection</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 w-6 h-6 text-blue-400">•</div>
-                      <p>Professional token management</p>
+                      <p className="hover:scale-105 transition-transform duration-300">Professional token management</p>
                     </div>
                   </div>
                   <div className="space-y-4 text-blue-100">
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 w-6 h-6 text-blue-400">•</div>
-                      <p>Transparent process</p>
+                      <p className="hover:scale-105 transition-transform duration-300">Transparent process</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 w-6 h-6 text-blue-400">•</div>
-                      <p>Immediate liquidity</p>
+                      <p className="hover:scale-105 transition-transform duration-300">Immediate liquidity</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 w-6 h-6 text-blue-400">•</div>
-                      <p>Fair distribution</p>
+                      <p className="hover:scale-105 transition-transform duration-300">Fair distribution</p>
                     </div>
                   </div>
                 </div>

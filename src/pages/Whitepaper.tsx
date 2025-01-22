@@ -44,15 +44,15 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                <p className="text-lg">
+                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
                   Currently, Cardano users have no easy way to track specific wallet addresses and receive notifications about their activity. This makes it difficult to monitor investments, track project treasuries, or stay updated on important transactions.
                 </p>
                 
-                <p className="text-lg">
+                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
                   WalletBud solves this by providing a simple Discord bot that monitors any Cardano wallet address you are interested in. Get instant notifications when wallets send or receive ADA, tokens, or NFTs. Track multiple addresses at once and never miss an important transaction.
                 </p>
 
-                <p className="text-lg">
+                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
                   Whether you are watching your own wallets, monitoring a project's treasury, or tracking whale movements, WalletBud keeps you informed with real time Discord notifications about all wallet activity.
                 </p>
               </div>
@@ -75,15 +75,15 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                <p className="text-lg">
+                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
                   We were inspired by an earlier project called WalletBud that attempted to create a wallet monitoring solution for Cardano. While innovative, it faced significant challenges: users had to repeatedly add their wallets after system restarts, and there was no sustainable way to fund the service's ongoing development and server costs.
                 </p>
                 
-                <p className="text-lg">
+                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
                   As a new team taking on this challenge, we have built our version of WalletBud from scratch with solutions to these core issues. Wallets are now permanently stored in our enterprise grade database, ensuring they persist through any system updates or restarts. And with our $BONE token, we have created a sustainable economic model that funds ongoing development while rewarding our users.
                 </p>
 
-                <p className="text-lg">
+                <p className="text-lg hover:scale-[1.02] transition-transform duration-300">
                   While we share the name and vision of the original project, we are a completely new team with a fresh implementation. Our goal is to deliver what the Cardano community has always needed: a reliable, user friendly monitoring solution with a sustainable future.
                 </p>
               </div>
@@ -513,12 +513,12 @@ const Whitepaper = () => {
                   <FaBolt className="text-blue-400" /> Purpose & Utility
                 </h3>
                 <div className="space-y-4 text-blue-100">
-                  <p>
+                  <p className="hover:scale-[1.02] transition-transform duration-300">
                     $BONE is the utility token that powers the WalletBud ecosystem. It serves as both an access key to our services 
                     and a mechanism for ensuring sustainable development. Unlike traditional subscription models, $BONE gives users 
                     perpetual access to services while maintaining their asset value.
                   </p>
-                  <p>
+                  <p className="hover:scale-[1.02] transition-transform duration-300">
                     To use WalletBud services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
                     requirement ensures fair access regardless of token price fluctuations, while rewarding early adopters as the 
                     token value grows.
@@ -534,19 +534,19 @@ const Whitepaper = () => {
                 <ul className="space-y-3 text-blue-100">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span>Hold $BONE tokens in your wallet to access WalletBud services</span>
+                    <span className="hover:scale-[1.02] transition-transform duration-300">Hold $BONE tokens in your wallet to access WalletBud services</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span>Track up to 5 wallets with sufficient token balance</span>
+                    <span className="hover:scale-[1.02] transition-transform duration-300">Track up to 5 wallets with sufficient token balance</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span>Token requirement adjusts with market value to maintain consistent ~20 ADA entry point</span>
+                    <span className="hover:scale-[1.02] transition-transform duration-300">Token requirement adjusts with market value to maintain consistent ~20 ADA entry point</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span>Tokens retain value and can be sold when no longer needed</span>
+                    <span className="hover:scale-[1.02] transition-transform duration-300">Tokens retain value and can be sold when no longer needed</span>
                   </li>
                 </ul>
               </div>
@@ -557,25 +557,25 @@ const Whitepaper = () => {
                   <FaBalanceScale className="text-blue-400" /> Long-term Sustainability
                 </h3>
                 <div className="space-y-4 text-blue-100">
-                  <p>
+                  <p className="hover:scale-[1.02] transition-transform duration-300">
                     Our token model ensures long-term sustainability through several mechanisms:
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span>Development fund ensures continuous improvement and maintenance</span>
+                      <span className="hover:scale-[1.02] transition-transform duration-300">Development fund ensures continuous improvement and maintenance</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span>Token-based access creates natural demand as user base grows</span>
+                      <span className="hover:scale-[1.02] transition-transform duration-300">Token-based access creates natural demand as user base grows</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span>Fair launch and public distribution promotes healthy token economics</span>
+                      <span className="hover:scale-[1.02] transition-transform duration-300">Fair launch and public distribution promotes healthy token economics</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span>No presale or private allocations ensures community-first approach</span>
+                      <span className="hover:scale-[1.02] transition-transform duration-300">No presale or private allocations ensures community-first approach</span>
                     </li>
                   </ul>
                 </div>
@@ -590,19 +590,19 @@ const Whitepaper = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-blue-800 p-4 rounded-lg">
                       <div className="text-white font-semibold mb-2">1. Acquire Tokens</div>
-                      <p className="text-blue-100 text-sm">
+                      <p className="text-blue-100 text-sm hover:scale-[1.02] transition-transform duration-300">
                         Purchase $BONE tokens through our supported DEX platforms
                       </p>
                     </div>
                     <div className="bg-blue-800 p-4 rounded-lg">
                       <div className="text-white font-semibold mb-2">2. Hold Required Amount</div>
-                      <p className="text-blue-100 text-sm">
+                      <p className="text-blue-100 text-sm hover:scale-[1.02] transition-transform duration-300">
                         Maintain ~20 ADA worth of $BONE in your wallet
                       </p>
                     </div>
                     <div className="bg-blue-800 p-4 rounded-lg">
                       <div className="text-white font-semibold mb-2">3. Start Using WalletBud</div>
-                      <p className="text-blue-100 text-sm">
+                      <p className="text-blue-100 text-sm hover:scale-[1.02] transition-transform duration-300">
                         Add wallets to track and receive notifications
                       </p>
                     </div>
@@ -1049,10 +1049,14 @@ const Whitepaper = () => {
                   id={section.id}
                   className="scroll-mt-32"
                 >
-                  <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-                    {section.icon}
-                    {section.title}
-                  </h2>
+                  <div className="flex items-center space-x-3 mb-6">
+                    <span className="text-blue-400 hover:scale-110 transition-transform duration-300">
+                      {section.icon}
+                    </span>
+                    <h2 className="text-2xl font-bold text-white hover:scale-105 transition-transform duration-300">
+                      {section.title}
+                    </h2>
+                  </div>
                   {section.content}
                 </div>
               </AnimatedElement>

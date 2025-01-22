@@ -78,10 +78,10 @@ const FAQ = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-16">
-              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
                 Frequently Asked Questions
               </h1>
-              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl">
+              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
                 Everything you need to know about WalletBud
               </p>
             </div>

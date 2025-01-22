@@ -99,8 +99,28 @@ const Commands = () => {
       description: 'Search for wallets and usernames across the platform.',
       details: [
         'Search for verified usernames',
-        'Find specific wallet addresses',
-        'Quick access to wallet information',
+        'Find wallet addresses',
+        'Quick access to wallet info',
+      ],
+    },
+    {
+      name: 'Uptime',
+      command: '/uptime',
+      description: 'Shows how long the bot has been running since its last restart.',
+      details: [
+        'View bot uptime duration',
+        'Check last restart time',
+        'Monitor bot stability',
+      ],
+    },
+    {
+      name: 'Rank',
+      command: '/rank <address>',
+      description: 'Shows a wallet\'s ranking among tracked wallets based on transaction count.',
+      details: [
+        'Compare wallet activity rankings',
+        'View transaction count metrics',
+        'Track wallet performance',
       ],
     },
   ];
@@ -112,11 +132,11 @@ const Commands = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-16">
-              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
                 Commands
               </h1>
-              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl">
-                All commands are DM only for your privacy and security
+              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
+                All available bot commands and their usage
               </p>
             </div>
           </AnimatedElement>
@@ -126,61 +146,23 @@ const Commands = () => {
       {/* Main Content */}
       <div className="w-full bg-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="space-y-16">
-            {/* Commands */}
-            <div>
-              <AnimatedElement animation="fadeIn" delay={0.4}>
-                <h2 className="text-3xl font-bold text-white mb-8">Commands (DM Only)</h2>
-              </AnimatedElement>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {commands.map((command, index) => (
-                  <AnimatedElement key={command.name} animation="fadeIn" delay={index * 0.1}>
-                    <div className="bg-blue-900 p-6 rounded-lg border border-blue-700 h-[200px] flex flex-col transform hover:scale-[1.02] transition-all duration-300">
-                      <div className="font-mono text-blue-200 text-lg mb-3">{command.command}</div>
-                      <p className="text-blue-100 mb-2">{command.description}</p>
-                      {command.details && (
-                        <div className="text-blue-300 text-sm mt-auto">
-                          {Array.isArray(command.details) ? (
-                            command.details.map((detail, i) => (
-                              <div key={i} className="mt-1">
-                                {detail.startsWith('•') ? detail : detail}
-                              </div>
-                            ))
-                          ) : (
-                            <p>{command.details}</p>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  </AnimatedElement>
-                ))}
-              </div>
-            </div>
-
-            {/* Notifications */}
-            <div>
-              <AnimatedElement animation="fadeIn" delay={2.2}>
-                <h2 className="text-3xl font-bold text-white mb-8">Real-time Notifications</h2>
-              </AnimatedElement>
-              <AnimatedElement animation="slideUp" delay={2.4}>
-                <div className="bg-blue-900 rounded-lg p-6 border border-blue-700 transform hover:scale-[1.02] transition-all duration-300">
-                  <p className="text-blue-100">Get instant DM notifications for:</p>
-                  <div className="mt-2 text-sm text-blue-300 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      • ADA transactions<br />
-                      • Token transfers<br />
-                      • NFT movements
-                    </div>
-                    <div>
-                      • Secure DM-based updates<br />
-                      • Rate-limited notifications<br />
-                      • Error notifications
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {commands.map((command, index) => (
+              <AnimatedElement key={index} animation="fadeIn" delay={index * 0.1}>
+                <div className="bg-blue-900 rounded-lg p-6 border border-blue-700 mb-4 hover:scale-105 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-2 hover:scale-105 transition-transform duration-300">{command.name}</h3>
+                  <div className="bg-blue-800/50 rounded px-3 py-2 mb-3 inline-block hover:scale-105 transition-transform duration-300">
+                    <code className="text-blue-200">{command.command}</code>
                   </div>
+                  <p className="text-blue-100 mb-4 hover:scale-105 transition-transform duration-300">{command.description}</p>
+                  <ul className="list-disc list-inside text-blue-200 space-y-2">
+                    {command.details.map((detail, detailIndex) => (
+                      <li key={detailIndex} className="hover:scale-105 transition-transform duration-300">{detail}</li>
+                    ))}
+                  </ul>
                 </div>
               </AnimatedElement>
-            </div>
+            ))}
           </div>
         </div>
       </div>
