@@ -56,7 +56,7 @@ const Commands = () => {
     {
       name: 'Stats',
       command: '/stats',
-      description: 'View global WalletBud statistics.',
+      description: 'View global WalletPup statistics.',
       details: [
         'Total global users tracking wallets',
         'Total wallets being tracked',

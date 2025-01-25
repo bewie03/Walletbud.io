@@ -50,11 +50,11 @@ const Whitepaper = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  WalletBud bridges this gap by connecting Discord with the Cardano blockchain. Our system securely links each user's Discord ID with their verified wallet addresses, creating a personalized monitoring experience. Through our Discord bot, users can easily track multiple wallets and get instant notifications about ADA, token, and NFT movements.
+                  WalletPup bridges this gap by connecting Discord with the Cardano blockchain. Our system securely links each user's Discord ID with their verified wallet addresses, creating a personalized monitoring experience. Through our Discord bot, users can easily track multiple wallets and get instant notifications about ADA, token, and NFT movements.
                 </p>
 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  This powerful Discord and blockchain connection ensures notifications go directly to users on their favorite platform. Whether you watch your own wallets, monitor project treasuries, or track whale movements, WalletBud keeps you informed with real time Discord notifications about all wallet activity.
+                  This powerful Discord and blockchain connection ensures notifications go directly to users on their favorite platform. Whether you watch your own wallets, monitor project treasuries, or track whale movements, WalletPup keeps you informed with real time Discord notifications about all wallet activity.
                 </p>
               </div>
             </div>
@@ -77,11 +77,11 @@ const Whitepaper = () => {
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
                 <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                  We were inspired by an earlier project called WalletBud that attempted to create a wallet monitoring solution for Cardano. While innovative, it had many problems and limitations: users needed to add their wallets again after system restarts, notifications were unreliable, and the bot would frequently go offline. The service lacked important features like multi wallet tracking, token monitoring, and NFT support.
+                  We were inspired by an earlier project called WalletPup that attempted to create a wallet monitoring solution for Cardano. While innovative, it had many problems and limitations: users needed to add their wallets again after system restarts, notifications were unreliable, and the bot would frequently go offline. The service lacked important features like multi wallet tracking, token monitoring, and NFT support.
                 </p>
                 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  As a new team taking on this challenge, we have built our version of WalletBud from scratch to solve these core issues. Our robust infrastructure ensures constant uptime, reliable notifications, and permanent wallet storage. We've added comprehensive token and NFT tracking, multi wallet support, and detailed transaction analytics.
+                  As a new team taking on this challenge, we have built our version of WalletPup from scratch to solve these core issues. Our robust infrastructure ensures constant uptime, reliable notifications, and permanent wallet storage. We've added comprehensive token and NFT tracking, multi wallet support, and detailed transaction analytics.
                 </p>
 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
@@ -413,12 +413,12 @@ const Whitepaper = () => {
                 <div className="space-y-4 text-blue-100">
                   <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
                     <p className="leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                      $BONE is the utility token that powers the WalletBud ecosystem. It serves as both an access key to our services 
+                      $BONE is the utility token that powers the WalletPup ecosystem. It serves as both an access key to our services 
                       and a mechanism for ensuring sustainable development. Unlike traditional subscription models, $BONE gives users 
                       perpetual access to services while maintaining their asset value.
                     </p>
                     <p className="leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                      To use WalletBud services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
+                      To use WalletPup services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
                       requirement ensures fair access regardless of token price fluctuations, while rewarding early adopters as the 
                       token value grows.
                     </p>
@@ -434,7 +434,7 @@ const Whitepaper = () => {
                 <ul className="space-y-3 text-blue-100">
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span className="hover:scale-[1.02] transition-transform duration-300">Hold $BONE tokens in your wallet to access WalletBud services</span>
+                    <span className="hover:scale-[1.02] transition-transform duration-300">Hold $BONE tokens in your wallet to access WalletPup services</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
@@ -513,7 +513,7 @@ const Whitepaper = () => {
                   <div className="flex flex-col">
                     <div className="text-xl font-semibold text-white mb-4 flex items-center">
                       <span className="text-blue-400 mr-2">3.</span>
-                      Start Using WalletBud
+                      Start Using WalletPup
                     </div>
                     <p className="text-blue-100">
                       Add wallets to track and receive notifications
@@ -760,7 +760,7 @@ const Whitepaper = () => {
                     <FaShieldAlt className="text-blue-400" /> Bug Bounty Program
                   </h5>
                   <p className="text-blue-200">
-                    Join our community bug hunting contest where users can earn rewards for finding and reporting issues. Help us make WalletBud more secure and reliable while earning rewards for your contributions.
+                    Join our community bug hunting contest where users can earn rewards for finding and reporting issues. Help us make WalletPup more secure and reliable while earning rewards for your contributions.
                   </p>
                 </div>
 
@@ -769,7 +769,7 @@ const Whitepaper = () => {
                     <FaPalette className="text-blue-400" /> Community Engagement
                   </h5>
                   <p className="text-blue-200">
-                    Regular art and meme competitions will bring creativity and fun to our community. Winners will receive special rewards and recognition within the WalletBud ecosystem.
+                    Regular art and meme competitions will bring creativity and fun to our community. Winners will receive special rewards and recognition within the WalletPup ecosystem.
                   </p>
                 </div>
               </div>
@@ -958,10 +958,10 @@ const Whitepaper = () => {
           {/* Cover */}
           <div className="bg-[#1e3a8a]/50 rounded-t-xl text-center py-16 px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              WalletBud Whitepaper
+              WalletPup Whitepaper
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-4">
-              A Comprehensive Guide to the WalletBud Ecosystem
+              A Comprehensive Guide to the WalletPup Ecosystem
             </p>
             <p className="text-sm text-blue-200">
               Version 1.0 - January 2025
@@ -1001,7 +1001,7 @@ const Whitepaper = () => {
           {/* Footer */}
           <div className="border-t border-blue-700 py-8 text-center rounded-b-xl">
             <p className="text-blue-200 text-sm">
-              &copy; 2025 WalletBud | All rights reserved
+              &copy; 2025 WalletPup | All rights reserved
             </p>
           </div>
         </div>

@@ -31,7 +31,7 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">Quick Support</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <a
-                href="https://discord.gg/walletbud"
+                href="https://discord.gg/walletpup"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-900 p-4 rounded-lg border border-blue-700 hover:border-blue-500 hover:scale-105 transition-all duration-300"
@@ -128,7 +128,7 @@ const Contact = () => {
             </h2>
             <div className="flex justify-center space-x-6">
               <a
-                href="https://discord.gg/walletbud"
+                href="https://discord.gg/walletpup"
                 className="text-blue-100 hover:text-white transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -136,7 +136,7 @@ const Contact = () => {
                 Discord
               </a>
               <a
-                href="https://twitter.com/walletbud"
+                href="https://twitter.com/walletpup"
                 className="text-blue-100 hover:text-white transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -144,7 +144,7 @@ const Contact = () => {
                 Twitter
               </a>
               <a
-                href="https://t.me/walletbud"
+                href="https://t.me/walletpup"
                 className="text-blue-100 hover:text-white transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"

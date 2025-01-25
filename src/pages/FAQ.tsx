@@ -11,12 +11,12 @@ const FAQ = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "What is WalletBud?",
-      answer: "WalletBud is a Discord bot that monitors Cardano wallet addresses and sends you instant notifications about their activity. We were inspired by an earlier project of the same name, but we're a new team that has built everything from scratch with improved reliability and sustainability."
+      question: "What is WalletPup?",
+      answer: "WalletPup is a Discord bot that monitors Cardano wallet addresses and sends you instant notifications about their activity. We were inspired by an earlier project of the same name, but we're a new team that has built everything from scratch with improved reliability and sustainability."
     },
     {
       question: "What are the token requirements?",
-      answer: "You need $BONE tokens to use WalletBud. The required amount adjusts with market value but will always cost approximately 20 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
+      answer: "You need $BONE tokens to use WalletPup. The required amount adjusts with market value but will always cost approximately 20 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
     },
     {
       question: "How do I add my wallet?",
@@ -27,7 +27,7 @@ const FAQ = () => {
       answer: "You get DM notifications when: ADA moves in or out of your wallet, tokens transfer, NFTs change hands, or if your $BONE balance gets too low. Everything is sent through DMs for security."
     },
     {
-      question: "Is WalletBud secure?",
+      question: "Is WalletPup secure?",
       answer: "Yes! We take security seriously. All commands work only in private messages, we never ask for or store sensitive info, and we only need your public wallet address. We also limit how often commands can be used to prevent abuse."
     },
     {
@@ -82,7 +82,7 @@ const FAQ = () => {
                 Frequently Asked Questions
               </h1>
               <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
-                Everything you need to know about WalletBud
+                Everything you need to know about WalletPup
               </p>
             </div>
           </AnimatedElement>

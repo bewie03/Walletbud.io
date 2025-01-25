@@ -1,6 +1,6 @@
 {
-  "name": "WalletBud",
-  "short_name": "WalletBud",
+  "name": "WalletPup",
+  "short_name": "WalletPup",
   "description": "Enterprise-Grade Cardano Wallet Tracking",
   "start_url": "/",
   "display": "standalone",

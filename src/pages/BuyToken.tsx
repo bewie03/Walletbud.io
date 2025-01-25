@@ -16,7 +16,7 @@ const BONE = () => {
             $BONE
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl animate-fade-delay hover:scale-105 transition-transform duration-300">
-            The WalletBud Utility Token - Always Approximately 20 ADA to Use
+            The WalletPup Utility Token - Always Approximately 20 ADA to Use
           </p>
         </div>
       </div>
@@ -134,8 +134,8 @@ const BONE = () => {
                       }}
                       theme="light"
                       width="500"
-                      partnerCode="walletbud6164647231717835727434726c76396e7061366e383539366575616773677a66757a6337713835726b39796b6c646b7070666334726e74356865777832676c7178683039386b396175366366777a6d666e3630636a6d34346170617a6d63386e71797934377065da39a3ee5e6b4b0d3255bfef95601890afd80709"
-                      partnerName="Walletbud"
+                      partnerCode="walletpup6164647231717835727434726c76396e7061366e383539366575616773677a66757a6337713835726b39796b6c646b7070666334726e74356865777832676c7178683039386b396175366366777a6d666e3630636a6d34346170617a6d63386e71797934377065da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                      partnerName="Walletpup"
                       displayType="DEFAULT"
                     />
                   </div>

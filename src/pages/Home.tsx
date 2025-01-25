@@ -60,7 +60,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Join Discord</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Join our Discord server and start a DM with the WalletBud bot.
+                  Join our Discord server and start a DM with the WalletPup bot.
                 </p>
                 <a
                   href="https://discord.gg/hnwJFkuU"

@@ -4,11 +4,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <p className="text-blue-100">
-            {new Date().getFullYear()} WalletBud. All rights reserved.
+            {new Date().getFullYear()} WalletPup. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a
-              href="https://x.com/walletbudada"
+              href="https://x.com/walletpup"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-100 hover:text-white transition-colors"
