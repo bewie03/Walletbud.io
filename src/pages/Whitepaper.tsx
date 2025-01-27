@@ -11,7 +11,6 @@ import {
   FaFeather, 
   FaUsers, 
   FaServer, 
-  FaDatabase, 
   FaSearchDollar, 
   FaCog,
   FaRobot,
@@ -23,10 +22,10 @@ import {
   FaPalette,
   FaLightbulb,
   FaBalanceScale,
-  FaClock,
-  FaWallet,
-  FaDiscord
-} from 'react-icons/fa';
+  FaDiscord,
+  FaHistory,
+  FaStar,
+  FaRocket} from 'react-icons/fa';
 import AnimatedElement from '../components/AnimatedElement';
 
 const Whitepaper = () => {
@@ -45,16 +44,19 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
+                  The First Cardano Wallet Tracker with AI Powered Commentary
+                </p>
                 <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                  Currently, Cardano users have no easy way to track specific wallet addresses and receive notifications about their activity. This makes it difficult to monitor investments, track project treasuries, or stay updated on important transactions.
+                  Meet WalletPup, the first Cardano wallet tracker that brings AI powered insights to your wallet activity. Get real time notifications with entertaining commentary about your transactions, making blockchain monitoring more engaging than ever.
                 </p>
                 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  WalletPup bridges this gap by connecting Discord with the Cardano blockchain. Our system securely links each user's Discord ID with their verified wallet addresses, creating a personalized monitoring experience. Through our Discord bot, users can easily track multiple wallets and get instant notifications about ADA, token, and NFT movements.
+                  WalletPup bridges the gap between Discord and the Cardano blockchain, creating a unique monitoring experience. Our AI analyzes your transactions in real time, delivering personalized commentary along with instant notifications about ADA, token, and NFT movements.
                 </p>
 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  This powerful Discord and blockchain connection ensures notifications go directly to users on their favorite platform. Whether you watch your own wallets, monitor project treasuries, or track whale movements, WalletPup keeps you informed with real time Discord notifications about all wallet activity.
+                  Gone are the days of boring transaction alerts. Whether you are trading, collecting NFTs, or receiving tokens, WalletPup adds personality to every notification, making blockchain monitoring not just informative, but genuinely entertaining.
                 </p>
               </div>
             </div>
@@ -64,7 +66,7 @@ const Whitepaper = () => {
     },
     {
       id: 'inspiration',
-      title: 'Inspiration',
+      title: 'Our Journey',
       icon: <FaLightbulb className="w-6 h-6" />,
       content: (
         <motion.div 
@@ -76,119 +78,56 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                  We were inspired by an earlier project called WalletPup that attempted to create a wallet monitoring solution for Cardano. While innovative, it had many problems and limitations: users needed to add their wallets again after system restarts, notifications were unreliable, and the bot would frequently go offline. The service lacked important features like multi wallet tracking, token monitoring, and NFT support.
-                </p>
+                <h3 className="text-xl font-semibold text-white mb-6">Evolution of Wallet Tracking</h3>
                 
-                <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  As a new team taking on this challenge, we have built our version of WalletPup from scratch to solve these core issues. Our robust infrastructure ensures constant uptime, reliable notifications, and permanent wallet storage. We've added comprehensive token and NFT tracking, multi wallet support, and detailed transaction analytics.
-                </p>
+                <div className="space-y-8">
+                  {/* History */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaHistory className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">The Beginning</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our journey began with inspiration from WalletBud, a pioneering project that offered free wallet tracking services on Cardano. While innovative, it faced reliability challenges. Later, ZING emerged with improved detection speeds, setting new standards for transaction monitoring.
+                    </p>
+                  </div>
 
-                <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  While we share the name and vision of the original project, we are a completely new team delivering a much better implementation. Our goal is to give the Cardano community a reliable, complete monitoring solution they can depend on.
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      )
-    },
-    {
-      id: 'market',
-      title: 'Market Analysis',
-      icon: <FaChartLine className="w-6 h-6" />,
-      content: (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-6"
-        >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Left Column */}
-              <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaSearchDollar className="text-blue-400" /> What Cardano Has
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      4.7M+ active wallet addresses
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      57K+ daily transactions
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Robust blockchain explorer
-                    </li>
-                  </ul>
-                </div>
+                  {/* Our Vision */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaEye className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Our Vision</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Rather than just competing on speed, we chose to innovate in a different direction. We envisioned creating a global Discord wallet tracking system that brings personality and intelligence to blockchain monitoring, focusing on user engagement and community building.
+                    </p>
+                  </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-blue-400" /> Current Limitations
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Manual wallet monitoring only
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      No automated notifications
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Missed important transactions
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                  {/* What Sets Us Apart */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaStar className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">What Sets Us Apart</h4>
+                    </div>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>AI Powered Commentary: Every transaction comes with fun, personalized insights</li>
+                      <li>Social Integration: Link Discord names to wallets for better community engagement</li>
+                      <li>Enhanced Commands: More ways to interact and analyze your wallet activity</li>
+                      <li>Detailed Statistics: Deep insights into your blockchain activity</li>
+                      <li>Global Community Focus: Building connections through wallet tracking</li>
+                    </ul>
+                  </div>
 
-              {/* Right Column */}
-              <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> What Cardano Needs
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Reliable wallet monitoring
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Instant transaction alerts
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Multi-wallet tracking solution
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartBar className="text-blue-400" /> Our Solution
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Discord-based notifications
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Persistent wallet tracking
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Token & NFT monitoring
-                    </li>
-                  </ul>
+                  {/* Future Vision */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Looking Forward</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      We are building more than just a wallet tracker. We are creating a social platform where blockchain activity becomes a shared experience. With our AI powered insights and community features, we are making crypto tracking more engaging, informative, and fun for everyone.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -242,11 +181,11 @@ const Whitepaper = () => {
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Multi-wallet monitoring (up to 5)
+                    Multi-wallet monitoring (up to 10)
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Real-time transaction alerts
+                    Real time transaction alerts
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -315,7 +254,7 @@ const Whitepaper = () => {
     },
     {
       id: 'tokenomics',
-      title: 'Tokenomics',
+      title: 'Tokenomics & $BONE',
       icon: <FaCoins className="w-6 h-6" />,
       content: (
         <motion.div 
@@ -325,65 +264,96 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Left Column */}
-              <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCoins className="text-blue-400" /> Total Supply
-                  </h5>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-white">1B</div>
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Token Overview</h3>
+                
+                <div className="space-y-8">
+                  {/* Total Supply */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Total Supply</h4>
+                    </div>
+                    <div className="text-5xl font-bold text-white mb-2">1B</div>
                     <div className="text-blue-200">Total $BONE Supply</div>
                   </div>
-                </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaChartPie className="text-blue-400" /> Distribution
-                  </h5>
-                  <div className="space-y-2 text-blue-100">
-                    <div className="flex items-center justify-between">
-                      <span>Public Distribution</span>
-                      <span>90%</span>
+                  {/* Distribution */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaChartPie className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Distribution</h4>
                     </div>
-                    <div className="w-full bg-blue-950 rounded-full h-2">
-                      <div className="bg-blue-400 h-2 rounded-full" style={{ width: '90%' }}></div>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span>Development & Events</span>
-                      <span>10%</span>
-                    </div>
-                    <div className="w-full bg-blue-950 rounded-full h-2">
-                      <div className="bg-blue-400 h-2 rounded-full" style={{ width: '10%' }}></div>
+                    <div className="space-y-4">
+                      {/* Public Distribution */}
+                      <div>
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-blue-100">Public Distribution</span>
+                          <span className="text-white font-bold">90%</span>
+                        </div>
+                        <div className="w-full bg-blue-950 rounded-full h-3">
+                          <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '90%' }}></div>
+                        </div>
+                        <div className="mt-2 text-sm text-blue-200">900,000,000 $BONE - For community, bot access, DEX trading, and liquidity</div>
+                      </div>
+                      {/* Development */}
+                      <div>
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-blue-100">Development</span>
+                          <span className="text-white font-bold">5%</span>
+                        </div>
+                        <div className="w-full bg-blue-950 rounded-full h-3">
+                          <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '5%' }}></div>
+                        </div>
+                        <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE - For long-term development and sustainability</div>
+                      </div>
+                      {/* Community Events */}
+                      <div>
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-blue-100">Community Events</span>
+                          <span className="text-white font-bold">5%</span>
+                        </div>
+                        <div className="w-full bg-blue-950 rounded-full h-3">
+                          <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '5%' }}></div>
+                        </div>
+                        <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE - For community events and rewards</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              {/* Right Column */}
-              <div className="grid grid-rows-2 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaUsers className="text-blue-400" /> Public Distribution
-                  </h5>
-                  <div className="space-y-2">
-                    <div className="text-2xl font-semibold text-white">900,000,000 $BONE</div>
-                    <div className="text-blue-200">
-                      Allocated for community, bot access, DEX trading, and providing liquidity.
+                  {/* Token Utility */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBolt className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Token Utility</h4>
                     </div>
+                    <p className="text-blue-100 mb-4">
+                      $BONE is the utility token that powers the WalletPup ecosystem. Unlike traditional subscription models, 
+                      $BONE gives users perpetual access to services while maintaining their asset value.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Access to wallet tracking services</li>
+                      <li>Dynamic token requirements that decrease with market cap growth</li>
+                      <li>Tokens retain value and can be traded when no longer needed</li>
+                      <li>No presale or private allocations</li>
+                    </ul>
                   </div>
-                </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCog className="text-blue-400" /> Development Fund
-                  </h5>
-                  <div className="space-y-2">
-                    <div className="text-2xl font-semibold text-white">100,000,000 $BONE</div>
-                    <div className="text-blue-200">
-                      Reserved for development, and community events to ensure long-term sustainability.
+                  {/* Token Requirements */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBalanceScale className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Token Requirements</h4>
                     </div>
+                    <p className="text-blue-100 mb-4">
+                      The amount of $BONE tokens required for service access decreases as our market cap grows, creating a fair system that rewards early adopters while ensuring accessibility for new users.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Dynamic requirements based on market cap</li>
+                      <li>Early adopters benefit from token value growth</li>
+                      <li>Sustainable model for long-term service access</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -393,143 +363,9 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'bone-token',
-      title: '$BONE Token',
-      icon: <FaCoins className="w-6 h-6" />,
-      content: (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-6"
-        >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700">
-            <div className="space-y-8">
-              {/* Purpose and Utility */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <FaBolt className="text-blue-400" /> Purpose & Utility
-                </h3>
-                <div className="space-y-4 text-blue-100">
-                  <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                    <p className="leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                      $BONE is the utility token that powers the WalletPup ecosystem. It serves as both an access key to our services 
-                      and a mechanism for ensuring sustainable development. Unlike traditional subscription models, $BONE gives users 
-                      perpetual access to services while maintaining their asset value.
-                    </p>
-                    <p className="leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                      To use WalletPup services, users need to hold approximately 20 ADA worth of $BONE tokens. This dynamic 
-                      requirement ensures fair access regardless of token price fluctuations, while rewarding early adopters as the 
-                      token value grows.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* How It Works */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <FaCog className="text-blue-400" /> How It Works
-                </h3>
-                <ul className="space-y-3 text-blue-100">
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span className="hover:scale-[1.02] transition-transform duration-300">Hold $BONE tokens in your wallet to access WalletPup services</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span className="hover:scale-[1.02] transition-transform duration-300">Track up to 5 wallets with sufficient token balance</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span className="hover:scale-[1.02] transition-transform duration-300">Token requirement adjusts with market value to maintain consistent ~20 ADA entry point</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                    <span className="hover:scale-[1.02] transition-transform duration-300">Tokens retain value and can be sold when no longer needed</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Long-term Sustainability */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <FaBalanceScale className="text-blue-400" /> Long-term Sustainability
-                </h3>
-                <div className="space-y-4 text-blue-100">
-                  <p className="hover:scale-[1.02] transition-transform duration-300">
-                    Our token model ensures long-term sustainability through several mechanisms:
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span className="hover:scale-[1.02] transition-transform duration-300">Development fund ensures continuous improvement and maintenance</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span className="hover:scale-[1.02] transition-transform duration-300">Token-based access creates natural demand as user base grows</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span className="hover:scale-[1.02] transition-transform duration-300">Fair launch and public distribution promotes healthy token economics</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                      <span className="hover:scale-[1.02] transition-transform duration-300">No presale or private allocations ensures community-first approach</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Getting Started */}
-              <div className="mt-12">
-                <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
-                  <FaRoad className="text-blue-400 mr-3" /> Getting Started with $BONE
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {/* Step 1 */}
-                  <div className="flex flex-col">
-                    <div className="text-xl font-semibold text-white mb-4 flex items-center">
-                      <span className="text-blue-400 mr-2">1.</span>
-                      Acquire Tokens
-                    </div>
-                    <p className="text-blue-100">
-                      Purchase $BONE tokens through our supported DEX platforms
-                    </p>
-                  </div>
-
-                  {/* Step 2 */}
-                  <div className="flex flex-col">
-                    <div className="text-xl font-semibold text-white mb-4 flex items-center">
-                      <span className="text-blue-400 mr-2">2.</span>
-                      Hold Required Amount
-                    </div>
-                    <p className="text-blue-100">
-                      Maintain ~20 ADA worth of $BONE in your wallet
-                    </p>
-                  </div>
-
-                  {/* Step 3 */}
-                  <div className="flex flex-col">
-                    <div className="text-xl font-semibold text-white mb-4 flex items-center">
-                      <span className="text-blue-400 mr-2">3.</span>
-                      Start Using WalletPup
-                    </div>
-                    <p className="text-blue-100">
-                      Add wallets to track and receive notifications
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      )
-    },
-    {
-      id: 'requirements',
-      title: 'Technical Architecture',
-      icon: <FaChartBar className="w-6 h-6" />,
+      id: 'technology',
+      title: 'How It Works',
+      icon: <FaCogs className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -538,192 +374,91 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Left Column */}
-              <div className="grid grid-rows-3 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> Processing Power
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      300 transactions per minute max
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      API response {'<'}1 second
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      4 notifications per second
-                    </li>
-                  </ul>
-                </div>
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">The Magic Behind WalletPup</h3>
+                
+                <div className="space-y-8">
+                  {/* AI Commentary System */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaRobot className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">AI Commentary Engine</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      Our advanced AI system analyzes transactions in real time, understanding context and patterns to provide entertaining and insightful comments. It is like having a knowledgeable friend watching your wallet activity!
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Real time transaction analysis</li>
+                      <li>Contextual understanding of blockchain activity</li>
+                      <li>Personalized commentary generation</li>
+                    </ul>
+                  </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-blue-400" /> Database Metrics
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      1GB total storage capacity
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      20 max connections (5 active)
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      6 tables of 4,000 available
-                    </li>
-                  </ul>
-                </div>
+                  {/* Monitoring System */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaEye className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      Our system monitors the Cardano blockchain and processes transactions with a typical delay of 1-2 minutes. While not instant like ZING, our focus is on providing entertaining AI commentary and a more engaging experience.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Regular blockchain monitoring</li>
+                      <li>Reliable notification delivery</li>
+                      <li>AI powered transaction insights</li>
+                    </ul>
+                  </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaClock className="text-blue-400" /> Timing & Intervals
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Balance check every 6 hours
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Full scan (100k wallets): 5.5 hours
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      250ms notification delay
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                  {/* Discord Integration */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaDiscord className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Seamless Discord Integration</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      WalletPup lives in Discord, making it incredibly easy to interact with. Add wallets, check balances, and receive notifications right where you spend your time.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Simple command interface</li>
+                      <li>Private DM notifications</li>
+                      <li>Secure wallet management</li>
+                    </ul>
+                  </div>
 
-              {/* Right Column */}
-              <div className="grid grid-rows-3 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaWallet className="text-blue-400" /> Wallet Capacity
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      108,000 max wallets per 6 hours
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      5 wallets checked per second
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Recommended: 100,000 wallets
-                    </li>
-                  </ul>
-                </div>
+                  {/* Security */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaShieldAlt className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Built for Security</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      Security is our top priority. We only work with public wallet addresses and use industry-standard encryption to protect your data.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>No sensitive data storage</li>
+                      <li>Private notifications</li>
+                      <li>Secure command handling</li>
+                    </ul>
+                  </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-blue-400" /> API Limits
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Blockfrost: 10 requests/second max
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Burst limit: 500 requests
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      50 second burst cooldown
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDiscord className="text-blue-400" /> Discord Integration
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      4 messages per second
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      1 command per 3s per user
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Unlimited servers and users
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-8 bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaDatabase className="text-blue-400" /> Auto scaling
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Enterprise PostgreSQL
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      20 max connections
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      1GB storage capacity
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBalanceScale className="text-blue-400" /> Load Balancing
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      10 requests/second
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      500 request burst limit
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      50s burst cooldown
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaBolt className="text-blue-400" /> Performance
-                  </h5>
-                  <ul className="space-y-2 text-blue-100">
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      Query speed: milliseconds
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                      4  messages/second
-                    </li>
-                    <li className="flex items-center gap-2">
-                    </li>
-                  </ul>
+                  {/* How It Works */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaCogs className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">How It Works</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      WalletPup monitors your selected wallets and delivers AI-powered insights through Discord. Our focus is on providing engaging, informative notifications that make blockchain tracking more enjoyable.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Track up to 10 wallets per user</li>
+                      <li>Receive personalized AI commentary</li>
+                      <li>Monitor ADA, tokens, and NFTs</li>
+                      <li>Get notifications through Discord DMs</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

@@ -58,12 +58,6 @@ const Navbar = () => {
               Whitepaper
             </Link>
             <Link
-              to="/launch"
-              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
-            >
-              Launch
-            </Link>
-            <Link
               to="/faq"
               className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
@@ -122,13 +116,6 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
           >
             Whitepaper
-          </Link>
-          <Link
-            to="/launch"
-            className="block text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
-            onClick={() => setIsOpen(false)}
-          >
-            Launch
           </Link>
           <Link
             to="/faq"

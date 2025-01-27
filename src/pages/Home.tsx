@@ -14,7 +14,7 @@ const Home = () => {
                 Your Personal Cardano Wallet Assistant
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl hover:scale-105 transition-transform duration-300">
-                Get real time DM notifications for your Cardano wallet. Track ADA transactions, token transfers, and NFT movements directly through DM.
+                Get real time DM notifications with AI powered insights on your wallet activity.
               </p>
             </div>
           </AnimatedElement>

@@ -12,11 +12,11 @@ const FAQ = () => {
   const faqs: FAQItem[] = [
     {
       question: "What is WalletPup?",
-      answer: "WalletPup is a Discord bot that monitors Cardano wallet addresses and sends you instant notifications about their activity. We were inspired by an earlier project of the same name, but we're a new team that has built everything from scratch with improved reliability and sustainability."
+      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our Discord bot not only monitors wallet addresses but provides entertaining insights about your transactions. Every time there is activity in your wallet, WalletPup delivers both the transaction details and witty personalized commentary about what just happened."
     },
     {
-      question: "What are the token requirements?",
-      answer: "You need $BONE tokens to use WalletPup. The required amount adjusts with market value but will always cost approximately 20 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
+      question: "What do I need to use WalletPup?",
+      answer: "You need $BONE tokens to use WalletPup. The required amount adjusts with market value but will always cost approximately 10 ADA worth of tokens to use the service. This ensures fair access for everyone while rewarding early adopters as the token value grows."
     },
     {
       question: "How do I add my wallet?",
@@ -24,7 +24,11 @@ const FAQ = () => {
     },
     {
       question: "What types of notifications can I receive?",
-      answer: "You get DM notifications when: ADA moves in or out of your wallet, tokens transfer, NFTs change hands, or if your $BONE balance gets too low. Everything is sent through DMs for security."
+      answer: "You get DM notifications when: ADA moves in or out of your wallet, tokens transfer, NFTs change hands, or if your $BONE balance gets too low. Our AI powered WalletPup bot also provides fun and insightful comments about your transactions, making wallet tracking more engaging and entertaining. Everything is sent through DMs for security."
+    },
+    {
+      question: "What makes WalletPup unique?",
+      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our bot does not just notify you about transactions, it analyzes them and provides entertaining insights and comments about your wallet activity. Whether you are making trades, collecting NFTs, or receiving tokens, WalletPup adds a fun, personal touch to every notification."
     },
     {
       question: "Is WalletPup secure?",
@@ -32,15 +36,15 @@ const FAQ = () => {
     },
     {
       question: "Can I track multiple wallets?",
-      answer: "Yes! You can track up to 5 wallets at once if you have enough $BONE tokens (approximately 20 ADA worth per wallet). Use /add for each wallet and give them different names. Use /list to see all your wallets, and /removeall to stop tracking all of them."
+      answer: "Yes! You can track up to 10 wallets at once if you have enough $BONE tokens (approximately 10 ADA worth per wallet). Use /add for each wallet and give them different names. Use /list to see all your wallets, and /removeall to stop tracking all of them."
     },
     {
       question: "What happens if I don't have enough tokens?",
-      answer: "Your wallet is checked for $BONE tokens every 6 hours. If you don't have approximately 20 ADA worth of tokens, your wallet will be automatically removed from tracking and you'll receive a DM notification. You'll need to add your wallet again with the required token amount to resume tracking."
+      answer: "Your wallet is checked for $BONE tokens every 6 hours. If you don't have approximately 10 ADA worth of tokens, your wallet will be automatically removed from tracking and you'll receive a DM notification. You'll need to add your wallet again with the required token amount to resume tracking."
     },
     {
-      question: "Will the token requirement change?",
-      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost of approximately 20 ADA worth of $BONE tokens. This means early adopters can benefit from token value growth while new users can always join at a fair price."
+      question: "Does the token requirement change?",
+      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost of approximately 10 ADA worth of $BONE tokens. This means early adopters can benefit from token value growth while new users can always join at a fair price."
     },
     {
       question: "How reliable is the notification system?",

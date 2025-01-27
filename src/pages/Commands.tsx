@@ -8,9 +8,9 @@ const Commands = () => {
       command: '/add <address>',
       description: 'Add a Cardano wallet address to your tracking list',
       details: [
-        'Add any Cardano wallet with reqruied BONE to your tracking list.',
-        'Requires approximately 20 ADA worth of BONE tokens',
-        'Track up to 5 wallets with sufficient token balance',
+        'Add any Cardano wallet with required BONE to your tracking list.',
+        'Requires approximately 10 ADA worth of BONE tokens',
+        'Track up to 10 wallets with sufficient token balance',
       ],
     },
     {
