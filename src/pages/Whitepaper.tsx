@@ -5,14 +5,10 @@ import {
   FaCogs, 
   FaBolt, 
   FaCoins, 
-  FaChartBar, 
   FaRoad, 
   FaShieldAlt, 
   FaFeather, 
-  FaUsers, 
   FaServer, 
-  FaSearchDollar, 
-  FaCog,
   FaRobot,
   FaNetworkWired,
   FaSearch,
@@ -48,11 +44,11 @@ const Whitepaper = () => {
                   The First Cardano Wallet Tracker with AI Powered Commentary
                 </p>
                 <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                  Meet WalletPup, the first Cardano wallet tracker that brings AI powered insights to your wallet activity. Get real time notifications with entertaining commentary about your transactions, making blockchain monitoring more engaging than ever.
+                  Meet WalletPup, the first Cardano wallet tracker that brings AI powered insights to your wallet activity. Our notifications with entertaining commentary make blockchain monitoring more engaging than ever.
                 </p>
                 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  WalletPup bridges the gap between Discord and the Cardano blockchain, creating a unique monitoring experience. Our AI analyzes your transactions in real time, delivering personalized commentary along with instant notifications about ADA, token, and NFT movements.
+                  WalletPup bridges the gap between Discord and the Cardano blockchain, creating a unique monitoring experience. Our AI analyzes your transactions and delivers personalized commentary about ADA, token, and NFT movements through Discord DMs.
                 </p>
 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
@@ -181,11 +177,11 @@ const Whitepaper = () => {
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Multi-wallet monitoring (up to 10)
+                    Multi-wallet monitoring
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Real time transaction alerts
+                    Transaction notifications with AI insights
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -322,37 +318,23 @@ const Whitepaper = () => {
                     </div>
                   </div>
 
-                  {/* Token Utility */}
+                  {/* Token Utility & Requirements */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaBolt className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Token Utility</h4>
+                      <h4 className="text-lg font-semibold text-white">Token Utility & Requirements</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
                       $BONE is the utility token that powers the WalletPup ecosystem. Unlike traditional subscription models, 
-                      $BONE gives users perpetual access to services while maintaining their asset value.
+                      $BONE gives users perpetual access to services while maintaining their asset value. The amount required 
+                      decreases as our market cap grows, creating a fair system that rewards early adopters.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Access to wallet tracking services</li>
-                      <li>Dynamic token requirements that decrease with market cap growth</li>
+                      <li>Access to wallet tracking services (up to 10 wallets)</li>
+                      <li>Dynamic requirements based on market cap growth</li>
+                      <li>Early adopters benefit from token value appreciation</li>
                       <li>Tokens retain value and can be traded when no longer needed</li>
                       <li>No presale or private allocations</li>
-                    </ul>
-                  </div>
-
-                  {/* Token Requirements */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaBalanceScale className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Token Requirements</h4>
-                    </div>
-                    <p className="text-blue-100 mb-4">
-                      The amount of $BONE tokens required for service access decreases as our market cap grows, creating a fair system that rewards early adopters while ensuring accessibility for new users.
-                    </p>
-                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Dynamic requirements based on market cap</li>
-                      <li>Early adopters benefit from token value growth</li>
-                      <li>Sustainable model for long-term service access</li>
                     </ul>
                   </div>
                 </div>
@@ -386,12 +368,12 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">AI Commentary Engine</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      Our advanced AI system analyzes transactions in real time, understanding context and patterns to provide entertaining and insightful comments. It is like having a knowledgeable friend watching your wallet activity!
+                      Our advanced AI system analyzes transactions, understanding context and patterns to provide entertaining and insightful comments. It's like having a knowledgeable friend watching your wallet activity!
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Real time transaction analysis</li>
-                      <li>Contextual understanding of blockchain activity</li>
-                      <li>Personalized commentary generation</li>
+                      <li>Contextual transaction analysis</li>
+                      <li>Pattern recognition for better insights</li>
+                      <li>Personalized commentary style</li>
                     </ul>
                   </div>
 
@@ -405,9 +387,9 @@ const Whitepaper = () => {
                       Our system monitors the Cardano blockchain and processes transactions with a typical delay of 1-2 minutes. While not instant like ZING, our focus is on providing entertaining AI commentary and a more engaging experience.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Regular blockchain monitoring</li>
-                      <li>Reliable notification delivery</li>
-                      <li>AI powered transaction insights</li>
+                      <li>Monitor ADA, tokens, and NFTs</li>
+                      <li>Reliable notification delivery through Discord DMs</li>
+                      <li>Personalized AI insights for each transaction</li>
                     </ul>
                   </div>
 
@@ -440,23 +422,6 @@ const Whitepaper = () => {
                       <li>No sensitive data storage</li>
                       <li>Private notifications</li>
                       <li>Secure command handling</li>
-                    </ul>
-                  </div>
-
-                  {/* How It Works */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaCogs className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">How It Works</h4>
-                    </div>
-                    <p className="text-blue-100 mb-4">
-                      WalletPup monitors your selected wallets and delivers AI-powered insights through Discord. Our focus is on providing engaging, informative notifications that make blockchain tracking more enjoyable.
-                    </p>
-                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Track up to 10 wallets per user</li>
-                      <li>Receive personalized AI commentary</li>
-                      <li>Monitor ADA, tokens, and NFTs</li>
-                      <li>Get notifications through Discord DMs</li>
                     </ul>
                   </div>
                 </div>
