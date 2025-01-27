@@ -17,7 +17,6 @@ import {
   FaProjectDiagram,
   FaPalette,
   FaLightbulb,
-  FaBalanceScale,
   FaDiscord,
   FaHistory,
   FaStar,
@@ -416,12 +415,12 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Built for Security</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      Security is our top priority. We only work with public wallet addresses and use industry-standard encryption to protect your data.
+                      Security is our top priority. We only work with public blockchain data and Discord's secure messaging system to protect your privacy.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>No sensitive data storage</li>
-                      <li>Private notifications</li>
-                      <li>Secure command handling</li>
+                      <li>Private Discord DM notifications</li>
+                      <li>Public address monitoring only</li>
                     </ul>
                   </div>
                 </div>
@@ -567,12 +566,12 @@ const Whitepaper = () => {
 
               <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaChartLine className="text-blue-400" /> Trading Insights
+                  <FaChartLine className="text-blue-400" /> Transaction Insights
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Price action alerts
+                    Transaction notifications
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -580,7 +579,7 @@ const Whitepaper = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Market signals
+                    Activity patterns
                   </li>
                 </ul>
               </div>
@@ -627,20 +626,20 @@ const Whitepaper = () => {
 
               <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
                 <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaNetworkWired className="text-blue-400" /> Market Analysis
+                  <FaNetworkWired className="text-blue-400" /> On-Chain Activity
                 </h5>
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Network activity
+                    Transaction monitoring
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Token flows
+                    Token transfers
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Trend analysis
+                    Wallet interactions
                   </li>
                 </ul>
               </div>
