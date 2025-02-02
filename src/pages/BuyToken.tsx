@@ -135,7 +135,7 @@ const BONE = () => {
                       </p>
                       <ul className="list-disc text-blue-100 space-y-2 ml-4">
                         <li>Track up to 10 wallets simultaneously</li>
-                        <li>Receive instant Discord notifications</li>
+                        <li>Receive almost instant notifications</li>
                         <li>Monitor ADA, tokens, and NFTs</li>
                       </ul>
                     </div>
@@ -202,7 +202,7 @@ const BONE = () => {
 
                     <div className="bg-blue-900 p-4 rounded-lg">
                       <h4 className="text-lg font-semibold text-white mb-3">Policy ID</h4>
-                      <p className="text-white font-mono text-sm break-all bg-blue-800/50 p-2 rounded">YOUR_POLICY_ID_HERE</p>
+                      <p className="text-white font-mono text-sm break-all bg-blue-800/50 p-2 rounded">Updated Soon</p>
                     </div>
                   </div>
                 </div>
