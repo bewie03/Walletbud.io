@@ -1,7 +1,6 @@
 // Whitepaper page - Updated 21 Jan 2025
 import { motion } from 'framer-motion';
 import { 
-  FaChartLine, 
   FaCogs, 
   FaBolt, 
   FaCoins, 
@@ -10,7 +9,6 @@ import {
   FaFeather, 
   FaServer, 
   FaRobot,
-  FaNetworkWired,
   FaSearch,
   FaChartPie,
   FaEye,
@@ -507,143 +505,6 @@ const Whitepaper = () => {
             <p className="text-sm text-blue-200 mt-6 text-center">
               Note: These development plans are subject to change based on community feedback and market conditions. We will prioritize features that bring the most value to our users.
             </p>
-          </div>
-        </motion.div>
-      )
-    },
-    {
-      id: 'advanced-use-cases',
-      title: 'Advanced Use Cases',
-      icon: <FaChartPie className="w-6 h-6" />,
-      content: (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-6"
-        >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaEye className="text-blue-400" /> Whale Watching
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Track large holders
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Monitor big moves
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Market insights
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaProjectDiagram className="text-blue-400" /> Project Analysis
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Treasury monitoring
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Team wallet tracking
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Fund movements
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaChartLine className="text-blue-400" /> Transaction Insights
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Transaction notifications
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Volume tracking
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Activity patterns
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaPalette className="text-blue-400" /> NFT Opportunities
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Collection tracking
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Mint notifications
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Sales alerts
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaSearch className="text-blue-400" /> Early Detection
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    New projects
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Token launches
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Market trends
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 h-[180px]">
-                <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <FaNetworkWired className="text-blue-400" /> On-Chain Activity
-                </h5>
-                <ul className="space-y-2 text-blue-100">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Transaction monitoring
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Token transfers
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Wallet interactions
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </motion.div>
       )
