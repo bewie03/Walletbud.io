@@ -8,7 +8,7 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6">
             <a
-              href="https://x.com/walletpup"
+              href="https://x.com/Walletpup_ada"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-100 hover:text-white transition-colors"

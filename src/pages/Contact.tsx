@@ -136,7 +136,7 @@ const Contact = () => {
                 Discord
               </a>
               <a
-                href="https://twitter.com/walletpup"
+                href="https://x.com/Walletpup_ada"
                 className="text-blue-100 hover:text-white transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
