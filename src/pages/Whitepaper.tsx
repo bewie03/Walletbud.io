@@ -186,7 +186,7 @@ const Whitepaper = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Platform-wide wallet search
+                    Platform wide wallet search
                   </li>
                 </ul>
               </div>
@@ -232,7 +232,7 @@ const Whitepaper = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Token-based access control
+                    Token based access control
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -323,7 +323,7 @@ const Whitepaper = () => {
                     </div>
                     <p className="text-blue-100 mb-4">
                       $BONE is the utility token that powers the WalletPup ecosystem. Unlike traditional subscription models, 
-                      $BONE gives users perpetual access to services while maintaining their asset value. The amount required 
+                      our token gives users perpetual access to services while maintaining their asset value. The amount required 
                       decreases as our market cap grows, creating a fair system that rewards early adopters.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
@@ -381,7 +381,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      Our system monitors the Cardano blockchain and processes transactions with a typical delay of 1-2 minutes. While not instant like ZING, our focus is on providing entertaining AI commentary and a more engaging experience.
+                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Monitor ADA, tokens, and NFTs</li>
