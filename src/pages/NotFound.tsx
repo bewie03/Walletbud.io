@@ -25,7 +25,7 @@ const NotFound = () => {
             </Link>
             <span className="hidden sm:inline text-blue-100">•</span>
             <a
-              href="https://discord.gg/walletpup"
+              href="https://discord.gg/d99FBA64Qf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-100 hover:text-white transition-colors duration-300"

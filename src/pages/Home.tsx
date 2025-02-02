@@ -63,7 +63,7 @@ const Home = () => {
                   Join our Discord server and start a DM with the WalletPup bot.
                 </p>
                 <a
-                  href="https://discord.gg/hnwJFkuU"
+                  href="https://discord.gg/d99FBA64Qf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-blue-200 text-lg font-medium hover:scale-110 transition-transform duration-300"
