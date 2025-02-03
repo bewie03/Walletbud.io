@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <AnimatePresence mode="wait" initial={false}>
-          <Routes location={location} key={location.pathname} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+          <Routes location={location} key={location.pathname}>
             <Route path="/" element={<PageTransition><Home /></PageTransition>} />
             <Route path="/commands" element={<PageTransition><Commands /></PageTransition>} />
             <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
