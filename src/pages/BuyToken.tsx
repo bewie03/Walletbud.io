@@ -1,7 +1,7 @@
 // BuyToken page - Updated 27 Jan 2025
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
-import { Swap } from '@dexhunterio/swaps';
+import Swap from '@dexhunterio/swaps';
 import '@dexhunterio/swaps/lib/assets/style.css';
 import { FaCoins, FaChartLine, FaInfoCircle } from 'react-icons/fa';
 
