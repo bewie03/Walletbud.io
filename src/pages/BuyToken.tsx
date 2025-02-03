@@ -1,6 +1,8 @@
 // BuyToken page - Updated 27 Jan 2025
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
+import { Swap } from '@dexhunterio/swaps';
+import '@dexhunterio/swaps/lib/assets/style.css';
 import { FaCoins, FaChartLine, FaInfoCircle } from 'react-icons/fa';
 
 const BONE = () => {
@@ -211,12 +213,23 @@ const BONE = () => {
             <div className="bg-blue-900/50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-white mb-6 text-center">Buy $BONE</h3>
               <div className="flex justify-center">
-                <div className="bg-blue-800/50 p-6 rounded-lg w-full max-w-[500px]">
-                  <p className="text-white text-center mb-4">DEX integration coming soon!</p>
-                  <p className="text-blue-200 text-center text-sm">
-                    You'll be able to swap tokens directly on this page.
-                  </p>
-                </div>
+                <Swap
+                  orderTypes={["SWAP","LIMIT"]}
+                  defaultToken="YOUR_TOKEN_ID_HERE"
+                  colors={{
+                    background: "#1E3A8A",
+                    containers: "#1E3A8A",
+                    subText: "#D9E3F0",
+                    mainText: "#FFFFFF",
+                    buttonText: "#FFFFFF",
+                    accent: "#60A5FA"
+                  }}
+                  theme="dark"
+                  width="500"
+                  partnerCode="walletpup6164647231717835727434726c76396e7061366e383539366575616773677a66757a6337713835726b39796b6c646b7070666334726e74356865777832676c7178683039386b396175366366777a6d666e3630636a6d34346170617a6d63386e71797934377065da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                  partnerName="Walletpup"
+                  displayType="DEFAULT"
+                />
               </div>
             </div>
           </div>
