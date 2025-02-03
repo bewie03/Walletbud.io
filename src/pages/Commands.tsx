@@ -1,4 +1,4 @@
-// Commands page - Updated 21 Jan 2025
+// Commands page • Updated 21 Jan 2025
 import AnimatedElement from '../components/AnimatedElement';
 
 const Commands = () => {
@@ -46,7 +46,7 @@ const Commands = () => {
     {
       name: 'List Wallets',
       command: '/list',
-      description: 'View all wallets you\'re currently tracking.',
+      description: 'View all wallets you are currently tracking.',
       details: [
         'Shows all your currently tracked wallets',
         'Displays wallet addresses',
@@ -94,13 +94,13 @@ const Commands = () => {
       ],
     },
     {
-      name: 'Search',
-      command: '/search <query>',
-      description: 'Search for wallets and usernames across the platform.',
+      name: 'Search Wallets',
+      command: '/search <discord_username>',
+      description: 'Find wallets connected to a Discord username',
       details: [
-        'Search for verified usernames',
-        'Find wallet addresses',
-        'Quick access to wallet info',
+        'Search for wallets by Discord username',
+        'Shows all publicly connected wallets',
+        'Helps verify wallet ownership',
       ],
     },
     {

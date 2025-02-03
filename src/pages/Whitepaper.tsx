@@ -38,18 +38,18 @@ const Whitepaper = () => {
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
                 <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
-                  The First Cardano Wallet Tracker with AI Powered Commentary
+                  Advanced Cardano Wallet Monitoring and Discord Integration
                 </p>
                 <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                  Meet WalletPup, the first Cardano wallet tracker that brings AI powered insights to your wallet activity. Our notifications with entertaining commentary make blockchain monitoring more engaging than ever.
+                  Introducing WalletBud, a powerful Cardano wallet monitoring platform that lets you connect your Discord account to your wallet. Our simple system allows users to link their Discord username with their wallet, making it easy for anyone to search and find your wallets.
                 </p>
                 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  WalletPup bridges the gap between Discord and the Cardano blockchain, creating a unique monitoring experience. Our AI analyzes your transactions and delivers personalized commentary about ADA, token, and NFT movements through Discord DMs.
+                  WalletBud brings Discord and the Cardano blockchain together seamlessly. After connecting your Discord account, our advanced AI analyzes your wallet activity in real time, sending you precise updates about ADA transactions, token movements, and NFT activities through personalized Discord notifications.
                 </p>
 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  Gone are the days of boring transaction alerts. Whether you are trading, collecting NFTs, or receiving tokens, WalletPup adds personality to every notification, making blockchain monitoring not just informative, but genuinely entertaining.
+                  Say goodbye to disconnected wallet monitoring. Whether you're trading, collecting NFTs, or managing tokens, WalletBud keeps you informed through Discord and makes it simple for others to find your connected wallets by searching your Discord username.
                 </p>
               </div>
             </div>
@@ -149,7 +149,7 @@ const Whitepaper = () => {
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Add/Remove wallet tracking
+                    Add or remove wallet tracking
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -174,7 +174,7 @@ const Whitepaper = () => {
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Multi-wallet monitoring
+                    Multi wallet monitoring
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -327,7 +327,7 @@ const Whitepaper = () => {
                       decreases as our market cap grows, creating a fair system that rewards early adopters.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Access to wallet tracking services (up to 10 wallets)</li>
+                      <li>Access to wallet tracking services up to 10 wallets</li>
                       <li>Dynamic requirements based on market cap growth</li>
                       <li>Early adopters benefit from token value appreciation</li>
                       <li>Tokens retain value and can be traded when no longer needed</li>
@@ -518,13 +518,13 @@ const Whitepaper = () => {
           {/* Cover */}
           <div className="bg-[#1e3a8a]/50 rounded-t-xl text-center py-16 px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              WalletPup Whitepaper
+              WalletBud Whitepaper
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-4">
-              A Comprehensive Guide to the WalletPup Ecosystem
+              A Comprehensive Guide to the WalletBud Ecosystem
             </p>
             <p className="text-sm text-blue-200">
-              Version 1.0 - January 2025
+              Version 1.0 • January 2025
             </p>
           </div>
 
@@ -561,7 +561,7 @@ const Whitepaper = () => {
           {/* Footer */}
           <div className="border-t border-blue-700 py-8 text-center rounded-b-xl">
             <p className="text-blue-200 text-sm">
-              &copy; 2025 WalletPup | All rights reserved
+              &copy; 2025 WalletBud | All rights reserved
             </p>
           </div>
         </div>

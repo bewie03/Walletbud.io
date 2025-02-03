@@ -7,6 +7,7 @@ import Whitepaper from './pages/Whitepaper'
 import BONE from './pages/BuyToken'
 import Commands from './pages/Commands'
 import FAQ from './pages/FAQ'
+import NotFound from './pages/NotFound'
 import PageTransition from './components/PageTransition'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
             <Route path="/whitepaper" element={<PageTransition><Whitepaper /></PageTransition>} />
             <Route path="/bone" element={<PageTransition><BONE /></PageTransition>} />
+            <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </main>
