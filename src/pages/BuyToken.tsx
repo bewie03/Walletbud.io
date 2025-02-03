@@ -215,7 +215,7 @@ const BONE = () => {
               <div className="flex justify-center">
                 <Swap
                   orderTypes={["SWAP","LIMIT"]}
-                  defaultToken="YOUR_TOKEN_ID_HERE"
+                  defaultToken="b6a7467ea1deb012808ef4e87b5ff371e85f7142d7b356a40d9b42a0"
                   colors={{
                     background: "#1E3A8A",
                     containers: "#1E3A8A",
