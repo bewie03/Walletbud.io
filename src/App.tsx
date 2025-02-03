@@ -3,10 +3,10 @@ import { AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import Whitepaper from './pages/Whitepaper'
-import BONE from './pages/BuyToken'
 import Commands from './pages/Commands'
 import FAQ from './pages/FAQ'
+import Whitepaper from './pages/Whitepaper'
+import BONE from './pages/BuyToken'
 import NotFound from './pages/NotFound'
 import PageTransition from './components/PageTransition'
 
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <AnimatePresence mode="wait" initial={false}>
-          <Routes location={location} key={location.pathname}>
+          <Routes location={location} key={location.pathname} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
             <Route path="/" element={<PageTransition><Home /></PageTransition>} />
             <Route path="/commands" element={<PageTransition><Commands /></PageTransition>} />
             <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
