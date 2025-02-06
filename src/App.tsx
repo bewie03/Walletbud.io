@@ -9,6 +9,7 @@ import Whitepaper from './pages/Whitepaper'
 import BONE from './pages/BuyToken'
 import NotFound from './pages/NotFound'
 import PageTransition from './components/PageTransition'
+import Guide from './pages/Guide'
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
             <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
             <Route path="/whitepaper" element={<PageTransition><Whitepaper /></PageTransition>} />
             <Route path="/bone" element={<PageTransition><BONE /></PageTransition>} />
+            <Route path="/guide" element={<PageTransition><Guide /></PageTransition>} />
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
           </Routes>
         </AnimatePresence>

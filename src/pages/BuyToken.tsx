@@ -31,7 +31,7 @@ const BONE = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Left Column - Info Cards */}
-            <div className="bg-blue-900/50 rounded-lg p-6">
+            <div className="bg-blue-900/50 rounded-lg p-6 hover:scale-[1.02] transition-all duration-300">
               {/* Navigation Tabs */}
               <div className="flex space-x-2 mb-6">
                 {[
@@ -42,14 +42,14 @@ const BONE = () => {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`flex-1 py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 ${
+                    className={`flex-1 py-2 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 hover:scale-[1.02] ${
                       activeTab === tab.id
                         ? 'bg-blue-600 text-white'
                         : 'bg-blue-900 text-blue-200 hover:bg-blue-800'
                     }`}
                   >
                     {tab.icon}
-                    {tab.label}
+                    <span>{tab.label}</span>
                   </button>
                 ))}
               </div>
@@ -57,32 +57,32 @@ const BONE = () => {
               {/* Content */}
               {activeTab === 'requirements' && (
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-6">Token Requirements</h3>
+                  <h3 className="text-xl font-semibold text-white mb-6 hover:scale-105 transition-transform duration-300">Token Requirements</h3>
                   <div className="space-y-4">
-                    <div className="bg-blue-900 p-4 rounded-lg">
-                      <p className="text-blue-100 mb-4">
+                    <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                      <p className="text-blue-100 mb-4 hover:scale-[1.02] transition-transform duration-300">
                         The amount of $BONE tokens required decreases as our market cap grows, giving fair access for everyone.
                       </p>
                     </div>
                     
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <h4 className="text-lg font-semibold text-white mb-4">Early Stage</h4>
+                        <h4 className="text-lg font-semibold text-white mb-4 hover:scale-105 transition-transform duration-300">Early Stage</h4>
                         <div className="space-y-3">
-                          <div className="bg-blue-900 p-3 rounded-lg">
-                            <div className="flex justify-between items-center">
+                          <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                            <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
                               <span className="text-blue-200">$1M MCAP</span>
                               <span className="text-white font-bold">10,000 $BONE</span>
                             </div>
                           </div>
-                          <div className="bg-blue-900 p-3 rounded-lg">
-                            <div className="flex justify-between items-center">
+                          <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                            <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
                               <span className="text-blue-200">$5M MCAP</span>
                               <span className="text-white font-bold">2,000 $BONE</span>
                             </div>
                           </div>
-                          <div className="bg-blue-900 p-3 rounded-lg">
-                            <div className="flex justify-between items-center">
+                          <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                            <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
                               <span className="text-blue-200">$10M MCAP</span>
                               <span className="text-white font-bold">1,000 $BONE</span>
                             </div>
@@ -90,22 +90,22 @@ const BONE = () => {
                         </div>
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-white mb-4">Growth Stage</h4>
+                        <h4 className="text-lg font-semibold text-white mb-4 hover:scale-105 transition-transform duration-300">Growth Stage</h4>
                         <div className="space-y-3">
-                          <div className="bg-blue-900 p-3 rounded-lg">
-                            <div className="flex justify-between items-center">
+                          <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                            <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
                               <span className="text-blue-200">$20M MCAP</span>
                               <span className="text-white font-bold">500 $BONE</span>
                             </div>
                           </div>
-                          <div className="bg-blue-900 p-3 rounded-lg">
-                            <div className="flex justify-between items-center">
+                          <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                            <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
                               <span className="text-blue-200">$50M MCAP</span>
                               <span className="text-white font-bold">200 $BONE</span>
                             </div>
                           </div>
-                          <div className="bg-blue-900 p-3 rounded-lg">
-                            <div className="flex justify-between items-center">
+                          <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                            <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
                               <span className="text-blue-200">$100M MCAP</span>
                               <span className="text-white font-bold">100 $BONE</span>
                             </div>
@@ -114,8 +114,8 @@ const BONE = () => {
                       </div>
                     </div>
 
-                    <div className="bg-blue-900 p-4 rounded-lg text-center">
-                      <p className="text-blue-100 font-semibold">
+                    <div className="bg-blue-900 p-4 rounded-lg text-center hover:scale-[1.02] transition-all duration-300">
+                      <p className="text-blue-100 font-semibold hover:scale-[1.02] transition-transform duration-300">
                         Token requirement never increases - only decreases as market cap grows
                       </p>
                     </div>
@@ -126,35 +126,35 @@ const BONE = () => {
               {/* Overview Tab */}
               {activeTab === 'overview' && (
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-6">Fair Entry System</h3>
+                  <h3 className="text-xl font-semibold text-white mb-6 hover:scale-105 transition-transform duration-300">Fair Entry System</h3>
                   <div className="space-y-4">
-                    <div className="bg-blue-900 p-4 rounded-lg">
-                      <h4 className="text-lg font-semibold text-white mb-3">How It Works</h4>
-                      <p className="text-blue-100 mb-4">
+                    <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                      <h4 className="text-lg font-semibold text-white mb-3 hover:scale-105 transition-transform duration-300">How It Works</h4>
+                      <p className="text-blue-100 mb-4 hover:scale-[1.02] transition-transform duration-300">
                         Our innovative token system ensures fair access while rewarding early adopters. The entry cost remains stable at approximately 10 ADA worth of $BONE tokens per wallet.
                       </p>
                       <ul className="list-disc text-blue-100 space-y-2 ml-4">
-                        <li>Track up to 10 wallets simultaneously</li>
-                        <li>Receive almost instant notifications</li>
-                        <li>Monitor ADA, tokens, and NFTs</li>
+                        <li className="hover:scale-[1.02] transition-transform duration-300">Track up to 10 wallets simultaneously</li>
+                        <li className="hover:scale-[1.02] transition-transform duration-300">Receive almost instant notifications</li>
+                        <li className="hover:scale-[1.02] transition-transform duration-300">Monitor ADA, tokens, and NFTs</li>
                       </ul>
                     </div>
                     
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-blue-900 p-4 rounded-lg">
-                        <h4 className="text-lg font-semibold text-white mb-3">Benefits</h4>
+                      <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                        <h4 className="text-lg font-semibold text-white mb-3 hover:scale-105 transition-transform duration-300">Benefits</h4>
                         <ul className="text-blue-100 space-y-2">
-                          <li>• Real time tracking</li>
-                          <li>• Multi wallet support</li>
-                          <li>• Secure monitoring</li>
+                          <li className="hover:scale-[1.02] transition-transform duration-300">• Real time tracking</li>
+                          <li className="hover:scale-[1.02] transition-transform duration-300">• Multi wallet support</li>
+                          <li className="hover:scale-[1.02] transition-transform duration-300">• Secure monitoring</li>
                         </ul>
                       </div>
-                      <div className="bg-blue-900 p-4 rounded-lg">
-                        <h4 className="text-lg font-semibold text-white mb-3">Features</h4>
+                      <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                        <h4 className="text-lg font-semibold text-white mb-3 hover:scale-105 transition-transform duration-300">Features</h4>
                         <ul className="text-blue-100 space-y-2">
-                          <li>• Discord integration</li>
-                          <li>• NFT tracking</li>
-                          <li>• Token alerts</li>
+                          <li className="hover:scale-[1.02] transition-transform duration-300">• Discord integration</li>
+                          <li className="hover:scale-[1.02] transition-transform duration-300">• NFT tracking</li>
+                          <li className="hover:scale-[1.02] transition-transform duration-300">• Token alerts</li>
                         </ul>
                       </div>
                     </div>
@@ -165,44 +165,55 @@ const BONE = () => {
               {/* Tokenomics Tab */}
               {activeTab === 'tokenomics' && (
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-6">Token Details</h3>
+                  <h3 className="text-xl font-semibold text-white mb-6 hover:scale-105 transition-transform duration-300">Token Details</h3>
                   <div className="space-y-4">
-                    <div className="bg-blue-900 p-4 rounded-lg">
+                    <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
                       <div className="grid grid-cols-2 gap-4">
-                        <div className="flex flex-col items-center bg-blue-800/50 p-3 rounded-lg">
+                        <div className="flex flex-col items-center bg-blue-800/50 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                           <span className="text-blue-200 text-sm">Total Supply</span>
                           <span className="text-white font-bold text-xl">1,000,000,000</span>
                           <span className="text-blue-300 text-sm">$BONE</span>
                         </div>
-                        <div className="flex flex-col items-center bg-blue-800/50 p-3 rounded-lg">
+                        <div className="flex flex-col items-center bg-blue-800/50 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                           <span className="text-blue-200 text-sm">Entry Cost</span>
-                          <span className="text-white font-bold text-xl">≈ 10 ADA</span>
-                          <span className="text-blue-300 text-sm">per wallet</span>
+                          <span className="text-white font-bold text-xl">Dynamic</span>
+                          <span className="text-blue-300 text-sm">based on mcap</span>
                         </div>
                       </div>
                     </div>
 
-                    <div className="bg-blue-900 p-4 rounded-lg">
-                      <h4 className="text-lg font-semibold text-white mb-3">Token Distribution</h4>
-                      <div className="space-y-3">
-                        <div className="flex justify-between items-center">
-                          <span className="text-blue-100">Public Sale</span>
-                          <span className="text-white font-bold">90%</span>
+                    <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                      <h4 className="text-lg font-semibold text-white mb-3 hover:scale-105 transition-transform duration-300">Token Distribution</h4>
+                      <div className="space-y-4">
+                        {/* Public Distribution */}
+                        <div>
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-blue-100">Public Distribution</span>
+                            <span className="text-white font-bold">95%</span>
+                          </div>
+                          <div className="w-full bg-blue-950 rounded-full h-3">
+                            <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '95%' }}></div>
+                          </div>
+                          <div className="mt-2 text-sm text-blue-200">950,000,000 $BONE</div>
                         </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-blue-100">Development</span>
-                          <span className="text-white font-bold">5%</span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-blue-100">Community Events</span>
-                          <span className="text-white font-bold">5%</span>
+
+                        {/* Development & Community */}
+                        <div>
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-blue-100">Development & Community Events</span>
+                            <span className="text-white font-bold">5%</span>
+                          </div>
+                          <div className="w-full bg-blue-950 rounded-full h-3">
+                            <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '5%' }}></div>
+                          </div>
+                          <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE</div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="bg-blue-900 p-4 rounded-lg">
-                      <h4 className="text-lg font-semibold text-white mb-3">Policy ID</h4>
-                      <p className="text-white font-mono text-sm break-all bg-blue-800/50 p-2 rounded">Updated Soon</p>
+                    <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
+                      <h4 className="text-lg font-semibold text-white mb-3 hover:scale-105 transition-transform duration-300">Policy ID</h4>
+                      <p className="text-white font-mono text-sm break-all bg-blue-800/50 p-2 rounded hover:scale-[1.02] transition-all duration-300">Updated Soon</p>
                     </div>
                   </div>
                 </div>
@@ -210,8 +221,8 @@ const BONE = () => {
             </div>
 
             {/* Right Column - DEX Widget */}
-            <div className="bg-blue-900/50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-white mb-6 text-center">Buy $BONE</h3>
+            <div className="bg-blue-900/50 rounded-lg p-6 hover:scale-[1.02] transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-6 text-center hover:scale-105 transition-transform duration-300">Buy $BONE</h3>
               <div className="flex justify-center">
                 <Swap
                   orderTypes={["SWAP","LIMIT"]}

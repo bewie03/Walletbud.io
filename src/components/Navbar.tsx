@@ -52,6 +52,12 @@ const Navbar = () => {
               Commands
             </Link>
             <Link
+              to="/guide"
+              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
+            >
+              Guide
+            </Link>
+            <Link
               to="/whitepaper"
               className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
@@ -93,33 +99,40 @@ const Navbar = () => {
       <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
           isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-        } overflow-hidden`}
+        } overflow-hidden bg-blue-900 border-t border-blue-800`}
       >
-        <div className="px-4 py-4 space-y-4">
+        <div className="px-4 py-2 space-y-2">
           <Link
             to="/bone"
-            className="block text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+            className="block py-2 text-lg font-medium text-blue-100 hover:text-white hover:scale-105 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             $BONE
           </Link>
           <Link
             to="/commands"
-            className="block text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+            className="block py-2 text-lg font-medium text-blue-100 hover:text-white hover:scale-105 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             Commands
           </Link>
           <Link
+            to="/guide"
+            className="block py-2 text-lg font-medium text-blue-100 hover:text-white hover:scale-105 transition-all duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Guide
+          </Link>
+          <Link
             to="/whitepaper"
-            className="block text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+            className="block py-2 text-lg font-medium text-blue-100 hover:text-white hover:scale-105 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             Whitepaper
           </Link>
           <Link
             to="/faq"
-            className="block text-lg font-medium text-blue-100 hover:text-white transition-colors duration-300"
+            className="block py-2 text-lg font-medium text-blue-100 hover:text-white hover:scale-105 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             FAQ

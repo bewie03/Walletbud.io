@@ -81,7 +81,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Add Your Wallet</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Use the /add command in a DM to start tracking your wallet.
+                  /add command to set up your primary wallet, then add up to 9 more wallets.
                 </p>
                 <Link
                   to="/commands"

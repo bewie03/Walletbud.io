@@ -149,11 +149,11 @@ const Whitepaper = () => {
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Add or remove wallet tracking
+                    Primary wallet setup with verification
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Wallet verification system
+                    Additional wallet tracking
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -161,7 +161,7 @@ const Whitepaper = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Balance inquiries
+                    Message history management
                   </li>
                 </ul>
               </div>
@@ -174,7 +174,7 @@ const Whitepaper = () => {
                 <ul className="space-y-2 text-blue-100">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Multi wallet monitoring
+                    Primary wallet with up to 9 additional wallets
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -203,7 +203,7 @@ const Whitepaper = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                    Token balance monitoring
+                    Dynamic BONE requirement system
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
@@ -283,34 +283,24 @@ const Whitepaper = () => {
                       <div>
                         <div className="flex items-center justify-between mb-2">
                           <span className="text-blue-100">Public Distribution</span>
-                          <span className="text-white font-bold">90%</span>
+                          <span className="text-white font-bold">95%</span>
                         </div>
                         <div className="w-full bg-blue-950 rounded-full h-3">
-                          <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '90%' }}></div>
+                          <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '95%' }}></div>
                         </div>
-                        <div className="mt-2 text-sm text-blue-200">900,000,000 $BONE - For community, bot access, DEX trading, and liquidity</div>
+                        <div className="mt-2 text-sm text-blue-200">950,000,000 $BONE - For community, bot access, DEX trading, and liquidity</div>
                       </div>
-                      {/* Development */}
+
+                      {/* Development & Community Events */}
                       <div>
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-blue-100">Development</span>
+                          <span className="text-blue-100">Development & Community Events</span>
                           <span className="text-white font-bold">5%</span>
                         </div>
                         <div className="w-full bg-blue-950 rounded-full h-3">
                           <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '5%' }}></div>
                         </div>
-                        <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE - For long-term development and sustainability</div>
-                      </div>
-                      {/* Community Events */}
-                      <div>
-                        <div className="flex items-center justify-between mb-2">
-                          <span className="text-blue-100">Community Events</span>
-                          <span className="text-white font-bold">5%</span>
-                        </div>
-                        <div className="w-full bg-blue-950 rounded-full h-3">
-                          <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '5%' }}></div>
-                        </div>
-                        <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE - For community events and rewards</div>
+                        <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE - For development and community events</div>
                       </div>
                     </div>
                   </div>
@@ -322,12 +312,14 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Token Utility & Requirements</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      $BONE is the utility token that powers the WalletPup ecosystem. Unlike traditional subscription models, 
-                      our token gives users perpetual access to services while maintaining their asset value. The amount required 
-                      decreases as our market cap grows, creating a fair system that rewards early adopters.
+                      $BONE is the utility token that powers the WalletPup ecosystem. Only your primary wallet needs to hold 
+                      the required BONE tokens - once verified, you can add up to 9 additional wallets with no BONE requirement. 
+                      Unlike traditional subscription models, our token gives users perpetual access to services while maintaining 
+                      their asset value. The amount required decreases as our market cap grows, creating a fair system that rewards early adopters.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Access to wallet tracking services up to 10 wallets</li>
+                      <li>Primary wallet holds BONE tokens, additional wallets have no token requirement</li>
+                      <li>Track 1 primary wallet plus 9 additional wallets of your choice</li>
                       <li>Dynamic requirements based on market cap growth</li>
                       <li>Early adopters benefit from token value appreciation</li>
                       <li>Tokens retain value and can be traded when no longer needed</li>
@@ -381,7 +373,9 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
+                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Your primary wallet 
+                      requires BONE tokens and verification, but after that's set up, you can track any additional wallets you want. 
+                      Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Monitor ADA, tokens, and NFTs</li>
@@ -397,7 +391,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Seamless Discord Integration</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      WalletPup lives in Discord, making it incredibly easy to interact with. Add wallets, check balances, and receive notifications right where you spend your time.
+                      WalletPup lives in Discord, making it incredibly easy to interact with. Add wallets, manage your tracked addresses, and receive notifications right where you spend your time.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Simple command interface</li>
@@ -448,7 +442,7 @@ const Whitepaper = () => {
                     <FaCogs className="text-blue-400" /> Enhanced Bot Commands
                   </h5>
                   <p className="text-blue-200">
-                    We are expanding our command system to provide more detailed analytics, custom alerts, and advanced tracking features. Users will have greater control over how they monitor and analyze wallet activity.
+                    We are expanding our command system with dynamic BONE requirements, enhanced wallet management, and advanced tracking features. Users will have greater control over how they monitor and analyze wallet activity.
                   </p>
                 </div>
 
@@ -508,7 +502,85 @@ const Whitepaper = () => {
           </div>
         </motion.div>
       )
-    }
+    },
+    {
+      id: 'growth',
+      title: 'Built for Growth',
+      icon: <FaProjectDiagram className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Sustainable Growth & Long-term Vision</h3>
+                
+                <div className="space-y-8">
+                  {/* Scalable Architecture */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaServer className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Built to Scale</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our infrastructure is designed to handle massive growth. We're not just building another wallet tracker - 
+                      we're creating the foundation for the largest Discord-to-wallet linking system in the Cardano ecosystem. 
+                      Our architecture can support thousands of users tracking multiple wallets each, with room for exponential growth.
+                    </p>
+                  </div>
+
+                  {/* Tokenomics for Growth */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Sustainable Tokenomics</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our dynamic BONE requirement system is designed to maintain service quality as we grow. As market cap increases, 
+                      the token requirement adjusts, ensuring sustainable growth while rewarding early adopters. With 95% of tokens 
+                      allocated to the public and only 5% reserved for team and community events, we've created a fair ecosystem 
+                      where both new and existing users benefit from the project's success.
+                    </p>
+                  </div>
+
+                  {/* Secret Development */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBolt className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Beyond Discord - Coming Soon</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      We're working on a groundbreaking feature that will add significant utility to the BONE token. 
+                      While we can't reveal all the details yet, we'll be releasing teasers in the coming months. 
+                      This development will further cement WalletPup's position as the leading wallet tracking solution 
+                      and provide even more value to our token holders.
+                    </p>
+                  </div>
+
+                  {/* Community Growth */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaDiscord className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Community-Driven Evolution</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our goal is to become the top wallet tracking bot in the Cardano ecosystem. We're constantly gathering 
+                      feedback from our community to improve and expand our features. From enhanced wallet tracking to new 
+                      AI insights, every update is designed to provide more value to our users while maintaining the 
+                      highest standards of reliability and security.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
   ];
 
   return (

@@ -15,8 +15,8 @@ const FAQ = () => {
       answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our Discord bot not only monitors wallet addresses but provides entertaining insights about your transactions. Every time there is activity in your wallet, WalletPup delivers both the transaction details and witty personalized commentary about what just happened."
     },
     {
-      question: "How do I add my wallet?",
-      answer: "Send the bot a DM with /add followed by your wallet address and a name you choose. For example: /add addr1... MyWallet. We only accept commands through DMs to keep your information private."
+      question: "How do I set up my wallets?",
+      answer: "Start by using /add with your first wallet address - this becomes your primary wallet and needs to hold BONE tokens. After adding it, verify ownership using the /verifywallet command. Once your primary wallet is verified, you can use /add to track up to 9 additional wallets - these don't need verification or BONE tokens."
     },
     {
       question: "What makes WalletPup unique?",
@@ -27,16 +27,20 @@ const FAQ = () => {
       answer: "Yes! We take security seriously. All commands work only in private messages, we never ask for or store sensitive info, and we only need your public wallet address. We also limit how often commands can be used to prevent abuse."
     },
     {
-      question: "Can I track multiple wallets?",
-      answer: "Yes! You can track up to 10 wallets at once if you have enough $BONE tokens (approximately 10 ADA worth per wallet). Use /add for each wallet and give them different names. Use /list to see all your wallets, and /removeall to stop tracking all of them."
+      question: "What happens if my primary wallet's BONE balance drops too low?",
+      answer: "If your primary wallet's BONE balance drops below the required amount or if you remove the primary wallet, all your additional wallets will be automatically removed. To continue tracking additional wallets, you'll need to maintain the required BONE balance in your primary wallet."
     },
     {
-      question: "What happens if I don't have enough tokens?",
-      answer: "Your wallet is checked for $BONE tokens every 6 hours. If you don't have approximately 10 ADA worth of tokens, your wallet will be automatically removed from tracking and you'll receive a DM notification. You'll need to add your wallet again with the required token amount to resume tracking."
+      question: "Can I track multiple wallets?",
+      answer: "Yes! After setting up and verifying your primary wallet (which requires BONE tokens), you can track up to 9 additional wallets. Just use the /add command for each wallet you want to track. These additional wallets don't need verification or BONE tokens."
+    },
+    {
+      question: "What happens if I don't have enough tokens in my primary wallet?",
+      answer: "Your primary wallet is checked for BONE tokens every 6 hours. If you don't have the required amount of tokens, your primary wallet will be automatically removed from tracking and you'll receive a DM notification. You'll need to add your primary wallet again with the required token amount to resume tracking."
     },
     {
       question: "Does the token requirement change?",
-      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost of approximately 10 ADA worth of $BONE tokens. This means early adopters can benefit from token value growth while new users can always join at a fair price."
+      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost. This means early adopters can benefit from token value growth while new users can always join at a fair price."
     },
     {
       question: "What other features are available?",
@@ -58,52 +62,45 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-blue-900">
+      {/* Hero Section */}
       <div className="w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-16">
               <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
-                Frequently Asked Questions
+                FAQ
               </h1>
               <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
-                Everything you need to know about WalletPup
+                Frequently Asked Questions
               </p>
             </div>
           </AnimatedElement>
         </div>
       </div>
 
+      {/* FAQ Section */}
       <div className="w-full bg-blue-800">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <AnimatedElement key={index} animation="fadeIn" delay={index * 0.1}>
+              <AnimatedElement key={index} delay={index * 0.1}>
                 <div
-                  className="bg-blue-900 rounded-lg border border-blue-700 transform hover:scale-[1.01] transition-all duration-300 hover:shadow-lg"
+                  className="bg-blue-900 rounded-lg border border-blue-700 overflow-hidden hover:scale-[1.02] transition-all duration-300"
+                  onClick={() => toggleFAQ(index)}
                 >
-                  <button
-                    className="w-full px-6 py-4 text-left focus:outline-none"
-                    onClick={() => toggleFAQ(index)}
-                  >
-                    <div className="flex items-center justify-between">
-                      <h2 className="text-xl font-semibold text-white">{faq.question}</h2>
-                      <span 
-                        className="text-blue-400 transform transition-transform duration-300"
-                        style={{
-                          transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)'
-                        }}
-                      >
-                        ▼
-                      </span>
-                    </div>
-                  </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="px-6 pb-4">
-                      <p className="text-blue-100">{faq.answer}</p>
+                  <div className="p-4 cursor-pointer flex justify-between items-center">
+                    <h3 className="text-lg font-medium text-white">{faq.question}</h3>
+                    <span className={`text-blue-400 text-2xl transform transition-transform duration-300 ${
+                      openIndex === index ? 'rotate-180' : ''
+                    }`}>
+                      ▼
+                    </span>
+                  </div>
+                  <div className={`transition-all duration-300 ease-in-out ${
+                    openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}>
+                    <div className="p-4 pt-0">
+                      <p className="text-blue-200">{faq.answer}</p>
                     </div>
                   </div>
                 </div>

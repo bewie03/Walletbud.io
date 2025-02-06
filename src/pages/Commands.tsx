@@ -6,51 +6,43 @@ const Commands = () => {
     {
       name: 'Add Wallet',
       command: '/add <address>',
-      description: 'Add a Cardano wallet address to your tracking list',
+      description: 'Add a wallet to your tracking list',
       details: [
-        'Add any Cardano wallet with required BONE to your tracking list.',
-        'Requires approximately 10 ADA worth of BONE tokens',
-        'Track up to 10 wallets with sufficient token balance',
+        'First wallet added becomes your primary wallet',
+        'Primary wallet requires BONE tokens',
+        'Once primary wallet is verified, add up to 9 additional wallets',
+        'Additional wallets have no BONE requirement',
       ],
     },
     {
       name: 'Verify Wallet',
       command: '/verifywallet <address> <name>',
-      description: 'Verify your wallet to get a custom name',
+      description: 'Verify ownership of your primary wallet',
       details: [
         'Send exact ADA amount specified by bot',
         'Custom name (up to 32 characters)',
-        'Special platform recognition',
+        'Required for primary wallet setup',
+        'Only primary wallet needs verification',
       ],
     },
     {
       name: 'Remove Wallet',
       command: '/remove <address>',
-      description: 'Remove a specific wallet from your tracking list.',
+      description: 'Remove a wallet from your tracking list',
       details: [
-        'Stop tracking a specific wallet address',
-        'Notifications stop immediately',
-        'Can add back anytime with required token balance',
-      ],
-    },
-    {
-      name: 'Remove All Wallets',
-      command: '/removeall',
-      description: 'Remove all your tracked wallets at once.',
-      details: [
-        'Remove all wallets from your tracking list.',
-        'This will stop all notifications.',
-        'This action cannot be undone.',
+        'Remove any wallet from your tracking list',
+        'Removing primary wallet will remove all additional wallets',
+        'If primary wallet BONE balance drops too low, all wallets are removed',
       ],
     },
     {
       name: 'List Wallets',
       command: '/list',
-      description: 'View all wallets you are currently tracking.',
+      description: 'List all your tracked wallets',
       details: [
-        'Shows all your currently tracked wallets',
-        'Displays wallet addresses',
-        'Shows how many tracking slots you have used',
+        'Shows your primary wallet and its BONE balance',
+        'Shows all additional tracked wallets',
+        'Displays verification status',
       ],
     },
     {
@@ -61,16 +53,6 @@ const Commands = () => {
         'Total global users tracking wallets',
         'Total wallets being tracked',
         'Total transactions monitored',
-      ],
-    },
-    {
-      name: 'Balance',
-      command: '/balance',
-      description: 'Show ADA balance for all your tracked wallets.',
-      details: [
-        'Quick view of all wallet balances',
-        'Updates in real time',
-        'Shows total ADA across all wallets',
       ],
     },
     {
@@ -121,6 +103,26 @@ const Commands = () => {
         'Compare wallet activity rankings',
         'View transaction count metrics',
         'Track wallet performance',
+      ],
+    },
+    {
+      name: 'Purge Messages',
+      command: '/purge',
+      description: 'Clean up your DM history with the bot',
+      details: [
+        'Removes bot messages from your DMs',
+        'Helps keep your Discord clean',
+        'Quick way to clear notifications',
+      ],
+    },
+    {
+      name: 'Set Requirement',
+      command: '/requirement <amount>',
+      description: 'Admin command to set required BONE amount',
+      details: [
+        'Adjusts BONE token requirement',
+        'Based on market conditions',
+        'Keeps entry cost fair for all users'
       ],
     },
   ];
