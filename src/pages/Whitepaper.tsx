@@ -58,77 +58,6 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'inspiration',
-      title: 'Our Journey',
-      icon: <FaLightbulb className="w-6 h-6" />,
-      content: (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-6"
-        >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="space-y-6 text-blue-100">
-              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Evolution of Wallet Tracking</h3>
-                
-                <div className="space-y-8">
-                  {/* History */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaHistory className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">The Beginning</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Our journey began with inspiration from WalletPup, a pioneering project that offered free wallet tracking services on Cardano. While innovative, it faced reliability challenges. Later, ZING emerged with improved detection speeds, setting new standards for transaction monitoring.
-                    </p>
-                  </div>
-
-                  {/* Our Vision */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaEye className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Our Vision</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Rather than just competing on speed, we chose to innovate in a different direction. We envisioned creating a global Discord wallet tracking system that brings personality and intelligence to blockchain monitoring, focusing on user engagement and community building.
-                    </p>
-                  </div>
-
-                  {/* What Sets Us Apart */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaStar className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">What Sets Us Apart</h4>
-                    </div>
-                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>AI Powered Commentary: Every transaction comes with fun, personalized insights</li>
-                      <li>Social Integration: Link Discord names to wallets for better community engagement</li>
-                      <li>Enhanced Commands: More ways to interact and analyze your wallet activity</li>
-                      <li>Detailed Statistics: Deep insights into your blockchain activity</li>
-                      <li>Global Community Focus: Building connections through wallet tracking</li>
-                    </ul>
-                  </div>
-
-                  {/* Future Vision */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Looking Forward</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      We are building more than just a wallet tracker. We are creating a social platform where blockchain activity becomes a shared experience. With our AI powered insights and community features, we are making crypto tracking more engaging, informative, and fun for everyone.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      )
-    },
-    {
       id: 'features',
       title: 'Features and Functionality',
       icon: <FaFeather className="w-6 h-6" />,
@@ -246,6 +175,93 @@ const Whitepaper = () => {
       )
     },
     {
+      id: 'technology',
+      title: 'How It Works',
+      icon: <FaCogs className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">The Magic Behind WalletPup</h3>
+                
+                <div className="space-y-8">
+                  {/* AI Commentary System */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaRobot className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">AI Commentary Engine</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      Our advanced AI system analyzes transactions, understanding context and patterns to provide entertaining and insightful comments. It's like having a knowledgeable friend watching your wallet activity!
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Contextual transaction analysis</li>
+                      <li>Pattern recognition for better insights</li>
+                      <li>Personalized commentary style</li>
+                    </ul>
+                  </div>
+
+                  {/* Monitoring System */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaEye className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Your primary wallet requires BONE tokens and verification, but after that's set up, you can track any additional wallets you want. The entry cost is fixed at 20 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Monitor ADA, tokens, and NFTs</li>
+                      <li>Reliable notification delivery through Discord DMs</li>
+                      <li>Personalized AI insights for each transaction</li>
+                    </ul>
+                  </div>
+
+                  {/* Discord Integration */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaDiscord className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Seamless Discord Integration</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      WalletPup lives in Discord, making it incredibly easy to interact with. Add wallets, manage your tracked addresses, and receive notifications right where you spend your time.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Simple command interface</li>
+                      <li>Private DM notifications</li>
+                      <li>Secure wallet management</li>
+                    </ul>
+                  </div>
+
+                  {/* Security */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaShieldAlt className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Built for Security</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      Security is our top priority. We only work with public blockchain data and Discord's secure messaging system to protect your privacy.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>No sensitive data storage</li>
+                      <li>Private Discord DM notifications</li>
+                      <li>Public address monitoring only</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
       id: 'tokenomics',
       title: 'Tokenomics & $BONE',
       icon: <FaCoins className="w-6 h-6" />,
@@ -331,9 +347,9 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'technology',
-      title: 'How It Works',
-      icon: <FaCogs className="w-6 h-6" />,
+      id: 'inspiration',
+      title: 'Our Journey',
+      icon: <FaLightbulb className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -344,71 +360,56 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">The Magic Behind WalletPup</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Evolution of Wallet Tracking</h3>
                 
                 <div className="space-y-8">
-                  {/* AI Commentary System */}
+                  {/* History */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaRobot className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">AI Commentary Engine</h4>
+                      <FaHistory className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">The Beginning</h4>
                     </div>
-                    <p className="text-blue-100 mb-4">
-                      Our advanced AI system analyzes transactions, understanding context and patterns to provide entertaining and insightful comments. It's like having a knowledgeable friend watching your wallet activity!
+                    <p className="text-blue-100">
+                      The story begins with Walletbud, the first wallet tracking service on Cardano. While groundbreaking, it faced significant sustainability and reliability challenges that ultimately affected its service. Following this, ZING emerged as a replacement, focusing on high-speed tracking and basic wallet monitoring capabilities.
                     </p>
-                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Contextual transaction analysis</li>
-                      <li>Pattern recognition for better insights</li>
-                      <li>Personalized commentary style</li>
-                    </ul>
                   </div>
 
-                  {/* Monitoring System */}
+                  {/* Our Vision */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaEye className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
+                      <h4 className="text-lg font-semibold text-white">Our Vision</h4>
                     </div>
-                    <p className="text-blue-100 mb-4">
-                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Your primary wallet requires BONE tokens and verification, but after that's set up, you can track any additional wallets you want. The entry cost is fixed at 20 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
+                    <p className="text-blue-100">
+                      We're building on the foundations laid by these pioneers while addressing their limitations. Our vision combines ZING's fast tracking speeds with innovative features that transform wallet monitoring into an engaging experience. By integrating AI commentary, extensive functionality, and Discord-wallet connectivity, we're creating a platform that's both powerful and user-friendly. Most importantly, our infrastructure is built to scale, capable of handling 100,000+ wallets and thousands of users while providing an investment opportunity through our token system.
                     </p>
+                  </div>
+
+                  {/* What Sets Us Apart */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaStar className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">What Sets Us Apart</h4>
+                    </div>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Monitor ADA, tokens, and NFTs</li>
-                      <li>Reliable notification delivery through Discord DMs</li>
-                      <li>Personalized AI insights for each transaction</li>
+                      <li>High-Speed Tracking: Maintaining the rapid detection capabilities users expect</li>
+                      <li>AI Commentary: Personalized insights for every transaction</li>
+                      <li>Discord Integration: Seamlessly link Discord usernames to wallets</li>
+                      <li>Scalable Infrastructure: Built to handle 100,000+ wallets</li>
+                      <li>Investment Opportunity: Token system that grows with our community</li>
+                      <li>Enhanced Features: Comprehensive wallet monitoring and management</li>
                     </ul>
                   </div>
 
-                  {/* Discord Integration */}
+                  {/* Future Vision */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaDiscord className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Seamless Discord Integration</h4>
+                      <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Looking Forward</h4>
                     </div>
-                    <p className="text-blue-100 mb-4">
-                      WalletPup lives in Discord, making it incredibly easy to interact with. Add wallets, manage your tracked addresses, and receive notifications right where you spend your time.
+                    <p className="text-blue-100">
+                      We are building more than just a wallet tracker. We are creating a social platform where blockchain activity becomes a shared experience. With our AI powered insights and community features, we are making crypto tracking more engaging, informative, and fun for everyone.
                     </p>
-                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>Simple command interface</li>
-                      <li>Private DM notifications</li>
-                      <li>Secure wallet management</li>
-                    </ul>
-                  </div>
-
-                  {/* Security */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaShieldAlt className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Built for Security</h4>
-                    </div>
-                    <p className="text-blue-100 mb-4">
-                      Security is our top priority. We only work with public blockchain data and Discord's secure messaging system to protect your privacy.
-                    </p>
-                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
-                      <li>No sensitive data storage</li>
-                      <li>Private Discord DM notifications</li>
-                      <li>Public address monitoring only</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -546,7 +547,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Beyond Discord - Coming Soon</h4>
                     </div>
                     <p className="text-blue-100">
-                      We're working on a groundbreaking feature that will add significant utility to the BONE token. 
+                      We're working on a new extension to the project that will add significant utility to the BONE token. 
                       While we can't reveal all the details yet, we'll be releasing teasers in the coming months. 
                       This development will further cement WalletPup's position as the leading wallet tracking solution 
                       and provide even more value to our token holders.

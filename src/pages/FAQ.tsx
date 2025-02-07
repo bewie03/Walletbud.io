@@ -43,10 +43,6 @@ const FAQ = () => {
       answer: "Yes, while the entry cost remains fixed at around 20 ADA, the amount of $BONE tokens you receive adjusts with market cap. This ensures fair access for all users while rewarding early adopters who may receive more tokens for the same entry cost when market cap is lower."
     },
     {
-      question: "What other features are available?",
-      answer: "Beyond basic tracking, you can use /topwatched to see which wallets are most popular among users, /stats to check your tracking stats, and /balance to quickly see ADA amounts in all your tracked wallets."
-    },
-    {
       question: "How do I get support?",
       answer: "Join our Discord server for help. You can also use /help in a DM with the bot to see all available commands and how to use them."
     },
