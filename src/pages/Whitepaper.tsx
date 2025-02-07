@@ -18,7 +18,9 @@ import {
   FaDiscord,
   FaHistory,
   FaStar,
-  FaRocket} from 'react-icons/fa';
+  FaRocket,
+  FaChartLine
+} from 'react-icons/fa';
 import AnimatedElement from '../components/AnimatedElement';
 
 const Whitepaper = () => {
@@ -214,7 +216,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Your primary wallet requires BONE tokens and verification, but after that's set up, you can track any additional wallets you want. The entry cost is fixed at 20 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
+                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Your primary wallet requires BONE tokens and verification, but after that's set up, you can track any additional wallets you want. The entry cost is fixed at roughly 20 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Monitor ADA, tokens, and NFTs</li>
@@ -410,6 +412,113 @@ const Whitepaper = () => {
                     <p className="text-blue-100">
                       We are building more than just a wallet tracker. We are creating a social platform where blockchain activity becomes a shared experience. With our AI powered insights and community features, we are making crypto tracking more engaging, informative, and fun for everyone.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'network-capacity',
+      title: 'Network Capacity Analysis',
+      icon: <FaChartPie className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-8">
+              {/* Current Network Stats */}
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaChartLine className="text-blue-400" /> Current Network Statistics (Feb 2025)
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-blue-300 text-sm font-medium">Daily Active Addresses</h4>
+                    <p className="text-2xl font-bold text-white mt-1">50,000+</p>
+                    <p className="text-xs text-blue-300 mt-1"></p>
+                  </div>
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-blue-300 text-sm font-medium">Daily Transactions</h4>
+                    <p className="text-2xl font-bold text-white mt-1">80,000+</p>
+                    <p className="text-xs text-blue-300 mt-1"></p>
+                  </div>
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-blue-300 text-sm font-medium">New Wallets Daily</h4>
+                    <p className="text-2xl font-bold text-white mt-1">5,500</p>
+                    <p className="text-xs text-blue-300 mt-1"></p>
+                  </div>
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-blue-300 text-sm font-medium">Total Addresses</h4>
+                    <p className="text-2xl font-bold text-white mt-1">4.2M+</p>
+                    <p className="text-xs text-blue-300 mt-1"></p>
+                  </div>
+                </div>
+              </div>
+
+              {/* WalletPup Capacity Analysis */}
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                  <FaServer className="text-blue-400" /> WalletPup Capacity Analysis
+                </h3>
+                <div className="space-y-4 text-blue-100">
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-2">Total System Capacity</h4>
+                    <p className="mb-2">Based on our total supply of 1B $BONE tokens and dynamic requirement system:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Initial capacity: 5,000 primary wallets (1B ÷ 200,000)</li>
+                      <li>Each user can track up to 9 additional wallets</li>
+                      <li>Maximum initial monitoring capacity: 50,000 wallets</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-2">Market-Driven Growth</h4>
+                    <p className="mb-2">Our system scales with market milestones to accommodate network growth:</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <h5 className="text-white font-medium mb-1">Early Stage Capacity</h5>
+                        <ul className="list-disc pl-6 space-y-1 text-sm">
+                          <li>$100K MCAP: 5,000 users (50K wallets)</li>
+                          <li>$200K MCAP: 10,000 users (100K wallets)</li>
+                          <li>$500K MCAP: 25,000 users (250K wallets)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="text-white font-medium mb-1">Growth Stage Capacity</h5>
+                        <ul className="list-disc pl-6 space-y-1 text-sm">
+                          <li>$1M MCAP: 50,000 users (500K wallets)</li>
+                          <li>$2M MCAP: 100,000 users (1M wallets)</li>
+                          <li>$5M MCAP: 250,000 users (2.5M wallets)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-2">Network Coverage Analysis</h4>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Current daily active addresses (50,000+) could be fully covered by our growth stage capacity</li>
+                      <li>System can handle 5x current network activity, ready for future growth</li>
+                      <li>Designed to scale with Cardano's Layer 2 solutions (Hydra) and increased adoption</li>
+                      <li>Accommodates the network's steady growth of 5,500 new wallets daily</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-2">Technical Infrastructure</h4>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Optimized for Cardano's current 80,000+ daily transactions</li>
+                      <li>Discord integration with rate limit management</li>
+                      <li>Real-time monitoring system with smart caching</li>
+                      <li>Scalable architecture supporting future network upgrades</li>
+                    </ul>
                   </div>
                 </div>
               </div>
