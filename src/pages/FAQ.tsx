@@ -40,7 +40,7 @@ const FAQ = () => {
     },
     {
       question: "Does the token requirement change?",
-      answer: "Yes, the required token amount adjusts with market value to maintain a consistent entry cost. This means early adopters can benefit from token value growth while new users can always join at a fair price."
+      answer: "Yes, while the entry cost remains fixed at 20 ADA, the amount of $BONE tokens you receive adjusts with market cap. This ensures fair access for all users while rewarding early adopters who may receive more tokens for the same entry cost when market cap is lower."
     },
     {
       question: "What other features are available?",
