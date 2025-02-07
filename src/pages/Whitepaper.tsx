@@ -216,7 +216,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      Our system monitors the Cardano blockchain and processes transactions to the users DM's. Your primary wallet requires BONE tokens and verification, but after that's set up, you can track any additional wallets you want. The entry cost is fixed at roughly 20 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Our focus is on providing fast and entertaining AI commentary with a more engaging experience.
+                      WalletPup is a revolutionary Discord bot that brings real time wallet monitoring to the Cardano blockchain. Our system processes transactions and delivers them directly to your DMs, complete with AI generated commentary that makes tracking your assets both informative and entertaining.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Monitor ADA, tokens, and NFTs</li>
@@ -232,7 +232,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Seamless Discord Integration</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      WalletPup lives in Discord, making it incredibly easy to interact with. Add wallets, manage your tracked addresses, and receive notifications right where you spend your time.
+                      The platform introduces a unique token based access system. Users need to hold $BONE tokens to verify their primary wallet, unlocking the ability to monitor multiple addresses. This creates a sustainable ecosystem where token requirements adjust based on market cap, ensuring fair access for all users.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Simple command interface</li>
@@ -248,7 +248,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Built for Security</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      Security is our top priority. We only work with public blockchain data and Discord's secure messaging system to protect your privacy.
+                      Our focus on user experience sets us apart. Beyond basic transaction monitoring, WalletPup offers smart alerts, customizable notifications, and AI driven insights that help you stay informed about your Cardano assets in an engaging way.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>No sensitive data storage</li>

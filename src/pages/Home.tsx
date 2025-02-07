@@ -14,7 +14,7 @@ const Home = () => {
                 Your Personal Cardano Wallet Assistant
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl hover:scale-105 transition-transform duration-300">
-                Get real time DM notifications with AI powered insights on your wallet activity.
+                Get instant DM notifications with AI powered insights about your wallet activity.
               </p>
             </div>
           </AnimatedElement>
@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Get $BONE Tokens</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Hold required $BONE tokens in your Cardano wallet to access the service.
+                  Hold the required $BONE tokens in your Cardano wallet to access our services.
                 </p>
                 <Link
                   to="/bone"
@@ -60,7 +60,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Join Discord</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Join our Discord server and start a DM with the WalletPup bot.
+                  Join our Discord server and connect with the WalletPup bot.
                 </p>
                 <a
                   href="https://discord.gg/d99FBA64Qf"
@@ -81,7 +81,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Add Your Wallet</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  /add command to set up your primary wallet, then add up to 9 more wallets.
+                  Use /add command to set up your primary wallet and add up to 9 more wallets.
                 </p>
                 <Link
                   to="/commands"

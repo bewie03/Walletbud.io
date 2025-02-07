@@ -12,15 +12,15 @@ const FAQ = () => {
   const faqs: FAQItem[] = [
     {
       question: "What is WalletPup?",
-      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our Discord bot not only monitors wallet addresses but provides entertaining insights about your transactions. Every time there is activity in your wallet, WalletPup delivers both the transaction details and witty personalized commentary about what just happened."
+      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our Discord bot monitors wallet addresses and provides entertaining insights about your transactions. Every time there is activity in your wallet, WalletPup delivers both the transaction details and witty personalized commentary about what just happened."
     },
     {
       question: "How do I set up my wallets?",
-      answer: "Start by using /add with your first wallet address - this becomes your primary wallet and needs to hold BONE tokens. After adding it, verify ownership using the /verifywallet command. Once your primary wallet is verified, you can use /add to track up to 9 additional wallets - these don't need verification or BONE tokens."
+      answer: "Start by using /add with your first wallet address. This becomes your primary wallet and needs to hold BONE tokens. After adding it, verify ownership using the /verifywallet command. Once your primary wallet is verified, you can use /add to track up to 9 additional wallets without needing verification or BONE tokens."
     },
     {
       question: "What makes WalletPup unique?",
-      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our bot does not just notify you about transactions, it analyzes them and provides entertaining insights and comments about your wallet activity. Whether you are making trades, collecting NFTs, or receiving tokens, WalletPup adds a fun, personal touch to every notification."
+      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our bot doesn't just notify you about transactions, it analyzes them and provides entertaining insights about your wallet activity. Whether you are making trades, collecting NFTs, or receiving tokens, WalletPup adds a fun personal touch to every notification."
     },
     {
       question: "Is WalletPup secure?",
