@@ -472,30 +472,40 @@ const Whitepaper = () => {
                     <h4 className="text-lg font-semibold text-white mb-2">Total System Capacity</h4>
                     <p className="mb-2">Based on our total supply of 1B $BONE tokens and dynamic requirement system:</p>
                     <ul className="list-disc pl-6 space-y-1">
-                      <li>Initial capacity: 5,000 primary wallets (1B ÷ 200,000)</li>
-                      <li>Each user can track up to 9 additional wallets</li>
-                      <li>Maximum initial monitoring capacity: 50,000 wallets</li>
+                      <li>Initial requirement: 200,000 $BONE per primary wallet</li>
+                      <li>Each user can monitor up to 9 additional wallets</li>
+                      <li>Initial active users: 5,000 (1B ÷ 200,000)</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-2">Token Recycling Mechanism</h4>
+                    <p className="mb-2">As market cap grows, token requirements decrease and excess tokens become available:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>When requirements halve, the same supply can support 2x users</li>
+                      <li>Previous holders can sell excess tokens to new users</li>
+                      <li>This creates a self-sustaining ecosystem for growth</li>
                     </ul>
                   </div>
 
                   <div className="bg-blue-800/50 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Market-Driven Growth</h4>
-                    <p className="mb-2">Our system scales with market milestones to accommodate network growth:</p>
+                    <p className="mb-2">Our system naturally scales with market milestones:</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <h5 className="text-white font-medium mb-1">Early Stage Capacity</h5>
+                        <h5 className="text-white font-medium mb-1">Early Stage</h5>
                         <ul className="list-disc pl-6 space-y-1 text-sm">
-                          <li>$100K MCAP: 5,000 users (50K wallets)</li>
-                          <li>$200K MCAP: 10,000 users (100K wallets)</li>
-                          <li>$500K MCAP: 25,000 users (250K wallets)</li>
+                          <li>$100K MCAP: 200K requirement (5K users)</li>
+                          <li>$200K MCAP: 100K requirement (10K users)</li>
+                          <li>$500K MCAP: 40K requirement (25K users)</li>
                         </ul>
                       </div>
                       <div>
-                        <h5 className="text-white font-medium mb-1">Growth Stage Capacity</h5>
+                        <h5 className="text-white font-medium mb-1">Growth Stage</h5>
                         <ul className="list-disc pl-6 space-y-1 text-sm">
-                          <li>$1M MCAP: 50,000 users (500K wallets)</li>
-                          <li>$2M MCAP: 100,000 users (1M wallets)</li>
-                          <li>$5M MCAP: 250,000 users (2.5M wallets)</li>
+                          <li>$1M MCAP: 20K requirement (50K users)</li>
+                          <li>$2M MCAP: 10K requirement (100K users)</li>
+                          <li>$5M MCAP: 4K requirement (250K users)</li>
                         </ul>
                       </div>
                     </div>
@@ -504,20 +514,20 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/50 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Network Coverage Analysis</h4>
                     <ul className="list-disc pl-6 space-y-2">
-                      <li>Current daily active addresses (50,000+) could be fully covered by our growth stage capacity</li>
-                      <li>System can handle 5x current network activity, ready for future growth</li>
-                      <li>Designed to scale with Cardano's Layer 2 solutions (Hydra) and increased adoption</li>
-                      <li>Accommodates the network's steady growth of 5,500 new wallets daily</li>
+                      <li>At $5M MCAP, system can support 250K primary wallets (2.5M total monitored wallets)</li>
+                      <li>This covers current daily active addresses (50K+) with room for 5x growth</li>
+                      <li>System can absorb current new wallet growth (5.5K daily)</li>
+                      <li>Scalable to accommodate future Layer 2 solutions (Hydra)</li>
                     </ul>
                   </div>
 
                   <div className="bg-blue-800/50 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Technical Infrastructure</h4>
                     <ul className="list-disc pl-6 space-y-2">
-                      <li>Optimized for Cardano's current 80,000+ daily transactions</li>
-                      <li>Discord integration with rate limit management</li>
-                      <li>Real-time monitoring system with smart caching</li>
-                      <li>Scalable architecture supporting future network upgrades</li>
+                      <li>Optimized for current network load (80K+ daily transactions)</li>
+                      <li>Discord rate limits handled through smart queuing</li>
+                      <li>Efficient caching reduces blockchain API calls</li>
+                      <li>Load-balanced for high availability</li>
                     </ul>
                   </div>
                 </div>
