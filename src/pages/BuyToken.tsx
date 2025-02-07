@@ -145,8 +145,12 @@ const BONE = () => {
           >
             <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-4">Token Requirements</h3>
+              <h4 className="text-lg font-semibold text-white mb-2">Entry Cost</h4>
+              <p className="text-blue-100 mb-4">
+                Fixed at roughly 50 ADA worth of $BONE tokens. This covers monitoring for up to 10 wallets (5 ADA per wallet), making it an excellent value for users tracking multiple addresses.
+              </p>
               <p className="text-blue-100 text-sm mb-6">
-                Token requirements decrease with market cap growth while maintaining a 20 ADA entry cost.
+                Token requirements decrease with market cap growth while maintaining a 50 ADA entry cost.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

@@ -216,7 +216,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Smart Monitoring</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      WalletPup is a revolutionary Discord bot that brings real time wallet monitoring to the Cardano blockchain. Our system processes transactions and delivers them directly to your DMs, complete with AI generated commentary that makes tracking your assets both informative and entertaining.
+                      Our system monitors the Cardano blockchain and processes transactions to your DMs. Your primary wallet requires BONE tokens and verification, but after setup you can track any additional wallets you want. The entry cost is fixed at roughly 50 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Our focus is on providing fast and entertaining AI commentary with an engaging experience.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Monitor ADA, tokens, and NFTs</li>
@@ -330,7 +330,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Token Utility & Requirements</h4>
                     </div>
                     <p className="text-blue-100 mb-4">
-                      $BONE is the utility token that powers the WalletPup ecosystem. The entry cost is fixed at roughly 20 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Unlike traditional subscription models, our token gives users perpetual access to services while maintaining their asset value. The amount required decreases as our market cap grows, creating a fair system that rewards early adopters.
+                      $BONE is the utility token that powers the WalletPup ecosystem. The entry cost is fixed at roughly 50 ADA worth of $BONE tokens, with the token amount adjusting based on market cap to ensure fair access for all users. Unlike traditional subscription models, our token gives users perpetual access to services while maintaining their asset value. The amount required decreases as our market cap grows, creating a fair system that rewards early adopters.
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Primary wallet holds BONE tokens, additional wallets have no token requirement</li>
@@ -655,7 +655,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Sustainable Tokenomics</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our dynamic BONE requirement system is designed to maintain service quality as we grow. With a fixed entry cost of 20 ADA, users receive varying amounts of $BONE tokens based on the current market cap. With 95% of tokens allocated to the public and only 5% reserved for team and community events, we've created a fair ecosystem where both new and existing users benefit from the project's success.
+                      Our dynamic BONE requirement system is designed to maintain service quality as we grow. With a fixed entry cost of 50 ADA, users receive varying amounts of $BONE tokens based on the current market cap. With 95% of tokens allocated to the public and only 5% reserved for team and community events, we've created a fair ecosystem where both new and existing users benefit from the project's success.
                     </p>
                   </div>
 

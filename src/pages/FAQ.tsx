@@ -40,7 +40,7 @@ const FAQ = () => {
     },
     {
       question: "Does the token requirement change?",
-      answer: "Yes, while the entry cost remains fixed at around 20 ADA, the amount of $BONE tokens you receive adjusts with market cap. This ensures fair access for all users while rewarding early adopters who may receive more tokens for the same entry cost when market cap is lower."
+      answer: "Yes, while the entry cost remains fixed at around 50 ADA, the amount of $BONE tokens you receive adjusts with market cap. This ensures fair access for all users while rewarding early adopters who may receive more tokens for the same entry cost when market cap is lower."
     },
     {
       question: "How do I get support?",
