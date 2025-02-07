@@ -41,15 +41,15 @@ const Whitepaper = () => {
                   Advanced Cardano Wallet Monitoring and Discord Integration
                 </p>
                 <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                  Introducing WalletBud, a powerful Cardano wallet monitoring platform that lets you connect your Discord account to your wallet. Our simple system allows users to link their Discord username with their wallet, making it easy for anyone to search and find your wallets.
+                  Introducing WalletPup, a powerful Cardano wallet monitoring platform that lets you connect your Discord account to your wallet. Our simple system allows users to link their Discord username with their wallet, making it easy for anyone to search and find your wallets.
                 </p>
                 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  WalletBud brings Discord and the Cardano blockchain together seamlessly. After connecting your Discord account, our advanced AI analyzes your wallet activity in real time, sending you precise updates about ADA transactions, token movements, and NFT activities through personalized Discord notifications.
+                  WalletPup brings Discord and the Cardano blockchain together seamlessly. After connecting your Discord account, our advanced AI analyzes your wallet activity in real time, sending you precise updates about ADA transactions, token movements, and NFT activities through personalized Discord notifications.
                 </p>
 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  Say goodbye to disconnected wallet monitoring. Whether you're trading, collecting NFTs, or managing tokens, WalletBud keeps you informed through Discord and makes it simple for others to find your connected wallets by searching your Discord username.
+                  Say goodbye to disconnected wallet monitoring. Whether you're trading, collecting NFTs, or managing tokens, WalletPup keeps you informed through Discord and makes it simple for others to find your connected wallets by searching your Discord username.
                 </p>
               </div>
             </div>
@@ -81,7 +81,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Beginning</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our journey began with inspiration from WalletBud, a pioneering project that offered free wallet tracking services on Cardano. While innovative, it faced reliability challenges. Later, ZING emerged with improved detection speeds, setting new standards for transaction monitoring.
+                      Our journey began with inspiration from WalletPup, a pioneering project that offered free wallet tracking services on Cardano. While innovative, it faced reliability challenges. Later, ZING emerged with improved detection speeds, setting new standards for transaction monitoring.
                     </p>
                   </div>
 
@@ -590,10 +590,10 @@ const Whitepaper = () => {
           {/* Cover */}
           <div className="bg-[#1e3a8a]/50 rounded-t-xl text-center py-16 px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              WalletBud Whitepaper
+              WalletPup Whitepaper
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-4">
-              A Comprehensive Guide to the WalletBud Ecosystem
+              A Comprehensive Guide to the WalletPup Ecosystem
             </p>
             <p className="text-sm text-blue-200">
               Version 1.0 • January 2025
@@ -633,7 +633,7 @@ const Whitepaper = () => {
           {/* Footer */}
           <div className="border-t border-blue-700 py-8 text-center rounded-b-xl">
             <p className="text-blue-200 text-sm">
-              &copy; 2025 WalletBud | All rights reserved
+              &copy; 2025 WalletPup | All rights reserved
             </p>
           </div>
         </div>
