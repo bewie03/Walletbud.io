@@ -6,7 +6,7 @@ const Guide = () => {
     {
       number: '01',
       title: 'Get BONE Tokens',
-      description: 'Purchase $BONE tokens for a fixed entry cost of 20 ADA from a DEX for your primary wallet.',
+      description: 'Purchase $BONE tokens for roughly the cost of 20 ADA from a DEX for your primary wallet.',
       link: '/bone',
       linkText: 'Buy Tokens'
     },
