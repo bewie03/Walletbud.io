@@ -139,10 +139,10 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700">
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Wallet Management */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                   <FaRobot className="text-blue-400" /> Core Commands
                 </h3>
@@ -167,7 +167,7 @@ const Whitepaper = () => {
               </div>
 
               {/* Tracking Features */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                   <FaSearch className="text-blue-400" /> Advanced Features
                 </h3>
@@ -192,7 +192,7 @@ const Whitepaper = () => {
               </div>
 
               {/* System Features */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                   <FaChartPie className="text-blue-400" /> System Features
                 </h3>
@@ -217,7 +217,7 @@ const Whitepaper = () => {
               </div>
 
               {/* Security Features */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700">
+              <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                   <FaShieldAlt className="text-blue-400" /> Security & Privacy
                 </h3>
