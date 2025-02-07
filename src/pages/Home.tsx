@@ -23,7 +23,7 @@ const Home = () => {
 
       {/* Get Started Section */}
       <div className="w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <AnimatedElement animation="fadeIn" delay={1}>
             <div className="text-center mb-12">
               <h2 className="text-3xl font-extrabold text-white sm:text-4xl hover:scale-105 transition-transform duration-300">
@@ -60,7 +60,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Join Discord</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Join our Discord server and connect with the WalletPup bot.
+                  Join our Discord server follow setup instructions and connect with the WalletPup bot.
                 </p>
                 <a
                   href="https://discord.gg/d99FBA64Qf"

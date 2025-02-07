@@ -66,7 +66,7 @@ const BONE = () => {
             <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-6">Monitor</h3>
               <p className="text-blue-100 text-lg mb-4">
-                Receive real-time Discord notifications with AI-powered insights
+                Receive real time Discord notifications with AI powered insights
               </p>
               <ul className="text-blue-200 space-y-2">
                 <li>• Transaction alerts</li>
@@ -80,7 +80,7 @@ const BONE = () => {
                 Early access to a growing ecosystem with decreasing token requirements
               </p>
               <ul className="text-blue-200 space-y-2">
-                <li>• Market-driven token requirement system</li>
+                <li>• Market driven token requirement system</li>
                 <li>• Active development and feature expansion</li>
                 <li>• Community-focused growth model</li>
               </ul>
