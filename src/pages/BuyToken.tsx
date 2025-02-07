@@ -61,7 +61,7 @@ const BONE = () => {
                   <div className="space-y-4">
                     <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
                       <p className="text-blue-100 mb-4 hover:scale-[1.02] transition-transform duration-300">
-                        The amount of $BONE tokens required decreases as our market cap grows, giving fair access for everyone.
+                        The amount of $BONE tokens required adjusts with market cap while maintaining a consistent 20 ADA entry cost, ensuring fair access for everyone.
                       </p>
                     </div>
                     
@@ -71,20 +71,20 @@ const BONE = () => {
                         <div className="space-y-3">
                           <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                             <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
-                              <span className="text-blue-200">$1M MCAP</span>
-                              <span className="text-white font-bold">10,000 $BONE</span>
+                              <span className="text-blue-200">$100K MCAP</span>
+                              <span className="text-white font-bold">200,000 $BONE</span>
                             </div>
                           </div>
                           <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                             <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
-                              <span className="text-blue-200">$5M MCAP</span>
-                              <span className="text-white font-bold">2,000 $BONE</span>
+                              <span className="text-blue-200">$200K MCAP</span>
+                              <span className="text-white font-bold">100,000 $BONE</span>
                             </div>
                           </div>
                           <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                             <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
-                              <span className="text-blue-200">$10M MCAP</span>
-                              <span className="text-white font-bold">1,000 $BONE</span>
+                              <span className="text-blue-200">$500K MCAP</span>
+                              <span className="text-white font-bold">40,000 $BONE</span>
                             </div>
                           </div>
                         </div>
@@ -94,20 +94,20 @@ const BONE = () => {
                         <div className="space-y-3">
                           <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                             <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
-                              <span className="text-blue-200">$20M MCAP</span>
-                              <span className="text-white font-bold">500 $BONE</span>
+                              <span className="text-blue-200">$1M MCAP</span>
+                              <span className="text-white font-bold">20,000 $BONE</span>
                             </div>
                           </div>
                           <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                             <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
-                              <span className="text-blue-200">$50M MCAP</span>
-                              <span className="text-white font-bold">200 $BONE</span>
+                              <span className="text-blue-200">$2M MCAP</span>
+                              <span className="text-white font-bold">10,000 $BONE</span>
                             </div>
                           </div>
                           <div className="bg-blue-900 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                             <div className="flex justify-between items-center hover:scale-[1.02] transition-transform duration-300">
-                              <span className="text-blue-200">$100M MCAP</span>
-                              <span className="text-white font-bold">100 $BONE</span>
+                              <span className="text-blue-200">$5M MCAP</span>
+                              <span className="text-white font-bold">4,000 $BONE</span>
                             </div>
                           </div>
                         </div>
@@ -116,7 +116,7 @@ const BONE = () => {
 
                     <div className="bg-blue-900 p-4 rounded-lg text-center hover:scale-[1.02] transition-all duration-300">
                       <p className="text-blue-100 font-semibold hover:scale-[1.02] transition-transform duration-300">
-                        Token requirement never increases - only decreases as market cap grows
+                        Entry cost remains fixed at 20 ADA worth of $BONE tokens - token amount adjusts with market cap
                       </p>
                     </div>
                   </div>
@@ -131,7 +131,7 @@ const BONE = () => {
                     <div className="bg-blue-900 p-4 rounded-lg hover:scale-[1.02] transition-all duration-300">
                       <h4 className="text-lg font-semibold text-white mb-3 hover:scale-105 transition-transform duration-300">How It Works</h4>
                       <p className="text-blue-100 mb-4 hover:scale-[1.02] transition-transform duration-300">
-                        Our innovative token system ensures fair access while rewarding early adopters. The entry cost remains stable at approximately 10 ADA worth of $BONE tokens per wallet.
+                        Our innovative token system ensures fair access with a fixed entry cost. The entry cost remains stable at 20 ADA worth of $BONE tokens per wallet, with the token amount adjusting based on market cap.
                       </p>
                       <ul className="list-disc text-blue-100 space-y-2 ml-4">
                         <li className="hover:scale-[1.02] transition-transform duration-300">Track up to 10 wallets simultaneously</li>
@@ -176,8 +176,8 @@ const BONE = () => {
                         </div>
                         <div className="flex flex-col items-center bg-blue-800/50 p-3 rounded-lg hover:scale-[1.02] transition-all duration-300">
                           <span className="text-blue-200 text-sm">Entry Cost</span>
-                          <span className="text-white font-bold text-xl">Dynamic</span>
-                          <span className="text-blue-300 text-sm">based on mcap</span>
+                          <span className="text-white font-bold text-xl">20 ADA</span>
+                          <span className="text-blue-300 text-sm">worth of $BONE</span>
                         </div>
                       </div>
                     </div>
