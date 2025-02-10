@@ -19,7 +19,7 @@ const Doghouse = () => {
   const dogs = [
     { name: 'Afghan Hound', title: 'The Wannabe British Person', description: 'A posh personality that tries (and adorably fails) to be British.', traits: ['Says "innit" and "bloody hell" frequently', 'Always talking about tea time', 'Tries to be posh but uses slang incorrectly'], category: 'personality' },
     { name: 'Akita', title: 'The Martial Arts Sensei', description: 'A wise and disciplined mentor focused on honor and tradition.', traits: ['Focused on discipline and honor', 'Uses martial arts terms and wise sayings', 'Very formal and respectful'], category: 'professional' },
-    { name: 'Australian Cattle Dog', title: 'The Micromanaging Middle Manager', description: 'Always creating spreadsheets and scheduling unnecessary meetings.', traits: ['Uses corporate buzzwords', 'Schedules unnecessary meetings', 'Obsessed with efficiency'], category: 'professional' },
+    { name: 'Australian Cattle Dog', title: 'The Micromanaging Middle Manager', description: 'Always creating spreadsheets and scheduling unnecessary meetings.', traits: ['Uses corporate buzzwords', 'Schedules unnecessary meetings', 'Obsessed with efficiency'], category: 'Lifestyle' },
     { name: 'Australian Shepherd', title: 'The Casual Aussie', description: 'A laid-back personality that loves using Aussie slang.', traits: ['Uses "yeah nah" and "mate"', 'Calls bad things "cooked"', 'Mentions smoko and servo'], category: 'personality' },
     { name: 'Basenji', title: 'The Tech Startup Founder', description: 'Always pitching new ideas and disrupting industries.', traits: ['Everything is "disrupting an industry"', 'Loves using tech buzzwords', 'Always pitching new ideas'], category: 'tech' },
     { name: 'Basset Hound', title: 'The Perpetually Hungover Dude', description: 'Always tired and in need of coffee.', traits: ['Always tired and slow', 'Complains about noise', 'Needs coffee constantly'], category: 'lifestyle' },
@@ -64,7 +64,7 @@ const Doghouse = () => {
     { name: 'Shih Tzu', title: 'The Retired Socialite', description: 'All about etiquette and formal language.', traits: ['Very proper', 'Uses formal language', 'Obsessed with etiquette'], category: 'lifestyle' },
     { name: 'Springer Spaniel', title: 'The MLM Hun', description: 'Overly positive and always selling something.', traits: ['Uses excessive positivity', 'Always selling something', 'Everything is an opportunity'], category: 'professional' },
     { name: 'Standard Poodle', title: 'The Struggling Artist', description: 'Feels misunderstood and uses artistic metaphors.', traits: ['Everything is deep', 'Uses artistic metaphors', 'Feels misunderstood'], category: 'creative' },
-    { name: 'Weimaraner', title: 'The Conspiracy Theorist', description: 'Sees patterns everywhere and trusts no one.', traits: ['Very paranoid', 'Trusts no one', 'Sees patterns everywhere'], category: 'personality' },
+    { name: 'Weimaraner', title: 'The Conspiracy Theorist', description: 'Sees patterns everywhere and trusts no one.', traits: ['Very paranoid', 'Trusts no one', 'Sees patterns everywhere'], category: 'lifestyle' },
     { name: 'Whippet', title: 'The Track Star', description: 'Everything is a race and highly competitive.', traits: ['Uses sports metaphors', 'Very competitive', 'Everything is a race'], category: 'professional' },
     { name: 'Yorkshire Terrier', title: 'The New York City Fashion Editor', description: 'Everything is fabulous or terrible.', traits: ['Uses fashion magazine language', 'Very critical', 'Everything is fabulous or terrible'], category: 'creative' }
   ];
@@ -107,13 +107,16 @@ const Doghouse = () => {
           {/* Search and Filter */}
           <div className="mb-12">
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-              <div className="relative w-full md:w-96">
+              <div className="flex items-center gap-4">
+                <div className="px-4 py-3 bg-blue-800 border border-blue-700 rounded-lg">
+                  <p className="text-blue-300 font-medium">Total Dogs: {dogs.length}</p>
+                </div>
                 <input
                   type="text"
                   placeholder="Search personalities..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full px-4 py-3 bg-blue-800 border border-blue-700 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full md:w-96 px-4 py-3 bg-blue-800 border border-blue-700 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 <FaSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-300" />
               </div>
