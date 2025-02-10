@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Outlet } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound'
 import PageTransition from './components/PageTransition'
 import Guide from './pages/Guide'
 import LoadingScreen from './components/LoadingScreen'
+import Doghouse from './pages/Doghouse'
 
 function App() {
   const location = useLocation();
@@ -53,13 +54,16 @@ function App() {
           >
             <AnimatePresence mode="wait">
               <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-                <Route path="/commands" element={<PageTransition><Commands /></PageTransition>} />
-                <Route path="/faq" element={<PageTransition><FAQ /></PageTransition>} />
-                <Route path="/whitepaper" element={<PageTransition><Whitepaper /></PageTransition>} />
-                <Route path="/bone" element={<PageTransition><BONE /></PageTransition>} />
-                <Route path="/guide" element={<PageTransition><Guide /></PageTransition>} />
-                <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+                <Route path="/" element={<PageTransition><Outlet /></PageTransition>}>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/commands" element={<Commands />} />
+                  <Route path="/faq" element={<FAQ />} />
+                  <Route path="/whitepaper" element={<Whitepaper />} />
+                  <Route path="/bone" element={<BONE />} />
+                  <Route path="/guide" element={<Guide />} />
+                  <Route path="/doghouse" element={<Doghouse />} />
+                  <Route path="*" element={<NotFound />} />
+                </Route>
               </Routes>
             </AnimatePresence>
           </motion.main>

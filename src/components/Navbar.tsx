@@ -46,6 +46,12 @@ const Navbar = () => {
               $BONE
             </Link>
             <Link
+              to="/doghouse"
+              className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
+            >
+              Doghouse
+            </Link>
+            <Link
               to="/commands"
               className="text-lg font-medium text-blue-100 hover:text-white hover:scale-110 transition-all duration-300"
             >
@@ -108,6 +114,13 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
           >
             $BONE
+          </Link>
+          <Link
+            to="/doghouse"
+            className="block py-2 text-lg font-medium text-blue-100 hover:text-white hover:scale-105 transition-all duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Doghouse
           </Link>
           <Link
             to="/commands"
