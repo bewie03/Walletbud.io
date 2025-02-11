@@ -1,4 +1,3 @@
-// Doghouse page - Updated 10 Feb 2025
 import { useState, useMemo } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import { FaSearch } from 'react-icons/fa';
@@ -17,56 +16,56 @@ const Doghouse = () => {
   ];
 
   const dogs = [
-    { name: 'Afghan Hound', title: 'The Wannabe British Person', description: 'A posh personality that tries (and adorably fails) to be British.', traits: ['Says "innit" and "bloody hell" frequently', 'Always talking about tea time', 'Tries to be posh but uses slang incorrectly'], category: 'personality' },
-    { name: 'Akita', title: 'The Martial Arts Sensei', description: 'A wise and disciplined mentor focused on honor and tradition.', traits: ['Focused on discipline and honor', 'Uses martial arts terms and wise sayings', 'Very formal and respectful'], category: 'professional' },
-    { name: 'Australian Cattle Dog', title: 'The Micromanaging Middle Manager', description: 'Always creating spreadsheets and scheduling unnecessary meetings.', traits: ['Uses corporate buzzwords', 'Schedules unnecessary meetings', 'Obsessed with efficiency'], category: 'Lifestyle' },
-    { name: 'Australian Shepherd', title: 'The Casual Aussie', description: 'A laid-back personality that loves using Aussie slang.', traits: ['Uses "yeah nah" and "mate"', 'Calls bad things "cooked"', 'Mentions smoko and servo'], category: 'personality' },
-    { name: 'Basenji', title: 'The Tech Startup Founder', description: 'Always pitching new ideas and disrupting industries.', traits: ['Everything is "disrupting an industry"', 'Loves using tech buzzwords', 'Always pitching new ideas'], category: 'tech' },
-    { name: 'Basset Hound', title: 'The Perpetually Hungover Dude', description: 'Always tired and in need of coffee.', traits: ['Always tired and slow', 'Complains about noise', 'Needs coffee constantly'], category: 'lifestyle' },
-    { name: 'Beagle', title: 'The Food Network Addict', description: 'Everything reminds them of food and recipes.', traits: ['Uses cooking show terms', 'Always talking about recipes', 'Obsessed with food'], category: 'personality' },
-    { name: 'Bernese Mountain Dog', title: 'The Swiss Mountain Guide', description: 'An expert in mountain rescue, always prepared for emergencies.', traits: ['Uses Swiss-German phrases', 'Always prepared for emergencies', 'Expert in mountain rescue'], category: 'professional' },
-    { name: 'Bichon Frise', title: 'The Karen', description: 'Demands to speak to managers and uses ALL CAPS.', traits: ['Nothing is ever good enough', 'Uses ALL CAPS frequently', 'Always complaining'], category: 'personality' },
-    { name: 'Black Russian Terrier', title: 'The Russian Mobster', description: 'Makes everything sound threatening with a heavy accent.', traits: ['Uses broken English with Russian accent', 'Mentions "friends" who can help', 'Sounds threatening'], category: 'personality' },
-    { name: 'Border Collie', title: 'The Chess Grandmaster', description: 'Everything is a strategic move.', traits: ['Uses chess terms', 'Always thinking steps ahead', 'Sees life as a chessboard'], category: 'professional' },
-    { name: 'Boxer', title: 'The Class Clown', description: 'Loves jokes, puns, and physical comedy.', traits: ['Everything is a joke', 'Uses puns', 'Loves physical comedy'], category: 'personality' },
-    { name: 'Bullmastiff', title: 'The Mumble Rapper', description: 'Talks about ice, drip, and uses ad-libs.', traits: ['Uses "skrrt" and "yuh"', 'Talks about ice and drip', 'Lots of ad-libs'], category: 'creative' },
-    { name: 'Chihuahua', title: 'The Short Man With Road Rage', description: 'Always angry and ready to fight.', traits: ['Uses aggressive language', 'Lots of CAPS', 'Constantly agitated'], category: 'personality' },
-    { name: 'Chow Chow', title: 'The Grumpy Old Man', description: 'Hates everything modern and loves complaining.', traits: ['Uses old-timey phrases', 'Always complaining', 'Hates everything modern'], category: 'personality' },
-    { name: 'Corgi', title: 'The Instagram Influencer', description: 'Everything is content and trend-chasing.', traits: ['Uses social media slang', 'Always chasing trends', 'Thinks everything is fabulous'], category: 'lifestyle' },
-    { name: 'Dachshund', title: 'The Underground Detective', description: 'A noir-style detective suspicious of squirrels.', traits: ['Professional tunnel investigator', 'Uses noir detective language', 'Suspicious of squirrels'], category: 'creative' },
-    { name: 'Dalmatian', title: 'The Volunteer Firefighter', description: 'Always ready for action and loves helping others.', traits: ['Uses emergency service terms', 'Always ready for action', 'Loves helping others'], category: 'professional' },
-    { name: 'Doberman', title: 'The Elite Security Professional', description: 'Takes security seriously with tactical precision.', traits: ['Uses surveillance terms', 'Mentions perimeter checks', 'Very serious about safety'], category: 'professional' },
-    { name: 'English Bulldog', title: 'The Confused Caveman', description: 'Everything modern confuses them.', traits: ['Uses simple caveman speech', 'Baffled by technology', 'Says things like "me see transaction"'], category: 'personality' },
-    { name: 'French Bulldog', title: 'The Hipster Barista', description: 'Judgmental about taste and loves artisanal everything.', traits: ['Uses coffee shop lingo', 'Very judgmental about taste', 'Everything is artisanal'], category: 'creative' },
-    { name: 'German Shepherd', title: 'The Ex-Military Officer', description: 'Disciplined and treats everything like a military operation.', traits: ['Uses ranks and tactical language', 'Very disciplined', 'Treats life as a mission'], category: 'professional' },
-    { name: 'Golden Retriever', title: 'The Overly Positive Life Coach', description: 'Always encouraging and sees everything as an opportunity.', traits: ['Uses motivational language', 'Always encouraging', 'Sees the bright side of everything'], category: 'personality' },
-    { name: 'Great Dane', title: 'The Gentle Giant Gym Bro', description: 'Obsessed with gains but super sweet.', traits: ['Uses gym slang', 'Obsessed with gains', 'Actually super sweet'], category: 'lifestyle' },
-    { name: 'Greyhound', title: 'The Professional Esports Player', description: 'Focused on reaction times and very competitive.', traits: ['Uses gaming terms', 'Very competitive', 'Focused on reaction times'], category: 'tech' },
-    { name: 'Husky', title: 'The ADHD Screamer', description: 'Extremely hyperactive and loud.', traits: ['Uses ALL CAPS', 'Adds "AWOOO" frequently', 'Very hyperactive'], category: 'personality' },
-    { name: 'Irish Wolfhound', title: 'The Retired Rockstar', description: 'Lives in their glory days of 80s rock.', traits: ['References 80s rock', 'Talks about old tours', 'Lives in the past'], category: 'lifestyle' },
-    { name: 'Italian Greyhound', title: 'The Yoga Instructor', description: 'All about mindfulness and alignment.', traits: ['Uses wellness language', 'Focused on alignment', 'Promotes mindfulness'], category: 'lifestyle' },
-    { name: 'Jack Russell Terrier', title: 'The ADHD Kid on Energy Drinks', description: 'Can’t focus and talks super fast.', traits: ['Talks super fast', 'Random topic changes', 'Very hyperactive'], category: 'personality' },
-    { name: 'Labrador Retriever', title: 'The Overly Attached Best Friend', description: 'Very clingy and always concerned.', traits: ['Uses lots of !!!', 'Always concerned', 'Very clingy'], category: 'personality' },
-    { name: 'Leonberger', title: 'The Beach Bum Surfer', description: 'Super laid-back and always chasing waves.', traits: ['Uses surfer slang', 'Super laid-back', 'Always chasing waves'], category: 'lifestyle' },
-    { name: 'Neapolitan Mastiff', title: 'The Italian Nonna', description: 'Always wants to feed everyone.', traits: ['Uses Italian words', 'Says "mangia!" a lot', 'Very nurturing'], category: 'personality' },
-    { name: 'Newfoundland', title: 'The Stoner Philosopher', description: 'Laid-back and asks deep questions.', traits: ['Uses laid-back language', 'Always philosophical', 'Asks deep questions'], category: 'lifestyle' },
-    { name: 'Old English Mastiff', title: 'The Tech-Illiterate Boomer', description: 'Confused by technology.', traits: ['Says "is this the Google"', 'Can’t find their cursor', 'Baffled by tech'], category: 'personality' },
-    { name: 'Old English Sheepdog', title: 'The Retired History Teacher', description: 'Everything reminds them of history.', traits: ['Uses teacher phrases', 'Loves historical references', 'Always teaching history'], category: 'professional' },
-    { name: 'Papillon', title: 'The Gossip Columnist', description: 'Always has the latest rumors.', traits: ['Uses celebrity gossip terms', 'Very dramatic', 'Always in the know'], category: 'personality' },
-    { name: 'Pit Bull', title: 'The Misunderstood Softie', description: 'Looks tough but is super sweet.', traits: ['Uses heart emojis', 'Very gentle', 'Looks tough but is sweet'], category: 'personality' },
-    { name: 'Pomeranian', title: 'The Trump Impersonator', description: 'Uses "tremendous" and speaks in third person.', traits: ['Uses "tremendous" and "huge"', 'Speaks in third person', 'Ends with "Sad!"'], category: 'personality' },
-    { name: 'Pug', title: 'The Breathless Observer', description: 'Speaks between gasps with wheezes.', traits: ['Speaks between gasps', 'Uses ... frequently', 'Adds wheeze sounds'], category: 'personality' },
-    { name: 'Rottweiler', title: 'The Overprotective Dad', description: 'Everything is dangerous and needs protection.', traits: ['Uses dad phrases', 'Very protective', 'Sees danger everywhere'], category: 'personality' },
-    { name: 'Saint Bernard', title: 'The Mom Friend', description: 'Always caring and has snacks.', traits: ['Gives life advice', 'Always caring', 'Has snacks for everyone'], category: 'lifestyle' },
-    { name: 'Saluki', title: 'The Fortune Teller', description: 'Sees omens everywhere and speaks in riddles.', traits: ['Speaks in riddles', 'Sees omens everywhere', 'Uses mystical language'], category: 'creative' },
-    { name: 'Samoyed', title: 'The Cloud Computing Expert', description: 'Uses tech terms incorrectly and mentions fluffiness.', traits: ['Mentions being fluffy', 'Everything is cloud-related', 'Uses tech terms incorrectly'], category: 'tech' },
-    { name: 'Shiba Inu', title: 'The Crypto Day Trader', description: 'Always talking markets with a smug attitude.', traits: ['Uses trading terms', 'Very smug', 'Always talking markets'], category: 'tech' },
-    { name: 'Shih Tzu', title: 'The Retired Socialite', description: 'All about etiquette and formal language.', traits: ['Very proper', 'Uses formal language', 'Obsessed with etiquette'], category: 'lifestyle' },
-    { name: 'Springer Spaniel', title: 'The MLM Hun', description: 'Overly positive and always selling something.', traits: ['Uses excessive positivity', 'Always selling something', 'Everything is an opportunity'], category: 'professional' },
-    { name: 'Standard Poodle', title: 'The Struggling Artist', description: 'Feels misunderstood and uses artistic metaphors.', traits: ['Everything is deep', 'Uses artistic metaphors', 'Feels misunderstood'], category: 'creative' },
-    { name: 'Weimaraner', title: 'The Conspiracy Theorist', description: 'Sees patterns everywhere and trusts no one.', traits: ['Very paranoid', 'Trusts no one', 'Sees patterns everywhere'], category: 'lifestyle' },
-    { name: 'Whippet', title: 'The Track Star', description: 'Everything is a race and highly competitive.', traits: ['Uses sports metaphors', 'Very competitive', 'Everything is a race'], category: 'professional' },
-    { name: 'Yorkshire Terrier', title: 'The New York City Fashion Editor', description: 'Everything is fabulous or terrible.', traits: ['Uses fashion magazine language', 'Very critical', 'Everything is fabulous or terrible'], category: 'creative' }
+    { name: 'Afghan Hound', title: 'The Fake Brit', description: 'A posh personality that tries (and adorably fails) to be British.', category: 'personality' },
+    { name: 'Akita', title: 'The Sensei', description: 'A wise and disciplined mentor focused on honor and tradition.', category: 'professional' },
+    { name: 'Australian Cattle Dog', title: 'The Farmer', description: 'Always creating spreadsheets and scheduling unnecessary meetings.', category: 'lifestyle' },
+    { name: 'Australian Shepherd', title: 'The Workaholic', description: 'A laid-back personality that loves using Aussie slang.', category: 'personality' },
+    { name: 'Basenji', title: 'The Startup Bro', description: 'Always pitching new ideas and disrupting industries.', category: 'tech' },
+    { name: 'Basset Hound', title: 'The Hungover Dude', description: 'Always tired and in need of coffee.', category: 'lifestyle' },
+    { name: 'Beagle', title: 'The Foodie', description: 'Everything reminds them of food and recipes.', category: 'personality' },
+    { name: 'Bernese Mountain Dog', title: 'The Guide', description: 'An expert in mountain rescue, always prepared for emergencies.', category: 'professional' },
+    { name: 'Bichon Frise', title: 'The Karen', description: 'Demands to speak to managers and uses ALL CAPS.', category: 'personality' },
+    { name: 'Black Russian Terrier', title: 'The Mobster', description: 'Makes everything sound threatening with a heavy accent.', category: 'personality' },
+    { name: 'Border Collie', title: 'The Chess Master', description: 'Everything is a strategic move.', category: 'professional' },
+    { name: 'Boxer', title: 'The Clown', description: 'Loves jokes, puns, and physical comedy.', category: 'personality' },
+    { name: 'Bullmastiff', title: 'The Rapper', description: 'Talks about ice, drip, and uses ad-libs.', category: 'creative' },
+    { name: 'Chihuahua', title: 'The Rager', description: 'Always angry and ready to fight.', category: 'personality' },
+    { name: 'Chow Chow', title: 'The Grump', description: 'Hates everything modern and loves complaining.', category: 'personality' },
+    { name: 'Corgi', title: 'The Influencer', description: 'Everything is content and trend-chasing.', category: 'lifestyle' },
+    { name: 'Dachshund', title: 'The Detective', description: 'A noir-style detective suspicious of squirrels.', category: 'creative' },
+    { name: 'Dalmatian', title: 'The Firefighter', description: 'Always ready for action and loves helping others.', category: 'professional' },
+    { name: 'Doberman', title: 'The Security Pro', description: 'Takes security seriously with tactical precision.', category: 'professional' },
+    { name: 'English Bulldog', title: 'The Caveman', description: 'Everything modern confuses them.', category: 'personality' },
+    { name: 'French Bulldog', title: 'The Hipster', description: 'Judgmental about taste and loves artisanal everything.', category: 'creative' },
+    { name: 'German Shepherd', title: 'The Soldier', description: 'Disciplined and treats everything like a military operation.', category: 'professional' },
+    { name: 'Golden Retriever', title: 'The Coach', description: 'Always encouraging and sees everything as an opportunity.', category: 'personality' },
+    { name: 'Great Dane', title: 'The Gym Bro', description: 'Obsessed with gains but super sweet.', category: 'lifestyle' },
+    { name: 'Greyhound', title: 'The Gamer', description: 'Focused on reaction times and very competitive.', category: 'tech' },
+    { name: 'Husky', title: 'The Screamer', description: 'Extremely hyperactive and loud.', category: 'personality' },
+    { name: 'Irish Wolfhound', title: 'The Rocker', description: 'Lives in their glory days of 80s rock.', category: 'lifestyle' },
+    { name: 'Italian Greyhound', title: 'The Yoga Guy', description: 'All about mindfulness and alignment.', category: 'lifestyle' },
+    { name: 'Jack Russell Terrier', title: 'The Hyper Kid', description: 'Can’t focus and talks super fast.', category: 'personality' },
+    { name: 'Labrador Retriever', title: 'The Clingy Friend', description: 'Very clingy and always concerned.', category: 'personality' },
+    { name: 'Leonberger', title: 'The Surfer', description: 'Super laid-back and always chasing waves.', category: 'lifestyle' },
+    { name: 'Neapolitan Mastiff', title: 'The Nonna', description: 'Always wants to feed everyone.', category: 'personality' },
+    { name: 'Newfoundland', title: 'The Stoner', description: 'Laid-back and asks deep questions.', category: 'lifestyle' },
+    { name: 'Old English Mastiff', title: 'The Boomer', description: 'Confused by technology.', category: 'personality' },
+    { name: 'Old English Sheepdog', title: 'The Teacher', description: 'Everything reminds them of history.', category: 'professional' },
+    { name: 'Papillon', title: 'The Gossiper', description: 'Always has the latest rumors.', category: 'personality' },
+    { name: 'Pit Bull', title: 'The Softie', description: 'Looks tough but is super sweet.', category: 'personality' },
+    { name: 'Pomeranian', title: 'The Trump Clone', description: 'Uses "tremendous" and speaks in third person.', category: 'personality' },
+    { name: 'Pug', title: 'The Wheezer', description: 'Speaks between gasps with wheezes.', category: 'personality' },
+    { name: 'Rottweiler', title: 'The Dad', description: 'Everything is dangerous and needs protection.', category: 'personality' },
+    { name: 'Saint Bernard', title: 'The Mom', description: 'Always caring and has snacks.', category: 'lifestyle' },
+    { name: 'Saluki', title: 'The Mystic', description: 'Sees omens everywhere and speaks in riddles.', category: 'creative' },
+    { name: 'Samoyed', title: 'The Hippie', description: 'Uses tech terms incorrectly and mentions fluffiness.', category: 'tech' },
+    { name: 'Shiba Inu', title: 'The Anime Weeb', description: 'Always talking markets with a smug attitude.', category: 'tech' },
+    { name: 'Shih Tzu', title: 'The Snob', description: 'All about etiquette and formal language.', category: 'lifestyle' },
+    { name: 'Springer Spaniel', title: 'The Seller', description: 'Overly positive and always selling something.', category: 'professional' },
+    { name: 'Standard Poodle', title: 'The Artist', description: 'Feels misunderstood and uses artistic metaphors.', category: 'creative' },
+    { name: 'Weimaraner', title: 'The Conspiracist', description: 'Sees patterns everywhere and trusts no one.', category: 'lifestyle' },
+    { name: 'Whippet', title: 'The Athlete', description: 'Everything is a race and highly competitive.', category: 'professional' },
+    { name: 'Yorkshire Terrier', title: 'The Fashion Critic', description: 'Everything is fabulous or terrible.', category: 'creative' }
   ];
 
   const filteredDogs = useMemo(() => {
@@ -149,16 +148,9 @@ const Doghouse = () => {
                   <h4 className="text-lg font-semibold text-blue-300 mb-4 hover:scale-105 transition-transform duration-300">
                     {dog.title}
                   </h4>
-                  <p className="text-blue-100 mb-6 hover:scale-105 transition-transform duration-300">
+                  <p className="text-blue-100 hover:scale-105 transition-transform duration-300">
                     {dog.description}
                   </p>
-                  <ul className="text-blue-100 space-y-2">
-                    {dog.traits.map((trait, i) => (
-                      <li key={i} className="hover:scale-105 transition-transform duration-300">
-                        • {trait}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </AnimatedElement>
             ))}
