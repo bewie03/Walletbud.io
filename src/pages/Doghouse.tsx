@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch, FaDog } from 'react-icons/fa';
 
 const Doghouse = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,8 +18,8 @@ const Doghouse = () => {
   const dogs = [
     { name: 'Afghan Hound', title: 'The Fake Brit', description: 'A posh personality that tries (and adorably fails) to be British.', category: 'personality' },
     { name: 'Akita', title: 'The Sensei', description: 'A wise and disciplined mentor focused on honor and tradition.', category: 'professional' },
-    { name: 'Australian Cattle Dog', title: 'The Farmer', description: 'Always creating spreadsheets and scheduling unnecessary meetings.', category: 'lifestyle' },
-    { name: 'Australian Shepherd', title: 'The Workaholic', description: 'A laid-back personality that loves using Aussie slang.', category: 'personality' },
+    { name: 'Australian Cattle Dog', title: 'The Farmer', description: 'Always talking about crops, weather and their trusty old tractor.', category: 'lifestyle' },
+    { name: 'Australian Shepherd', title: 'The Workaholic', description: 'Never stops working and obsessed with productivity.', category: 'personality' },
     { name: 'Basenji', title: 'The Startup Bro', description: 'Always pitching new ideas and disrupting industries.', category: 'tech' },
     { name: 'Basset Hound', title: 'The Hungover Dude', description: 'Always tired and in need of coffee.', category: 'lifestyle' },
     { name: 'Beagle', title: 'The Foodie', description: 'Everything reminds them of food and recipes.', category: 'personality' },
@@ -27,8 +27,8 @@ const Doghouse = () => {
     { name: 'Bichon Frise', title: 'The Karen', description: 'Demands to speak to managers and uses ALL CAPS.', category: 'personality' },
     { name: 'Black Russian Terrier', title: 'The Mobster', description: 'Makes everything sound threatening with a heavy accent.', category: 'personality' },
     { name: 'Border Collie', title: 'The Chess Master', description: 'Everything is a strategic move.', category: 'professional' },
-    { name: 'Boxer', title: 'The Clown', description: 'Loves jokes, puns, and physical comedy.', category: 'personality' },
-    { name: 'Bullmastiff', title: 'The Rapper', description: 'Talks about ice, drip, and uses ad-libs.', category: 'creative' },
+    { name: 'Boxer', title: 'The Clown', description: 'Loves jokes, puns and physical comedy.', category: 'personality' },
+    { name: 'Bullmastiff', title: 'The Rapper', description: 'Talks about ice, drip and uses ad libs.', category: 'creative' },
     { name: 'Chihuahua', title: 'The Rager', description: 'Always angry and ready to fight.', category: 'personality' },
     { name: 'Chow Chow', title: 'The Grump', description: 'Hates everything modern and loves complaining.', category: 'personality' },
     { name: 'Corgi', title: 'The Influencer', description: 'Everything is content and trend-chasing.', category: 'lifestyle' },
@@ -40,7 +40,7 @@ const Doghouse = () => {
     { name: 'German Shepherd', title: 'The Soldier', description: 'Disciplined and treats everything like a military operation.', category: 'professional' },
     { name: 'Golden Retriever', title: 'The Coach', description: 'Always encouraging and sees everything as an opportunity.', category: 'personality' },
     { name: 'Great Dane', title: 'The Gym Bro', description: 'Obsessed with gains but super sweet.', category: 'lifestyle' },
-    { name: 'Greyhound', title: 'The Gamer', description: 'Focused on reaction times and very competitive.', category: 'tech' },
+    { name: 'Greyhound', title: 'The Gamer', description: 'Lives for gaming streams, speedruns and says "poggers" unironically.', category: 'tech' },
     { name: 'Husky', title: 'The Screamer', description: 'Extremely hyperactive and loud.', category: 'personality' },
     { name: 'Irish Wolfhound', title: 'The Rocker', description: 'Lives in their glory days of 80s rock.', category: 'lifestyle' },
     { name: 'Italian Greyhound', title: 'The Yoga Guy', description: 'All about mindfulness and alignment.', category: 'lifestyle' },
@@ -50,7 +50,7 @@ const Doghouse = () => {
     { name: 'Neapolitan Mastiff', title: 'The Nonna', description: 'Always wants to feed everyone.', category: 'personality' },
     { name: 'Newfoundland', title: 'The Stoner', description: 'Laid-back and asks deep questions.', category: 'lifestyle' },
     { name: 'Old English Mastiff', title: 'The Boomer', description: 'Confused by technology.', category: 'personality' },
-    { name: 'Old English Sheepdog', title: 'The Teacher', description: 'Everything reminds them of history.', category: 'professional' },
+    { name: 'Old English Sheepdog', title: 'The Teacher', description: 'Always giving pop quizzes and saying "What did we learn from this?"', category: 'professional' },
     { name: 'Papillon', title: 'The Gossiper', description: 'Always has the latest rumors.', category: 'personality' },
     { name: 'Pit Bull', title: 'The Softie', description: 'Looks tough but is super sweet.', category: 'personality' },
     { name: 'Pomeranian', title: 'The Trump Clone', description: 'Uses "tremendous" and speaks in third person.', category: 'personality' },
@@ -58,12 +58,12 @@ const Doghouse = () => {
     { name: 'Rottweiler', title: 'The Dad', description: 'Everything is dangerous and needs protection.', category: 'personality' },
     { name: 'Saint Bernard', title: 'The Mom', description: 'Always caring and has snacks.', category: 'lifestyle' },
     { name: 'Saluki', title: 'The Mystic', description: 'Sees omens everywhere and speaks in riddles.', category: 'creative' },
-    { name: 'Samoyed', title: 'The Hippie', description: 'Uses tech terms incorrectly and mentions fluffiness.', category: 'tech' },
-    { name: 'Shiba Inu', title: 'The Anime Weeb', description: 'Always talking markets with a smug attitude.', category: 'tech' },
+    { name: 'Samoyed', title: 'The Hippie', description: 'All about peace, love and positive vibes, dude.', category: 'lifestyle' },
+    { name: 'Shiba Inu', title: 'The Anime Weeb', description: 'Speaks in Japanese phrases and references anime constantly.', category: 'personality' },
     { name: 'Shih Tzu', title: 'The Snob', description: 'All about etiquette and formal language.', category: 'lifestyle' },
     { name: 'Springer Spaniel', title: 'The Seller', description: 'Overly positive and always selling something.', category: 'professional' },
     { name: 'Standard Poodle', title: 'The Artist', description: 'Feels misunderstood and uses artistic metaphors.', category: 'creative' },
-    { name: 'Weimaraner', title: 'The Conspiracist', description: 'Sees patterns everywhere and trusts no one.', category: 'lifestyle' },
+    { name: 'Weimaraner', title: 'The Conspiracist', description: 'Everything is a conspiracy and the squirrels are government drones.', category: 'personality' },
     { name: 'Whippet', title: 'The Athlete', description: 'Everything is a race and highly competitive.', category: 'professional' },
     { name: 'Yorkshire Terrier', title: 'The Fashion Critic', description: 'Everything is fabulous or terrible.', category: 'creative' }
   ];
@@ -103,6 +103,13 @@ const Doghouse = () => {
 
       <div className="w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          {/* Art Contest Notice */}
+          <div className="text-center mb-8">
+            <p className="text-sm text-blue-300 italic">
+              Images coming soon through art contests. Stay tuned for contest announcements.
+            </p>
+          </div>
+          
           {/* Search and Filter */}
           <div className="mb-12">
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
@@ -142,6 +149,9 @@ const Doghouse = () => {
             {filteredDogs.map((dog, index) => (
               <AnimatedElement key={dog.name} animation="slideRight" delay={0.1 * (index % 3)}>
                 <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-full">
+                  <div className="w-32 h-32 mx-auto mb-6 bg-blue-800 rounded-lg p-4 flex items-center justify-center">
+                    <FaDog className="w-full h-full text-blue-300" />
+                  </div>
                   <h3 className="text-2xl font-bold text-white mb-2 hover:scale-105 transition-transform duration-300">
                     {dog.name}
                   </h3>

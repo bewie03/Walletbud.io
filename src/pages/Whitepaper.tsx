@@ -19,7 +19,10 @@ import {
   FaHistory,
   FaStar,
   FaRocket,
-  FaChartLine
+  FaChartLine,
+  FaDog,
+  FaPaw,
+  FaBone
 } from 'react-icons/fa';
 import AnimatedElement from '../components/AnimatedElement';
 
@@ -339,6 +342,93 @@ const Whitepaper = () => {
                       <li>Early adopters benefit from token value appreciation</li>
                       <li>Tokens retain value and can be traded when no longer needed</li>
                       <li>No presale or private allocations</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'ai-personalities',
+      title: 'The Doghouse',
+      icon: <FaDog className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Meet Our AI Personalities</h3>
+                
+                <div className="space-y-8">
+                  {/* Core Concept */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaPaw className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Diverse AI Cast</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      The Doghouse features 50 unique AI personalities, each with their own distinct character, communication style and backstory. From professional personalities for serious analysis to creative characters for entertaining insights, our diverse cast makes blockchain monitoring both informative and entertaining.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Professional personalities for serious analysis</li>
+                      <li>Creative characters for entertaining insights</li>
+                      <li>Lifestyle personalities for relatable commentary</li>
+                    </ul>
+                  </div>
+
+                  {/* Evolution & Growth */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaChartLine className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Continuous Evolution</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      Our AI personalities are not static. They grow, evolve and adapt based on community feedback and platform needs. We regularly refine existing personalities and introduce new ones to keep the experience fresh and engaging.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Regular refinement of existing personalities</li>
+                      <li>New personality additions based on community feedback</li>
+                      <li>Themed personality releases for special events</li>
+                    </ul>
+                  </div>
+
+                  {/* Community Art Contests */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaPalette className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Art Contests & Community Engagement</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      We believe in bringing our AI personalities to life through community creativity. Regular art contests allow talented artists to visualize each unique personality, with prizes for winning submissions.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Regular art contests for each AI personality</li>
+                      <li>Attractive prize pools for winning submissions</li>
+                      <li>Winning artwork becomes official character representation</li>
+                    </ul>
+                  </div>
+
+                  {/* Future Development */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBone className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Future Development</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      The Doghouse is a living, growing ecosystem. We're committed to expanding and enhancing our AI personalities to create the most engaging wallet monitoring experience in the Cardano ecosystem.
+                    </p>
+                    <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                      <li>Expanded personality roster beyond initial 50</li>
+                      <li>Personality specific special features</li>
+                      <li>Community suggested personality traits</li>
                     </ul>
                   </div>
                 </div>

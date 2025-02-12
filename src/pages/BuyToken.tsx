@@ -69,8 +69,8 @@ const BONE = () => {
                 Receive real time Discord notifications with AI powered insights
               </p>
               <ul className="text-blue-200 space-y-2">
-                <li>• Transaction alerts</li>
-                <li>• Token movement tracking</li>
+                <li>• Transaction alerts with AI commentary</li>
+                <li>• 50 unique AI personalities</li>
                 <li>• NFT activity updates</li>
               </ul>
             </div>

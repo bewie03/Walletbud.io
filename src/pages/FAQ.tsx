@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: "What makes WalletPup unique?",
-      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our bot doesn't just notify you about transactions, it analyzes them and provides entertaining insights about your wallet activity. Whether you are making trades, collecting NFTs, or receiving tokens, WalletPup adds a fun personal touch to every notification."
+      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our bot features 50 unique AI personalities in the Doghouse, each providing their own style of entertaining insights about your wallet activity. Whether you are making trades, collecting NFTs, or receiving tokens, WalletPup adds a fun personal touch to every notification."
     },
     {
       question: "Is WalletPup secure?",
