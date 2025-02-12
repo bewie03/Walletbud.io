@@ -16,7 +16,7 @@ const Doghouse = () => {
   ];
 
   const dogs = [
-    { name: 'Afghan Hound', title: 'The Fake Brit', description: 'A posh personality that tries (and adorably fails) to be British.', category: 'personality' },
+    { name: 'Afghan Hound', title: 'The Supermodel', description: 'Elegant, poised, and knows their angles.', category: 'personality' },
     { name: 'Akita', title: 'The Sensei', description: 'A wise and disciplined mentor focused on honor and tradition.', category: 'professional' },
     { name: 'Australian Cattle Dog', title: 'The Farmer', description: 'Always talking about crops, weather and their trusty old tractor.', category: 'lifestyle' },
     { name: 'Australian Shepherd', title: 'The Workaholic', description: 'Never stops working and obsessed with productivity.', category: 'personality' },
@@ -51,18 +51,18 @@ const Doghouse = () => {
     { name: 'Newfoundland', title: 'The Stoner', description: 'Laid-back and asks deep questions.', category: 'lifestyle' },
     { name: 'Old English Mastiff', title: 'The Boomer', description: 'Confused by technology.', category: 'personality' },
     { name: 'Old English Sheepdog', title: 'The Teacher', description: 'Always giving pop quizzes and saying "What did we learn from this?"', category: 'professional' },
-    { name: 'Papillon', title: 'The Gossiper', description: 'Always has the latest rumors.', category: 'personality' },
+    { name: 'Papillon', title: 'The Gossiper', description: 'Loves rumors.', category: 'personality' },
     { name: 'Pit Bull', title: 'The Softie', description: 'Looks tough but is super sweet.', category: 'personality' },
     { name: 'Pomeranian', title: 'The Trump Clone', description: 'Uses "tremendous" and speaks in third person.', category: 'personality' },
     { name: 'Pug', title: 'The Wheezer', description: 'Speaks between gasps with wheezes.', category: 'personality' },
-    { name: 'Rottweiler', title: 'The Dad', description: 'Everything is dangerous and needs protection.', category: 'personality' },
+    { name: 'Rottweiler', title: 'The Dad', description: 'Always a dad joke.', category: 'personality' },
     { name: 'Saint Bernard', title: 'The Mom', description: 'Always caring and has snacks.', category: 'lifestyle' },
     { name: 'Saluki', title: 'The Mystic', description: 'Sees omens everywhere and speaks in riddles.', category: 'creative' },
     { name: 'Samoyed', title: 'The Hippie', description: 'All about peace, love and positive vibes, dude.', category: 'lifestyle' },
     { name: 'Shiba Inu', title: 'The Anime Weeb', description: 'Speaks in Japanese phrases and references anime constantly.', category: 'personality' },
-    { name: 'Shih Tzu', title: 'The Snob', description: 'All about etiquette and formal language.', category: 'lifestyle' },
+    { name: 'Shih Tzu', title: 'The Snob', description: 'High society.', category: 'lifestyle' },
     { name: 'Springer Spaniel', title: 'The Seller', description: 'Overly positive and always selling something.', category: 'professional' },
-    { name: 'Standard Poodle', title: 'The Artist', description: 'Feels misunderstood and uses artistic metaphors.', category: 'creative' },
+    { name: 'Standard Poodle', title: 'The Artist', description: 'Deep and misunderstood.', category: 'creative' },
     { name: 'Weimaraner', title: 'The Conspiracist', description: 'Everything is a conspiracy and the squirrels are government drones.', category: 'personality' },
     { name: 'Whippet', title: 'The Athlete', description: 'Everything is a race and highly competitive.', category: 'professional' },
     { name: 'Yorkshire Terrier', title: 'The Fashion Critic', description: 'Everything is fabulous or terrible.', category: 'creative' }
@@ -106,7 +106,7 @@ const Doghouse = () => {
           {/* Art Contest Notice */}
           <div className="text-center mb-8">
             <p className="text-sm text-blue-300 italic">
-              Images coming soon through art contests. Stay tuned for contest announcements.
+              Images coming soon through art contests
             </p>
           </div>
           
@@ -148,19 +148,27 @@ const Doghouse = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredDogs.map((dog, index) => (
               <AnimatedElement key={dog.name} animation="slideRight" delay={0.1 * (index % 3)}>
-                <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-full">
-                  <div className="w-32 h-32 mx-auto mb-6 bg-blue-800 rounded-lg p-4 flex items-center justify-center">
-                    <FaDog className="w-full h-full text-blue-300" />
+                <div className="relative bg-blue-900 rounded-lg border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 aspect-square overflow-hidden">
+                  {/* Image container - will be replaced with actual image later */}
+                  <div className="absolute inset-0 w-full h-full bg-blue-800 flex items-center justify-center">
+                    <FaDog className="w-1/2 h-1/2 text-blue-300" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2 hover:scale-105 transition-transform duration-300">
-                    {dog.name}
-                  </h3>
-                  <h4 className="text-lg font-semibold text-blue-300 mb-4 hover:scale-105 transition-transform duration-300">
-                    {dog.title}
-                  </h4>
-                  <p className="text-blue-100 hover:scale-105 transition-transform duration-300">
-                    {dog.description}
-                  </p>
+                  
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/40 to-blue-900/90"></div>
+                  
+                  {/* Text content */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-2xl font-bold text-white mb-1 hover:scale-105 transition-transform duration-300 drop-shadow-md">
+                      {dog.name}
+                    </h3>
+                    <h4 className="text-lg font-semibold text-blue-200 mb-1 hover:scale-105 transition-transform duration-300 drop-shadow-md">
+                      {dog.title}
+                    </h4>
+                    <p className="text-blue-100 hover:scale-105 transition-transform duration-300 drop-shadow-md">
+                      {dog.description}
+                    </p>
+                  </div>
                 </div>
               </AnimatedElement>
             ))}
