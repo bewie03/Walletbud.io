@@ -11,7 +11,7 @@ interface Bone {
   opacity: number;
 }
 
-const BONE_COUNT = 12;
+const BONE_COUNT = 24; // Increased for more constant coverage
 const VIEWPORT_HEIGHT = 120; // Percentage, slightly larger than screen
 
 const FloatingBones = () => {
@@ -21,10 +21,11 @@ const FloatingBones = () => {
 
   // Initialize bones if not already done
   if (bonesRef.current.length === 0) {
-    bonesRef.current = Array.from({ length: BONE_COUNT }, () => ({
+    bonesRef.current = Array.from({ length: BONE_COUNT }, (_, index) => ({
       x: Math.random() * 100,
-      y: Math.random() * VIEWPORT_HEIGHT - VIEWPORT_HEIGHT, // Start above viewport
-      speed: Math.random() * 0.002 + 0.008, // Very slow fall
+      // Distribute bones evenly across the viewport height initially
+      y: (index * (VIEWPORT_HEIGHT / (BONE_COUNT / 2))) - VIEWPORT_HEIGHT,
+      speed: 0.007, // Consistent speed for all bones
       rotation: Math.random() * 360,
       rotationSpeed: (Math.random() - 0.5) * 0.3, // Random direction
       size: Math.random() * 12 + 8, // 8-20px
