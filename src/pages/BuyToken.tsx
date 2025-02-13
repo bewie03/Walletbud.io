@@ -144,17 +144,12 @@ const BONE = () => {
             className="max-w-4xl mx-auto"
           >
             <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-              <h3 className="text-2xl font-bold text-white mb-4">Token Requirements</h3>
-              <h4 className="text-lg font-semibold text-white mb-2">Entry Cost</h4>
               <p className="text-blue-100 mb-4">
-                Fixed at roughly 50 ADA worth of $BONE tokens. This covers monitoring for up to 20 wallets, making it an excellent value for users tracking multiple addresses.
-              </p>
+              </p>‎‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ To keep a fair price at around 50 ADA, requirement halves at each milestone. Here are some examples:
               <p className="text-blue-100 text-sm mb-6">
-                Token requirements decrease with market cap growth while maintaining a 50 ADA entry cost.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Early Stage</h4>
                   <div className="space-y-2">
                     {[
                       { mcap: '$100K MCAP', amount: '200,000 $BONE'},
@@ -172,7 +167,6 @@ const BONE = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Growth Stage</h4>
                   <div className="space-y-2">
                     {[
                       { mcap: '$1M MCAP', amount: '20,000 $BONE'},

@@ -14,7 +14,7 @@ const Guide = () => {
       number: '02',
       title: 'Join Discord',
       description: 'Join the WalletPup Discord server to access the bot.',
-      link: 'https://discord.gg/walletpup',
+      link: 'https://discord.com/invite/d99FBA64Qf',
       linkText: 'Join Server',
       isExternal: true
     },
@@ -22,7 +22,7 @@ const Guide = () => {
       number: '03',
       title: 'Add the Bot',
       description: 'Authorize WalletPup bot to send you private notifications.',
-      link: 'https://discord.gg/walletpup',
+      link: 'https://discord.com/invite/d99FBA64Qf',
       linkText: 'Authorize Bot',
       isExternal: true
     },
@@ -119,7 +119,7 @@ const Guide = () => {
               <p className="text-blue-200">
                 Need help? Use <span className="text-white font-mono">/help</span> in Discord or ask in the{' '}
                 <a 
-                  href="https://discord.gg/walletpup" 
+                  href="https://discord.com/invite/d99FBA64Qf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300"

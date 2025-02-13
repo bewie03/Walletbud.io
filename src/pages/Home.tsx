@@ -11,10 +11,10 @@ const Home = () => {
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-8">
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
-                Your Personal Cardano Wallet Assistant
+                Your Loyal  Wallet Companion
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl hover:scale-105 transition-transform duration-300">
-                Get instant DM notifications with AI powered insights about your wallet activity.
+                Let our pack of AI personalities fetch your wallet updates with entertaining insights
               </p>
             </div>
           </AnimatedElement>
@@ -39,9 +39,9 @@ const Home = () => {
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
                   <span className="text-white font-bold text-lg">1</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Get $BONE Tokens</h3>
+                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Fetch $BONE Tokens</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Hold the required $BONE tokens in your Cardano wallet to access our services.
+                  Get your paws on some $BONE tokens to join our pack and access all our services.
                 </p>
                 <Link
                   to="/bone"
@@ -58,9 +58,9 @@ const Home = () => {
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
                   <span className="text-white font-bold text-lg">2</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Join Discord</h3>
+                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Join the Pack</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Join our Discord server follow setup instructions and connect with the WalletPup bot.
+                  Come play with us on Discord! Meet our AI pups and get ready for some tail wagging fun.
                 </p>
                 <a
                   href="https://discord.gg/d99FBA64Qf"
@@ -79,9 +79,9 @@ const Home = () => {
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
                   <span className="text-white font-bold text-lg">3</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Add Your Wallet</h3>
+                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Mark Your Territory</h3>
                 <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Use /add command to set up your primary wallet and add up to 9 more wallets.
+                  Use /add command to register your wallets. Track up to 20 wallets with our faithful AI companions.
                 </p>
                 <Link
                   to="/commands"
@@ -97,7 +97,7 @@ const Home = () => {
           <AnimatedElement animation="fadeIn" delay={1.8}>
             <div className="mt-12 text-center">
               <p className="text-lg text-blue-100 hover:scale-[1.02] transition-transform duration-300">
-                Need help? Check our <Link to="/faq" className="text-white hover:text-blue-200">FAQ</Link> or join the Discord community.
+                Need a helping paw? Check our <Link to="/faq" className="text-white hover:text-blue-200">FAQ</Link> or join our friendly pack on Discord.
               </p>
             </div>
           </AnimatedElement>
