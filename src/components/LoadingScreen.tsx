@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { FaPaw } from 'react-icons/fa';
 
 interface LoadingScreenProps {
   onLoadingComplete: () => void;
@@ -37,7 +38,22 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
             }}
             transition={{ duration: 3, times: [0, 0.5, 1] }}
             className="absolute w-[800px] h-[800px] border-white border-[1px] rounded-full"
-          />
+          >
+            {/* Decorative paw prints on the outer circle */}
+            {[...Array(8)].map((_, i) => (
+              <motion.div
+                key={`outer-paw-${i}`}
+                className="absolute text-white/30"
+                style={{
+                  top: '50%',
+                  left: '50%',
+                  transform: `rotate(${i * 45}deg) translateY(-400px) rotate(-${i * 45}deg)`,
+                }}
+              >
+                <FaPaw className="text-2xl" />
+              </motion.div>
+            ))}
+          </motion.div>
           <motion.div
             initial={{ scale: 0, rotate: 0 }}
             animate={{ 
@@ -47,7 +63,22 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
             }}
             transition={{ duration: 3, delay: 0.2, times: [0, 0.5, 1] }}
             className="absolute w-[600px] h-[600px] border-white border-[1px] rounded-full"
-          />
+          >
+            {/* Decorative paw prints on the inner circle */}
+            {[...Array(6)].map((_, i) => (
+              <motion.div
+                key={`inner-paw-${i}`}
+                className="absolute text-white/30"
+                style={{
+                  top: '50%',
+                  left: '50%',
+                  transform: `rotate(${i * 60}deg) translateY(-300px) rotate(-${i * 60}deg)`,
+                }}
+              >
+                <FaPaw className="text-xl" />
+              </motion.div>
+            ))}
+          </motion.div>
 
           {/* Central content */}
           <div className="relative z-10 text-center">
@@ -74,9 +105,11 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                   transition: { duration: 0.8 }
                 }}
                 transition={{ duration: 1, delay: 0.8 }}
-                className="text-6xl font-bold text-white mb-4"
+                className="text-6xl font-bold text-white mb-4 flex items-center justify-center gap-4"
               >
+                <FaPaw className="text-5xl" />
                 WalletPup
+                <FaPaw className="text-5xl transform rotate-45" />
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -88,7 +121,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                 transition={{ duration: 0.5, delay: 1.2 }}
                 className="text-white text-xl"
               >
-                Your Personal Finance Companion
+                Your Faithful Finance Companion
               </motion.p>
             </motion.div>
 
@@ -104,7 +137,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
               className="w-[300px] h-[2px] bg-white mx-auto mb-6"
             />
 
-            {/* Dots animation */}
+            {/* Paw print dots animation */}
             <div className="flex justify-center space-x-2">
               {[0, 1, 2].map((i) => (
                 <motion.div
@@ -125,8 +158,10 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                     repeat: 1,
                     repeatType: "reverse"
                   }}
-                  className="w-3 h-3 bg-white rounded-full"
-                />
+                  className="text-white"
+                >
+                  <FaPaw className="text-sm transform rotate-45" />
+                </motion.div>
               ))}
             </div>
           </div>
