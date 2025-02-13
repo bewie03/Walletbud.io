@@ -116,13 +116,13 @@ const Commands = () => {
       ],
     },
     {
-      name: 'Set Requirement',
-      command: '/requirement <amount>',
-      description: 'Admin command to set required BONE amount',
+      name: 'Raffle',
+      command: '/raffle <amount>',
+      description: 'Enter the doggie bowl',
       details: [
-        'Adjusts BONE token requirement',
-        'Based on market conditions',
-        'Keeps entry cost fair for all users'
+        'Send up to 5 ADA to the  bowl',
+        '80% of bowl goes to winner',
+        'Each verified wallet can enter once'
       ],
     },
   ];

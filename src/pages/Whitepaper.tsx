@@ -22,7 +22,10 @@ import {
   FaChartLine,
   FaDog,
   FaPaw,
-  FaBone
+  FaBone,
+  FaGift,
+  FaCog,
+  FaPiggyBank
 } from 'react-icons/fa';
 import AnimatedElement from '../components/AnimatedElement';
 
@@ -30,8 +33,12 @@ const Whitepaper = () => {
   const sections = [
     {
       id: 'introduction',
-      title: 'Introduction',
-      icon: <FaRoad className="w-6 h-6" />,
+      title: (
+        <div className="flex items-center gap-2">
+          <span>Introduction</span>
+        </div>
+      ),
+      icon: <FaLightbulb className="w-6 h-6 text-blue-300" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -42,19 +49,22 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
-                  Advanced Cardano Wallet Monitoring and Discord Integration
-                </p>
-                <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                  Introducing WalletPup, a powerful Cardano wallet monitoring platform that lets you connect your Discord account to your wallet. Our simple system allows users to link their Discord username with their wallet, making it easy for anyone to search and find your wallets.
+                <div className="flex items-center gap-3 mb-4">
+                  <FaPaw className="w-8 h-8 text-blue-300" />
+                  <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
+                    Next Generation Cardano Wallet Monitoring
+                  </p>
+                </div>
+                <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
+                WalletPup seamlessly integrates Discord with the Cardano blockchain, turning wallet monitoring into an interactive and entertaining experience. Connect your Discord account to your wallets, let friends discover your wallets via your Discord username, and enjoy playful AI-generated commentary on all your transactions.
                 </p>
                 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  WalletPup brings Discord and the Cardano blockchain together seamlessly. After connecting your Discord account, our advanced AI analyzes your wallet activity in real time, sending you precise updates about ADA transactions, token movements, and NFT activities through personalized Discord notifications.
+                Our robust, scalable infrastructure supports over 100,000 wallets, ensuring smooth performance for every user. Powered by $BONE tokens, WalletPup offers a fair, subscription free system. Hold tokens to access premium features while supporting both service quality and token value.
                 </p>
 
                 <p className="text-lg leading-relaxed mt-6 hover:scale-[1.02] transition-transform duration-300">
-                  Say goodbye to disconnected wallet monitoring. Whether you're trading, collecting NFTs, or managing tokens, WalletPup keeps you informed through Discord and makes it simple for others to find your connected wallets by searching your Discord username.
+                Track up to 10 wallets and receive instant, personalized Discord notifications with fun, AI-driven insights on your ADA, tokens, and NFTs. Whether you’re keeping an eye on your own wallets or searching for others through their Discord usernames, WalletPup keeps you updated with personality.
                 </p>
               </div>
             </div>
@@ -337,12 +347,133 @@ const Whitepaper = () => {
                     </p>
                     <ul className="list-disc ml-6 text-blue-200 space-y-2">
                       <li>Primary wallet holds BONE tokens, additional wallets have no token requirement</li>
-                      <li>Track 1 primary wallet plus 9 additional wallets of your choice</li>
+                      <li>Track 1 primary wallet plus 19 additional wallets of your choice</li>
                       <li>Dynamic requirements based on market cap growth</li>
                       <li>Early adopters benefit from token value appreciation</li>
                       <li>Tokens retain value and can be traded when no longer needed</li>
                       <li>No presale or private allocations</li>
                     </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'doggie-bowl',
+      title: 'The Doggie Bowl',
+      icon: <FaGift className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">The Doggie Bowl Raffle System</h3>
+                
+                <div className="space-y-8">
+                  {/* Overview */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaGift className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Raffle Overview</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      The Doggie Bowl is our community raffle system that adds an exciting layer of engagement to the WalletPup ecosystem. It's designed to create regular community events while maintaining a fair and transparent process for all participants.
+                    </p>
+                  </div>
+
+                  {/* Mechanics */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaCog className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Raffle Mechanics</h4>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <h5 className="text-white font-semibold mb-2">Entry Rules</h5>
+                        <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                          <li>5 ADA entry per verified wallet</li>
+                          <li>One entry per wallet per raffle</li>
+                          <li>Must have a verified wallet to participate</li>
+                          <li>Regular drawing schedule</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="text-white font-semibold mb-2">Prize Distribution</h5>
+                        <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                          <li>80% of pool goes to winner</li>
+                          <li>20% supports community treasury</li>
+                          <li>Transparent winner selection</li>
+                          <li>Instant prize distribution</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Benefits */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaStar className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Community Benefits</h4>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <h5 className="text-white font-semibold mb-2">For Participants</h5>
+                        <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                          <li>Chance to win big prizes</li>
+                          <li>Fair participation system</li>
+                          <li>Regular opportunities to win</li>
+                          <li>Engaging community experience</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="text-white font-semibold mb-2">For Community</h5>
+                        <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                          <li>Treasury funding for events</li>
+                          <li>Sustainable reward mechanism</li>
+                          <li>Regular community engagement</li>
+                          <li>Growing prize pools</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Treasury */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaPiggyBank className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Treasury Allocation</h4>
+                    </div>
+                    <p className="text-blue-100 mb-4">
+                      The 20% treasury allocation from each raffle helps sustain and grow our community through various initiatives:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <h5 className="text-white font-semibold mb-2">Immediate Use</h5>
+                        <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                          <li>Community event prizes</li>
+                          <li>Special giveaways</li>
+                          <li>Contest rewards</li>
+                          <li>Community challenges</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="text-white font-semibold mb-2">Long-term Benefits</h5>
+                        <ul className="list-disc ml-6 text-blue-200 space-y-2">
+                          <li>Ecosystem development</li>
+                          <li>Future community initiatives</li>
+                          <li>Sustainable growth</li>
+                          <li>Community-driven projects</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -563,7 +694,7 @@ const Whitepaper = () => {
                     <p className="mb-2">Based on our total supply of 1B $BONE tokens and dynamic requirement system:</p>
                     <ul className="list-disc pl-6 space-y-1">
                       <li>Initial requirement: 200,000 $BONE per primary wallet</li>
-                      <li>Each user can monitor up to 9 additional wallets</li>
+                      <li>Each user can monitor up to 19 additional wallets</li>
                       <li>Initial active users: 5,000 (1B ÷ 200,000)</li>
                     </ul>
                   </div>

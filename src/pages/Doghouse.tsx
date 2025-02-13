@@ -117,14 +117,16 @@ const Doghouse = () => {
                 <div className="px-4 py-3 bg-blue-800 border border-blue-700 rounded-lg">
                   <p className="text-blue-300 font-medium">Total Dogs: {dogs.length}</p>
                 </div>
-                <input
-                  type="text"
-                  placeholder="Search personalities..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full md:w-96 px-4 py-3 bg-blue-800 border border-blue-700 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <FaSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-300" />
+                <div className="relative w-full md:w-96">
+                  <input
+                    type="text"
+                    placeholder="Search personalities..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full px-4 py-3 bg-blue-800 border border-blue-700 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <FaSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-300" />
+                </div>
               </div>
               <div className="flex flex-wrap justify-center gap-2">
                 {categories.map(category => (

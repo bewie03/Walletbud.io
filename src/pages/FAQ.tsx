@@ -12,43 +12,39 @@ const FAQ = () => {
   const faqs: FAQItem[] = [
     {
       question: "What is WalletPup?",
-      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our Discord bot monitors wallet addresses and provides entertaining insights about your transactions. Every time there is activity in your wallet, WalletPup delivers both the transaction details and witty personalized commentary about what just happened."
-    },
-    {
-      question: "How do I set up my wallets?",
-      answer: "Start by using /add with your first wallet address. This becomes your primary wallet and needs to hold BONE tokens. After adding it, verify ownership using the /verifywallet command. Once your primary wallet is verified, you can use /add to track up to 9 additional wallets without needing verification or BONE tokens."
+      answer: "WalletPup connects your Cardano wallets to Discord, providing entertaining AI commentary on all your transactions. Our 50 unique AI personalities make tracking fun, while our interactive commands and regular community events keep you engaged. Track ADA, tokens, and NFTs while enjoying witty insights in your DMs!"
     },
     {
       question: "What makes WalletPup unique?",
-      answer: "WalletPup is the first Cardano wallet tracker with AI powered commentary! Our bot features 50 unique AI personalities in the Doghouse, each providing their own style of entertaining insights about your wallet activity. Whether you are making trades, collecting NFTs, or receiving tokens, WalletPup adds a fun personal touch to every notification."
+      answer: "Our 50 AI personalities deliver entertaining commentary on every transaction. Each has their own style and humor, making wallet tracking fun and engaging!"
+    },
+    {
+      question: "What can I track with WalletPup?",
+      answer: "Track up to 20 Cardano wallets! Get entertaining AI commentary on all ADA, token, and NFT transactions directly in your Discord DMs."
+    },
+    {
+      question: "What community features do you offer?",
+      answer: "Regular raffles, interactive commands, contests and community events. Our doggie bowl raffle and active Discord keep the community engaged!"
+    },
+    {
+      question: "How do I start using WalletPup?",
+      answer: "Join our Discord and check out our guide page at walletpup.com/guide to get started! We'll show you how to link your Cardano wallet and start enjoying entertaining AI commentary."
     },
     {
       question: "Is WalletPup secure?",
-      answer: "Yes! We take security seriously. All commands work only in private messages, we never ask for or store sensitive info, and we only need your public wallet address. We also limit how often commands can be used to prevent abuse."
-    },
-    {
-      question: "What happens if my primary wallet's BONE balance drops too low?",
-      answer: "If your primary wallet's BONE balance drops below the required amount or if you remove the primary wallet, all your additional wallets will be automatically removed. To continue tracking additional wallets, you'll need to maintain the required BONE balance in your primary wallet."
+      answer: "Yes! We only use private Discord DMs and only need public wallet addresses to track activity and provide commentary."
     },
     {
       question: "Can I track multiple wallets?",
-      answer: "Yes! After setting up and verifying your primary wallet (which requires BONE tokens), you can track up to 9 additional wallets. Just use the /add command for each wallet you want to track. These additional wallets don't need verification or BONE tokens."
+      answer: "Yes! Verify your primary wallet with BONE tokens, then track up to 19 more wallets. Each gets the same fun AI commentary!"
     },
     {
-      question: "What happens if I don't have enough tokens in my primary wallet?",
-      answer: "Your primary wallet is checked for BONE tokens every 6 hours. If you don't have the required amount of tokens, your primary wallet will be automatically removed from tracking and you'll receive a DM notification. You'll need to add your primary wallet again with the required token amount to resume tracking."
-    },
-    {
-      question: "Does the token requirement change?",
-      answer: "Yes, while the entry cost remains fixed at around 50 ADA, the amount of $BONE tokens you receive adjusts with market cap. This ensures fair access for all users while rewarding early adopters who may receive more tokens for the same entry cost when market cap is lower."
+      question: "What's the doggie bowl raffle?",
+      answer: "A fun community event! Enter 5 ADA once per verified wallet. 80% goes to winner, 20% to community treasury."
     },
     {
       question: "How do I get support?",
-      answer: "Join our Discord server for help. You can also use /help in a DM with the bot to see all available commands and how to use them."
-    },
-    {
-      question: "What happens to the verification fees?",
-      answer: "The ADA fees sent during wallet verification are used to fund our infrastructure, including API costs, database hosting, and website maintenance. This helps us maintain a reliable and high-performance service for all users."
+      answer: "Join our Discord community or use /help in bot DMs. Our community and team are here to help!"
     }
   ];
 
