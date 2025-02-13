@@ -1,5 +1,8 @@
 // Whitepaper page - Updated 21 Jan 2025
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import AnimatedElement from '../components/AnimatedElement';
+import FloatingBones from '../components/FloatingBones';
 import { 
   FaCogs, 
   FaBolt, 
@@ -27,7 +30,6 @@ import {
   FaCog,
   FaPiggyBank
 } from 'react-icons/fa';
-import AnimatedElement from '../components/AnimatedElement';
 
 const Whitepaper = () => {
   const sections = [
@@ -917,8 +919,9 @@ const Whitepaper = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#1e3b94] py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
+      <FloatingBones />
+      <div className="max-w-7xl mx-auto px-4 pt-20">
         <div className="bg-blue-900/40 backdrop-blur-sm rounded-xl shadow-2xl border border-blue-700/30">
           {/* Cover */}
           <div className="bg-[#1e3a8a]/50 rounded-t-xl text-center py-16 px-4">

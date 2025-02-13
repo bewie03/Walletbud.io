@@ -1,17 +1,19 @@
 // Home page - Updated 21 Jan 2025
 import { Link } from 'react-router-dom';
 import AnimatedElement from '../components/AnimatedElement';
+import FloatingBones from '../components/FloatingBones';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[#1e40af]">
+    <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
+      <FloatingBones />
       {/* Header Section with darker blue */}
       <div className="w-full bg-blue-900 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-8">
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
-                Your Loyal  Wallet Companion
+                Your Loyal  Wallet Companions
               </h1>
               <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl hover:scale-105 transition-transform duration-300">
                 Let our pack of AI personalities fetch your wallet updates with entertaining insights
