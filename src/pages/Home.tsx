@@ -1,108 +1,152 @@
 // Home page - Updated 21 Jan 2025
 import { Link } from 'react-router-dom';
-import AnimatedElement from '../components/AnimatedElement';
+import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
+import { FaBone, FaDiscord, FaTerminal } from 'react-icons/fa';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
+    <div className="h-screen bg-[#1e40af] relative overflow-hidden flex flex-col">
       <FloatingBones />
-      {/* Header Section with darker blue */}
-      <div className="w-full bg-blue-900 pb-8">
+      
+      {/* Hero Section */}
+      <div className="w-full bg-blue-900/95 backdrop-blur-sm pb-8 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedElement animation="slideDown" delay={0.2}>
-            <div className="text-center pt-32 pb-8">
-              <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
-                Your Loyal  Wallet Companions
-              </h1>
-              <p className="mt-3 max-w-md mx-auto text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl hover:scale-105 transition-transform duration-300">
-                Let our pack of AI personalities fetch your wallet updates with entertaining insights
-              </p>
-            </div>
-          </AnimatedElement>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center pt-24 pb-8"
+          >
+            <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
+              Your Loyal Wallet Companions
+            </h1>
+            <p className="mt-4 max-w-md mx-auto text-lg text-blue-100 sm:text-xl md:text-2xl md:max-w-3xl">
+              Let our pack of AI personalities fetch your wallet updates with entertaining insights
+            </p>
+          </motion.div>
         </div>
       </div>
 
-      {/* Get Started Section */}
-      <div className="w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-          <AnimatedElement animation="fadeIn" delay={1}>
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-extrabold text-white sm:text-4xl hover:scale-105 transition-transform duration-300">
+      {/* Features Section */}
+      <div className="flex-1 flex items-center">
+        <div className="w-full py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center mb-10"
+            >
+              <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-2">
                 Get Started in 3 Simple Steps
               </h2>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: <FaBone className="text-2xl" />,
+                  title: "Fetch $BONE Tokens",
+                  description: "Get your paws on some $BONE tokens to join our pack and access all our services.",
+                  link: "/bone",
+                  linkText: "Learn More →",
+                  delay: 0.3
+                },
+                {
+                  icon: <FaDiscord className="text-2xl" />,
+                  title: "Join the Pack",
+                  description: "Come play with us on Discord! Meet our AI pups and get ready for some tail wagging fun.",
+                  link: "https://discord.gg/d99FBA64Qf",
+                  linkText: "Join Discord →",
+                  delay: 0.4
+                },
+                {
+                  icon: <FaTerminal className="text-2xl" />,
+                  title: "Mark Your Territory",
+                  description: "Use /add command to register your wallets. Track up to 20 wallets with our faithful AI companions.",
+                  link: "/commands",
+                  linkText: "View Commands →",
+                  delay: 0.5
+                }
+              ].map((feature) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: feature.delay }}
+                  className="group"
+                >
+                  <div className="relative bg-blue-900/30 backdrop-blur-sm rounded-xl p-8 border border-blue-700/50 hover:border-blue-500 transition-all duration-200 h-[240px] flex flex-col hover:scale-105 hover:shadow-lg">
+                    {/* Icon Background */}
+                    <div className="absolute -top-4 -left-4 bg-blue-700 rounded-xl w-12 h-12 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
+                      <div className="text-blue-200">
+                        {feature.icon}
+                      </div>
+                    </div>
+                    
+                    <div className="ml-6">
+                      <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                      <p className="text-blue-100 mb-4 text-sm">
+                        {feature.description}
+                      </p>
+                      {feature.link.startsWith('http') ? (
+                        <a
+                          href={feature.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-white hover:text-blue-200 text-base font-medium hover:translate-x-1 transition-all duration-200"
+                        >
+                          {feature.linkText}
+                        </a>
+                      ) : (
+                        <Link
+                          to={feature.link}
+                          className="inline-flex items-center text-white hover:text-blue-200 text-base font-medium hover:translate-x-1 transition-all duration-200"
+                        >
+                          {feature.linkText}
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
-          </AnimatedElement>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Step 1 */}
-            <AnimatedElement animation="slideRight" delay={1.2}>
-              <div className="relative bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-full">
-                <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-lg">1</span>
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Fetch $BONE Tokens</h3>
-                <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Get your paws on some $BONE tokens to join our pack and access all our services.
+            {/* Help Message */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              className="mt-12 text-center"
+            >
+              <div className="inline-block bg-blue-900/30 backdrop-blur-sm rounded-xl px-6 py-3 border border-blue-700/50 hover:border-blue-500 hover:shadow-lg transition-all duration-200">
+                <p className="text-blue-100">
+                  Need a helping paw? Check our{' '}
+                  <motion.span whileHover={{ scale: 1.05 }} className="inline-block">
+                    <Link 
+                      to="/faq" 
+                      className="text-white hover:text-blue-200 font-medium hover:underline"
+                    >
+                      FAQ
+                    </Link>
+                  </motion.span>
+                  {' '}or join our friendly pack on{' '}
+                  <motion.span whileHover={{ scale: 1.05 }} className="inline-block">
+                    <a 
+                      href="https://discord.gg/d99FBA64Qf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-blue-200 font-medium hover:underline"
+                    >
+                      Discord
+                    </a>
+                  </motion.span>
                 </p>
-                <Link
-                  to="/bone"
-                  className="text-white hover:text-blue-200 text-lg font-medium hover:scale-110 transition-transform duration-300"
-                >
-                  Learn More →
-                </Link>
               </div>
-            </AnimatedElement>
-
-            {/* Step 2 */}
-            <AnimatedElement animation="slideUp" delay={1.4}>
-              <div className="relative bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-full">
-                <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-lg">2</span>
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Join the Pack</h3>
-                <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Come play with us on Discord! Meet our AI pups and get ready for some tail wagging fun.
-                </p>
-                <a
-                  href="https://discord.gg/d99FBA64Qf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-blue-200 text-lg font-medium hover:scale-110 transition-transform duration-300"
-                >
-                  Join Discord →
-                </a>
-              </div>
-            </AnimatedElement>
-
-            {/* Step 3 */}
-            <AnimatedElement animation="slideLeft" delay={1.6}>
-              <div className="relative bg-blue-900 rounded-lg p-8 border border-blue-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-full">
-                <div className="absolute -top-4 -left-4 bg-blue-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-lg">3</span>
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-6 hover:scale-105 transition-transform duration-300">Mark Your Territory</h3>
-                <p className="text-blue-100 mb-8 text-lg hover:scale-105 transition-transform duration-300">
-                  Use /add command to register your wallets. Track up to 20 wallets with our faithful AI companions.
-                </p>
-                <Link
-                  to="/commands"
-                  className="text-white hover:text-blue-200 text-lg font-medium hover:scale-110 transition-transform duration-300"
-                >
-                  View Commands →
-                </Link>
-              </div>
-            </AnimatedElement>
+            </motion.div>
           </div>
-
-          {/* Quick Start Note */}
-          <AnimatedElement animation="fadeIn" delay={1.8}>
-            <div className="mt-12 text-center">
-              <p className="text-lg text-blue-100 hover:scale-[1.02] transition-transform duration-300">
-                Need a helping paw? Check our <Link to="/faq" className="text-white hover:text-blue-200">FAQ</Link> or join our friendly pack on Discord.
-              </p>
-            </div>
-          </AnimatedElement>
         </div>
       </div>
     </div>

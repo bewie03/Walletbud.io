@@ -1,6 +1,5 @@
 // Whitepaper page - Updated 21 Jan 2025
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedElement from '../components/AnimatedElement';
 import FloatingBones from '../components/FloatingBones';
 import { 
@@ -28,10 +27,30 @@ import {
   FaBone,
   FaGift,
   FaCog,
-  FaPiggyBank
+  FaPiggyBank,
+  FaArrowUp
 } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 
 const Whitepaper = () => {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollButton(window.scrollY > 500);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const sections = [
     {
       id: 'introduction',
@@ -891,8 +910,7 @@ const Whitepaper = () => {
                     <p className="text-blue-100">
                       We're working on a new extension to the project that will add significant utility to the BONE token. 
                       While we can't reveal all the details yet, we'll be releasing teasers in the coming months. 
-                      This development will further cement WalletPup's position as the leading wallet tracking solution 
-                      and provide even more value to our token holders.
+                      This development will provide even more value to our token holders while bringing in more users.
                     </p>
                   </div>
 
@@ -974,6 +992,23 @@ const Whitepaper = () => {
           </div>
         </div>
       </div>
+
+      {/* Scroll to Top Button */}
+      <AnimatePresence>
+        {showScrollButton && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            onClick={scrollToTop}
+            className="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+            whileHover={{ y: -3 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaArrowUp className="text-xl" />
+          </motion.button>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

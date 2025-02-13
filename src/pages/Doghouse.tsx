@@ -3,6 +3,7 @@ import React from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import { FaSearch, FaDog, FaBriefcase, FaPalette, FaLaptopCode, FaHeart, FaSmile } from 'react-icons/fa';
 import FloatingBones from '../components/FloatingBones';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface Dog {
   name: string;
@@ -125,12 +126,15 @@ const Doghouse = () => {
           {/* Art Contest Notice */}
           <AnimatedElement animation="fadeIn" delay={0.3}>
             <div className="text-center mb-8">
-              <div className="inline-block bg-blue-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-blue-600">
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="inline-block bg-blue-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-blue-600 hover:border-blue-500/50 transition-all duration-300"
+              >
                 <p className="text-blue-200 font-medium">
                   <FaDog className="inline-block mr-2 mb-1" />
                   Images coming soon through art contests
                 </p>
-              </div>
+              </motion.div>
             </div>
           </AnimatedElement>
           
@@ -140,9 +144,12 @@ const Doghouse = () => {
               <div className="flex flex-col md:flex-row items-center gap-6">
                 {/* Left Section - Dogs Count and Search */}
                 <div className="flex-1 w-full md:w-auto flex flex-col sm:flex-row items-center gap-4">
-                  <div className="bg-blue-800/50 px-4 py-2 rounded-xl border border-blue-600">
+                  <motion.div 
+                    whileHover={{ scale: 1.02 }}
+                    className="bg-blue-800/50 px-4 py-2 rounded-xl border border-blue-600 hover:border-blue-500/50 transition-all duration-300"
+                  >
                     <span className="text-blue-200">Dogs: {filteredDogs.length} / {dogs.length}</span>
-                  </div>
+                  </motion.div>
                   <div className="flex-1 w-full sm:w-auto">
                     <div className="relative">
                       <input
@@ -150,7 +157,7 @@ const Doghouse = () => {
                         placeholder="Search personalities..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full bg-blue-800/30 border border-blue-600 rounded-xl py-2 px-4 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full bg-blue-800/30 border border-blue-600 rounded-xl py-2 px-4 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:border-blue-500/50 transition-all duration-300"
                       />
                       <div className="absolute inset-y-0 right-0 flex items-center pr-3">
                         <FaSearch className="text-blue-300" />
@@ -162,20 +169,21 @@ const Doghouse = () => {
                 {/* Right Section - Filter Buttons */}
                 <div className="flex flex-wrap justify-center md:justify-end gap-3">
                   {categories.map((category) => (
-                    <button
+                    <motion.button
                       key={category}
                       onClick={() => setSelectedCategory(category)}
-                      className={`bg-blue-800/50 hover:bg-blue-700/50 text-white px-4 py-2 rounded-xl transition-colors flex items-center gap-2 ${
+                      whileHover={{ scale: 1.02 }}
+                      className={`bg-blue-800/50 text-white px-4 py-2 rounded-xl flex items-center gap-2 transition-all duration-300 border ${
                         selectedCategory === category
                           ? 'bg-blue-600 border-blue-500 text-white shadow-lg'
-                          : 'hover:bg-blue-700/50 hover:border-blue-500'
+                          : 'border-blue-600 hover:bg-blue-700/50 hover:border-blue-500/50'
                       }`}
                     >
                       {createElement(categoryIcons[category as keyof typeof categoryIcons] || FaDog, {
                         className: "text-blue-300"
                       } as React.SVGProps<SVGSVGElement>)}
                       {category.charAt(0).toUpperCase() + category.slice(1)}
-                    </button>
+                    </motion.button>
                   ))}
                 </div>
               </div>
@@ -183,10 +191,23 @@ const Doghouse = () => {
           </div>
 
           {/* Dog Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredDogs.map((dog, index) => (
-              <AnimatedElement key={dog.name} animation="fadeIn" delay={0.1 * (index % 3)}>
-                <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg group">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={selectedCategory}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+              {filteredDogs.map((dog, index) => (
+                <motion.div
+                  key={dog.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg group"
+                >
                   {/* Image Section */}
                   <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-800/50 backdrop-blur-sm border-b border-blue-600">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -208,10 +229,10 @@ const Doghouse = () => {
                     <div className="text-lg font-semibold text-blue-300 mb-3">{dog.title}</div>
                     <p className="text-blue-100">{dog.description}</p>
                   </div>
-                </div>
-              </AnimatedElement>
-            ))}
-          </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>

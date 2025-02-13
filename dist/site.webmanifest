@@ -2,7 +2,7 @@
   "name": "WalletPup",
   "short_name": "WalletPup",
   "description": "Enterprise-Grade Cardano Wallet Tracking",
-  "start_url": "https://walletpup.com",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#1E3A8A",
   "theme_color": "#1E40AF",

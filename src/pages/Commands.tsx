@@ -3,7 +3,21 @@ import AnimatedElement from '../components/AnimatedElement';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
-import { FaPaw, FaArrowLeft } from 'react-icons/fa';
+import { 
+  FaWallet, 
+  FaCheck, 
+  FaTimes, 
+  FaList, 
+  FaChartBar, 
+  FaQuestionCircle,
+  FaStar,
+  FaSearch,
+  FaClock,
+  FaTrophy,
+  FaTrash,
+  FaGift,
+  FaArrowLeft 
+} from 'react-icons/fa';
 
 const CommandCard = ({ command }: { command: any }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -143,6 +157,37 @@ const CommandCard = ({ command }: { command: any }) => {
     }
   };
 
+  const getCommandIcon = (cmd: string) => {
+    switch (cmd) {
+      case '/add <address>':
+        return <FaWallet className="text-blue-200 text-2xl" />;
+      case '/verifywallet <address> <name>':
+        return <FaCheck className="text-blue-200 text-2xl" />;
+      case '/remove <address>':
+        return <FaTimes className="text-blue-200 text-2xl" />;
+      case '/list':
+        return <FaList className="text-blue-200 text-2xl" />;
+      case '/stats':
+        return <FaChartBar className="text-blue-200 text-2xl" />;
+      case '/help':
+        return <FaQuestionCircle className="text-blue-200 text-2xl" />;
+      case '/topwatched':
+        return <FaStar className="text-blue-200 text-2xl" />;
+      case '/search <discord_username>':
+        return <FaSearch className="text-blue-200 text-2xl" />;
+      case '/uptime':
+        return <FaClock className="text-blue-200 text-2xl" />;
+      case '/rank <address>':
+        return <FaTrophy className="text-blue-200 text-2xl" />;
+      case '/purge':
+        return <FaTrash className="text-blue-200 text-2xl" />;
+      case '/raffle <amount>':
+        return <FaGift className="text-blue-200 text-2xl" />;
+      default:
+        return <FaQuestionCircle className="text-blue-200 text-2xl" />;
+    }
+  };
+
   const usage = getUsageDetails(command.command);
 
   return (
@@ -157,9 +202,9 @@ const CommandCard = ({ command }: { command: any }) => {
         {/* Front of card */}
         <div className="absolute w-full h-full backface-hidden">
           <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full flex flex-col">
-            {/* Paw Icon Background */}
+            {/* Command Icon Background */}
             <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
-              <FaPaw className="text-blue-200 text-2xl" />
+              {getCommandIcon(command.command)}
             </div>
             
             <div className="ml-6 flex-1 flex flex-col">
