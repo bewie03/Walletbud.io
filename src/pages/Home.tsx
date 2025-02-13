@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
-import { FaBone, FaDiscord, FaTerminal } from 'react-icons/fa';
+import { FaBone, FaDiscord, FaPaw } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -56,15 +56,15 @@ const Home = () => {
                 {
                   icon: <FaDiscord className="text-2xl" />,
                   title: "Join the Pack",
-                  description: "Come play with us on Discord! Meet our AI pups and get ready for some tail wagging fun.",
+                  description: "Come play with us on Discord! Meet our AI pups and participate in our community",
                   link: "https://discord.gg/d99FBA64Qf",
                   linkText: "Join Discord →",
                   delay: 0.4
                 },
                 {
-                  icon: <FaTerminal className="text-2xl" />,
+                  icon: <FaPaw className="text-2xl" />,
                   title: "Mark Your Territory",
-                  description: "Use /add command to register your wallets. Track up to 20 wallets with our faithful AI companions.",
+                  description: "Use /add to register and track your wallets with our AI companions.",
                   link: "/commands",
                   linkText: "View Commands →",
                   delay: 0.5
@@ -77,17 +77,17 @@ const Home = () => {
                   transition={{ duration: 0.5, delay: feature.delay }}
                   className="group"
                 >
-                  <div className="relative bg-blue-900/30 backdrop-blur-sm rounded-xl p-8 border border-blue-700/50 hover:border-blue-500 transition-all duration-200 h-[240px] flex flex-col hover:scale-[1.02] transition-all duration-300">
+                  <div className="relative bg-blue-900/30 backdrop-blur-sm rounded-xl p-8 border border-blue-700/50 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300 h-[240px] flex flex-col">
                     {/* Icon Background */}
-                    <div className="absolute -top-4 -left-4 bg-blue-700 rounded-xl w-12 h-12 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
+                    <div className="absolute -top-4 -left-4 bg-blue-700 rounded-xl w-12 h-12 flex items-center justify-center shadow-lg">
                       <div className="text-blue-200">
                         {feature.icon}
                       </div>
                     </div>
                     
                     <div className="ml-6">
-                      <h3 className="text-xl font-bold text-white mb-3 hover:scale-[1.02] transition-all duration-300">{feature.title}</h3>
-                      <p className="text-blue-100 mb-4 text-sm hover:scale-[1.02] transition-all duration-300">
+                      <h3 className="text-2xl font-bold text-white mb-3 hover:scale-[1.02] transition-all duration-300">{feature.title}</h3>
+                      <p className="text-blue-100 mb-4 text-base hover:scale-[1.02] transition-all duration-300">
                         {feature.description}
                       </p>
                       {feature.link.startsWith('http') ? (
@@ -95,14 +95,14 @@ const Home = () => {
                           href={feature.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center text-white hover:text-blue-200 text-base font-medium hover:translate-x-1 transition-all duration-200 hover:scale-[1.02]"
+                          className="inline-flex items-center text-white hover:text-blue-200 text-base font-medium hover:translate-x-1 hover:scale-[1.02] transition-all duration-200"
                         >
                           {feature.linkText}
                         </a>
                       ) : (
                         <Link
                           to={feature.link}
-                          className="inline-flex items-center text-white hover:text-blue-200 text-base font-medium hover:translate-x-1 transition-all duration-200 hover:scale-[1.02]"
+                          className="inline-flex items-center text-white hover:text-blue-200 text-base font-medium hover:translate-x-1 hover:scale-[1.02] transition-all duration-200"
                         >
                           {feature.linkText}
                         </Link>

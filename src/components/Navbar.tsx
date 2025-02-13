@@ -42,7 +42,7 @@ const Navbar = () => {
                 className="h-12 w-12 relative z-10"
               />
             </motion.div>
-            <span className="text-2xl font-bold text-white group-hover:text-blue-200 transition-colors duration-300">WalletPup</span>
+            <span className="text-2xl font-bold text-white group-hover:text-blue-200 hover:scale-[1.02] transition-all duration-300">WalletPup</span>
           </Link>
 
           {/* Navigation Links */}
