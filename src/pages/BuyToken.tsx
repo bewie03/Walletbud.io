@@ -82,7 +82,7 @@ const BONE = () => {
               <ul className="text-blue-200 space-y-2">
                 <li>• Market driven token requirement system</li>
                 <li>• Active development and feature expansion</li>
-                <li>• Community-focused growth model</li>
+                <li>• Community focused growth model</li>
               </ul>
             </div>
           </motion.div>
@@ -192,7 +192,7 @@ const BONE = () => {
               </div>
               <div className="mt-4 bg-blue-800 rounded p-3 border border-blue-700">
                 <p className="text-sm text-blue-100 text-center">
-                  Requirements only decrease with market cap growth - never increase back
+                  Requirements only decrease with market cap growth never increase back
                 </p>
               </div>
             </div>

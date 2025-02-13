@@ -465,12 +465,12 @@ const Whitepaper = () => {
                         </ul>
                       </div>
                       <div>
-                        <h5 className="text-white font-semibold mb-2">Long-term Benefits</h5>
+                        <h5 className="text-white font-semibold mb-2">Long Term Benefits</h5>
                         <ul className="list-disc ml-6 text-blue-200 space-y-2">
                           <li>Ecosystem development</li>
                           <li>Future community initiatives</li>
                           <li>Sustainable growth</li>
-                          <li>Community-driven projects</li>
+                          <li>Community driven projects</li>
                         </ul>
                       </div>
                     </div>
