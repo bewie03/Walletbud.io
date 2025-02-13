@@ -64,7 +64,7 @@ const Home = () => {
                 {
                   icon: <FaPaw className="text-2xl" />,
                   title: "Mark Your Territory",
-                  description: "Use /add to register and track your wallets with our AI companions.",
+                  description: "Use the /add command to register your wallets and let our loyal AI companions keep track of them!.         ",
                   link: "/commands",
                   linkText: "View Commands →",
                   delay: 0.5
@@ -77,9 +77,9 @@ const Home = () => {
                   transition={{ duration: 0.5, delay: feature.delay }}
                   className="group"
                 >
-                  <div className="relative bg-blue-900/30 backdrop-blur-sm rounded-xl p-8 border border-blue-700/50 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300 h-[240px] flex flex-col">
+                  <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[240px] flex flex-col">
                     {/* Icon Background */}
-                    <div className="absolute -top-4 -left-4 bg-blue-700 rounded-xl w-12 h-12 flex items-center justify-center shadow-lg">
+                    <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
                       <div className="text-blue-200">
                         {feature.icon}
                       </div>
@@ -87,7 +87,7 @@ const Home = () => {
                     
                     <div className="ml-6">
                       <h3 className="text-2xl font-bold text-white mb-3 hover:scale-[1.02] transition-all duration-300">{feature.title}</h3>
-                      <p className="text-blue-100 mb-4 text-base hover:scale-[1.02] transition-all duration-300">
+                      <p className="text-blue-100 mb-4 text-lg hover:scale-[1.02] transition-all duration-300">
                         {feature.description}
                       </p>
                       {feature.link.startsWith('http') ? (
