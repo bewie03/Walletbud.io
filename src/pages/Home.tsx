@@ -8,7 +8,11 @@ import { MetaTags } from '../components/MetaTags';
 const Home = () => {
   return (
     <>
-      <MetaTags />
+      <MetaTags 
+        title="WalletPup - Your Loyal Wallet Companion"
+        description="Let our pack of AI personalities fetch your wallet updates with entertaining insights"
+        path="/"
+      />
       <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
         <FloatingBones />
         
