@@ -9,9 +9,8 @@ const Home = () => {
   return (
     <>
       <MetaTags 
-        title="WalletPup - Your Loyal Wallet Companion"
-        description="Let our pack of AI personalities fetch your wallet updates with entertaining insights"
-        path="/"
+        title="WalletPup"
+        description="Launch your Cardano wallet companion. No need to seed liquidity."
       />
       <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
         <FloatingBones />

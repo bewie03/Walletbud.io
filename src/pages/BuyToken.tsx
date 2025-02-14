@@ -275,9 +275,8 @@ const BONE = () => {
   return (
     <>
       <MetaTags 
-        title="WalletPup - $BONE Token"
-        description="Get $BONE - The utility token powering WalletPup's Cardano wallet companion"
-        path="/bone"
+        title="WalletPup"
+        description="Launch your Cardano wallet companion. No need to seed liquidity."
       />
       <div className="relative min-h-screen bg-gradient-to-b from-blue-900 to-blue-950">
         <FloatingBones />
