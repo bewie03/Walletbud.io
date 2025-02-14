@@ -28,131 +28,79 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Add Wallet',
           desc: 'Start tracking a Cardano wallet address',
-          details: [
-            'Paste your full Cardano address after /add',
-            'Verify within 15 minutes for first wallet',
-            'Track as many wallets as you like'
-          ]
+          details: "Copy your Cardano wallet address and use /add to begin tracking. This lets our AI companions monitor your wallet's activity and provide updates. Perfect for keeping tabs on your investments."
         };
       case '/verifywallet <address> <name>':
         return {
           title: 'Verify Ownership',
           desc: 'Prove you own the wallet and give it a name',
-          details: [
-            'Choose a wallet from the menu',
-            'Send a small verification amount',
-            'Get a ✓ badge and crown 👑 for first wallet'
-          ]
+          details: "Send a small verification amount to prove ownership, then choose a unique name for your wallet. This grants you a verified badge and crown for your first wallet, showing you're a trusted member."
+        };
+      case '/remove <address>':
+        return {
+          title: 'Remove Wallet',
+          desc: 'Stop tracking selected wallets',
+          details: "Use this command when you no longer want to track a wallet. Simply provide the wallet address, and we'll stop monitoring it. You can always add it back later if you change your mind."
         };
       case '/list':
         return {
           title: 'View Wallets',
           desc: 'See all your tracked wallets',
-          details: [
-            'Verified wallets show custom names',
-            'Primary wallet marked with 👑',
-            'Click any wallet for detailed stats'
-          ]
-        };
-      case '/remove <address>':
-        return {
-          title: 'Remove Wallets',
-          desc: 'Stop tracking selected wallets',
-          details: [
-            'Choose wallets from the menu',
-            'Removing primary (👑) clears all',
-            'Can add them back anytime'
-          ]
+          details: "Get a quick overview of all your tracked wallets, their verification status, and custom names. This helps you manage multiple wallets and ensure they're all being monitored correctly."
         };
       case '/stats':
         return {
-          title: 'View Stats',
+          title: 'Stats',
           desc: 'Check wallet tracking statistics',
-          details: [
-            'See your tracking summary',
-            'View global system stats',
-            'Updates live as changes happen'
-          ]
+          details: "View detailed statistics about your tracked wallets, including total value, transaction history, and activity trends. Perfect for understanding your portfolio's performance at a glance."
         };
       case '/help':
         return {
-          title: 'Get Help',
+          title: 'Help',
           desc: 'Learn about available commands',
-          details: [
-            'Shows all commands you can use',
-            'Explains what each one does',
-            'Lists any special requirements'
-          ]
+          details: "Access a comprehensive guide to all available commands and features. Whether you're new or need a refresher, this command explains everything you can do with WalletPup."
         };
       case '/topwatched':
         return {
-          title: 'Popular Wallets',
+          title: 'Top Watched',
           desc: 'See the most tracked wallets',
-          details: [
-            'Top 10 most watched wallets',
-            'Shows names if verified',
-            'Live watcher count for each'
-          ]
+          details: "Discover which wallets are most popular in our community. This gives you insights into trending wallets and helps you identify potential opportunities in the Cardano ecosystem."
         };
       case '/search <discord_username>':
         return {
           title: 'Search Wallets',
           desc: 'Find wallets by their name',
-          details: [
-            'Type part of the name to search',
-            'Shows up to 25 matches',
-            'Only finds verified wallets'
-          ]
+          details: "Looking for a specific wallet? Search by Discord username to find verified wallets in our community. Great for connecting with other members and tracking interesting wallets."
         };
       case '/uptime':
         return {
-          title: 'Bot Status',
+          title: 'Uptime',
           desc: 'Check if bot is running normally',
-          details: [
-            'Shows current uptime',
-            'Last maintenance time',
-            'System health status'
-          ]
+          details: "Verify that WalletPup is functioning properly. This command shows you our uptime status and any ongoing maintenance, ensuring you never miss important wallet updates."
         };
       case '/rank <address>':
         return {
-          title: 'Check Rank',
+          title: 'Rank',
           desc: 'See how popular a wallet is',
-          details: [
-            'Shows total watchers',
-            'Global ranking position',
-            'Updates in real-time'
-          ]
+          details: "Check how frequently a wallet is tracked by our community. Higher ranks indicate more community interest, helping you identify notable wallets in the Cardano ecosystem."
         };
       case '/purge':
         return {
-          title: 'Clear Messages',
+          title: 'Purge Messages',
           desc: 'Clean up old bot messages',
-          details: [
-            'Removes recent bot messages',
-            'Up to 100 at once',
-            'Keeps your chat tidy'
-          ]
+          details: "Keep your Discord channel tidy by removing old WalletPup messages. This helps maintain a clean chat environment while preserving important recent updates."
         };
       case '/raffle <amount>':
         return {
-          title: 'Join Raffle',
+          title: 'Raffle',
           desc: 'Enter to win the daily prize',
-          details: [
-            'Must have verified wallet',
-            'Send 4.8-5 ADA to enter',
-            'Winner picked at midnight UTC'
-          ]
+          details: "Join our daily community raffle for a chance to win prizes. Simply specify your entry amount - the more you enter, the better your chances of winning exciting rewards!"
         };
       default:
         return {
-          title: 'Command Help',
-          desc: 'Get command information',
-          details: [
-            'Type /help for command list',
-            'Click cards for details',
-            'All commands are case-sensitive'
-          ]
+          title: 'Unknown Command',
+          desc: 'Command not found',
+          details: "This command isn't recognized. Use /help to see all available commands and their proper usage. Our AI companions are here to assist you!"
         };
     }
   };
@@ -231,13 +179,10 @@ const CommandCard = ({ command }: { command: any }) => {
                 <p className="text-blue-300 text-sm">{usage.desc}</p>
               </div>
               
-              <div className="flex-1 space-y-3">
-                {usage.details.map((detail, idx) => (
-                  <div key={idx} className="text-gray-300 text-base flex items-baseline">
-                    <span className="text-[#4f88e3] mr-2 text-lg">•</span>
-                    <span>{detail}</span>
-                  </div>
-                ))}
+              <div className="flex-1">
+                <p className="text-gray-300 text-base leading-relaxed">
+                  {usage.details}
+                </p>
               </div>
             </div>
           </div>

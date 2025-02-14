@@ -45,14 +45,9 @@ const GuideCard = ({ step, index }: { step: any; index: number }) => {
               
               <div className="ml-6 h-full flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
-                <div className="flex-1 space-y-3">
-                  {step.details.map((detail: string, idx: number) => (
-                    <div key={idx} className="text-gray-300 text-base flex items-baseline">
-                      <span className="text-[#4f88e3] mr-2 text-lg">•</span>
-                      <span>{detail}</span>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-gray-300 text-base leading-relaxed">
+                  {step.details}
+                </p>
               </div>
             </div>
           </div>
@@ -68,78 +63,42 @@ const Guide = () => {
       number: '01',
       title: 'Get BONE Tokens',
       description: 'Purchase $BONE tokens from a DEX for your primary wallet.',
-      details: [
-        'Visit a supported DEX platform',
-        'Purchase required amount of $BONE',
-        'Keep tokens in your primary wallet',
-        'Requirements decrease with market cap',
-        'Never increases once lowered'
-      ],
+      details: "Visit a supported DEX platform to purchase $BONE tokens for your primary wallet. The required amount decreases with market cap and never increases once lowered, making it easier to join over time.",
       icon: FaBone
     },
     {
       number: '02',
       title: 'Join Discord',
       description: 'Join our Discord and add WalletPup as an app.',
-      details: [
-        'Join the Discord server',
-        'Verify yourself to access channels',
-        'Add WalletPup as an app',
-        'This allows the bot to DM you',
-        'Required for transaction alerts'
-      ],
+      details: "Join our Discord server, complete verification, and add WalletPup as an app to enable direct messaging. This setup ensures you receive instant transaction alerts and updates about your wallets.",
       icon: FaDiscord
     },
     {
       number: '03',
       title: 'Add Primary Wallet',
       description: 'Use /add to register your wallet with BONE tokens.',
-      details: [
-        'Use /add <wallet_address>',
-        'Must contain required $BONE tokens',
-        'This becomes your primary wallet',
-        'Get crown 👑 after verification',
-        'Complete verification within 15 mins'
-      ],
+      details: "Register your wallet containing $BONE tokens using the /add command. Once verified, this becomes your primary wallet and you'll receive a crown badge, unlocking all WalletPup features.",
       icon: FaWallet
     },
     {
       number: '04',
       title: 'Verify Ownership',
-      description: 'Prove ownership of your primary wallet with /verify.',
-      details: [
-        'Use /verify command',
-        'Follow verification steps',
-        'Send small verification amount',
-        'Confirms wallet ownership',
-        'Unlocks additional features'
-      ],
+      description: 'Complete verification to unlock all features.',
+      details: "Send a small verification transaction to prove wallet ownership. This quick process enables all premium features and grants you a verified status, showing you're a trusted member of our community.",
       icon: FaCheck
     },
     {
       number: '05',
       title: 'Add More Wallets',
-      description: 'Add up to 19 additional wallets - no BONE needed.',
-      details: [
-        'Use /add for each wallet',
-        'No $BONE tokens required',
-        'Track up to 20 wallets total',
-        'Same tracking features',
-        'Optional verification'
-      ],
+      description: 'Track additional wallets for broader coverage.',
+      details: "Expand your tracking by adding more wallets using /add. Each wallet you add increases your coverage and helps you stay informed about all your Cardano assets in one place.",
       icon: FaPlus
     },
     {
       number: '06',
-      title: 'Start Tracking',
-      description: 'Tracking starts automatically for all added wallets.',
-      details: [
-        'Instant transaction alerts',
-        'AI personality commentary',
-        'NFT tracking included',
-        'Access to raffles & events',
-        'Use /list to view your wallets'
-      ],
+      title: 'Monitor Activity',
+      description: 'Get real-time updates on wallet activity.',
+      details: "Watch your wallets in action! Receive instant notifications about transactions, balance changes, and market movements. Our AI companions provide entertaining insights about your wallet activity.",
       icon: FaChartLine
     }
   ];

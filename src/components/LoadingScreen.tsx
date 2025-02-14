@@ -81,7 +81,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           </motion.div>
 
           {/* Central content */}
-          <div className="relative z-10 text-center">
+          <div className="relative z-10 text-center px-4">
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -105,11 +105,11 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                   transition: { duration: 0.8 }
                 }}
                 transition={{ duration: 1, delay: 0.8 }}
-                className="text-6xl font-bold text-white mb-4 flex items-center justify-center gap-4"
+                className="text-4xl sm:text-6xl font-bold text-white mb-4 flex items-center justify-center gap-2 sm:gap-4"
               >
-                <FaPaw className="text-5xl" />
+                <FaPaw className="text-3xl sm:text-5xl" />
                 WalletPup
-                <FaPaw className="text-5xl transform rotate-45" />
+                <FaPaw className="text-3xl sm:text-5xl transform rotate-45" />
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -119,7 +119,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                   transition: { duration: 0.5 }
                 }}
                 transition={{ duration: 0.5, delay: 1.2 }}
-                className="text-white text-xl"
+                className="text-white text-lg sm:text-xl"
               >
                 Your Faithful Finance Companion
               </motion.p>
@@ -134,7 +134,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                 transition: { duration: 0.5 }
               }}
               transition={{ duration: 1, delay: 1.5 }}
-              className="w-[300px] h-[2px] bg-white mx-auto mb-6"
+              className="w-[200px] sm:w-[300px] h-[2px] bg-white mx-auto mb-6"
             />
 
             {/* Paw print dots animation */}
