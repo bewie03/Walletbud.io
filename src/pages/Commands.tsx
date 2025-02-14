@@ -201,7 +201,7 @@ const CommandCard = ({ command }: { command: any }) => {
       >
         {/* Front of card */}
         <div className="absolute w-full h-full backface-hidden">
-          <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full flex flex-col">
+          <div className="relative bg-blue-900 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full flex flex-col">
             {/* Command Icon Background */}
             <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
               {getCommandIcon(command.command)}
@@ -209,7 +209,7 @@ const CommandCard = ({ command }: { command: any }) => {
             
             <div className="ml-6 flex-1 flex flex-col">
               <h3 className="text-2xl font-bold text-white mb-3">{command.name}</h3>
-              <div className="bg-blue-800/50 rounded-xl px-4 py-2 mb-4 inline-block border border-blue-700/50">
+              <div className="bg-blue-800 rounded-xl px-4 py-2 mb-4 inline-block border border-blue-700">
                 <code className="text-blue-200 font-mono">{command.command}</code>
               </div>
               <p className="text-blue-100 text-lg flex-1">{command.description}</p>
@@ -219,7 +219,7 @@ const CommandCard = ({ command }: { command: any }) => {
 
         {/* Back of card */}
         <div className="absolute w-full h-full backface-hidden rotate-y-180">
-          <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
+          <div className="relative bg-blue-900 backdrop-blur-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
             {/* Back Icon */}
             <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
               <FaArrowLeft className="text-blue-200 text-2xl" />
@@ -315,7 +315,7 @@ const Commands = () => {
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
       <FloatingBones />
       {/* Hero Section */}
-      <div className="w-full bg-blue-900/50 backdrop-blur-sm pb-8">
+      <div className="w-full bg-blue-900 backdrop-blur-sm pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-16">

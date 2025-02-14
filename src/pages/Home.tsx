@@ -6,7 +6,7 @@ import { FaBone, FaDiscord, FaPaw } from 'react-icons/fa';
 
 const Home = () => {
   return (
-    <div className="h-screen bg-[#1e40af] relative overflow-hidden flex flex-col">
+    <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
       <FloatingBones />
       
       {/* Hero Section */}
