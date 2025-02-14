@@ -7,7 +7,7 @@ interface MetaTagsProps {
 
 export const MetaTags = ({ 
   title = "WalletPup - Your Loyal Wallet Companion",
-  description = "Get real-time notifications for your Cardano wallet. Track ADA transactions, tokens, NFTs, DApp interactions, and staking rewards through Discord. Powered by $BONE token."
+  description = "Your Loyal Wallet Companion"
 }: MetaTagsProps) => {
   return (
     <Helmet>

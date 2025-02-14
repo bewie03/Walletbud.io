@@ -276,7 +276,7 @@ const BONE = () => {
     <>
       <MetaTags 
         title="WalletPup - Your Cardano Wallet Tracking Bot"
-        description="Get real-time notifications for your Cardano wallet. Track ADA transactions, tokens, NFTs, DApp interactions, and staking rewards through Discord. Powered by $BONE token."
+        description="Your Loyal Wallet Companion"
       />
       <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
         <FloatingBones />
