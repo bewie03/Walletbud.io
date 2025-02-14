@@ -217,7 +217,7 @@ const Doghouse = () => {
       title: 'The Firefighter',
       description: '',
       category: 'professional',
-      story: "Always first on the scene when your finances are burning down, sirens blazing. Rushes in to put out money emergencies and rescue your budget from disaster with practiced precision. Cool under pressure, hot on response time, ready to save.",
+      story: "Always first on the scene when your finances are burning down, sirens blazing. Rushes in to put out money emergencies and rescue your budget from disaster with practiced precision. Cool under pressure, quick to respond, ready to save.",
     },
     {
       name: 'Doberman',
@@ -245,7 +245,7 @@ const Doghouse = () => {
       title: 'The Soldier',
       description: '',
       category: 'professional',
-      story: "Standing at attention with military precision, this disciplined pup runs finances like a well oiled machine. With tactical planning and unwavering dedication, they will march your budget through any battlefield toward financial victory.",
+      story: "Standing at attention with military precision, this disciplined pup runs finances like a well maintained machine. With tactical planning and unwavering dedication, they will march your budget through any battlefield toward financial victory.",
     },
     {
       name: 'Golden Retriever',
@@ -308,7 +308,7 @@ const Doghouse = () => {
       title: 'The Surfer',
       description: '',
       category: 'lifestyle',
-      story: "Catching waves and living the dream with financial strategies. We will keep you on track with reminders and updates, and maybe even help you develop a few strategies that are totally gnarly.",
+      story: "Catching waves and living the dream with financial strategies. They will help you ride the market swells and keep your money flowing with the tides. Totally gnarly financial moves included, dude!",
     },
     {
       name: 'Neapolitan Mastiff',
@@ -420,7 +420,7 @@ const Doghouse = () => {
       title: 'The Artist',
       description: '',
       category: 'creative',
-      story: "Being totally artistic and expressive with their financial strategies. They will keep you on track with reminders and updates, and maybe even help you develop a few financial strategies that are totally avant garde.",
+      story: "Being creative and expressive with their financial strategies. They will keep you stylishly on track with elegant reminders and updates, while helping you develop a few financial strategies that are truly avant garde.",
     },
     {
       name: 'Weimaraner',
