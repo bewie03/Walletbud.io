@@ -28,13 +28,13 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Add Wallet',
           desc: 'Start tracking a Cardano wallet address',
-          details: "Copy your Cardano wallet address and use /add to begin tracking. This lets our AI companions monitor your wallet's activity and provide updates. Perfect for keeping tabs on your investments."
+          details: "Use /add to begin tracking. This lets our AI companions monitor your wallet's activity and provide updates. First wallet must be the one with the BONE tokens."
         };
       case '/verifywallet <address> <name>':
         return {
           title: 'Verify Ownership',
           desc: 'Prove you own the wallet and give it a name',
-          details: "Send a small verification amount to prove ownership, then choose a unique name for your wallet. This grants you a verified badge and crown for your first wallet, showing you're a trusted member."
+          details: "Send a small verification amount to prove ownership, then choose a unique name for your wallet. This grants you a verified badge and crown for your first wallet."
         };
       case '/remove <address>':
         return {
