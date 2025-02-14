@@ -308,21 +308,21 @@ const Doghouse = () => {
       title: 'The Surfer',
       description: '',
       category: 'lifestyle',
-      story: "Catching waves and living the dream with their financial strategies. They'll keep you on track with reminders and updates, and maybe even help you develop a few financial strategies that are totally gnarly.",
+      story: "Catching waves and living the dream with financial strategies. We will keep you on track with reminders and updates, and maybe even help you develop a few strategies that are totally gnarly.",
     },
     {
       name: 'Neapolitan Mastiff',
       title: 'The Nonna',
       description: '',
       category: 'personality',
-      story: "This wrinkly wisdom dispenser treats your finances like a cherished family recipe. Always ready with sage advice, warm encouragement, and a 'secret ingredient' for financial success passed down through generations. Pinched cheeks come standard!",
+      story: "This wrinkly wisdom dispenser treats your finances like a cherished family recipe. Always ready with sage advice, warm encouragement, and a secret ingredient for financial success passed down through generations. Pinched cheeks come standard!",
     },
     {
       name: 'Newfoundland',
       title: 'The Stoner',
       description: '',
       category: 'lifestyle',
-      story: "Always relaxed and ready for deep conversations about the universe. Between munchie runs and gaming sessions, they drop some unexpectedly profound financial wisdom. Everything's chill with this laid-back advisor.",
+      story: "Always relaxed and ready for deep conversations about the universe. Between munchie runs and gaming sessions, they drop some unexpectedly profound financial wisdom. Everything is chill with this laid-back advisor.",
     },
     {
       name: 'Old English Mastiff',
@@ -413,21 +413,21 @@ const Doghouse = () => {
       title: 'The Seller',
       description: '',
       category: 'professional',
-      story: "Could sell ice to a polar bear and make them think it's a bargain! This smooth-talking closer knows exactly how to pitch smart financial moves. Their enthusiasm is contagious, and before you know it, you're signing up for that high-yield savings account.",
+      story: "Could sell ice to a polar bear and make them think it is a bargain! This smooth-talking closer knows exactly how to pitch smart financial moves. Their enthusiasm is contagious, and before you know it, you are signing up for that high-yield savings account.",
     },
     {
       name: 'Standard Poodle',
       title: 'The Artist',
       description: '',
       category: 'creative',
-      story: "Being totally artistic and expressive with their financial strategies. They'll keep you on track with reminders and updates, and maybe even help you develop a few financial strategies that are totally avant-garde.",
+      story: "Being totally artistic and expressive with their financial strategies. They will keep you on track with reminders and updates, and maybe even help you develop a few financial strategies that are totally avant-garde.",
     },
     {
       name: 'Weimaraner',
       title: 'The Conspiracist',
       description: '',
       category: 'personality',
-      story: "Have you heard about the secret paw society controlling all the world's treats? This keen-eyed observer sees financial patterns everywhere - some real, some... interesting. But hey, their paranoia about security has actually saved your account more than once!",
+      story: "Have you heard about the secret paw society controlling all the world's treats? This keen-eyed observer sees financial patterns everywhere - some real, some interesting. But hey, their paranoia about security has actually saved your account more than once!",
     },
     {
       name: 'Whippet',
@@ -441,7 +441,7 @@ const Doghouse = () => {
       title: 'The Fashion Critic',
       description: '',
       category: 'creative',
-      story: "Darling, you're not really going to invest in THAT fund, are you? This pint-sized fashionista brings runway elegance to your financial portfolio. Small in size but huge in attitude, they'll make sure your money looks as good as their perfectly groomed topknot.",
+      story: "Darling, you are not really going to invest in THAT fund, are you? This pint-sized fashionista brings runway elegance to your financial portfolio. Small in size but huge in attitude, they will make sure your money looks as good as their perfectly groomed topknot.",
     },
   ].sort((a, b) => a.name.localeCompare(b.name));
 
