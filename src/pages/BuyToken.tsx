@@ -276,7 +276,7 @@ const BONE = () => {
     <>
       <MetaTags 
         title="WalletPup"
-        description="Launch your Cardano wallet companion. No need to seed liquidity."
+        description="Your Loyal Wallet Companion on Cardano"
       />
       <div className="relative min-h-screen bg-gradient-to-b from-blue-900 to-blue-950">
         <FloatingBones />
