@@ -6,6 +6,7 @@ import '@dexhunterio/swaps/lib/assets/style.css';
 import { FaBone, FaPaw, FaChartLine, FaCoins, FaExchangeAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
+import { MetaTags } from '../components/MetaTags';
 
 const BONE = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -272,53 +273,59 @@ const BONE = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
-      <FloatingBones />
-      {/* Hero Section */}
-      <div className="w-full bg-blue-900 pb-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedElement animation="slideDown" delay={0.2}>
-            <div className="text-center pt-32 pb-16">
-              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
-                $BONE Token
-              </h1>
-              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
-                Your ticket to joining the pack
-              </p>
-            </div>
-          </AnimatedElement>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="w-full bg-blue-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          {/* Tabs */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {tabs.map((tab) => (
-              <motion.button
-                key={tab.id}
-                variants={buttonVariants}
-                whileHover="hover"
-                whileTap="tap"
-                onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center space-x-2 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 ${
-                  activeTab === tab.id
-                    ? 'bg-blue-700 text-white shadow-lg scale-105'
-                    : 'bg-blue-900 text-blue-200 hover:bg-blue-700/50'
-                }`}
-              >
-                <tab.icon className={`${activeTab === tab.id ? 'text-blue-300' : 'text-blue-400'}`} />
-                <span>{tab.label}</span>
-              </motion.button>
-            ))}
+    <>
+      <MetaTags 
+        title="WalletPup - Your Cardano Wallet Tracking Bot"
+        description="Get real-time notifications for your Cardano wallet. Track ADA transactions, tokens, NFTs, DApp interactions, and staking rewards through Discord. Powered by $BONE token."
+      />
+      <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
+        <FloatingBones />
+        {/* Hero Section */}
+        <div className="w-full bg-blue-900 pb-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <AnimatedElement animation="slideDown" delay={0.2}>
+              <div className="text-center pt-32 pb-16">
+                <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
+                  $BONE Token
+                </h1>
+                <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
+                  Your ticket to joining the pack
+                </p>
+              </div>
+            </AnimatedElement>
           </div>
+        </div>
 
-          {/* Content */}
-          {renderContent()}
+        {/* Main Content */}
+        <div className="w-full bg-blue-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            {/* Tabs */}
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+              {tabs.map((tab) => (
+                <motion.button
+                  key={tab.id}
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  whileTap="tap"
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`flex items-center space-x-2 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 ${
+                    activeTab === tab.id
+                      ? 'bg-blue-700 text-white shadow-lg scale-105'
+                      : 'bg-blue-900 text-blue-200 hover:bg-blue-700/50'
+                  }`}
+                >
+                  <tab.icon className={`${activeTab === tab.id ? 'text-blue-300' : 'text-blue-400'}`} />
+                  <span>{tab.label}</span>
+                </motion.button>
+              ))}
+            </div>
+
+            {/* Content */}
+            {renderContent()}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
