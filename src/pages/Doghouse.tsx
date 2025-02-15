@@ -37,9 +37,9 @@ const DogCard = ({ dog }: { dog: Dog }) => {
       >
         {/* Front of card */}
         <div className="absolute w-full h-full backface-hidden">
-          <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
+          <div className="relative bg-blue-900 rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
             {/* Image Section */}
-            <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-800/50 backdrop-blur-sm border-b border-blue-600">
+            <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-900 border-b border-blue-600">
               <div className="absolute inset-0 flex items-center justify-center">
                 <FaDog className="text-blue-400 text-7xl opacity-50 group-hover:scale-110 transition-transform duration-300" />
               </div>
@@ -62,7 +62,7 @@ const DogCard = ({ dog }: { dog: Dog }) => {
 
         {/* Back of card */}
         <div className="absolute w-full h-full backface-hidden rotate-y-180">
-          <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
+          <div className="relative bg-blue-900 rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
             {/* Back Icon */}
             <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12 z-10">
               {createElement(categoryIcons[dog.category as keyof typeof categoryIcons] || FaDog, {
@@ -71,7 +71,7 @@ const DogCard = ({ dog }: { dog: Dog }) => {
             </div>
             
             {/* Square Main Section */}
-            <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-800/50 backdrop-blur-sm border-b border-blue-600 p-8">
+            <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-800 p-8 border-b border-blue-600">
               <div className="ml-6 h-full flex items-center">
                 <p className="text-blue-100 text-xl leading-relaxed">{dog.story}</p>
               </div>
@@ -463,7 +463,7 @@ const Doghouse = () => {
   return (
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
       <FloatingBones />
-      <div className="w-full bg-blue-900/50 backdrop-blur-sm pb-8">
+      <div className="w-full bg-blue-900 rounded-b-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-8">
@@ -497,7 +497,7 @@ const Doghouse = () => {
           
           {/* Filter Section */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="bg-blue-900/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-blue-700">
+            <div className="bg-blue-900 rounded-2xl p-6 shadow-lg border border-blue-700">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 {/* Left Section - Dogs Count and Search */}
                 <div className="flex-1 w-full md:w-auto flex flex-col sm:flex-row items-center gap-4">
