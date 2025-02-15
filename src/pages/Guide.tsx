@@ -98,7 +98,7 @@ const Guide = () => {
       number: '06',
       title: 'Monitor Activity',
       description: 'Get real-time updates on wallet activity.',
-      details: "Watch your wallets in action! Receive instant notifications about transactions, balance changes, and market movements. Our AI companions provide entertaining insights about your wallet activity.",
+      details: "Watch your wallets in action! Receive instant notifications about transactions, balance changes, and market movements. Our loyal pups provide entertaining insights about your wallet activity.",
       icon: FaChartLine
     }
   ];

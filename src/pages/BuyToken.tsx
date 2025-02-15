@@ -66,10 +66,10 @@ const BONE = () => {
               {
                 title: "Fetch Updates",
                 icon: FaBone,
-                description: "Receive real time Discord notifications with AI powered insights",
+                description: "Receive real time Discord notifications with insights from our loyal pups",
                 features: [
-                  "Transaction alerts with AI commentary",
-                  "50 unique AI personalities",
+                  "Transaction alerts with commentary from our pups",
+                  "50 unique pup personalities",
                   "NFT activity updates"
                 ]
               },

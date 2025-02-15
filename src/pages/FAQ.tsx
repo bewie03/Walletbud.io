@@ -15,15 +15,15 @@ const FAQ = () => {
   const faqItems: FAQItem[] = [
     {
       question: "What is WalletPup?",
-      answer: "WalletPup connects your Cardano wallets to Discord, providing entertaining AI commentary on all your transactions. Our 50 unique AI personalities make tracking fun, while our interactive commands and regular community events keep you engaged. Track ADA, tokens, and NFTs while enjoying witty insights in your DMs!"
+      answer: "WalletPup connects your Cardano wallets to Discord, providing entertaining commentary from our loyal pups on all your transactions. Our 50 unique pup personalities make tracking fun, while our interactive commands and regular community events keep you engaged. Track ADA, tokens, and NFTs while enjoying witty insights in your DMs!"
     },
     {
       question: "What makes WalletPup unique?",
-      answer: "Our 50 AI personalities deliver entertaining commentary on every transaction. Each has their own style and humor, making wallet tracking fun and engaging!"
+      answer: "Our 50 pup personalities deliver entertaining commentary on every transaction. Each has their own style and humor, making wallet tracking fun and engaging!"
     },
     {
       question: "What can I track with WalletPup?",
-      answer: "Track up to 20 Cardano wallets! Get entertaining AI commentary on all ADA, token, and NFT transactions directly in your Discord DMs."
+      answer: "Track up to 20 Cardano wallets! Get entertaining commentary from our loyal pups on all ADA, token, and NFT transactions directly in your Discord DMs."
     },
     {
       question: "What community features do you offer?",
@@ -31,7 +31,7 @@ const FAQ = () => {
     },
     {
       question: "How do I start using WalletPup?",
-      answer: "Join our Discord and check out our guide page at walletpup.com/guide to get started! We'll show you how to link your Cardano wallet and start enjoying entertaining AI commentary."
+      answer: "Join our Discord and check out our guide page at walletpup.com/guide to get started! We'll show you how to link your Cardano wallet and start enjoying entertaining commentary from our pups."
     },
     {
       question: "Is WalletPup secure?",
@@ -39,7 +39,7 @@ const FAQ = () => {
     },
     {
       question: "Can I track multiple wallets?",
-      answer: "Yes! Verify your primary wallet with BONE tokens, then track up to 19 more wallets. Each gets the same fun AI commentary!"
+      answer: "Yes! Verify your primary wallet with BONE tokens, then track up to 19 more wallets. Each gets the same fun commentary from our pups!"
     },
     {
       question: "What's the doggie bowl raffle?",

@@ -28,7 +28,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Add Wallet',
           desc: 'Start tracking a Cardano wallet address',
-          details: "Use /add to begin tracking. This lets our AI companions monitor your wallet's activity and provide updates. First wallet must be the one with the BONE tokens."
+          details: "Use /add to begin tracking. This lets our loyal pups monitor your wallet's activity and provide updates. First wallet must be the one with the BONE tokens."
         };
       case '/verifywallet <address> <name>':
         return {
@@ -100,7 +100,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Unknown Command',
           desc: 'Command not found',
-          details: "This command isn't recognized. Use /help to see all available commands and their proper usage. Our AI companions are here to assist you!"
+          details: "This command isn't recognized. Use /help to see all available commands and their proper usage. Our pups are here to assist you!"
         };
     }
   };
