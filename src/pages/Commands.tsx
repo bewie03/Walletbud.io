@@ -268,7 +268,7 @@ const Commands = () => {
     {
       name: 'Feeding Bowl',
       command: '/bowl',
-      description: 'Fill the feeding bowl (5 ADA)',
+      description: 'Fill the feeding bowl',
     },
     {
       name: 'Toggle Notifications',

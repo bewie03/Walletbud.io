@@ -144,7 +144,7 @@ const Whitepaper = () => {
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
                     <code className="text-blue-300 font-bold">/bowl</code>
-                    <p className="text-blue-100 mt-1">Fill the feeding bowl (5 ADA)</p>
+                    <p className="text-blue-100 mt-1">Fill the feeding bowl</p>
                   </div>
                 </div>
               </div>
