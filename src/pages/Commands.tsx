@@ -92,11 +92,11 @@ const CommandCard = ({ command }: { command: any }) => {
           desc: 'Clean up old bot messages',
           details: "Keep your Discord channel tidy by removing old WalletPup messages. This helps maintain a clean chat environment while preserving important recent updates."
         };
-      case '/bowl <amount>':
+      case '/bowl':
         return {
           title: 'Feeding Bowl',
           desc: 'Fill the feeding bowl',
-          details: "Fill the feeding bowl! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
+          details: "Fill the feeding bowl with 5 ADA! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
         };
       case '/notifications':
         return {
@@ -143,7 +143,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return <FaTrophy className="text-blue-200 text-2xl" />;
       case '/purge':
         return <FaTrash className="text-blue-200 text-2xl" />;
-      case '/bowl <amount>':
+      case '/bowl':
         return <FaGift className="text-blue-200 text-2xl" />;
       case '/notifications':
         return <FaBell className="text-blue-200 text-2xl" />;
@@ -267,8 +267,8 @@ const Commands = () => {
     },
     {
       name: 'Feeding Bowl',
-      command: '/bowl <amount>',
-      description: 'Fill the feeding bowl',
+      command: '/bowl',
+      description: 'Fill the feeding bowl (5 ADA)',
     },
     {
       name: 'Toggle Notifications',

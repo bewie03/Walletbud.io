@@ -142,6 +142,10 @@ const Whitepaper = () => {
                     <code className="text-blue-300 font-bold">/remove</code>
                     <p className="text-blue-100 mt-1">Stop tracking specific wallets</p>
                   </div>
+                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
+                    <code className="text-blue-300 font-bold">/bowl</code>
+                    <p className="text-blue-100 mt-1">Fill the feeding bowl (5 ADA)</p>
+                  </div>
                 </div>
               </div>
 
@@ -165,10 +169,6 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
                     <code className="text-blue-300 font-bold">/stats</code>
                     <p className="text-blue-100 mt-1">View global community statistics</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/bowl</code>
-                    <p className="text-blue-100 mt-1">Fill the feeding bowl</p>
                   </div>
                 </div>
               </div>
@@ -448,7 +448,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Bowl</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Feeding Bowl is our community prize pool with durations set by project owners. Longer periods result in bigger prize pools, where verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
+                      The Feeding Bowl is our community prize pool with durations set by project owners. Each entry costs 5 ADA, with longer periods resulting in bigger prize pools. Verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
                     </p>
                   </div>
 
