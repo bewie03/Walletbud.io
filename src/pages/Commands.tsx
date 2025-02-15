@@ -94,9 +94,9 @@ const CommandCard = ({ command }: { command: any }) => {
         };
       case '/bowl <amount>':
         return {
-          title: 'Dog Bowl',
-          desc: 'Enter the community bowl',
-          details: "Join our community bowl! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
+          title: 'Feeding Bowl',
+          desc: 'Fill the feeding bowl',
+          details: "Fill the feeding bowl! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
         };
       case '/notifications':
         return {
@@ -266,9 +266,9 @@ const Commands = () => {
       description: 'Clean up old bot messages',
     },
     {
-      name: 'Dog Bowl',
+      name: 'Feeding Bowl',
       command: '/bowl <amount>',
-      description: 'Enter the community bowl',
+      description: 'Fill the feeding bowl',
     },
     {
       name: 'Toggle Notifications',

@@ -30,8 +30,8 @@ const FAQ = () => {
       answer: "95% for public distribution (950M BONE) and 5% for development and partnerships (50M BONE)."
     },
     {
-      question: "What's the doggie bowl?",
-      answer: "Community bowl where verified wallets can win rewards. 80% to winner, 10% burns BONE, 10% funds community contests."
+      question: "What's the feeding bowl?",
+      answer: "A community prize pool where verified wallets can win rewards. 80% to winner, 10% burns BONE, 10% funds community contests."
     },
     {
       question: "Is WalletPup secure?",

@@ -168,7 +168,7 @@ const Whitepaper = () => {
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
                     <code className="text-blue-300 font-bold">/bowl</code>
-                    <p className="text-blue-100 mt-1">Join community bowl</p>
+                    <p className="text-blue-100 mt-1">Fill the feeding bowl</p>
                   </div>
                 </div>
               </div>
@@ -426,7 +426,7 @@ const Whitepaper = () => {
     },
     {
       id: 'doggie-bowl',
-      title: 'The Doggie Bowl',
+      title: 'The Feeding Bowl',
       icon: <FaGift className="w-6 h-6" />,
       content: (
         <motion.div 
@@ -438,7 +438,7 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">The Doggie Bowl</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">The Feeding Bowl</h3>
                 
                 <div className="space-y-8">
                   {/* What is it */}
@@ -448,7 +448,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Bowl</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Doggie Bowl is our community prize pool with durations set by project owners. Longer periods result in bigger prize pools, where verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
+                      The Feeding Bowl is our community prize pool with durations set by project owners. Longer periods result in bigger prize pools, where verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
                     </p>
                   </div>
 
@@ -477,7 +477,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Benefits</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Doggie Bowl creates an engaging way for our community to interact while supporting both token value through burns and funding exciting skill based contests for those who prefer to showcase their talents.
+                      The Feeding Bowl creates an engaging way for our community to interact while supporting both token value through burns and funding exciting skill based contests for those who prefer to showcase their talents.
                     </p>
                   </div>
 
@@ -820,7 +820,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Sustainable Token Model</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our dynamic BONE requirement system ensures sustainable growth. With 95% of tokens allocated to the public and regular token burns through the Doggie Bowl, we've created an ecosystem that rewards early adopters while remaining accessible to new users.
+                      Our dynamic BONE requirement system ensures sustainable growth. With 95% of tokens allocated to the public and regular token burns through the Feeding Bowl, we've created an ecosystem that rewards early adopters while remaining accessible to new users.
                     </p>
                   </div>
 
@@ -831,7 +831,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Growing Community</h4>
                     </div>
                     <p className="text-blue-100">
-                      Regular events, contests, and bowls keep our community engaged and growing. Through the Doggie Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
+                      Regular events, contests, and feeding bowls keep our community engaged and growing. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
                     </p>
                   </div>
                 </div>
