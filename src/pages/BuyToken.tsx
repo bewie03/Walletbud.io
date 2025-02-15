@@ -6,7 +6,6 @@ import '@dexhunterio/swaps/lib/assets/style.css';
 import { FaBone, FaPaw, FaChartLine, FaCoins, FaExchangeAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
-import { MetaTags } from '../components/MetaTags';
 
 const BONE = () => {
   const [activeTab, setActiveTab] = useState('overview');
