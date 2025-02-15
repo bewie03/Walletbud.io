@@ -48,22 +48,17 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
             }}
             transition={{ duration: 3, delay: 0.2, times: [0, 0.5, 1] }}
             className="absolute w-[600px] h-[600px] border-white border-[1px] rounded-full"
-          >
-            {/* Decorative paw prints on the inner circle */}
-            {[...Array(6)].map((_, i) => (
-              <motion.div
-                key={`inner-paw-${i}`}
-                className="absolute text-white/30"
-                style={{
-                  top: '50%',
-                  left: '50%',
-                  transform: `rotate(${i * 60}deg) translateY(-300px) rotate(-${i * 60}deg)`,
-                }}
-              >
-                <FaPaw className="text-xl" />
-              </motion.div>
-            ))}
-          </motion.div>
+          />
+          <motion.div
+            initial={{ scale: 0, rotate: 0 }}
+            animate={{ 
+              scale: [0, 0.9, 0.9],
+              rotate: [0, 180, 360],
+              opacity: [1, 0.8, 0]
+            }}
+            transition={{ duration: 3, delay: 0.4, times: [0, 0.5, 1] }}
+            className="absolute w-[400px] h-[400px] border-white border-[1px] rounded-full"
+          />
 
           {/* Central content */}
           <div className="relative z-10 text-center px-4">
