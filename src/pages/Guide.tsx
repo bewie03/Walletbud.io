@@ -19,7 +19,7 @@ const GuideCard = ({ step, index }: { step: any; index: number }) => {
         >
           {/* Front of card */}
           <div className="absolute w-full h-full backface-hidden">
-            <div className="relative bg-blue-900 rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
+            <div className="relative bg-blue-900/90 rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
               {/* Icon Background */}
               <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
                 <step.icon className="text-blue-200 text-2xl" />
@@ -37,7 +37,7 @@ const GuideCard = ({ step, index }: { step: any; index: number }) => {
 
           {/* Back of card */}
           <div className="absolute w-full h-full backface-hidden rotate-y-180">
-            <div className="relative bg-blue-900 rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
+            <div className="relative bg-blue-900/90 rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
               {/* Back Icon */}
               <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
                 <FaArrowLeft className="text-blue-200 text-2xl" />
@@ -131,7 +131,7 @@ const Guide = () => {
         {/* Main Content */}
         <div className="w-full bg-blue-800/30">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
               {steps.map((step, index) => (
                 <GuideCard key={index} step={step} index={index} />
               ))}
