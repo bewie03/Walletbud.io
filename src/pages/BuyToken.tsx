@@ -3,7 +3,7 @@ import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import Swap from '@dexhunterio/swaps';
 import '@dexhunterio/swaps/lib/assets/style.css';
-import { FaBone, FaPaw, FaChartLine, FaCoins, FaExchangeAlt } from 'react-icons/fa';
+import { FaBone, FaPaw, FaFire, FaBalanceScale, FaExchangeAlt, FaChartPie, FaWarehouse, FaLayerGroup } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
 
@@ -35,8 +35,8 @@ const BONE = () => {
 
   const tabs = [
     { id: 'overview', label: 'Overview', icon: FaPaw },
-    { id: 'tokenomics', label: 'Tokenomics', icon: FaChartLine },
-    { id: 'requirements', label: 'Requirements', icon: FaCoins },
+    { id: 'tokenomics', label: 'Tokenomics', icon: FaChartPie },
+    { id: 'requirements', label: 'Requirements', icon: FaWarehouse },
     { id: 'buy', label: 'Buy $BONE', icon: FaExchangeAlt }
   ];
 
@@ -53,33 +53,33 @@ const BONE = () => {
           >
             {[
               {
-                title: "Join the Pack",
-                icon: FaPaw,
-                description: "Link your Discord account with your Cardano wallets for seamless monitoring",
-                features: [
-                  "Primary wallet verification",
-                  "Track up to 19 additional wallets",
-                  "Platform wide wallet search"
-                ]
-              },
-              {
-                title: "Fetch Updates",
+                title: "Token Utility",
                 icon: FaBone,
-                description: "Receive real time Discord notifications with insights from our loyal pups",
+                description: "Access the full WalletPup ecosystem with $BONE tokens",
                 features: [
-                  "Transaction alerts with commentary from our pups",
-                  "50 unique pup personalities",
-                  "NFT activity updates"
+                  "Hold to access all features",
+                  "Tradeable on major Cardano DEXs",
+                  "No lock up periods"
                 ]
               },
               {
-                title: "Grow Together",
-                icon: FaChartLine,
-                description: "Early access to a growing ecosystem with decreasing token requirements",
+                title: "Token Burns",
+                icon: FaFire,
+                description: "Regular token burns increase scarcity and support long term value",
                 features: [
-                  "Market driven token system",
-                  "Active development roadmap",
-                  "Community focused growth"
+                  "10% of raffle pools used for burns",
+                  "Deflationary tokenomics",
+                  "Transparent burn tracking"
+                ]
+              },
+              {
+                title: "Dynamic Requirements",
+                icon: FaBalanceScale,
+                description: "Token requirements decrease as market cap grows",
+                features: [
+                  "Requirements never increase",
+                  "Target value of 50 ADA per entry",
+                  "Early adopter benefits"
                 ]
               }
             ].map((card, index) => (
@@ -119,7 +119,7 @@ const BONE = () => {
             <AnimatedElement animation="fadeIn" delay={0.1}>
               <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[300px] flex flex-col">
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
-                  <FaCoins className="text-blue-200 text-2xl" />
+                  <FaChartPie className="text-blue-200 text-2xl" />
                 </div>
                 
                 <div className="ml-6 flex-1 flex flex-col">
@@ -137,7 +137,7 @@ const BONE = () => {
                     </div>
                     <div>
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-base text-blue-100">Development & Community</span>
+                        <span className="text-base text-blue-100">Development & Partnerships</span>
                         <span className="text-lg font-bold text-white">5%</span>
                       </div>
                       <div className="w-full bg-blue-950 rounded-full h-3">
@@ -153,7 +153,7 @@ const BONE = () => {
             <AnimatedElement animation="fadeIn" delay={0.2}>
               <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[300px] flex flex-col">
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
-                  <FaBone className="text-blue-200 text-2xl" />
+                  <FaLayerGroup className="text-blue-200 text-2xl" />
                 </div>
                 
                 <div className="ml-6 flex-1 flex flex-col">
@@ -183,7 +183,7 @@ const BONE = () => {
             <AnimatedElement animation="fadeIn">
               <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg">
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
-                  <FaCoins className="text-blue-200 text-2xl" />
+                  <FaWarehouse className="text-blue-200 text-2xl" />
                 </div>
                 
                 <div className="ml-6">

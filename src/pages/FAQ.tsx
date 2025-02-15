@@ -43,7 +43,7 @@ const FAQ = () => {
     },
     {
       question: "What's the doggie bowl raffle?",
-      answer: "A fun community event! Enter 5 ADA once per verified wallet. 80% goes to winner, 20% to community treasury."
+      answer: "The Doggie Bowl is our community raffle system where verified wallet holders can win rewards. When a raffle ends, 80% goes to the winner, 10% is used to burn BONE tokens, and 10% funds community contests. You only need one verified wallet to participate!"
     },
     {
       question: "How do I get support?",

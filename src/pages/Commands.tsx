@@ -16,6 +16,8 @@ import {
   FaTrophy,
   FaTrash,
   FaGift,
+  FaShieldAlt,
+  FaBell,
   FaArrowLeft 
 } from 'react-icons/fa';
 
@@ -70,7 +72,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Search',
           desc: 'Find wallets and users',
-          details: "Search for wallets using Discord username, verified wallet name, or wallet address to find and track interesting wallets in the community."
+          details: "Find interesting wallets in the community to learn from their strategies or discover potential investment opportunities. Great for networking with other BONE holders and staying updated on market trends."
         };
       case '/uptime':
         return {
@@ -82,7 +84,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Activity Rank',
           desc: 'Check transaction ranking',
-          details: "View your rank based on wallet transaction activity. The more transactions your wallet makes, the higher your rank in the community!"
+          details: "See how active you are compared to other community members. Active members often have better insights into market movements and contribute more to community discussions."
         };
       case '/purge':
         return {
@@ -94,7 +96,19 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Raffle',
           desc: 'Enter the community raffle',
-          details: "Join our 5-day community raffle! 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
+          details: "Join our community raffle! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
+        };
+      case '/notifications':
+        return {
+          title: 'Toggle Notifications',
+          desc: 'Manage wallet notifications',
+          details: "Sometimes notifications can be overwhelming, especially for active traders. Toggle them on when you need to stay alert about important transactions, or turn them off when you want to reduce Discord noise. You're always in control of what you want to be notified about."
+        };
+      case '/admin':
+        return {
+          title: 'Admin Commands',
+          desc: 'View admin command list',
+          details: "Admin commands help maintain a healthy community. Blacklisting protects against spam and abuse, requirements ensure fair participation, and raffle controls let us adjust rewards based on community growth."
         };
       default:
         return {
@@ -131,6 +145,10 @@ const CommandCard = ({ command }: { command: any }) => {
         return <FaTrash className="text-blue-200 text-2xl" />;
       case '/raffle <amount>':
         return <FaGift className="text-blue-200 text-2xl" />;
+      case '/notifications':
+        return <FaBell className="text-blue-200 text-2xl" />;
+      case '/admin':
+        return <FaShieldAlt className="text-blue-200 text-2xl" />;
       default:
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
     }
@@ -251,6 +269,16 @@ const Commands = () => {
       name: 'Raffle',
       command: '/raffle <amount>',
       description: 'Enter the community raffle',
+    },
+    {
+      name: 'Toggle Notifications',
+      command: '/notifications',
+      description: 'Manage wallet notifications',
+    },
+    {
+      name: 'Admin Commands',
+      command: '/admin',
+      description: 'View admin command list',
     },
   ];
 

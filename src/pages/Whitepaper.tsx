@@ -3,37 +3,41 @@ import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedElement from '../components/AnimatedElement';
 import FloatingBones from '../components/FloatingBones';
 import { 
-  FaCogs, 
-  FaBolt, 
-  FaCoins, 
-  FaRoad, 
-  FaShieldAlt, 
-  FaFeather, 
-  FaServer, 
+  FaBolt,
+  FaDatabase,
+  FaRoad,
+  FaCogs,
+  FaShieldAlt,
+  FaServer,
   FaRobot,
-  FaSearch,
   FaChartPie,
   FaEye,
-  FaProjectDiagram,
+  FaCoins,
+  FaNetworkWired,
   FaPalette,
   FaLightbulb,
-  FaDiscord,
   FaHistory,
-  FaStar,
   FaRocket,
-  FaChartLine,
+  FaChartBar,
   FaDog,
   FaPaw,
   FaBone,
   FaGift,
-  FaCog,
+  FaCubes,
   FaArrowUp,
   FaBell,
-  FaLock,
   FaEnvelope,
   FaTrophy,
+  FaProjectDiagram,
+  FaChartLine,
+  FaHandshake,
+  FaFeather,
+  FaCog,
+  FaAddressBook,
   FaUsers,
-  FaAddressBook
+  FaLock,
+  FaSearch,
+  FaStar
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -90,7 +94,7 @@ const Whitepaper = () => {
                   </p>
 
                   <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                    Using $BONE tokens, we've created a fair access system that benefits everyone. Instead of traditional subscriptions, you simply hold tokens in your wallet - and you're free to trade them whenever you want. This approach helps maintain both service quality and token value, while keeping things simple for our users.
+                    Using $BONE tokens, we've created a fair access system that benefits everyone. Instead of traditional subscriptions, you simply hold tokens in your wallet and you're free to trade them whenever you want. This approach helps maintain both service quality and token value, while keeping things simple for our users.
                   </p>
                 </div>
               </div>
@@ -156,7 +160,7 @@ const Whitepaper = () => {
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
                     <code className="text-blue-300 font-bold">/rank</code>
-                    <p className="text-blue-100 mt-1">Check your transaction-based ranking</p>
+                    <p className="text-blue-100 mt-1">Check your transaction based ranking</p>
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
                     <code className="text-blue-300 font-bold">/stats</code>
@@ -164,7 +168,7 @@ const Whitepaper = () => {
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
                     <code className="text-blue-300 font-bold">/raffle</code>
-                    <p className="text-blue-100 mt-1">Join 5-day community prize pools</p>
+                    <p className="text-blue-100 mt-1">Join community dog bowl</p>
                   </div>
                 </div>
               </div>
@@ -265,44 +269,44 @@ const Whitepaper = () => {
                   {/* Blockchain Connection */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaServer className="w-6 h-6 mr-3 text-blue-300" />
+                      <FaNetworkWired className="w-6 h-6 mr-3 text-blue-300" />
                       <h4 className="text-lg font-semibold text-white">1. Blockchain Connection</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our webhook system connects directly to the Cardano blockchain, receiving detailed information about transactions for all wallets in our database. This ensures real-time monitoring of your tracked addresses.
+                      Our webhook system connects directly to the Cardano blockchain, receiving detailed information about transactions for all wallets in our database. This ensures real time monitoring of your tracked addresses.
                     </p>
                   </div>
 
                   {/* Data Processing */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaBolt className="w-6 h-6 mr-3 text-blue-300" />
+                      <FaDatabase className="w-6 h-6 mr-3 text-blue-300" />
                       <h4 className="text-lg font-semibold text-white">2. Data Processing</h4>
                     </div>
                     <p className="text-blue-100">
-                      When a transaction occurs, we collect all asset details and their metadata. This raw blockchain data is then transformed into human-readable format, making it easy to understand what assets were transferred and their values.
+                      When a transaction occurs, we collect all asset details and their metadata. This raw blockchain data is then transformed into human readable format, making it easy to understand what assets were transferred and their values.
                     </p>
                   </div>
 
                   {/* Pup Commentary */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaDog className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">3. Pup Commentary</h4>
+                      <FaRobot className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">3. Personality Engine</h4>
                     </div>
                     <p className="text-blue-100">
-                      The processed transaction data is fed to our loyal pups, who generate fun and engaging descriptions of the activity. This turns raw transaction data into entertaining updates about your wallet's activity.
+                      Our unique personality engine assigns different pup personalities to your wallets. Each pup has its own traits and communication style, making your wallet updates more engaging and fun to read.
                     </p>
                   </div>
 
                   {/* Notification Delivery */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaDiscord className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">4. Notification Delivery</h4>
+                      <FaBell className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">4. Discord Integration</h4>
                     </div>
                     <p className="text-blue-100">
-                      Finally, your pup's commentary and transaction details are sent via Discord to all users tracking that wallet. Each user receives personalized notifications in their DMs, keeping them updated on their tracked wallets.
+                      Processed data is sent to our Discord bot, which delivers your wallet updates with personality. You can customize notification settings and manage multiple wallets through simple Discord commands.
                     </p>
                   </div>
                 </div>
@@ -367,7 +371,7 @@ const Whitepaper = () => {
                         <div className="w-full bg-blue-950 rounded-full h-3">
                           <div className="bg-blue-400 h-3 rounded-full transition-all duration-300 hover:bg-blue-300" style={{ width: '5%' }}></div>
                         </div>
-                        <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE - For development and community events</div>
+                        <div className="mt-2 text-sm text-blue-200">50,000,000 $BONE - For development and partnerships</div>
                       </div>
                     </div>
                   </div>
@@ -375,7 +379,7 @@ const Whitepaper = () => {
                   {/* Token Utility & Requirements */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaBolt className="w-6 h-6 mr-3 text-blue-300" />
+                      <FaCubes className="w-6 h-6 mr-3 text-blue-300" />
                       <h4 className="text-lg font-semibold text-white">Token Utility & Requirements</h4>
                     </div>
                     <div className="space-y-6">
@@ -389,12 +393,12 @@ const Whitepaper = () => {
                       {/* Smart Token Economics */}
                       <div className="bg-blue-800/50 rounded-lg p-4">
                         <h5 className="text-white font-semibold mb-2 flex items-center gap-2">
-                          <FaChartLine className="text-blue-300" />
+                          <FaChartBar className="text-blue-300" />
                           Smart Token Economics
                         </h5>
                         <div className="text-blue-200">
                           <p>Entry cost fixed at ~50 ADA worth of $BONE (2.5 ADA per wallet)</p>
-                          <p>As market cap grows, required token amount decreases - maintaining the same ADA value</p>
+                          <p>As market cap grows, required token amount decreases, maintaining the same ADA value</p>
                           <p>Early adopters can sell excess tokens while maintaining service access</p>
                         </div>
                       </div>
@@ -402,13 +406,13 @@ const Whitepaper = () => {
                       {/* User Benefits */}
                       <div className="bg-blue-800/50 rounded-lg p-4">
                         <h5 className="text-white font-semibold mb-2 flex items-center gap-2">
-                          <FaStar className="text-blue-300" />
+                          <FaHandshake className="text-blue-300" />
                           User Benefits
                         </h5>
                         <div className="text-blue-200">
-                          <p>Tokens remain in your wallet - sell them back at any time</p>
+                          <p>Tokens remain in your wallet, sell them back at any time</p>
                           <p>Early adopters benefit from token value appreciation</p>
-                          <p>Sustainable model that rewards long-term holders</p>
+                          <p>Sustainable model that rewards long term holders</p>
                         </div>
                       </div>
                     </div>
@@ -444,7 +448,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Raffle</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Doggie Bowl is our community raffle  that happens every 5 days where verified wallet holders can participate for a chance to win. Each raffle has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill-based community contests.
+                      The Doggie Bowl is our community raffle with durations set by project owners. Longer periods result in bigger prize pools, where verified wallet holders can participate for a chance to win. Each raffle has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
                     </p>
                   </div>
 
@@ -462,7 +466,7 @@ const Whitepaper = () => {
                       <p className="mt-4">Prize Distribution:</p>
                       <p>• 80% of pool to winner</p>
                       <p>• 10% to buy and burn BONE tokens</p>
-                      <p>• 10% to fund skill-based community contests</p>
+                      <p>• 10% to fund skill based community contests</p>
                     </div>
                   </div>
 
@@ -473,7 +477,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Benefits</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Doggie Bowl creates an engaging way for our community to interact while supporting both token value through burns and funding exciting skill-based contests for those who prefer to showcase their talents.
+                      The Doggie Bowl creates an engaging way for our community to interact while supporting both token value through burns and funding exciting skill based contests for those who prefer to showcase their talents.
                     </p>
                   </div>
 
@@ -579,7 +583,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Original</h4>
                     </div>
                     <p className="text-blue-100">
-                      Walletbud was the pioneer of wallet tracking on Cardano, introducing the concept of Discord-based wallet monitoring. While revolutionary at the time, it faced significant challenges with sustainability and reliability that ultimately affected its service quality and longevity.
+                      Walletbud was the pioneer of wallet tracking on Cardano, introducing the concept of Discord based wallet monitoring. While revolutionary at the time, it faced significant challenges with sustainability and reliability that ultimately affected its service quality and longevity.
                     </p>
                   </div>
 
@@ -590,7 +594,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Successor</h4>
                     </div>
                     <p className="text-blue-100">
-                      Following Walletbud's challenges, ZING emerged as the replacement, focusing primarily on high-speed tracking. While ZING successfully addressed the speed aspect of wallet monitoring, we saw an opportunity to create something more engaging.
+                      Following Walletbud's challenges, ZING emerged as the replacement, focusing primarily on high speed tracking. While ZING successfully addressed the speed aspect of wallet monitoring, we saw an opportunity to create something more engaging.
                     </p>
                   </div>
 
@@ -601,7 +605,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Evolution</h4>
                     </div>
                     <p className="text-blue-100">
-                      WalletPup builds upon these foundations while addressing their limitations. We combine ZING's rapid tracking capabilities with features that transform wallet monitoring into an engaging social experience. Through our loyal pups and community-driven approach, we're creating a platform that's not just about tracking - it's about bringing the Cardano community together.
+                      WalletPup builds upon these foundations while addressing their limitations. We combine ZING's rapid tracking capabilities with features that transform wallet monitoring into an engaging social experience.
                     </p>
                   </div>
                 </div>
@@ -666,7 +670,7 @@ const Whitepaper = () => {
                     <div className="text-blue-200">
                       <p>• Currently supporting 80,000+ daily transactions</p>
                       <p>• Smart queuing system for Discord notifications</p>
-                      <p>• Load-balanced for high availability</p>
+                      <p>• Load balanced for high availability</p>
                     </div>
                   </div>
 
@@ -827,7 +831,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Growing Community</h4>
                     </div>
                     <p className="text-blue-100">
-                      Regular events, contests, and raffles keep our community engaged and growing. Through the Doggie Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill-based competitions.
+                      Regular events, contests, and raffles keep our community engaged and growing. Through the Doggie Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
                     </p>
                   </div>
                 </div>
