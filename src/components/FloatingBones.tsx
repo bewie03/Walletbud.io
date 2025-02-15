@@ -18,6 +18,7 @@ const FloatingBones = () => {
   const bonesRef = useRef<Bone[]>([]);
   const requestRef = useRef<number>();
   const previousTimeRef = useRef<number>();
+  const containerRef = useRef<HTMLDivElement>(null);
 
   // Initialize bones if not already done
   if (bonesRef.current.length === 0) {
@@ -78,7 +79,10 @@ const FloatingBones = () => {
   }, []); // Empty deps array since we're using refs
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden">
+    <div
+      ref={containerRef}
+      className="absolute inset-0 overflow-hidden pointer-events-none w-full h-full"
+    >
       {bonesRef.current.map((bone, index) => (
         <div
           key={index}

@@ -273,15 +273,12 @@ const BONE = () => {
   };
 
   return (
-    <>
-      <MetaTags 
-        title="WalletPup"
-        description="Your Loyal Wallet Companion on Cardano"
-      />
-      <div className="relative min-h-screen bg-gradient-to-b from-blue-900 to-blue-950">
-        <FloatingBones />
+    <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
+      <FloatingBones />
+      
+      <div className="relative">
         {/* Hero Section */}
-        <div className="w-full bg-blue-900 pb-8">
+        <div className="w-full bg-blue-900/80 pb-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedElement animation="slideDown" delay={0.2}>
               <div className="text-center pt-32 pb-16">
@@ -297,7 +294,7 @@ const BONE = () => {
         </div>
 
         {/* Main Content */}
-        <div className="w-full bg-blue-800">
+        <div className="w-full bg-blue-800/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             {/* Tabs */}
             <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -325,7 +322,7 @@ const BONE = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

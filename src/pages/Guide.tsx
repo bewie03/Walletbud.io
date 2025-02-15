@@ -106,51 +106,54 @@ const Guide = () => {
   return (
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
       <FloatingBones />
-      {/* Hero Section */}
-      <div className="w-full bg-blue-900 pb-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedElement animation="slideDown" delay={0.2}>
-            <div className="text-center pt-32 pb-16">
-              <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
-                Getting Started
-              </h1>
-              <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
-                Your guide to joining the pack
-              </p>
-              <p className="mt-2 text-sm text-blue-300 ">
-              Click on any guide card to view detailed information
+      
+      <div className="relative">
+        {/* Hero Section */}
+        <div className="w-full bg-blue-900/80 pb-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <AnimatedElement animation="slideDown" delay={0.2}>
+              <div className="text-center pt-32 pb-16">
+                <h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl hover:scale-105 transition-transform duration-300">
+                  Getting Started
+                </h1>
+                <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
+                  Your guide to joining the pack
+                </p>
+                <p className="mt-2 text-sm text-blue-300 ">
+                Click on any guide card to view detailed information
 
 </p>
-            </div>
-          </AnimatedElement>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="w-full bg-blue-800">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {steps.map((step, index) => (
-              <GuideCard key={index} step={step} index={index} />
-            ))}
+              </div>
+            </AnimatedElement>
           </div>
+        </div>
 
-          {/* Help Text */}
-          <AnimatedElement delay={0.5}>
-            <div className="mt-12 text-center">
-              <p className="text-blue-200 text-lg">
-                Need a helping paw? Use <span className="text-white font-mono">/help</span> in Discord or join our{' '}
-                <a 
-                  href="https://discord.com/invite/d99FBA64Qf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300"
-                >
-                  friendly pack
-                </a>
-              </p>
+        {/* Main Content */}
+        <div className="w-full bg-blue-800/30">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {steps.map((step, index) => (
+                <GuideCard key={index} step={step} index={index} />
+              ))}
             </div>
-          </AnimatedElement>
+
+            {/* Help Text */}
+            <AnimatedElement delay={0.5}>
+              <div className="mt-12 text-center">
+                <p className="text-blue-200 text-lg">
+                  Need a helping paw? Use <span className="text-white font-mono">/help</span> in Discord or join our{' '}
+                  <a 
+                    href="https://discord.com/invite/d99FBA64Qf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300"
+                  >
+                    friendly pack
+                  </a>
+                </p>
+              </div>
+            </AnimatedElement>
+          </div>
         </div>
       </div>
     </div>
