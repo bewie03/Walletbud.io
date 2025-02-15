@@ -45,14 +45,14 @@ const CommandCard = ({ command }: { command: any }) => {
       case '/list':
         return {
           title: 'View Wallets',
-          desc: 'See all your tracked wallets',
-          details: "Get a quick overview of all your tracked wallets, their verification status, and custom names. This helps you manage multiple wallets and ensure they're all being monitored correctly."
+          desc: 'See all tracked wallets',
+          details: "View your list of wallets being tracked. Click on any wallet to see detailed stats including total transactions, number of watchers, and ADA balance."
         };
       case '/stats':
         return {
-          title: 'Stats',
-          desc: 'Check wallet tracking statistics',
-          details: "View detailed statistics about your tracked wallets, including total value, transaction history, and activity trends. Perfect for understanding your portfolio's performance at a glance."
+          title: 'Global Stats',
+          desc: 'View community statistics',
+          details: "Check out the global WalletPup community stats including total users, wallets tracked, ADA won from raffles, and total transactions."
         };
       case '/help':
         return {
@@ -66,11 +66,11 @@ const CommandCard = ({ command }: { command: any }) => {
           desc: 'See the most tracked wallets',
           details: "Discover which wallets are most popular in our community. This gives you insights into trending wallets and helps you identify potential opportunities in the Cardano ecosystem."
         };
-      case '/search <discord_username>':
+      case '/search <query>':
         return {
-          title: 'Search Wallets',
-          desc: 'Find wallets by their name',
-          details: "Looking for a specific wallet? Search by Discord username to find verified wallets in our community. Great for connecting with other members and tracking interesting wallets."
+          title: 'Search',
+          desc: 'Find wallets and users',
+          details: "Search for wallets using Discord username, verified wallet name, or wallet address to find and track interesting wallets in the community."
         };
       case '/uptime':
         return {
@@ -78,11 +78,11 @@ const CommandCard = ({ command }: { command: any }) => {
           desc: 'Check if bot is running normally',
           details: "Verify that WalletPup is functioning properly. This command shows you our uptime status and any ongoing maintenance, ensuring you never miss important wallet updates."
         };
-      case '/rank <address>':
+      case '/rank':
         return {
-          title: 'Rank',
-          desc: 'See how popular a wallet is',
-          details: "Check how frequently a wallet is tracked by our community. Higher ranks indicate more community interest, helping you identify notable wallets in the Cardano ecosystem."
+          title: 'Activity Rank',
+          desc: 'Check transaction ranking',
+          details: "View your rank based on wallet transaction activity. The more transactions your wallet makes, the higher your rank in the community!"
         };
       case '/purge':
         return {
@@ -93,8 +93,8 @@ const CommandCard = ({ command }: { command: any }) => {
       case '/raffle <amount>':
         return {
           title: 'Raffle',
-          desc: 'Enter to win the daily prize',
-          details: "Join our daily community raffle for a chance to win prizes. Simply specify your entry amount - the more you enter, the better your chances of winning exciting rewards!"
+          desc: 'Enter the community raffle',
+          details: "Join our 5-day community raffle! 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
         };
       default:
         return {
@@ -121,11 +121,11 @@ const CommandCard = ({ command }: { command: any }) => {
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
       case '/topwatched':
         return <FaStar className="text-blue-200 text-2xl" />;
-      case '/search <discord_username>':
+      case '/search <query>':
         return <FaSearch className="text-blue-200 text-2xl" />;
       case '/uptime':
         return <FaClock className="text-blue-200 text-2xl" />;
-      case '/rank <address>':
+      case '/rank':
         return <FaTrophy className="text-blue-200 text-2xl" />;
       case '/purge':
         return <FaTrash className="text-blue-200 text-2xl" />;
@@ -210,12 +210,12 @@ const Commands = () => {
     {
       name: 'List Wallets',
       command: '/list',
-      description: 'See all your tracked wallets',
+      description: 'See all tracked wallets',
     },
     {
-      name: 'Stats',
+      name: 'Global Stats',
       command: '/stats',
-      description: 'Check wallet tracking statistics',
+      description: 'View community statistics',
     },
     {
       name: 'Help',
@@ -229,8 +229,8 @@ const Commands = () => {
     },
     {
       name: 'Search Wallets',
-      command: '/search <discord_username>',
-      description: 'Find wallets by their name',
+      command: '/search <query>',
+      description: 'Find wallets and users',
     },
     {
       name: 'Uptime',
@@ -238,9 +238,9 @@ const Commands = () => {
       description: 'Check if bot is running normally',
     },
     {
-      name: 'Rank',
-      command: '/rank <address>',
-      description: 'See how popular a wallet is',
+      name: 'Activity Rank',
+      command: '/rank',
+      description: 'Check transaction ranking',
     },
     {
       name: 'Purge Messages',
@@ -250,7 +250,7 @@ const Commands = () => {
     {
       name: 'Raffle',
       command: '/raffle <amount>',
-      description: 'Enter to win the daily prize',
+      description: 'Enter the community raffle',
     },
   ];
 

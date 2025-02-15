@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
       <MetaTags 
-        title="WalletPup - Your Loyal Wallet Companion"
-        description="Launch your Cardano wallet companion. No need to seed liquidity."
+        title="WalletPup"
+        description="Your Loyal Wallet Companion"
       />
       <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
         <FloatingBones />
@@ -28,7 +28,7 @@ const Home = () => {
                 Your Loyal Wallet Companions
               </h1>
               <p className="mt-4 max-w-md mx-auto text-lg text-blue-100 sm:text-xl md:text-2xl md:max-w-3xl hover:scale-[1.02] transition-all duration-300">
-                Let our pack of AI personalities fetch your wallet updates with entertaining insights
+                Let our pack of loyal pups fetch your wallet updates with entertaining insights
               </p>
             </motion.div>
           </div>
@@ -62,7 +62,7 @@ const Home = () => {
                   {
                     icon: <FaDiscord className="text-2xl" />,
                     title: "Join the Pack",
-                    description: "Come play with us on Discord! Meet our AI pups and participate in our community",
+                    description: "Come play with us on Discord! Meet our friendly pack and participate in our community",
                     link: "https://discord.gg/d99FBA64Qf",
                     linkText: "Join Discord →",
                     delay: 0.4
@@ -70,7 +70,7 @@ const Home = () => {
                   {
                     icon: <FaPaw className="text-2xl" />,
                     title: "Mark Your Territory",
-                    description: "Use the /add command to register your wallets and let our loyal AI companions keep track of them!.         ",
+                    description: "Use the /add command to register your wallets and let our loyal pups keep track of them!",
                     link: "/commands",
                     linkText: "View Commands →",
                     delay: 0.5

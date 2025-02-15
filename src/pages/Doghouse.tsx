@@ -27,15 +27,21 @@ const DogCard = ({ dog }: { dog: Dog }) => {
 
   return (
     <div 
-      className="relative w-full h-[500px] cursor-pointer perspective-1000"
+      className="relative w-full h-[500px] cursor-pointer"
+      style={{ perspective: '1000px' }}
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <motion.div
-        className="w-full h-full relative transform-style-3d transition-transform duration-500"
+        className="w-full h-full relative"
+        style={{ 
+          transformStyle: 'preserve-3d',
+          backfaceVisibility: 'hidden'
+        }}
         animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
       >
         {/* Front of card */}
-        <div className="absolute w-full h-full backface-hidden">
+        <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
           <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
             {/* Image Section */}
             <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-800/50 backdrop-blur-sm border-b border-blue-600">
@@ -60,7 +66,7 @@ const DogCard = ({ dog }: { dog: Dog }) => {
         </div>
 
         {/* Back of card */}
-        <div className="absolute w-full h-full backface-hidden rotate-y-180">
+        <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
           <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
             {/* Back Icon */}
             <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12 z-10">
