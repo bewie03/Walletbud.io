@@ -167,8 +167,8 @@ const Whitepaper = () => {
                     <p className="text-blue-100 mt-1">View global community statistics</p>
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/raffle</code>
-                    <p className="text-blue-100 mt-1">Join community dog bowl</p>
+                    <code className="text-blue-300 font-bold">/bowl</code>
+                    <p className="text-blue-100 mt-1">Join community bowl</p>
                   </div>
                 </div>
               </div>
@@ -445,10 +445,10 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaTrophy className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Community Raffle</h4>
+                      <h4 className="text-lg font-semibold text-white">Community Bowl</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Doggie Bowl is our community raffle with durations set by project owners. Longer periods result in bigger prize pools, where verified wallet holders can participate for a chance to win. Each raffle has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
+                      The Doggie Bowl is our community prize pool with durations set by project owners. Longer periods result in bigger prize pools, where verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
                     </p>
                   </div>
 
@@ -461,7 +461,7 @@ const Whitepaper = () => {
                     <div className="text-blue-100">
                       <p className="mb-4">Entry Rules:</p>
                       <p>• 5 ADA entry fee per verified wallet</p>
-                      <p>• One entry per wallet per raffle</p>
+                      <p>• One entry per wallet per bowl</p>
                       <p>• Must have a verified wallet to participate</p>
                       <p className="mt-4">Prize Distribution:</p>
                       <p>• 80% of pool to winner</p>
@@ -831,7 +831,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Growing Community</h4>
                     </div>
                     <p className="text-blue-100">
-                      Regular events, contests, and raffles keep our community engaged and growing. Through the Doggie Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
+                      Regular events, contests, and bowls keep our community engaged and growing. Through the Doggie Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
                     </p>
                   </div>
                 </div>

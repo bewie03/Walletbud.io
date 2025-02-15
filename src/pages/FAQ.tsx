@@ -15,39 +15,39 @@ const FAQ = () => {
   const faqItems: FAQItem[] = [
     {
       question: "What is WalletPup?",
-      answer: "WalletPup connects your Cardano wallets to Discord, providing entertaining commentary from our loyal pups on all your transactions. Our 50 unique pup personalities make tracking fun, while our interactive commands and regular community events keep you engaged. Track ADA, tokens, and NFTs while enjoying witty insights in your DMs!"
+      answer: "WalletPup is a Cardano wallet tracker that delivers transaction updates through Discord DMs with entertaining commentary from unique pup personalities."
     },
     {
-      question: "What makes WalletPup unique?",
-      answer: "Our 50 pup personalities deliver entertaining commentary on every transaction. Each has their own style and humor, making wallet tracking fun and engaging!"
+      question: "How many wallets can I track?",
+      answer: "Track up to 20 Cardano wallets with one verified wallet holding BONE tokens."
     },
     {
-      question: "What can I track with WalletPup?",
-      answer: "Track up to 20 Cardano wallets! Get entertaining commentary from our loyal pups on all ADA, token, and NFT transactions directly in your Discord DMs."
+      question: "What are BONE tokens?",
+      answer: "BONE is our utility token used to access WalletPup services. Hold ~50 ADA worth of BONE to verify your primary wallet."
     },
     {
-      question: "What community features do you offer?",
-      answer: "Regular raffles, interactive commands, contests and community events. Our doggie bowl raffle and active Discord keep the community engaged!"
+      question: "How is BONE distributed?",
+      answer: "95% for public distribution (950M BONE) and 5% for development and partnerships (50M BONE)."
     },
     {
-      question: "How do I start using WalletPup?",
-      answer: "Join our Discord and check out our guide page at walletpup.com/guide to get started! We'll show you how to link your Cardano wallet and start enjoying entertaining commentary from our pups."
+      question: "What's the doggie bowl?",
+      answer: "Community bowl where verified wallets can win rewards. 80% to winner, 10% burns BONE, 10% funds community contests."
     },
     {
       question: "Is WalletPup secure?",
-      answer: "Yes! We only use private Discord DMs and only need public wallet addresses to track activity and provide commentary."
+      answer: "Yes! We only use public wallet addresses and private Discord DMs for notifications."
     },
     {
-      question: "Can I track multiple wallets?",
-      answer: "Yes! Verify your primary wallet with BONE tokens, then track up to 19 more wallets. Each gets the same fun commentary from our pups!"
+      question: "How do I start using WalletPup?",
+      answer: "Get BONE tokens > Join the discord > Use /add to add your BONE wallet > /verify its yours"
     },
     {
-      question: "What's the doggie bowl raffle?",
-      answer: "The Doggie Bowl is our community raffle system where verified wallet holders can win rewards. When a raffle ends, 80% goes to the winner, 10% is used to burn BONE tokens, and 10% funds community contests. You only need one verified wallet to participate!"
+      question: "Do BONE tokens maintain value?",
+      answer: "Yes! Unlike subscriptions, BONE tokens remain in your wallet and can be sold at any time."
     },
     {
       question: "How do I get support?",
-      answer: "Join our Discord community or use /help in bot DMs. Our community and team are here to help!"
+      answer: "Use /help in bot DMs or join our Discord community for assistance."
     }
   ];
 

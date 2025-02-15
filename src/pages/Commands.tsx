@@ -54,7 +54,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Global Stats',
           desc: 'View community statistics',
-          details: "Check out the global WalletPup community stats including total users, wallets tracked, ADA won from raffles, and total transactions."
+          details: "Check out the global WalletPup community stats including total users, wallets tracked, ADA won from bowls, and total transactions."
         };
       case '/help':
         return {
@@ -92,11 +92,11 @@ const CommandCard = ({ command }: { command: any }) => {
           desc: 'Clean up old bot messages',
           details: "Keep your Discord channel tidy by removing old WalletPup messages. This helps maintain a clean chat environment while preserving important recent updates."
         };
-      case '/raffle <amount>':
+      case '/bowl <amount>':
         return {
-          title: 'Raffle',
-          desc: 'Enter the community raffle',
-          details: "Join our community raffle! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
+          title: 'Dog Bowl',
+          desc: 'Enter the community bowl',
+          details: "Join our community bowl! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
         };
       case '/notifications':
         return {
@@ -108,7 +108,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Admin Commands',
           desc: 'View admin command list',
-          details: "Admin commands help maintain a healthy community. Blacklisting protects against spam and abuse, requirements ensure fair participation, and raffle controls let us adjust rewards based on community growth."
+          details: "Admin commands help maintain a healthy community. Blacklisting protects against spam and abuse, requirements ensure fair participation, and bowl controls let us adjust rewards based on community growth."
         };
       default:
         return {
@@ -143,7 +143,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return <FaTrophy className="text-blue-200 text-2xl" />;
       case '/purge':
         return <FaTrash className="text-blue-200 text-2xl" />;
-      case '/raffle <amount>':
+      case '/bowl <amount>':
         return <FaGift className="text-blue-200 text-2xl" />;
       case '/notifications':
         return <FaBell className="text-blue-200 text-2xl" />;
@@ -266,9 +266,9 @@ const Commands = () => {
       description: 'Clean up old bot messages',
     },
     {
-      name: 'Raffle',
-      command: '/raffle <amount>',
-      description: 'Enter the community raffle',
+      name: 'Dog Bowl',
+      command: '/bowl <amount>',
+      description: 'Enter the community bowl',
     },
     {
       name: 'Toggle Notifications',

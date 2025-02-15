@@ -67,7 +67,7 @@ const BONE = () => {
                 icon: FaFire,
                 description: "Regular token burns increase scarcity and support long term value",
                 features: [
-                  "10% of raffle pools used for burns",
+                  "10% of bowl pools used for burns",
                   "Deflationary tokenomics",
                   "Transparent burn tracking"
                 ]
