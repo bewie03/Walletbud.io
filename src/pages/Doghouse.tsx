@@ -71,7 +71,7 @@ const DogCard = ({ dog }: { dog: Dog }) => {
             </div>
             
             {/* Square Main Section */}
-            <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-800 p-8 border-b border-blue-600">
+            <div className="aspect-square w-full relative overflow-hidden rounded-t-2xl bg-blue-900 p-8 border-b border-blue-600">
               <div className="ml-6 h-full flex items-center">
                 <p className="text-blue-100 text-xl leading-relaxed">{dog.story}</p>
               </div>
