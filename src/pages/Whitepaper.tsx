@@ -139,12 +139,8 @@ const Whitepaper = () => {
                     <p className="text-blue-100 mt-1">View your wallets with detailed stats</p>
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/remove</code>
-                    <p className="text-blue-100 mt-1">Stop tracking specific wallets</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/bowl</code>
-                    <p className="text-blue-100 mt-1">Fill the feeding bowl</p>
+                    <code className="text-blue-300 font-bold">/train</code>
+                    <p className="text-blue-100 mt-1">Customize your pup personality</p>
                   </div>
                 </div>
               </div>
@@ -170,6 +166,10 @@ const Whitepaper = () => {
                     <code className="text-blue-300 font-bold">/stats</code>
                     <p className="text-blue-100 mt-1">View global community statistics</p>
                   </div>
+                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
+                    <code className="text-blue-300 font-bold">/loyalty</code>
+                    <p className="text-blue-100 mt-1">View longest BONE holders</p>
+                  </div>
                 </div>
               </div>
 
@@ -191,7 +191,7 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
                     <div className="flex items-center gap-2">
                       <FaBell className="text-blue-300" />
-                      <p className="text-blue-100">Instant transaction notifications</p>
+                      <p className="text-blue-100">Almost instant notifications</p>
                     </div>
                   </div>
                   <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">

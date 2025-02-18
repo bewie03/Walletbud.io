@@ -1,5 +1,5 @@
 import AnimatedElement from '../components/AnimatedElement';
-import { FaBone, FaDiscord, FaWallet, FaCheck, FaPlus, FaChartLine, FaArrowLeft } from 'react-icons/fa';
+import { FaBone, FaDiscord, FaWallet, FaCheck, FaPlus, FaChartLine, FaArrowLeft, FaDog, FaStar } from 'react-icons/fa';
 import FloatingBones from '../components/FloatingBones';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -19,15 +19,18 @@ const GuideCard = ({ step, index }: { step: any; index: number }) => {
         >
           {/* Front of card */}
           <div className="absolute w-full h-full backface-hidden">
-            <div className="relative bg-blue-900/90 rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
+            <div className={`relative bg-blue-900/90 rounded-2xl p-8 border ${step.optional ? 'border-blue-500' : 'border-blue-700'} hover:scale-[1.02] transition-all duration-300 shadow-lg h-full`}>
               {/* Icon Background */}
-              <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
+              <div className={`absolute -top-4 -left-4 ${step.optional ? 'bg-blue-500' : 'bg-blue-700'} rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12`}>
                 <step.icon className="text-blue-200 text-2xl" />
               </div>
               
               <div className="ml-6">
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-blue-400 font-mono text-sm">Step {step.number}</span>
+                  {step.optional && (
+                    <span className="text-blue-300 text-sm px-2 py-1 bg-blue-800 rounded-full">Optional</span>
+                  )}
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3">{step.title}</h3>
                 <p className="text-blue-100 text-lg mb-4">{step.description}</p>
@@ -37,14 +40,19 @@ const GuideCard = ({ step, index }: { step: any; index: number }) => {
 
           {/* Back of card */}
           <div className="absolute w-full h-full backface-hidden rotate-y-180">
-            <div className="relative bg-blue-900/90 rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
+            <div className={`relative bg-blue-900/90 rounded-2xl p-8 border ${step.optional ? 'border-blue-500' : 'border-blue-700'} hover:scale-[1.02] transition-all duration-300 shadow-lg h-full`}>
               {/* Back Icon */}
-              <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
+              <div className={`absolute -top-4 -left-4 ${step.optional ? 'bg-blue-500' : 'bg-blue-700'} rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12`}>
                 <FaArrowLeft className="text-blue-200 text-2xl" />
               </div>
               
               <div className="ml-6 h-full flex flex-col">
-                <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-xl font-bold text-white">{step.title}</h3>
+                  {step.optional && (
+                    <span className="text-blue-300 text-sm px-2 py-1 bg-blue-800 rounded-full">Optional</span>
+                  )}
+                </div>
                 <p className="text-gray-300 text-base leading-relaxed">
                   {step.details}
                 </p>
@@ -62,7 +70,7 @@ const Guide = () => {
     {
       number: '01',
       title: 'Get BONE Tokens',
-      description: 'Purchase $BONE tokens from a DEX for your primary wallet.',
+      description: 'Purchase $BONE tokens for your primary wallet.',
       details: "Visit a supported DEX platform to purchase $BONE tokens for your primary wallet. The required amount decreases with market cap and never increases once lowered, making it easier to join over time.",
       icon: FaBone
     },
@@ -89,17 +97,32 @@ const Guide = () => {
     },
     {
       number: '05',
-      title: 'Add More Wallets',
-      description: 'Track additional wallets for broader coverage.',
-      details: "Expand your tracking by adding more wallets using /add. Each wallet you add increases your coverage and helps you stay informed about all your Cardano assets in one place.",
-      icon: FaPlus
+      title: 'Train Your Pup',
+      description: 'Customize your pup personality.',
+      details: "Make your experience unique by using /train to customize your pup's personality. Until you train your own, you'll enjoy updates from one of our 50 default doghouse personalities, each with their own unique style. When you're ready, customize the traits to match your preferences for a truly personalized experience.",
+      icon: FaDog,
+      optional: true
     },
     {
       number: '06',
+      title: 'Add More Wallets',
+      description: 'Track additional wallets for broader coverage.',
+      details: "Expand your tracking by adding more wallets using /add. Each wallet you add increases your coverage and helps you stay informed about all your Cardano assets in one place. (These dont require bone) ",
+      icon: FaPlus
+    },
+    {
+      number: '07',
       title: 'Monitor Activity',
       description: 'Get real time updates on wallet activity.',
       details: "Watch your wallets in action! Receive instant notifications about transactions, balance changes, and market movements. Our loyal pups provide entertaining insights about your wallet activity.",
       icon: FaChartLine
+    },
+    {
+      number: '08',
+      title: 'You\'re All Set!',
+      description: 'Explore commands and community features.',
+      details: "Congratulations, you're ready to go! Use /help to see all available commands. Join the fun with community features like the /bowl prize pool, check /loyalty rankings, or try your luck with /guess. There's always something exciting happening in our community!",
+      icon: FaStar
     }
   ];
 

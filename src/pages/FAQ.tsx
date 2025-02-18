@@ -30,6 +30,10 @@ const FAQ = () => {
       answer: "95% for public distribution (950M BONE) and 5% for development and partnerships (50M BONE)."
     },
     {
+      question: "Can I customize my pup's personality?",
+      answer: "Yes! Use the /train command to customize your pup's personality traits. If you haven't set a custom personality, your pup will use one of 50 unique personalities from our doghouse. Each default personality has its own charm and style of delivering updates."
+    },
+    {
       question: "What's the feeding bowl?",
       answer: "A community prize pool where verified wallets can win rewards. 80% to winner, 10% burns BONE, 10% funds community contests."
     },
