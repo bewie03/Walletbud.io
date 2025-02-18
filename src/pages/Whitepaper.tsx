@@ -520,14 +520,14 @@ const Whitepaper = () => {
                     </p>
                   </div>
 
-                  {/* Evolution & Growth */}
+                  {/* Pup Personality Customization */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaChartLine className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Continuous Evolution</h4>
+                      <FaCog className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Customize Your Pup</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our pup personalities are not static. They grow, evolve and adapt based on community feedback and platform needs. We regularly refine existing personalities and introduce new ones to keep the experience fresh and engaging.
+                      Make your WalletPup truly yours with the /train command. Customize your pup's personality, tone, and style to match your preferences. Whether you want a professional, playful, or sassy companion, you can fine tune how your pup delivers notifications to create a personalized monitoring experience.
                     </p>
                   </div>
 
@@ -546,10 +546,10 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaBone className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Future Development</h4>
+                      <h4 className="text-lg font-semibold text-white">Growing the Pack</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Doghouse is a living, growing ecosystem. We're committed to expanding and enhancing our pup personalities to create the most engaging wallet monitoring experience in the Cardano ecosystem.
+                      We're constantly expanding our pack with new pup personalities and enhancing existing ones. The most creative and engaging personalities from our community will be considered for integration into WalletPup, with rewards for contributors. Regular updates will bring fresh personalities, new features, and improvements based on community feedback to keep your wallet monitoring experience exciting and engaging.
                     </p>
                   </div>
                 </div>
