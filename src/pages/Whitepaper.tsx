@@ -293,18 +293,6 @@ const Whitepaper = () => {
                       When a transaction occurs, we collect all asset details and their metadata. This raw blockchain data is then transformed into human readable format, making it easy to understand what assets were transferred and their values.
                     </p>
                   </div>
-
-                  {/* Pup Commentary */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaRobot className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">3. Personality Engine</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Our unique personality engine assigns different pup personalities to your wallets. Each pup has its own traits and communication style, making your wallet updates more engaging and fun to read.
-                    </p>
-                  </div>
-
                   {/* Notification Delivery */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
@@ -312,7 +300,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">4. Creative Response</h4>
                     </div>
                     <p className="text-blue-100">
-                      The readable transaction data is fed to our pup personalities, each trained with unique characteristics and communication styles. They analyze the data and generate creative, personality-driven responses that make tracking your wallet both informative and entertaining.
+                      The readable transaction data is fed to our pup personalities, each trained with unique characteristics and communication styles. They analyze the data and generate creative, personality driven responses that make tracking your wallet both informative and entertaining.
                     </p>
                   </div>
                 </div>
