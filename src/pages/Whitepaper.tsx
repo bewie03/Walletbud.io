@@ -5,7 +5,6 @@ import FloatingBones from '../components/FloatingBones';
 import { 
   FaBolt,
   FaDatabase,
-  FaRoad,
   FaCogs,
   FaShieldAlt,
   FaServer,
@@ -33,11 +32,13 @@ import {
   FaHandshake,
   FaFeather,
   FaCog,
-  FaAddressBook,
   FaUsers,
   FaLock,
   FaSearch,
-  FaStar
+  FaStar,
+  FaGlobe,
+  FaBullhorn,
+  FaCompass
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -65,7 +66,7 @@ const Whitepaper = () => {
       id: 'introduction',
       title: (
         <div className="flex items-center gap-2">
-          <span>Welcome to WalletPup</span>
+          <span>Introduction</span>
         </div>
       ),
       icon: <FaPaw className="w-6 h-6 text-blue-300" />,
@@ -80,22 +81,21 @@ const Whitepaper = () => {
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
                 <div className="flex items-center gap-3 mb-4">
-                  <FaPaw className="w-8 h-8 text-blue-300" />
                   <h3 className="text-xl font-semibold text-white">Welcome to WalletPup</h3>
                 </div>
 
-                <div className="space-y-6">
-                  <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                    We're bringing a friendly, fun approach to Cardano wallet monitoring. WalletPup connects your Discord account to your wallets, delivering transaction updates with personality. Our pups transform blockchain data into entertaining notifications, making it enjoyable to stay updated on your wallet activity.
-                  </p>
-                  
-                  <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                    Track up to 20 wallets and receive Discord notifications about your ADA, tokens, and NFTs. Each transaction comes with playful commentary from our pups, adding a touch of fun to your blockchain experience. Plus, you can easily find friends' wallets through their Discord usernames, making wallet discovery simple and social.
-                  </p>
-
-                  <p className="text-lg leading-relaxed hover:scale-[1.02] transition-transform duration-300">
-                    Using $BONE tokens, we've created a fair access system that benefits everyone. Instead of traditional subscriptions, you simply hold tokens in your wallet and you're free to trade them whenever you want. This approach helps maintain both service quality and token value, while keeping things simple for our users.
-                  </p>
+                <div className="space-y-8">
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <p className="text-blue-100">
+                      WalletPup is being developed to bring a fresh perspective to Cardano wallet monitoring, where we believe that staying updated with your blockchain activity should be both informative and enjoyable. At its core, WalletPup is a Discord based monitoring service that connects to your Cardano wallets, providing detailed updates about transactions, token movements, and NFT activities. What makes our approach unique is the integration of AI powered pup personalities that transform standard blockchain data into engaging, personality rich notifications.
+                    </p>
+                    <p className="text-blue-100 mt-4">
+                      Our platform is designed to support up to 20 wallet connections per user, making it suitable for both individual investors and active traders who manage multiple addresses. Users can train their own unique pup personality, customizing how their companion delivers transaction notifications across all their wallets. This personalization creates a distinct character that matches each user's style, and extends beyond just notifications. Users can interact with their pup through various commands and participate in community events centered around these unique characters.
+                    </p>
+                    <p className="text-blue-100 mt-4">
+                      To create a sustainable and fair system, we've implemented $BONE tokens as our access mechanism. Rather than traditional subscription models, users simply hold tokens in their wallets to maintain access to the service. This approach allows users to retain the value of their investment, as tokens can be traded whenever they choose. While Discord serves as the primary hub for our community, we're actively exploring additional utilities for $BONE through various forms of wallet tracking beyond Discord. Our vision extends to creating a comprehensive ecosystem where monitoring your blockchain activity becomes part of a larger, more engaging experience, supported by a community that shares our commitment to making Cardano wallet tracking more accessible and enjoyable for everyone.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -115,131 +115,136 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            {/* Command Categories Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Core Commands */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-600 transform hover:scale-[1.01] transition-all duration-300 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="bg-blue-700 rounded-xl p-3 shadow-lg">
-                    <FaRobot className="text-blue-200 text-2xl" />
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Features Overview</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {/* Core Commands */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaRobot className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Core Commands</h4>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/add</code>
+                        <p className="text-blue-100 mt-1">Track new wallets (up to 20 total)</p>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/verifywallet</code>
+                        <p className="text-blue-100 mt-1">Verify ownership of wallet</p>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/list</code>
+                        <p className="text-blue-100 mt-1">View your wallets with detailed stats</p>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/train</code>
+                        <p className="text-blue-100 mt-1">Customize your pup personality</p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white">Core Commands</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/add</code>
-                    <p className="text-blue-100 mt-1">Track new wallets (up to 20 total)</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/verifywallet</code>
-                    <p className="text-blue-100 mt-1">Verify ownership & customize wallet names</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/list</code>
-                    <p className="text-blue-100 mt-1">View your wallets with detailed stats</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/train</code>
-                    <p className="text-blue-100 mt-1">Customize your pup personality</p>
-                  </div>
-                </div>
-              </div>
 
-              {/* Community Features */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-600 transform hover:scale-[1.01] transition-all duration-300 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="bg-blue-700 rounded-xl p-3 shadow-lg">
-                    <FaSearch className="text-blue-200 text-2xl" />
+                  {/* Community Features */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaSearch className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Community Features</h4>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/search</code>
+                        <p className="text-blue-100 mt-1">Find wallets by username or address</p>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/rank</code>
+                        <p className="text-blue-100 mt-1">Check your transaction based ranking</p>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/stats</code>
+                        <p className="text-blue-100 mt-1">View global community statistics</p>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <code className="text-blue-300 font-bold">/loyalty</code>
+                        <p className="text-blue-100 mt-1">View longest BONE holders</p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white">Community Features</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/search</code>
-                    <p className="text-blue-100 mt-1">Find wallets by username or address</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/rank</code>
-                    <p className="text-blue-100 mt-1">Check your transaction based ranking</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/stats</code>
-                    <p className="text-blue-100 mt-1">View global community statistics</p>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <code className="text-blue-300 font-bold">/loyalty</code>
-                    <p className="text-blue-100 mt-1">View longest BONE holders</p>
-                  </div>
-                </div>
-              </div>
 
-              {/* Key Features */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-600 transform hover:scale-[1.01] transition-all duration-300 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="bg-blue-700 rounded-xl p-3 shadow-lg">
-                    <FaChartPie className="text-blue-200 text-2xl" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">Key Features</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaPaw className="text-blue-300" />
-                      <p className="text-blue-100">Track up to 20 wallets at once</p>
+                  {/* Key Features */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaChartPie className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Key Features</h4>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaPaw className="text-blue-300" />
+                          <p className="text-blue-100">Track up to 20 wallets at once</p>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaBell className="text-blue-300" />
+                          <p className="text-blue-100">Almost instant notifications</p>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaChartLine className="text-blue-300" />
+                          <p className="text-blue-100">Detailed wallet analytics</p>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaGift className="text-blue-300" />
+                          <p className="text-blue-100">Regular community rewards</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaBell className="text-blue-300" />
-                      <p className="text-blue-100">Almost instant notifications</p>
-                    </div>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaChartLine className="text-blue-300" />
-                      <p className="text-blue-100">Detailed wallet analytics</p>
-                    </div>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaGift className="text-blue-300" />
-                      <p className="text-blue-100">Regular community rewards</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              {/* Security & Privacy */}
-              <div className="bg-blue-900 rounded-xl p-6 border border-blue-600 transform hover:scale-[1.01] transition-all duration-300 shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="bg-blue-700 rounded-xl p-3 shadow-lg">
-                    <FaShieldAlt className="text-blue-200 text-2xl" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">Security & Privacy</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaLock className="text-blue-300" />
-                      <p className="text-blue-100">Secure verification system</p>
+                  {/* Security & Privacy */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaShieldAlt className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Security & Privacy</h4>
                     </div>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaEnvelope className="text-blue-300" />
-                      <p className="text-blue-100">Private Discord notifications</p>
-                    </div>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaBone className="text-blue-300" />
-                      <p className="text-blue-100">$BONE token access control</p>
-                    </div>
-                  </div>
-                  <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-600/50 hover:border-blue-500 transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <FaEye className="text-blue-300" />
-                      <p className="text-blue-100">Optional public discovery</p>
+                    <div className="space-y-4">
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaLock className="text-blue-300" />
+                          <p className="text-blue-100">Secure verification system</p>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaEnvelope className="text-blue-300" />
+                          <p className="text-blue-100">Private Discord notifications</p>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaBone className="text-blue-300" />
+                          <p className="text-blue-100">$BONE token access control</p>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <FaEye className="text-blue-300" />
+                          <p className="text-blue-100">Optional public discovery</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -391,7 +396,7 @@ const Whitepaper = () => {
                       </div>
 
                       {/* Smart Token Economics */}
-                      <div className="bg-blue-800/50 rounded-lg p-4">
+                      <div className="bg-blue-920/50 rounded-lg p-4">
                         <h5 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <FaChartBar className="text-blue-300" />
                           Smart Token Economics
@@ -404,7 +409,7 @@ const Whitepaper = () => {
                       </div>
 
                       {/* User Benefits */}
-                      <div className="bg-blue-800/50 rounded-lg p-4">
+                      <div className="bg-blue-920/50 rounded-lg p-4">
                         <h5 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <FaHandshake className="text-blue-300" />
                           User Benefits
@@ -633,22 +638,22 @@ const Whitepaper = () => {
                   <FaChartLine className="text-blue-400" /> Current Network Statistics (Feb 2025)
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                  <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-blue-300 text-sm font-medium">Daily Active Addresses</h4>
                     <p className="text-2xl font-bold text-white mt-1">50,000+</p>
                     <p className="text-xs text-blue-300 mt-1"></p>
                   </div>
-                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                  <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-blue-300 text-sm font-medium">Daily Transactions</h4>
                     <p className="text-2xl font-bold text-white mt-1">80,000+</p>
                     <p className="text-xs text-blue-300 mt-1"></p>
                   </div>
-                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                  <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-blue-300 text-sm font-medium">New Wallets Daily</h4>
                     <p className="text-2xl font-bold text-white mt-1">~ 5,500</p>
                     <p className="text-xs text-blue-300 mt-1"></p>
                   </div>
-                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                  <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-blue-300 text-sm font-medium">Total Addresses</h4>
                     <p className="text-2xl font-bold text-white mt-1">4.2M+</p>
                     <p className="text-xs text-blue-300 mt-1"></p>
@@ -662,7 +667,7 @@ const Whitepaper = () => {
                   <FaServer className="text-blue-400" /> WalletPup Capacity Analysis
                 </h3>
                 <div className="space-y-4 text-blue-100">
-                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                  <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Network Capacity</h4>
                     <p className="text-blue-100 mb-4">
                       Our infrastructure is designed to handle the growing Cardano ecosystem:
@@ -674,7 +679,7 @@ const Whitepaper = () => {
                     </div>
                   </div>
 
-                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                  <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">User Growth</h4>
                     <p className="text-blue-100 mb-4">
                       We've built WalletPup to scale with the community:
@@ -686,7 +691,7 @@ const Whitepaper = () => {
                     </div>
                   </div>
 
-                  <div className="bg-blue-800/50 p-4 rounded-lg">
+                  <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Performance Optimization</h4>
                     <p className="text-blue-100 mb-4">
                       We maintain high performance through:
@@ -707,7 +712,7 @@ const Whitepaper = () => {
     {
       id: 'future',
       title: 'Future Development',
-      icon: <FaRoad className="w-6 h-6" />,
+      icon: <FaRocket className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -716,71 +721,65 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Left Column */}
-              <div className="grid grid-rows-3 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaCogs className="text-blue-400" /> Enhanced Bot Commands
-                  </h5>
-                  <p className="text-blue-200">
-                    We are expanding our command system with dynamic BONE requirements, enhanced wallet management, and advanced tracking features. Users will have greater control over how they monitor and analyze wallet activity.
-                  </p>
-                </div>
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Future Development</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Enhanced Bot Commands */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaCogs className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Enhanced Bot Commands</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Based on community feedback, we're working on additional commands to help users better track and understand their wallet activity. These improvements will focus on providing useful insights and making the tracking experience more convenient for our users.
+                    </p>
+                  </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaShieldAlt className="text-blue-400" /> Bug Bounty Program
-                  </h5>
-                  <p className="text-blue-200">
-                    Join our community bug hunting contest where users can earn rewards for finding and reporting issues. Help us make WalletPup more secure and reliable while earning rewards for your contributions.
-                  </p>
-                </div>
+                  {/* Beyond Discord */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaGlobe className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Beyond Discord</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      While Discord is our current home, we're exploring ways to bring wallet tracking to other platforms. Our goal is to thoughtfully expand $BONE utility while staying focused on our core mission of providing reliable wallet monitoring services.
+                    </p>
+                  </div>
 
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaPalette className="text-blue-400" /> Community Engagement
-                  </h5>
-                  <p className="text-blue-200">
-                    Regular art and meme competitions will bring creativity and fun to our community. Winners will receive special rewards and recognition within the WalletPup ecosystem.
-                  </p>
-                </div>
-              </div>
+                  {/* Marketing & Expansion */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaBullhorn className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Marketing & Expansion</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our pup companions bring a playful twist to wallet monitoring that we believe can make crypto more approachable and fun. Through creative social media content, memes, and engaging community events, we aim to show that staying on top of your wallet activity doesn't have to be boring.
+                    </p>
+                  </div>
 
-              {/* Right Column */}
-              <div className="grid grid-rows-3 gap-6">
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaRobot className="text-blue-400" /> Discord Server Features
-                  </h5>
-                  <p className="text-blue-200">
-                    New server features will enhance community interaction and provide more value to our users. This includes specialized channels, automated roles, and interactive community events.
-                  </p>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaProjectDiagram className="text-blue-400" /> Project Collaborations
-                  </h5>
-                  <p className="text-blue-200">
-                    We are actively seeking partnerships with Cardano projects to create unique monitoring solutions. Projects will have access to custom bot features and specialized tracking tools for their communities.
-                  </p>
-                </div>
-
-                <div className="bg-blue-900 rounded-xl p-6 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-                  <h5 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <FaServer className="text-blue-400" /> System Improvements
-                  </h5>
-                  <p className="text-blue-200">
-                    Continuous updates to our core systems will improve speed, reliability, and functionality. We are developing token specific tracking features to provide detailed insights for different assets.
-                  </p>
+                  {/* Project Collaborations */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaProjectDiagram className="text-blue-300 text-2xl" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-white">Project Collaborations</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our treasury will provide free tokens to selected project owners who want to join the WalletPup community. These partnerships will help create a network where users can easily track their favorite projects' wallets and stay informed about their activities on the blockchain.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <p className="text-sm text-blue-200 mt-6 text-center">
-              Note: These development plans are subject to change based on community feedback and market conditions. We will prioritize features that bring the most value to our users.
-            </p>
           </div>
         </motion.div>
       )
@@ -842,9 +841,9 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'beyond-discord',
-      title: 'Beyond Discord',
-      icon: <FaAddressBook className="w-6 h-6" />,
+      id: 'conclusion',
+      title: 'Conclusion',
+      icon: <FaCompass className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -855,17 +854,21 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Beyond Discord</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Looking Forward</h3>
                 
-                <div className="space-y-8">
-                  {/* Expansion Plans */}
+                <div className="space-y-6">
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaAddressBook className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Expanding Horizons</h4>
-                    </div>
                     <p className="text-blue-100">
-                      While Discord is our current home, we're developing exciting new ways to interact with your wallets. Our expansion plans focus on bringing more utility to BONE tokens while staying true to our core mission of wallet tracking. These developments will enhance how you access and manage your tracking experience, making it even more valuable for our community.
+                      WalletPup combines practical utility with engaging features, creating a unique opportunity in the Cardano ecosystem. By holding $BONE, you gain access to essential wallet monitoring tools while participating in a growing platform. We're building something that's both fun to use and valuable to hold.
+                    </p>
+                    <p className="text-blue-100 mt-4">
+                      We appreciate everyone who has taken the time to learn about WalletPup. Whether you're here for the tracking features or the investment potential, we invite you to join us in creating the future of wallet monitoring.
+                    </p>
+                  </div>
+
+                  <div className="text-sm text-blue-300 mt-4 border-t border-blue-700/20 pt-4">
+                    <p className="italic">
+                      Note: The information presented in this whitepaper is subject to change based on market conditions, technical requirements, and community feedback. This document serves as a roadmap and vision for WalletPup, but specific features, timelines, and implementations may be modified as the project evolves.
                     </p>
                   </div>
                 </div>

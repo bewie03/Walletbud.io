@@ -35,7 +35,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-blue-400 rounded-full blur-md group-hover:blur-lg transition-all duration-300 opacity-20"></div>
+              <div className="absolute inset-0 bg-blue-400 rounded-full blur-md group-hover:blur-lg transition-all duration-300 opacity-0"></div>
               <img
                 src={WalletpupLogo}
                 alt="WalletPup Logo"
