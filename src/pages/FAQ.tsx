@@ -35,7 +35,7 @@ const FAQ = () => {
     },
     {
       question: "What's the feeding bowl?",
-      answer: "A community prize pool where verified wallets can win rewards. 80% to winner, 10% burns BONE, 10% funds community contests."
+      answer: "A community prize pool where verified wallets can win rewards. 75% to winner, 15% to treasury, and 10% used to buy and burn BONE tokens."
     },
     {
       question: "Is WalletPup secure?",

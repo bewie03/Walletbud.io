@@ -452,8 +452,11 @@ const Whitepaper = () => {
                       <FaTrophy className="w-6 h-6 mr-3 text-blue-300" />
                       <h4 className="text-lg font-semibold text-white">Community Bowl</h4>
                     </div>
-                    <p className="text-blue-100">
-                      The Feeding Bowl is our community prize pool with durations set by project owners. Each entry costs 5 ADA, with longer periods resulting in bigger prize pools. Verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 80% going to the winner, 10% for buying and burning BONE tokens, and 10% funding skill based community contests.
+                    <p className="text-blue-100 text-base mb-6">
+                      The Feeding Bowl is our community prize pool with durations set by project owners. Each entry costs 5 ADA, with longer periods resulting in bigger prize pools. Verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 75% going to the winner, 15% to the treasury, and 10% used to buy and burn BONE tokens.
+                    </p>
+                    <p className="text-blue-100 text-base">
+                      The Feeding Bowl creates an engaging way for our community to interact while supporting token value through regular BONE burns and growing our treasury for future development.
                     </p>
                   </div>
 
@@ -469,9 +472,9 @@ const Whitepaper = () => {
                       <p>• One entry per wallet per bowl</p>
                       <p>• Must have a verified wallet to participate</p>
                       <p className="mt-4">Prize Distribution:</p>
-                      <p>• 80% of pool to winner</p>
+                      <p>• 75% of pool to winner</p>
+                      <p>• 15% to treasury</p>
                       <p>• 10% to buy and burn BONE tokens</p>
-                      <p>• 10% to fund skill based community contests</p>
                     </div>
                   </div>
 
@@ -818,8 +821,12 @@ const Whitepaper = () => {
                       <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
                       <h4 className="text-lg font-semibold text-white">Sustainable Token Model</h4>
                     </div>
-                    <p className="text-blue-100">
+                    <p className="text-blue-100 text-base mb-6">
                       Our dynamic BONE requirement system ensures sustainable growth. With 95% of tokens allocated to the public and regular token burns through the Feeding Bowl, we've created an ecosystem that rewards early adopters while remaining accessible to new users.
+                    </p>
+
+                    <p className="text-blue-100 text-base">
+                      Regular events, contests, and feeding bowls keep our community engaged and growing. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and treasury growth.
                     </p>
                   </div>
 

@@ -400,7 +400,7 @@ const Doghouse = () => {
       title: 'The Anime Weeb',
       description: '',
       category: 'personality',
-      story: "Tracks finances with the power of friendship! Their investment strategy is inspired by their favorite manga, and they measure gains in terms of figurine collections. To the moon? More like to the next anime convention! UwU your way to wealth.",
+      story: "This pup brings enthusiasm from countless hours of watching animes. They'll help you track your investments while dropping occasional references to their favorite shows. Their motto? A good portfolio is like a good anime it takes time to develop but the payoff is worth it.",
     },
     {
       name: 'Shih Tzu',

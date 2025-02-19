@@ -99,7 +99,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Feeding Bowl',
           desc: 'Fill the feeding bowl',
-          details: "Fill the feeding bowl with 5 ADA! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% is used to burn BONE tokens, and 10% goes to the treasury for community content."
+          details: "Fill the feeding bowl with 5 ADA! The duration is set by project owners, with longer periods resulting in bigger prize pools. 75% of the pool goes to the winner, 15% goes to the treasury, and 10% is used to buy and burn BONE tokens."
         };
       case '/notifications':
         return {
