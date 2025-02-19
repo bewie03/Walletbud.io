@@ -55,11 +55,11 @@ const BONE = () => {
               {
                 title: "Token Utility",
                 icon: FaBone,
-                description: "Access the full WalletPup ecosystem with $BONE tokens",
+                description: "Access WalletPup's full range of wallet monitoring features",
                 features: [
-                  "Hold to access all features",
-                  "Tradeable on major Cardano DEXs",
-                  "No lock up periods"
+                  "Track up to 20 wallets",
+                  "Customize your pup companion",
+                  "Access all bot commands"
                 ]
               },
               {
