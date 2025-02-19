@@ -11,7 +11,7 @@ interface Bone {
   opacity: number;
 }
 
-const BONE_COUNT = 24; // Increased for more constant coverage
+const BONE_COUNT = 40; // Increased for more constant coverage
 const VIEWPORT_HEIGHT = 120; // Percentage, slightly larger than screen
 
 const FloatingBones = () => {
@@ -26,10 +26,10 @@ const FloatingBones = () => {
       x: Math.random() * 100,
       // Distribute bones evenly across the viewport height initially
       y: (index * (VIEWPORT_HEIGHT / (BONE_COUNT / 2))) - VIEWPORT_HEIGHT,
-      speed: 0.007, // Consistent speed for all bones
+      speed: 0.005 + Math.random() * 0.008, // Random speed between 0.005 and 0.013
       rotation: Math.random() * 360,
       rotationSpeed: (Math.random() - 0.5) * 0.3, // Random direction
-      size: Math.random() * 12 + 8, // 8-20px
+      size: Math.random() * 16 + 6, // 6-22px, more variation
       opacity: Math.random() * 0.05 + 0.1, // Very subtle
     }));
   }
@@ -38,11 +38,11 @@ const FloatingBones = () => {
     bone.y += bone.speed * deltaTime;
     bone.rotation += bone.rotationSpeed * deltaTime;
 
-    // If bone goes below viewport, reset it to top with new random x position
+    // If bone goes below viewport, reset it to top with new random x position and speed
     if (bone.y > 100) {
       bone.y = -20; // Reset above viewport
       bone.x = Math.random() * 100; // New random x position
-      // Keep other properties (speed, size, etc.) for consistency
+      bone.speed = 0.003 + Math.random() * 0.006; // New random speed when recycling
     }
 
     return bone;
