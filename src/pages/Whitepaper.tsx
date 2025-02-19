@@ -3,42 +3,43 @@ import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedElement from '../components/AnimatedElement';
 import FloatingBones from '../components/FloatingBones';
 import { 
-  FaBolt,
-  FaDatabase,
-  FaCogs,
-  FaShieldAlt,
-  FaServer,
-  FaRobot,
-  FaChartPie,
-  FaEye,
-  FaCoins,
-  FaNetworkWired,
-  FaPalette,
-  FaLightbulb,
-  FaHistory,
-  FaRocket,
-  FaChartBar,
-  FaDog,
-  FaPaw,
-  FaBone,
-  FaGift,
-  FaCubes,
   FaArrowUp,
   FaBell,
-  FaEnvelope,
-  FaTrophy,
-  FaProjectDiagram,
-  FaChartLine,
-  FaHandshake,
-  FaFeather,
-  FaCog,
-  FaUsers,
-  FaLock,
-  FaSearch,
-  FaStar,
-  FaGlobe,
+  FaBone,
   FaBullhorn,
-  FaCompass
+  FaChartBar,
+  FaChartLine,
+  FaChartPie,
+  FaCog,
+  FaCogs,
+  FaCompass,
+  FaCubes,
+  FaDatabase,
+  FaCoins,
+  FaDog,
+  FaDragon,
+  FaEnvelope,
+  FaEye,
+  FaFeather,
+  FaGift,
+  FaGlobe,
+  FaHandshake,
+  FaHistory,
+  FaLightbulb,
+  FaLock,
+  FaNetworkWired,
+  FaPalette,
+  FaPaw,
+  FaProjectDiagram,
+  FaRobot,
+  FaRocket,
+  FaSearch,
+  FaServer,
+  FaShieldAlt,
+  FaStar,
+  FaTrophy,
+  FaBolt,
+  FaUsers
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -77,29 +78,29 @@ const Whitepaper = () => {
           transition={{ duration: 0.5 }}
           className="space-y-6"
         >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="space-y-6 text-blue-100">
-              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <div className="flex items-center gap-3 mb-4">
-                  <h3 className="text-xl font-semibold text-white">Welcome to WalletPup</h3>
-                </div>
+                  <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-600/50">
+                    <div className="space-y-6 text-blue-100">
+                      <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                        <div className="flex items-center gap-3 mb-4">
+                          <h3 className="text-xl font-semibold text-white">Welcome to WalletPup</h3>
+                        </div>
 
-                <div className="space-y-8">
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <p className="text-blue-100">
-                      WalletPup is being developed to bring a fresh perspective to Cardano wallet monitoring, where we believe that staying updated with your blockchain activity should be both informative and enjoyable. At its core, WalletPup is a Discord based monitoring service that connects to your Cardano wallets, providing detailed updates about transactions, token movements, and NFT activities. What makes our approach unique is the integration of AI powered pup personalities that transform standard blockchain data into engaging, personality rich notifications.
-                    </p>
-                    <p className="text-blue-100 mt-4">
-                      Our platform is designed to support up to 20 wallet connections per user, making it suitable for both individual investors and active traders who manage multiple addresses. Users can train their own unique pup personality, customizing how their companion delivers transaction notifications across all their wallets. This personalization creates a distinct character that matches each user's style, and extends beyond just notifications. Users can interact with their pup through various commands and participate in community events centered around these unique characters.
-                    </p>
-                    <p className="text-blue-100 mt-4">
-                      To create a sustainable and fair system, we've implemented $BONE tokens as our access mechanism. Rather than traditional subscription models, users simply hold tokens in their wallets to maintain access to the service. This approach allows users to retain the value of their investment, as tokens can be traded whenever they choose. While Discord serves as the primary hub for our community, we're actively exploring additional utilities for $BONE through various forms of wallet tracking beyond Discord. Our vision extends to creating a comprehensive ecosystem where monitoring your blockchain activity becomes part of a larger, more engaging experience, supported by a community that shares our commitment to making Cardano wallet tracking more accessible and enjoyable for everyone.
-                    </p>
+                        <div className="space-y-8">
+                          <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                            <p className="text-blue-100">
+                              WalletPup is being developed to bring a fresh perspective to Cardano wallet monitoring, where we believe that staying updated with your blockchain activity should be both informative and enjoyable. At its core, WalletPup is a Discord based monitoring service that connects to your Cardano wallets, providing detailed updates about transactions, token movements, and NFT activities. What makes our approach unique is the integration of AI powered pup personalities that transform standard blockchain data into engaging, personality rich notifications.
+                            </p>
+                            <p className="text-blue-100 mt-4">
+                              Our platform is designed to support up to 20 wallet connections per user, making it suitable for both individual investors and active traders who manage multiple addresses. Users can train their own unique pup personality, customizing how their companion delivers transaction notifications across all their wallets. This personalization creates a distinct character that matches each user's style, and extends beyond just notifications. Users can interact with their pup through various commands and participate in community events centered around these unique characters.
+                            </p>
+                            <p className="text-blue-100 mt-4">
+                              To create a sustainable and fair system, we've implemented $BONE tokens as our access mechanism. Rather than traditional subscription models, users simply hold tokens in their wallets to maintain access to the service. This approach allows users to retain the value of their investment, as tokens can be traded whenever they choose. While Discord serves as the primary hub for our community, we're actively exploring additional utilities for $BONE through various forms of wallet tracking beyond Discord. Our vision extends to creating a comprehensive ecosystem where monitoring your blockchain activity becomes part of a larger, more engaging experience, supported by a community that shares our commitment to making Cardano wallet tracking more accessible and enjoyable for everyone.
+                            </p>
+                          </div>
+                        </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
         </motion.div>
       )
     },
@@ -308,10 +309,10 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaBell className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">4. Discord Integration</h4>
+                      <h4 className="text-lg font-semibold text-white">4. Creative Response</h4>
                     </div>
                     <p className="text-blue-100">
-                      Processed data is sent to our Discord bot, which delivers your wallet updates with personality. You can customize notification settings and manage multiple wallets through simple Discord commands.
+                      The readable transaction data is fed to our pup personalities, each trained with unique characteristics and communication styles. They analyze the data and generate creative, personality-driven responses that make tracking your wallet both informative and entertaining.
                     </p>
                   </div>
                 </div>
@@ -421,6 +422,47 @@ const Whitepaper = () => {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'launch-platform',
+      title: 'Launch Platform',
+      icon: <FaDragon className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Launch Platform</h3>
+                
+                <div className="space-y-6">
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <p className="text-blue-100 text-base mb-6">
+                      We chose to launch WalletPup on Snek.fun, a trusted Cardano launchpad that has earned its reputation through successful, fair, and transparent token launches. This platform's commitment to preventing manipulation and ensuring fair distribution aligns perfectly with our community first approach.
+                    </p>
+                    <div className="space-y-4 text-blue-200 mb-6">
+                      <p className="font-semibold">Why Snek.fun?</p>
+                      <ul className="list-disc list-inside space-y-2 ml-4">
+                        <li>Proven track record of successful launches</li>
+                        <li>Fair distribution mechanisms</li>
+                        <li>Transparent launch process</li>
+                        <li>Established community presence</li>
+                      </ul>
+                    </div>
+                    <p className="text-blue-100 text-base">
+                      By launching through Snek.fun, we ensure that our token distribution starts on the right foundation fair, transparent, and accessible to genuine community members. This aligns with our longterm vision of building a sustainable and engaged community around WalletPup.
+                    </p>
                   </div>
                 </div>
               </div>
