@@ -85,7 +85,7 @@ const Guide = () => {
       number: '03',
       title: 'Add Primary Wallet',
       description: 'Use /add to register your wallet with BONE tokens.',
-      details: "Register your wallet containing $BONE tokens using the /add command. Once verified, this becomes your primary wallet and you'll receive a crown badge, unlocking all WalletPup features.",
+      details: "Register your wallet containing $BONE tokens using the /add command. Once verified, this becomes your primary wallet and you'll receive a bone 🦴 badge, unlocking all WalletPup features.",
       icon: FaWallet
     },
     {

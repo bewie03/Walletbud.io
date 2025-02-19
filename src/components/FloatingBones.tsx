@@ -11,7 +11,7 @@ interface Bone {
   opacity: number;
 }
 
-const BONE_COUNT = 40; // Increased for more constant coverage
+const BONE_COUNT = 30; // Increased for more constant coverage
 const VIEWPORT_HEIGHT = 120; // Percentage, slightly larger than screen
 
 const FloatingBones = () => {

@@ -20,7 +20,6 @@ import {
   FaBell,
   FaArrowLeft,
   FaDog,
-  FaCrown,
   FaDice 
 } from 'react-icons/fa';
 
@@ -39,7 +38,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Verify Ownership',
           desc: 'Prove you own the wallet and give it a name',
-          details: "Send a small verification amount to prove ownership, then choose a unique name for your wallet. This grants you a verified badge and crown for your first wallet."
+          details: "Send a small verification amount to prove ownership, then choose a unique name for your wallet. This grants you a verified badge and bone 🦴 for your first wallet."
         };
       case '/remove <address>':
         return {
@@ -173,7 +172,7 @@ const CommandCard = ({ command }: { command: any }) => {
       case '/train':
         return <FaDog className="text-blue-200 text-2xl" />;
       case '/loyalty':
-        return <FaCrown className="text-blue-200 text-2xl" />;
+        return <span className="text-blue-200 text-2xl">🦴</span>;
       case '/guess':
         return <FaDice className="text-blue-200 text-2xl" />;
       default:
