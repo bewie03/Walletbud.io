@@ -19,11 +19,11 @@ const FAQ = () => {
     },
     {
       question: "How many wallets can I track?",
-      answer: "Track up to 20 Cardano wallets with one verified wallet holding BONE tokens."
+      answer: "Track up to 25 Cardano wallets with one verified wallet holding BONE tokens. You can either start with a smaller amount and let market growth increase your slots, or get all 25 slots immediately by holding enough BONE."
     },
     {
       question: "What are BONE tokens?",
-      answer: "BONE is our utility token used to access WalletPup services. Hold ~50 ADA worth of BONE to verify your primary wallet."
+      answer: "BONE is our utility token used to access WalletPup services. Entry cost is fixed at ~50 ADA worth of BONE (2.5 ADA per wallet). As market cap grows, the required token amount decreases while maintaining the same ADA value."
     },
     {
       question: "How is BONE distributed?",

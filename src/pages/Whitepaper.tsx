@@ -25,11 +25,13 @@ import {
   FaGlobe,
   FaHandshake,
   FaHistory,
+  FaHome,
   FaLightbulb,
   FaLock,
   FaNetworkWired,
   FaPalette,
   FaPaw,
+  FaPiggyBank,
   FaProjectDiagram,
   FaRobot,
   FaRocket,
@@ -39,7 +41,10 @@ import {
   FaStar,
   FaTrophy,
   FaBolt,
-  FaUsers
+  FaUsers,
+  FaBullseye,
+  FaCheckCircle,
+  FaDiscord
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -91,7 +96,7 @@ const Whitepaper = () => {
                               WalletPup is being developed to bring a fresh perspective to Cardano wallet monitoring, where we believe that staying updated with your blockchain activity should be both informative and enjoyable. At its core, WalletPup is a Discord based monitoring service that connects to your Cardano wallets, providing detailed updates about transactions, token movements, and NFT activities. What makes our approach unique is the integration of AI powered pup personalities that transform standard blockchain data into engaging, personality rich notifications.
                             </p>
                             <p className="text-blue-100 mt-4">
-                              Our platform is designed to support up to 20 wallet connections per user, making it suitable for both individual investors and active traders who manage multiple addresses. Users can train their own unique pup personality, customizing how their companion delivers transaction notifications across all their wallets. This personalization creates a distinct character that matches each user's style, and extends beyond just notifications. Users can interact with their pup through various commands and participate in community events centered around these unique characters.
+                              Our platform is designed to support up to 25 wallet connections per user, making it suitable for both individual investors and active traders who manage multiple addresses. Users can train their own unique pup personality, customizing how their companion delivers transaction notifications across all their wallets. This personalization creates a distinct character that matches each user's style, and extends beyond just notifications. Users can interact with their pup through various commands and participate in community events centered around these unique characters.
                             </p>
                             <p className="text-blue-100 mt-4">
                               To create a sustainable and fair system, we've implemented $BONE tokens as our access mechanism. Rather than traditional subscription models, users simply hold tokens in their wallets to maintain access to the service. This approach allows users to retain the value of their investment, as tokens can be traded whenever they choose. While Discord serves as the primary hub for our community, we're actively exploring additional utilities for $BONE through various forms of wallet tracking beyond Discord. Our vision extends to creating a comprehensive ecosystem where monitoring your blockchain activity becomes part of a larger, more engaging experience, supported by a community that shares our commitment to making Cardano wallet tracking more accessible and enjoyable for everyone.
@@ -132,7 +137,7 @@ const Whitepaper = () => {
                     <div className="space-y-4">
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/add</code>
-                        <p className="text-blue-100 mt-1">Track new wallets (up to 20 total)</p>
+                        <p className="text-blue-100 mt-1">Track new wallets (up to 25 total)</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/verifywallet</code>
@@ -189,7 +194,7 @@ const Whitepaper = () => {
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <div className="flex items-center gap-2">
                           <FaPaw className="text-blue-300" />
-                          <p className="text-blue-100">Track up to 20 wallets at once</p>
+                          <p className="text-blue-100">Track up to 25 wallets at once</p>
                         </div>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
@@ -387,13 +392,14 @@ const Whitepaper = () => {
                       {/* Smart Token Economics */}
                       <div className="bg-blue-920/50 rounded-lg p-4">
                         <h5 className="text-white font-semibold mb-2 flex items-center gap-2">
-                          <FaChartBar className="text-blue-300" />
+                          <FaChartLine className="text-blue-300" />
                           Smart Token Economics
                         </h5>
                         <div className="text-blue-200">
-                          <p>Entry cost fixed at ~50 ADA worth of $BONE (2.5 ADA per wallet)</p>
-                          <p>As market cap grows, required token amount decreases, maintaining the same ADA value</p>
-                          <p>Early adopters can sell excess tokens while maintaining service access</p>
+                          <p>• Entry cost fixed at ~50 ADA worth of $BONE (2.5 ADA per wallet)</p>
+                          <p>• As market cap grows, required token amount decreases, maintaining the same ADA value</p>
+                          <p>• Early adopters can sell excess tokens while maintaining service access</p>
+                          <p>• Get all 25 slots immediately or grow your slots over time</p>
                         </div>
                       </div>
 
@@ -404,10 +410,159 @@ const Whitepaper = () => {
                           User Benefits
                         </h5>
                         <div className="text-blue-200">
-                          <p>Tokens remain in your wallet, sell them back at any time</p>
-                          <p>Early adopters benefit from token value appreciation</p>
-                          <p>Sustainable model that rewards long term holders</p>
+                          <p>• Tokens remain in your wallet, sell them back at any time</p>
+                          <p>• Early adopters benefit from token value appreciation</p>
+                          <p>• Sustainable model that rewards long term holders</p>
+                          <p>• Flexible entry: start small or go big for maximum slots</p>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'bone-tiers',
+      title: 'BONE Tier System',
+      icon: <FaBone className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-4">Track More Wallets Just By Holding!</h3>
+                <p className="text-blue-100 mb-6">
+                  The more successful WalletPup becomes, the more wallets you can track without buying more BONE! 
+                  Start with a few slots and watch them multiply as our market cap grows. You can track up to 25 wallets maximum.
+                </p>
+
+                <div className="space-y-6">
+                  {/* Simple Explanation */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-4">
+                      <div className="flex items-center gap-2">
+                        <FaBullseye className="text-blue-300" />
+                        <span>How It Works - Simple Version</span>
+                      </div>
+                    </h4>
+                    <div className="space-y-4">
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <p className="text-blue-100">
+                          1. Buy BONE tokens to unlock wallet tracking slots
+                        </p>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <p className="text-blue-100">
+                          2. As WalletPup grows, the amount of BONE needed for slots gets smaller
+                        </p>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <p className="text-blue-100">
+                          3. When this happens, you automatically get more slots if you're holding enough BONE
+                        </p>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <p className="text-blue-100">
+                          4. The longer you hold, the more slots you can get up to 25 maximum!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Real Example */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-4">
+                      <div className="flex items-center gap-2">
+                        <FaLightbulb className="text-blue-300" />
+                        <span>Real Example: The Power of Holding</span>
+                      </div>
+                    </h4>
+                    <p className="text-blue-100 mb-4">
+                      Let's say you buy 200K BONE today. Here's how your wallet slots grow automatically as WalletPup succeeds:
+                    </p>
+                    <div className="grid grid-cols-1 gap-4">
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="flex items-center gap-4">
+                          <div className="text-2xl text-blue-300">
+                            <FaRocket />
+                          </div>
+                          <div>
+                            <div className="font-bold text-white">Day 1: Project Launch</div>
+                            <div>You get 5 slots (200K BONE needed for 5 slots)</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="flex items-center gap-4">
+                          <div className="text-2xl text-blue-300">
+                            <FaChartLine />
+                          </div>
+                          <div>
+                            <div className="font-bold text-white">Later: Project Grows</div>
+                            <div>Now only 100K BONE needed for 5 slots</div>
+                            <div className="text-blue-300">Your 200K BONE now gets you 10 slots!</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="flex items-center gap-4">
+                          <div className="text-2xl text-blue-300">
+                            <FaChartBar />
+                          </div>
+                          <div>
+                            <div className="font-bold text-white">Project Grows More</div>
+                            <div>Now only 50K BONE needed for 5 slots</div>
+                            <div className="text-blue-300">Your 200K BONE now gets you 20 slots!</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="flex items-center gap-4">
+                          <div className="text-2xl text-blue-300">
+                            <FaStar />
+                          </div>
+                          <div>
+                            <div className="font-bold text-white">Project Thrives</div>
+                            <div>Now only 25K BONE needed for 5 slots</div>
+                            <div className="text-blue-300">Your 200K BONE gets you max 25 slots!</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Key Benefits */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-4">
+                      <div className="flex items-center gap-2">
+                        <FaTrophy className="text-blue-300" />
+                        <span>Why This is Great for You</span>
+                      </div>
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="font-bold text-white mb-2">Hold & Win</div>
+                        <p className="text-blue-100">Just keep holding your BONE and get more slots automatically as we grow</p>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="font-bold text-white mb-2">No Extra Cost</div>
+                        <p className="text-blue-100">Get more slots without buying more BONE - project growth does the work</p>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="font-bold text-white mb-2">Early Bird Bonus</div>
+                        <p className="text-blue-100">Buy early, hold, and watch your access level multiply over time</p>
+                      </div>
+                      <div className="bg-blue-800/50 p-4 rounded-lg">
+                        <div className="font-bold text-white mb-2">Flexibility</div>
+                        <p className="text-blue-100">Start small and grow your access, or go big right away for maximum slots</p>
                       </div>
                     </div>
                   </div>
@@ -702,7 +857,7 @@ const Whitepaper = () => {
                 <div className="space-y-4 text-blue-100">
                   <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Network Capacity</h4>
-                    <p className="text-blue-100 mb-4">
+                    <p className="text-blue-100">
                       Our infrastructure is designed to handle the growing Cardano ecosystem:
                     </p>
                     <div className="text-blue-200">
@@ -714,11 +869,11 @@ const Whitepaper = () => {
 
                   <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">User Growth</h4>
-                    <p className="text-blue-100 mb-4">
+                    <p className="text-blue-100">
                       We've built WalletPup to scale with the community:
                     </p>
                     <div className="text-blue-200">
-                      <p>• Each user can track up to 20 wallets</p>
+                      <p>• Each user can track up to 25 wallets</p>
                       <p>• System can handle 250,000+ primary wallets</p>
                       <p>• Supports current daily active addresses</p>
                     </div>
@@ -726,7 +881,7 @@ const Whitepaper = () => {
 
                   <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Performance Optimization</h4>
-                    <p className="text-blue-100 mb-4">
+                    <p className="text-blue-100">
                       We maintain high performance through:
                     </p>
                     <div className="text-blue-200">
@@ -869,6 +1024,106 @@ const Whitepaper = () => {
                     <p className="text-blue-100">
                       Regular events, contests, and feeding bowls keep our community engaged and growing. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'pup-house',
+      title: 'Pup House Treasury',
+      icon: <FaHome className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">The Pup House: Sustaining Our Ecosystem</h3>
+                
+                <div className="space-y-8">
+                  {/* Overview */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaPiggyBank className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Treasury Overview</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      The Pup House treasury is the backbone of WalletPup's ecosystem, ensuring sustainable operations and continuous community engagement. Project fees are strategically reinvested to maintain and enhance every aspect of our service.
+                    </p>
+                  </div>
+
+                  {/* Infrastructure & Development */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaServer className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Infrastructure & Development</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaDatabase className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Maintaining robust database infrastructure for reliable wallet tracking</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaDiscord className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Premium Discord server hosting for optimal performance</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaGlobe className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Website hosting and continuous development</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Community Engagement */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Community Engagement</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaTrophy className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Regular contests and community events with attractive prizes</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaGift className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Community giveaways to reward active members</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaHandshake className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Strategic collaborations with other Cardano projects</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Platform Growth */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaChartLine className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Platform Growth</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaCheckCircle className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Platform verifications and official listings</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaBullhorn className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Marketing initiatives to expand our community</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaShieldAlt className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">General system improvements</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

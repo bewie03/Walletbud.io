@@ -71,7 +71,7 @@ const Guide = () => {
       number: '01',
       title: 'Get BONE Tokens',
       description: 'Purchase $BONE tokens for your primary wallet.',
-      details: "Visit a supported DEX platform to purchase $BONE tokens for your primary wallet. The required amount decreases with market cap and never increases once lowered, making it easier to join over time.",
+      details: "Visit a supported DEX platform to purchase $BONE tokens for your primary wallet. You can start with a smaller amount and grow your slots over time as market cap increases, or get all 25 slots immediately by holding more BONE. The required amount decreases with market cap and never increases once lowered.",
       icon: FaBone
     },
     {
@@ -85,7 +85,7 @@ const Guide = () => {
       number: '03',
       title: 'Add Primary Wallet',
       description: 'Use /add to register your wallet with BONE tokens.',
-      details: "Register your wallet containing $BONE tokens using the /add command. Once verified, this becomes your primary wallet and you'll receive a bone 🦴 badge, unlocking all WalletPup features.",
+      details: "Register your wallet containing $BONE tokens using the /add command. Once verified, this becomes your primary wallet and you'll receive a bone badge, unlocking all WalletPup features.",
       icon: FaWallet
     },
     {
@@ -106,8 +106,8 @@ const Guide = () => {
     {
       number: '06',
       title: 'Add More Wallets',
-      description: 'Track additional wallets for broader coverage.',
-      details: "Expand your tracking by adding more wallets using /add. Each wallet you add increases your coverage and helps you stay informed about all your Cardano assets in one place. (These dont require bone) ",
+      description: 'Track up to 25 wallets based on your BONE.',
+      details: "Track up to 25 wallets total based on your BONE holdings. The more BONE you hold, the more wallets you can track. You can either start small and let market growth increase your slots, or get all 25 slots right away by holding enough BONE.",
       icon: FaPlus
     },
     {

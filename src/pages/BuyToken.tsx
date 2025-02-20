@@ -57,7 +57,7 @@ const BONE = () => {
                 icon: FaBone,
                 description: "Access WalletPup's full range of wallet monitoring features",
                 features: [
-                  "Track up to 20 wallets",
+                  "Track up to 25 wallets",
                   "Customize your pup companion",
                   "Access all bot commands"
                 ]
