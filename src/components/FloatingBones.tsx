@@ -11,7 +11,7 @@ interface Bone {
   opacity: number;
 }
 
-const BONE_COUNT = 30; // Increased for more constant coverage
+const BONE_COUNT = 20; // Increased for more constant coverage
 const VIEWPORT_HEIGHT = 120; // Percentage, slightly larger than screen
 
 const FloatingBones = () => {
@@ -42,7 +42,7 @@ const FloatingBones = () => {
     if (bone.y > 100) {
       bone.y = -20; // Reset above viewport
       bone.x = Math.random() * 100; // New random x position
-      bone.speed = 0.003 + Math.random() * 0.006; // New random speed when recycling
+      bone.speed = 0.002 + Math.random() * 0.004; // New random speed when recycling
     }
 
     return bone;
