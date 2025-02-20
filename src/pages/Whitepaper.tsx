@@ -4,6 +4,7 @@ import AnimatedElement from '../components/AnimatedElement';
 import FloatingBones from '../components/FloatingBones';
 import { 
   FaArrowUp,
+  FaArrowDown,
   FaBell,
   FaBone,
   FaBullhorn,
@@ -67,6 +68,13 @@ const Whitepaper = () => {
     });
   };
 
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth'
+    });
+  };
+
   const sections = [
     {
       id: 'introduction',
@@ -93,13 +101,19 @@ const Whitepaper = () => {
                         <div className="space-y-8">
                           <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                             <p className="text-blue-100">
-                              WalletPup is being developed to bring a fresh perspective to Cardano wallet monitoring, where we believe that staying updated with your blockchain activity should be both informative and enjoyable. At its core, WalletPup is a Discord based monitoring service that connects to your Cardano wallets, providing detailed updates about transactions, token movements, and NFT activities. What makes our approach unique is the integration of AI powered pup personalities that transform standard blockchain data into engaging, personality rich notifications.
+                              WalletPup was built to make Cardano wallet tracking more intuitive, engaging, and rewarding.
                             </p>
                             <p className="text-blue-100 mt-4">
-                              Our platform is designed to support up to 25 wallet connections per user, making it suitable for both individual investors and active traders who manage multiple addresses. Users can train their own unique pup personality, customizing how their companion delivers transaction notifications across all their wallets. This personalization creates a distinct character that matches each user's style, and extends beyond just notifications. Users can interact with their pup through various commands and participate in community events centered around these unique characters.
+                              Blockchain explorers and tracking tools provide the raw data, but they often feel disconnected from how people actually use and interact with their wallets. We saw an opportunity to create a system that not only keeps you informed but also makes the experience more natural and user friendly.
                             </p>
                             <p className="text-blue-100 mt-4">
-                              To create a sustainable and fair system, we've implemented $BONE tokens as our access mechanism. Rather than traditional subscription models, users simply hold tokens in their wallets to maintain access to the service. This approach allows users to retain the value of their investment, as tokens can be traded whenever they choose. While Discord serves as the primary hub for our community, we're actively exploring additional utilities for $BONE through various forms of wallet tracking beyond Discord. Our vision extends to creating a comprehensive ecosystem where monitoring your blockchain activity becomes part of a larger, more engaging experience, supported by a community that shares our commitment to making Cardano wallet tracking more accessible and enjoyable for everyone.
+                              At its core, WalletPup transforms complex blockchain data into clear, easy to understand insights delivered in real time through AI powered pup personalities. Whether you're tracking a long term investment or actively managing multiple wallets, our system is designed to keep you updated without the need to constantly check transactions manually.
+                            </p>
+                            <p className="text-blue-100 mt-4">
+                              Beyond tracking, WalletPup introduces a new approach to accessibility through the $BONE token. Instead of paying for a subscription, users hold BONE to unlock tracking slots, keeping ownership of their tokens while gaining full access to the platform. As WalletPup grows, the token model ensures that early adopters benefit over time, creating a sustainable and user friendly way to engage with wallet monitoring.
+                            </p>
+                            <p className="text-blue-100 mt-4">
+                              With instant notifications, customizable tracking, community driven features, and a sustainable token model, WalletPup brings something fresh to the Cardano ecosystem. Our goal is simple: make wallet tracking smarter, easier, and more engaging while ensuring long term value for our users.
                             </p>
                           </div>
                         </div>
@@ -1151,11 +1165,13 @@ const Whitepaper = () => {
                 <div className="space-y-6">
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <p className="text-blue-100">
-                      WalletPup combines practical utility with engaging features, creating a unique opportunity in the Cardano ecosystem. By holding $BONE, you gain access to essential wallet monitoring tools while participating in a growing platform. We're building something that's both fun to use and valuable to hold.
-                    </p>
+                    WalletPup was created to fill a gap in the Cardano ecosystem offering a clearer, more intuitive way to track wallets while keeping things engaging and accessible. We’ve built a system that not only provides real time insights but also adapts and grows with its users.                    </p>
                     <p className="text-blue-100 mt-4">
-                      We appreciate everyone who has taken the time to learn about WalletPup. Whether you're here for the tracking features or the investment potential, we invite you to join us in creating the future of wallet monitoring.
-                    </p>
+                    As the project evolves, our focus remains the same: delivering a reliable and rewarding tracking experience while listening to the community and improving based on real world feedback. Blockchain technology is always changing, and WalletPup is designed to change with it.
+                   </p>
+                   We appreciate everyone who joins us on this journey. Whether you’re here for better tracking, the community, or the long term potential of $BONE, WalletPup is built to support you.
+
+                  This is just the beginning, and we’re excited for what’s ahead.
                   </div>
 
                   <div className="text-sm text-blue-300 mt-4 border-t border-blue-700/20 pt-4">
@@ -1229,20 +1245,33 @@ const Whitepaper = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
+      {/* Scroll Buttons */}
       <AnimatePresence>
         {showScrollButton && (
-          <motion.button
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.5 }}
-            onClick={scrollToTop}
-            className="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
-            whileHover={{ y: -3 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <FaArrowUp className="text-xl" />
-          </motion.button>
+          <div className="fixed bottom-32 right-8 space-y-4">
+            <motion.button
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              onClick={scrollToTop}
+              className="block bg-blue-600 hover:bg-blue-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaArrowUp className="text-xl" />
+            </motion.button>
+            <motion.button
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+              onClick={scrollToBottom}
+              className="block bg-blue-600 hover:bg-blue-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+              whileHover={{ y: 3 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaArrowDown className="text-xl" />
+            </motion.button>
+          </div>
         )}
       </AnimatePresence>
     </div>
