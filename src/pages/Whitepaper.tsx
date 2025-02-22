@@ -927,43 +927,36 @@ const Whitepaper = () => {
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
                 <h3 className="text-xl font-semibold text-white mb-6">Future Development</h3>
                 
+                {/* Vision & Future Projects */}
+                <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300 mb-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="bg-blue-800 rounded-xl p-3">
+                      <FaBullseye className="text-blue-300 text-2xl" />
+                    </div>
+                    <h4 className="text-xl font-semibold text-white">Vision & Future Projects</h4>
+                  </div>
+                  <p className="text-blue-100 mb-4">
+                    While our Discord bot is where we're starting, it's just one piece of a larger vision. We're developing WalletPup to be a suite of interconnected tools that help Cardano users track wallets, organize addresses, and evaluate projects in ways that haven't been done before.
+                  </p>
+                  <p className="text-blue-100 mt-4">
+                    We're excited to share that two additional projects are already under active development and will be launching in the coming months. These tools will introduce new ways to interact with Cardano data, making it more accessible and actionable for everyone. While we can't reveal all the details yet, we can say that they'll focus on helping users organize their Cardano journey and make more informed decisions about projects.
+                  </p>
+                  <p className="text-blue-100">
+                    Each project will tie back to $BONE, creating additional utility and value for our token holders. The development is progressing well, and we're ensuring each tool integrates seamlessly with our ecosystem while maintaining the high standards our community expects.
+                  </p>
+                </div>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Enhanced Bot Commands */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="bg-blue-800 rounded-xl p-3">
-                        <FaCogs className="text-blue-300 text-2xl" />
-                      </div>
-                      <h4 className="text-xl font-semibold text-white">Enhanced Bot Commands</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Based on community feedback, we're working on additional commands to help users better track and understand their wallet activity. These improvements will focus on providing useful insights and making the tracking experience more convenient for our users.
-                    </p>
-                  </div>
-
-                  {/* Beyond Discord */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="bg-blue-800 rounded-xl p-3">
-                        <FaGlobe className="text-blue-300 text-2xl" />
-                      </div>
-                      <h4 className="text-xl font-semibold text-white">Beyond Discord</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      While Discord is our current home, we're exploring ways to bring wallet tracking to other platforms. Our goal is to thoughtfully expand $BONE utility while staying focused on our core mission of providing reliable wallet monitoring services.
-                    </p>
-                  </div>
-
-                  {/* Marketing & Expansion */}
+                  {/* Marketing & Community Growth */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-blue-800 rounded-xl p-3">
                         <FaBullhorn className="text-blue-300 text-2xl" />
                       </div>
-                      <h4 className="text-xl font-semibold text-white">Marketing & Expansion</h4>
+                      <h4 className="text-xl font-semibold text-white">Marketing & Community Growth</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our pup companions bring a playful twist to wallet monitoring that we believe can make crypto more approachable and fun. Through creative social media content, memes, and engaging community events, we aim to show that staying on top of your wallet activity doesn't have to be boring.
+                      Our upcoming tools create unique marketing opportunities that benefit both WalletPup and the wider Cardano ecosystem. Projects using our services will gain visibility through our platform, while their engagement helps showcase the practical utility of our tools. This creates a natural growth cycle where increased project participation drives user adoption, and vice versa.
                     </p>
                   </div>
 
@@ -976,7 +969,7 @@ const Whitepaper = () => {
                       <h4 className="text-xl font-semibold text-white">Project Collaborations</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our treasury will provide free tokens to selected project owners who want to join the WalletPup community. These partnerships will help create a network where users can easily track their favorite projects' wallets and stay informed about their activities on the blockchain.
+                      We're exploring partnerships with Cardano projects to create mutually beneficial integrations. Projects will be able to leverage our tools to enhance their community engagement, while their participation strengthens our ecosystem. These collaborations will focus on creating practical utility that serves both the projects and their communities.
                     </p>
                   </div>
                 </div>
@@ -1020,13 +1013,20 @@ const Whitepaper = () => {
                       <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
                       <h4 className="text-lg font-semibold text-white">Sustainable Token Model</h4>
                     </div>
-                    <p className="text-blue-100 text-base mb-6">
-                      Our dynamic BONE requirement system ensures sustainable growth. With 95% of tokens allocated to the public and regular token burns through the Feeding Bowl, we've created an ecosystem that rewards early adopters while remaining accessible to new users.
-                    </p>
-
-                    <p className="text-blue-100 text-base">
-                      Regular events, contests, and feeding bowls keep our community engaged and growing. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and treasury growth.
-                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaDatabase className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Maintaining robust database infrastructure for reliable wallet tracking</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaDiscord className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Premium Discord server hosting for optimal performance</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaGlobe className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Website hosting and continuous development</p>
+                      </div>
+                    </div>
                   </div>
 
                   {/* Community Growth */}
