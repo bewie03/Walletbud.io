@@ -49,7 +49,6 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-1">
             {[
               { to: '/bone', text: '$BONE' },
-              { to: '/doghouse', text: 'Doghouse' },
               { to: '/commands', text: 'Commands' },
               { to: '/guide', text: 'Guide' },
               { to: '/whitepaper', text: 'Whitepaper' },
@@ -106,7 +105,6 @@ const Navbar = () => {
         <div className="px-4 py-2 space-y-1">
           {[
             { to: '/bone', text: '$BONE' },
-            { to: '/doghouse', text: 'Doghouse' },
             { to: '/commands', text: 'Commands' },
             { to: '/guide', text: 'Guide' },
             { to: '/whitepaper', text: 'Whitepaper' },

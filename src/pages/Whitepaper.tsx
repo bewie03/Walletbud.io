@@ -24,13 +24,13 @@ import {
   FaFeather,
   FaGift,
   FaGlobe,
+  FaGraduationCap,
   FaHandshake,
   FaHistory,
   FaHome,
   FaLightbulb,
   FaLock,
   FaNetworkWired,
-  FaPalette,
   FaPaw,
   FaPiggyBank,
   FaProjectDiagram,
@@ -316,7 +316,7 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaBell className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">4. Creative Response</h4>
+                      <h4 className="text-lg font-semibold text-white">3. Creative Response</h4>
                     </div>
                     <p className="text-blue-100">
                       The readable transaction data is fed to our pup personalities, each trained with unique characteristics and communication styles. They analyze the data and generate creative, personality driven responses that make tracking your wallet both informative and entertaining.
@@ -410,7 +410,7 @@ const Whitepaper = () => {
                           Smart Token Economics
                         </h5>
                         <div className="text-blue-200">
-                          <p>• Entry cost fixed at ~50 ADA worth of $BONE (2.5 ADA per wallet)</p>
+                          <p>• Entry cost at ~50 ADA worth of $BONE</p>
                           <p>• As market cap grows, required token amount decreases, maintaining the same ADA value</p>
                           <p>• Early adopters can sell excess tokens while maintaining service access</p>
                           <p>• Get all 25 slots immediately or grow your slots over time</p>
@@ -701,7 +701,7 @@ const Whitepaper = () => {
     },
     {
       id: 'ai-personalities',
-      title: 'The Doghouse',
+      title: 'Pup Personalities',
       icon: <FaDog className="w-6 h-6" />,
       content: (
         <motion.div 
@@ -716,37 +716,46 @@ const Whitepaper = () => {
                 <h3 className="text-xl font-semibold text-white mb-6">Meet Our Loyal Pups</h3>
                 
                 <div className="space-y-8">
-                  {/* Core Concept */}
+                  {/* Training */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaPaw className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Diverse Pup Cast</h4>
+                      <FaGraduationCap className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Training Your Pup</h4>
                     </div>
-                    <p className="text-blue-100">
-                      The Doghouse features 50 unique pup personalities, each with their own distinct character, communication style and backstory. From professional personalities for serious analysis to creative characters for entertaining insights, our diverse cast makes blockchain monitoring both informative and entertaining.
-                    </p>
+                    <div className="space-y-4">
+                      <p className="text-blue-100">
+                        The /train command lets you customize your pup's personality through a clear, detailed prompt. The quality and specificity of your prompt directly determines how well your pup will communicate and process information:
+                      </p>
+                      <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
+                        <p className="text-blue-100">• Specify exactly how you want transactions to be described</p>
+                        <p className="text-blue-100">• Define the level of detail for different transaction types</p>
+                        <p className="text-blue-100">• Set the tone and style of communication</p>
+                        <p className="text-blue-100">• Include examples of ideal responses for clarity</p>
+                      </div>
+                      <p className="text-blue-100">
+                        Your pup's effectiveness depends entirely on the quality of your training prompt. Take time to craft a clear, detailed prompt that covers all aspects of how you want your pup to communicate. For those who prefer a ready to use solution, we offer 50 preset personalities to choose from.
+                      </p>
+                    </div>
                   </div>
 
-                  {/* Pup Personality Customization */}
+                  {/* Training Tips */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaCog className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Customize Your Pup</h4>
+                      <h4 className="text-lg font-semibold text-white">Crafting the Perfect Prompt</h4>
                     </div>
-                    <p className="text-blue-100">
-                      Make your WalletPup truly yours with the /train command. Customize your pup's personality, tone, and style to match your preferences. Whether you want a professional, playful, or sassy companion, you can fine tune how your pup delivers notifications to create a personalized monitoring experience.
-                    </p>
-                  </div>
-
-                  {/* Community Art Contests */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaPalette className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Art Contests & Community Engagement</h4>
+                    <div className="space-y-4">
+                      <p className="text-blue-100">Master these strategies to create an effective training prompt:</p>
+                      <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
+                        <p className="text-blue-100">• Be explicit - detail exactly how you want information presented</p>
+                        <p className="text-blue-100">• Include examples - show your pup the ideal format for different scenarios</p>
+                        <p className="text-blue-100">• Cover edge cases - specify how to handle unusual transactions</p>
+                        <p className="text-blue-100">• Define priorities - what information should be emphasized vs summarized</p>
+                      </div>
+                      <p className="text-blue-100">
+                        Remember: The effectiveness of your pup comes down to the quality of your prompt. A well crafted prompt will consistently deliver the exact notification style you want. If you're not satisfied with the results, refine your prompt with more specific instructions and examples.
+                      </p>
                     </div>
-                    <p className="text-blue-100">
-                      We believe in bringing our pup personalities to life through community creativity. Regular art contests allow talented artists to visualize each unique personality, with prizes for winning submissions.
-                    </p>
                   </div>
 
                   {/* Future Development */}
