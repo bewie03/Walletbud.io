@@ -124,6 +124,117 @@ const Whitepaper = () => {
       )
     },
     {
+      id: 'inspiration',
+      title: 'Our Journey',
+      icon: <FaLightbulb className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Our Journey</h3>
+                
+                <div className="space-y-8">
+                  {/* The Original */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaHistory className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">The Original</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Walletbud was the pioneer of wallet tracking on Cardano, introducing the concept of Discord based wallet monitoring. While revolutionary at the time, it faced significant challenges with sustainability and reliability that ultimately affected its service quality and longevity.
+                    </p>
+                  </div>
+
+                  {/* The Successor */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBolt className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">The Successor</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Following Walletbud's challenges, ZING emerged as the replacement, focusing primarily on high speed tracking. While ZING successfully addressed the speed aspect of wallet monitoring, we saw an opportunity to create something more engaging.
+                    </p>
+                  </div>
+
+                  {/* The Evolution */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">The Evolution</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      WalletPup builds upon these foundations while addressing their limitations. We combine ZING's rapid tracking capabilities with features that transform wallet monitoring into an engaging social experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'technology',
+      title: 'How It Works',
+      icon: <FaCogs className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Technical Overview</h3>
+                
+                <div className="space-y-8">
+                  {/* Blockchain Connection */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaNetworkWired className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">1. Blockchain Connection</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our webhook system connects directly to the Cardano blockchain, receiving detailed information about transactions for all wallets in our database. This ensures real time monitoring of your tracked addresses.
+                    </p>
+                  </div>
+
+                  {/* Data Processing */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaDatabase className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">2. Data Processing</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      When a transaction occurs, we collect all asset details and their metadata. This raw blockchain data is then transformed into human readable format, making it easy to understand what assets were transferred and their values.
+                    </p>
+                  </div>
+                  {/* Notification Delivery */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBell className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">3. Creative Response</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      The readable transaction data is fed to our pup personalities, each trained with unique characteristics and communication styles. They analyze the data and generate creative, personality driven responses that make tracking your wallet both informative and entertaining.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
       id: 'features',
       title: 'Features and Functionality',
       icon: <FaFeather className="w-6 h-6" />,
@@ -266,61 +377,6 @@ const Whitepaper = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      )
-    },
-    {
-      id: 'technology',
-      title: 'How It Works',
-      icon: <FaCogs className="w-6 h-6" />,
-      content: (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-6"
-        >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="space-y-6 text-blue-100">
-              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Technical Overview</h3>
-                
-                <div className="space-y-8">
-                  {/* Blockchain Connection */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaNetworkWired className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">1. Blockchain Connection</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Our webhook system connects directly to the Cardano blockchain, receiving detailed information about transactions for all wallets in our database. This ensures real time monitoring of your tracked addresses.
-                    </p>
-                  </div>
-
-                  {/* Data Processing */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaDatabase className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">2. Data Processing</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      When a transaction occurs, we collect all asset details and their metadata. This raw blockchain data is then transformed into human readable format, making it easy to understand what assets were transferred and their values.
-                    </p>
-                  </div>
-                  {/* Notification Delivery */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaBell className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">3. Creative Response</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      The readable transaction data is fed to our pup personalities, each trained with unique characteristics and communication styles. They analyze the data and generate creative, personality driven responses that make tracking your wallet both informative and entertaining.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -588,9 +644,9 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'launch-platform',
-      title: 'Launch Platform',
-      icon: <FaDragon className="w-6 h-6" />,
+      id: 'ai-personalities',
+      title: 'Pup Personalities',
+      icon: <FaDog className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -601,24 +657,59 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Launch Platform</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Meet Our Loyal Pups</h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-8">
+                  {/* Training */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <p className="text-blue-100 text-base mb-6">
-                      We chose to launch WalletPup on Snek.fun, a trusted Cardano launchpad that has earned its reputation through successful, fair, and transparent token launches. This platform's commitment to preventing manipulation and ensuring fair distribution aligns perfectly with our community first approach.
-                    </p>
-                    <div className="space-y-4 text-blue-200 mb-6">
-                      <p className="font-semibold">Why Snek.fun?</p>
-                      <ul className="list-disc list-inside space-y-2 ml-4">
-                        <li>Proven track record of successful launches</li>
-                        <li>Fair distribution mechanisms</li>
-                        <li>Transparent launch process</li>
-                        <li>Established community presence</li>
-                      </ul>
+                    <div className="flex items-center mb-4">
+                      <FaGraduationCap className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Training Your Pup</h4>
                     </div>
-                    <p className="text-blue-100 text-base">
-                      By launching through Snek.fun, we ensure that our token distribution starts on the right foundation fair, transparent, and accessible to genuine community members. This aligns with our longterm vision of building a sustainable and engaged community around WalletPup.
+                    <div className="space-y-4">
+                      <p className="text-blue-100">
+                        The /train command lets you customize your pup's personality through a clear, detailed prompt. The quality and specificity of your prompt directly determines how well your pup will communicate and process information:
+                      </p>
+                      <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
+                        <p className="text-blue-100">• Specify exactly how you want transactions to be described</p>
+                        <p className="text-blue-100">• Define the level of detail for different transaction types</p>
+                        <p className="text-blue-100">• Set the tone and style of communication</p>
+                        <p className="text-blue-100">• Include examples of ideal responses for clarity</p>
+                      </div>
+                      <p className="text-blue-100">
+                        Your pup's effectiveness depends entirely on the quality of your training prompt. Take time to craft a clear, detailed prompt that covers all aspects of how you want your pup to communicate. For those who prefer a ready to use solution, we offer 50 preset personalities to choose from.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Training Tips */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaCog className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Crafting the Perfect Prompt</h4>
+                    </div>
+                    <div className="space-y-4">
+                      <p className="text-blue-100">Master these strategies to create an effective training prompt:</p>
+                      <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
+                        <p className="text-blue-100">• Be explicit - detail exactly how you want information presented</p>
+                        <p className="text-blue-100">• Include examples - show your pup the ideal format for different scenarios</p>
+                        <p className="text-blue-100">• Cover edge cases - specify how to handle unusual transactions</p>
+                        <p className="text-blue-100">• Define priorities - what information should be emphasized vs summarized</p>
+                      </div>
+                      <p className="text-blue-100">
+                        Remember: The effectiveness of your pup comes down to the quality of your prompt. A well crafted prompt will consistently deliver the exact notification style you want. If you're not satisfied with the results, refine your prompt with more specific instructions and examples.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Future Development */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBone className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Growing the Pack</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      We're constantly expanding our pack with new pup personalities and enhancing existing ones. The most creative and engaging personalities from our community will be considered for integration into WalletPup, with rewards for contributors. Regular updates will bring fresh personalities, new features, and improvements based on community feedback to keep your wallet monitoring experience exciting and engaging.
                     </p>
                   </div>
                 </div>
@@ -700,9 +791,9 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'ai-personalities',
-      title: 'Pup Personalities',
-      icon: <FaDog className="w-6 h-6" />,
+      id: 'pup-house',
+      title: 'Pup House Treasury',
+      icon: <FaHome className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -713,60 +804,84 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Meet Our Loyal Pups</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">The Pup House: Sustaining Our Ecosystem</h3>
                 
                 <div className="space-y-8">
-                  {/* Training */}
+                  {/* Overview */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaGraduationCap className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Training Your Pup</h4>
-                    </div>
-                    <div className="space-y-4">
-                      <p className="text-blue-100">
-                        The /train command lets you customize your pup's personality through a clear, detailed prompt. The quality and specificity of your prompt directly determines how well your pup will communicate and process information:
-                      </p>
-                      <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
-                        <p className="text-blue-100">• Specify exactly how you want transactions to be described</p>
-                        <p className="text-blue-100">• Define the level of detail for different transaction types</p>
-                        <p className="text-blue-100">• Set the tone and style of communication</p>
-                        <p className="text-blue-100">• Include examples of ideal responses for clarity</p>
-                      </div>
-                      <p className="text-blue-100">
-                        Your pup's effectiveness depends entirely on the quality of your training prompt. Take time to craft a clear, detailed prompt that covers all aspects of how you want your pup to communicate. For those who prefer a ready to use solution, we offer 50 preset personalities to choose from.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Training Tips */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaCog className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Crafting the Perfect Prompt</h4>
-                    </div>
-                    <div className="space-y-4">
-                      <p className="text-blue-100">Master these strategies to create an effective training prompt:</p>
-                      <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
-                        <p className="text-blue-100">• Be explicit - detail exactly how you want information presented</p>
-                        <p className="text-blue-100">• Include examples - show your pup the ideal format for different scenarios</p>
-                        <p className="text-blue-100">• Cover edge cases - specify how to handle unusual transactions</p>
-                        <p className="text-blue-100">• Define priorities - what information should be emphasized vs summarized</p>
-                      </div>
-                      <p className="text-blue-100">
-                        Remember: The effectiveness of your pup comes down to the quality of your prompt. A well crafted prompt will consistently deliver the exact notification style you want. If you're not satisfied with the results, refine your prompt with more specific instructions and examples.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Future Development */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaBone className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Growing the Pack</h4>
+                      <FaPiggyBank className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Treasury Overview</h4>
                     </div>
                     <p className="text-blue-100">
-                      We're constantly expanding our pack with new pup personalities and enhancing existing ones. The most creative and engaging personalities from our community will be considered for integration into WalletPup, with rewards for contributors. Regular updates will bring fresh personalities, new features, and improvements based on community feedback to keep your wallet monitoring experience exciting and engaging.
+                      The Pup House treasury is the backbone of WalletPup's ecosystem, ensuring sustainable operations and continuous community engagement. Project fees are strategically reinvested to maintain and enhance every aspect of our service.
                     </p>
+                  </div>
+
+                  {/* Infrastructure & Development */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaServer className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Infrastructure & Development</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaDatabase className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Maintaining robust database infrastructure for reliable wallet tracking</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaDiscord className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Premium Discord server hosting for optimal performance</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaGlobe className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Website hosting and continuous development</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Community Engagement */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Community Engagement</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaTrophy className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Regular contests and community events with attractive prizes</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaGift className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Community giveaways to reward active members</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaHandshake className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Strategic collaborations with other Cardano projects</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Platform Growth */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaChartLine className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Platform Growth</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaCheckCircle className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Platform verifications and official listings</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaBullhorn className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Marketing initiatives to expand our community</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaShieldAlt className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">General system improvements</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -776,9 +891,9 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'inspiration',
-      title: 'Our Journey',
-      icon: <FaLightbulb className="w-6 h-6" />,
+      id: 'growth',
+      title: 'Built for Growth',
+      icon: <FaProjectDiagram className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -787,41 +902,52 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="space-y-6">
+            <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Our Journey</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Built for Growth</h3>
                 
                 <div className="space-y-8">
-                  {/* The Original */}
+                  {/* Scalable Infrastructure */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaHistory className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">The Original</h4>
+                      <FaServer className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Scalable Infrastructure</h4>
                     </div>
                     <p className="text-blue-100">
-                      Walletbud was the pioneer of wallet tracking on Cardano, introducing the concept of Discord based wallet monitoring. While revolutionary at the time, it faced significant challenges with sustainability and reliability that ultimately affected its service quality and longevity.
+                      Our system is built to handle massive growth, with an infrastructure designed for thousands of users tracking multiple wallets. Through efficient caching and smart rate limiting, we maintain high performance even as we scale.
                     </p>
                   </div>
 
-                  {/* The Successor */}
+                  {/* Token Economics */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaBolt className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">The Successor</h4>
+                      <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Sustainable Token Model</h4>
                     </div>
-                    <p className="text-blue-100">
-                      Following Walletbud's challenges, ZING emerged as the replacement, focusing primarily on high speed tracking. While ZING successfully addressed the speed aspect of wallet monitoring, we saw an opportunity to create something more engaging.
-                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <FaDatabase className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Maintaining robust database infrastructure for reliable wallet tracking</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaDiscord className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Premium Discord server hosting for optimal performance</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaGlobe className="text-blue-300 mt-1" />
+                        <p className="text-blue-100">Website hosting and continuous development</p>
+                      </div>
+                    </div>
                   </div>
 
-                  {/* The Evolution */}
+                  {/* Community Growth */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">The Evolution</h4>
+                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Growing Community</h4>
                     </div>
                     <p className="text-blue-100">
-                      WalletPup builds upon these foundations while addressing their limitations. We combine ZING's rapid tracking capabilities with features that transform wallet monitoring into an engaging social experience.
+                      Regular events, contests, and feeding bowls keep our community engaged and growing. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
                     </p>
                   </div>
                 </div>
@@ -989,9 +1115,9 @@ const Whitepaper = () => {
       )
     },
     {
-      id: 'growth',
-      title: 'Built for Growth',
-      icon: <FaProjectDiagram className="w-6 h-6" />,
+      id: 'launch-platform',
+      title: 'Launch Platform',
+      icon: <FaDragon className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -1002,151 +1128,25 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Built for Growth</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Launch Platform</h3>
                 
-                <div className="space-y-8">
-                  {/* Scalable Infrastructure */}
+                <div className="space-y-6">
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaServer className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Scalable Infrastructure</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Our system is built to handle massive growth, with an infrastructure designed for thousands of users tracking multiple wallets. Through efficient caching and smart rate limiting, we maintain high performance even as we scale.
+                    <p className="text-blue-100 text-base mb-6">
+                      We chose to launch WalletPup on Snek.fun, a trusted Cardano launchpad that has earned its reputation through successful, fair, and transparent token launches. This platform's commitment to preventing manipulation and ensuring fair distribution aligns perfectly with our community first approach.
                     </p>
-                  </div>
-
-                  {/* Token Economics */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Sustainable Token Model</h4>
+                    <div className="space-y-4 text-blue-200 mb-6">
+                      <p className="font-semibold">Why Snek.fun?</p>
+                      <ul className="list-disc list-inside space-y-2 ml-4">
+                        <li>Proven track record of successful launches</li>
+                        <li>Fair distribution mechanisms</li>
+                        <li>Transparent launch process</li>
+                        <li>Established community presence</li>
+                      </ul>
                     </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaDatabase className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Maintaining robust database infrastructure for reliable wallet tracking</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaDiscord className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Premium Discord server hosting for optimal performance</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaGlobe className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Website hosting and continuous development</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Community Growth */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Growing Community</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Regular events, contests, and feeding bowls keep our community engaged and growing. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
+                    <p className="text-blue-100 text-base">
+                      By launching through Snek.fun, we ensure that our token distribution starts on the right foundation fair, transparent, and accessible to genuine community members. This aligns with our longterm vision of building a sustainable and engaged community around WalletPup.
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      )
-    },
-    {
-      id: 'pup-house',
-      title: 'Pup House Treasury',
-      icon: <FaHome className="w-6 h-6" />,
-      content: (
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-6"
-        >
-          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="space-y-6 text-blue-100">
-              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">The Pup House: Sustaining Our Ecosystem</h3>
-                
-                <div className="space-y-8">
-                  {/* Overview */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaPiggyBank className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Treasury Overview</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      The Pup House treasury is the backbone of WalletPup's ecosystem, ensuring sustainable operations and continuous community engagement. Project fees are strategically reinvested to maintain and enhance every aspect of our service.
-                    </p>
-                  </div>
-
-                  {/* Infrastructure & Development */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaServer className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Infrastructure & Development</h4>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaDatabase className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Maintaining robust database infrastructure for reliable wallet tracking</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaDiscord className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Premium Discord server hosting for optimal performance</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaGlobe className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Website hosting and continuous development</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Community Engagement */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Community Engagement</h4>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaTrophy className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Regular contests and community events with attractive prizes</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaGift className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Community giveaways to reward active members</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaHandshake className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Strategic collaborations with other Cardano projects</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Platform Growth */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaChartLine className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Platform Growth</h4>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaCheckCircle className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Platform verifications and official listings</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaBullhorn className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Marketing initiatives to expand our community</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaShieldAlt className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">General system improvements</p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
