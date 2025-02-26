@@ -100,19 +100,13 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Feeding Bowl',
           desc: 'Fill the feeding bowl',
-          details: "Fill the feeding bowl with 5 ADA! The duration is set by project owners, with longer periods resulting in bigger prize pools. 75% of the pool goes to the winner, 15% goes to the treasury, and 10% is used to buy and burn BONE tokens."
+          details: "Fill the feeding bowl with 5 ADA! The duration is set by project owners, with longer periods resulting in bigger prize pools. 75% of the pool goes to the winner, 15% goes to the treasury, and 10% is buried in $burnsnek."
         };
       case '/notifications':
         return {
           title: 'Toggle Notifications',
           desc: 'Manage wallet notifications',
-          details: "Sometimes notifications can be overwhelming, especially for active traders. Toggle them on when you need to stay alert about important transactions, or turn them off when you want to reduce Discord noise. You're always in control of what you want to be notified about."
-        };
-      case '/admin':
-        return {
-          title: 'Admin Commands',
-          desc: 'View admin command list',
-          details: "Admin commands help maintain a healthy community. Blacklisting protects against spam and abuse, requirements ensure fair participation, and bowl controls let us adjust rewards based on community growth."
+          details: "This command is designed so you can toggle your wallets transaction notifications without needing to remove them from your list. We have also included a global button if you need to mute or unmute all of them."
         };
       case '/train':
         return {
@@ -142,7 +136,7 @@ const CommandCard = ({ command }: { command: any }) => {
         return {
           title: 'Admin Controls',
           desc: 'System administration features',
-          details: "Administrative tools for system management including event setup, requirement adjustments, and community moderation. These controls help maintain smooth operation and enable staff to organize special events and manage system parameters effectively."
+          details: "Admin tools for system management including event setup, requirement adjustments, and community moderation. These controls help maintain smooth operation and to manage system parameters effectively."
         };
       default:
         return {
