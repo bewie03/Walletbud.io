@@ -16,13 +16,12 @@ import {
   FaTrophy,
   FaTrash,
   FaGift,
-  FaShieldAlt,
   FaBell,
   FaArrowLeft,
   FaDog,
   FaDice,
   FaNetworkWired,
-  FaUserShield 
+  FaBullhorn 
 } from 'react-icons/fa';
 
 const CommandCard = ({ command }: { command: any }) => {
@@ -132,11 +131,11 @@ const CommandCard = ({ command }: { command: any }) => {
           desc: 'Track wallet interactions',
           details: "Analyze a wallet's transaction history to discover connected addresses and interaction patterns. This powerful tracking tool helps identify linked wallets and understand transaction networks."
         };
-      case 'admin':
+      case '/announce <message>':
         return {
-          title: 'Admin Controls',
-          desc: 'System administration features',
-          details: "Admin tools for system management including event setup, requirement adjustments, and community moderation. These controls help maintain smooth operation and to manage system parameters effectively."
+          title: 'Announce',
+          desc: 'Send message to wallet watchers',
+          details: "As a verified wallet owner, send an announcement to everyone watching your wallet. Perfect for project owners to communicate important updates, upcoming transactions, or general announcements to their community."
         };
       default:
         return {
@@ -175,8 +174,6 @@ const CommandCard = ({ command }: { command: any }) => {
         return <FaGift className="text-blue-200 text-2xl" />;
       case '/notifications':
         return <FaBell className="text-blue-200 text-2xl" />;
-      case '/admin':
-        return <FaShieldAlt className="text-blue-200 text-2xl" />;
       case '/train':
         return <FaDog className="text-blue-200 text-2xl" />;
       case '/loyalty':
@@ -185,8 +182,8 @@ const CommandCard = ({ command }: { command: any }) => {
         return <FaDice className="text-blue-200 text-2xl" />;
       case '/trace <address>':
         return <FaNetworkWired className="text-blue-200 text-2xl" />;
-      case 'admin':
-        return <FaUserShield className="text-blue-200 text-2xl" />;
+      case '/announce <message>':
+        return <FaBullhorn className="text-blue-200 text-2xl" />;
       default:
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
     }
@@ -334,9 +331,9 @@ const Commands = () => {
       description: 'Track wallet interactions',
     },
     {
-      name: 'Admin Controls',
-      cmd: 'admin',
-      description: 'System administration features',
+      name: 'Announce',
+      cmd: '/announce <message>',
+      description: 'Send message to wallet watchers',
     },
   ];
 

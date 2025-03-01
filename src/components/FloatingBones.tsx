@@ -11,7 +11,7 @@ interface Bone {
   opacity: number;
 }
 
-const BONE_COUNT = 20; // Increased for more constant coverage
+const BONE_COUNT = 0; // Increased for more constant coverage
 const VIEWPORT_HEIGHT = 120; // Percentage, slightly larger than screen
 
 const FloatingBones = () => {
@@ -29,8 +29,8 @@ const FloatingBones = () => {
       speed: 0.005 + Math.random() * 0.008, // Random speed between 0.005 and 0.013
       rotation: Math.random() * 360,
       rotationSpeed: (Math.random() - 0.5) * 0.3, // Random direction
-      size: Math.random() * 16 + 6, // 6-22px, more variation
-      opacity: Math.random() * 0.05 + 0.1, // Very subtle
+      size: Math.random() * 20 + 6, // 6-22px, more variation
+      opacity: Math.random() * 0.05 + 0.2, // Very subtle
     }));
   }
 
