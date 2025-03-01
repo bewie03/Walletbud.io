@@ -158,7 +158,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Successor</h4>
                     </div>
                     <p className="text-blue-100">
-                      Following Walletbud's challenges, ZING emerged as the replacement, focusing primarily on high speed tracking. While ZING successfully addressed the speed aspect of wallet monitoring, we saw an opportunity to create something more engaging.
+                      Following Walletbud's challenges, RushLabs emerged with their groundbreaking project ZING, setting new standards in the Cardano ecosystem. Their incredibly talented team has built an impressive suite of tools focused on high speed trading capabilities, including instant trading to new pools all available for free to the community. While ZING excels in their focused approach to trading and speed critical operations, we recognized an opportunity to explore a different direction that would serve other needs in the ecosystem.
                     </p>
                   </div>
 
@@ -166,10 +166,10 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">The Evolution</h4>
+                      <h4 className="text-lg font-semibold text-white">The Adaptation</h4>
                     </div>
                     <p className="text-blue-100">
-                      WalletPup builds upon these foundations while addressing their limitations. We combine ZING's rapid tracking capabilities with features that transform wallet monitoring into an engaging social experience.
+                      While others focus on trading speed, WalletPup takes a different path centered on community insights and marketing opportunities. We're building a global identity system where wallet owners can safely share their activities with followers through private DMs, creating valuable connections between projects and their communities. Starting with Discord, users can train their own AI pup personalities to deliver notifications in their preferred style. Project owners can verify their wallets and let their community follow their on chain activity, opening new channels for engagement and insights. While Discord integration is just our first step, we have exciting plans to expand this marketing-focused ecosystem far beyond chat platforms.
                     </p>
                   </div>
                 </div>
@@ -1184,8 +1184,7 @@ const Whitepaper = () => {
                   </div>
 
                   <div className="text-sm text-blue-300 mt-4 border-t border-blue-700/20 pt-4">
-                    <p className="italic">
-                      Note: The information presented in this whitepaper is subject to change based on market conditions, technical requirements, and community feedback. This document serves as a roadmap and vision for WalletPup, but specific features, timelines, and implementations may be modified as the project evolves.
+                    <p>Note: The information presented in this whitepaper is subject to change based on market conditions, technical requirements, and community feedback. This document serves as a roadmap and vision for WalletPup, but specific features, timelines, and implementations may be modified as the project evolves.
                     </p>
                   </div>
                 </div>
