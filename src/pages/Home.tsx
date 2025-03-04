@@ -28,7 +28,7 @@ const Home = () => {
                 Your Loyal Wallet Companion
               </h1>
               <p className="mt-4 max-w-md mx-auto text-lg text-blue-100 sm:text-xl md:text-2xl md:max-w-3xl hover:scale-[1.02] transition-all duration-300">
-                Let our loyal pup fetch your wallet and token updates with entertaining insights
+                Fetch your wallet and token updates with entertaining insights
               </p>
             </motion.div>
           </div>
