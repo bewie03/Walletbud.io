@@ -45,7 +45,8 @@ import {
   FaUsers,
   FaBullseye,
   FaCheckCircle,
-  FaDiscord
+  FaDiscord,
+  FaBinoculars
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -557,7 +558,7 @@ const Whitepaper = () => {
                       </div>
                     </h4>
                     <p className="text-blue-100 mb-4">
-                      Let's say you buy 200K BONE today. Here's how your wallet slots grow automatically as WalletPup succeeds:
+                      Let's say you buy 200K BONE today. Here's how your wallet slots grow automatically as we grow:
                     </p>
                     <div className="grid grid-cols-1 gap-4">
                       <div className="bg-blue-800/50 p-4 rounded-lg">
@@ -1130,23 +1131,113 @@ const Whitepaper = () => {
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
                 <h3 className="text-xl font-semibold text-white mb-6">Launch Platform</h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-8">
+                  {/* Overview */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Launching on Snek.fun</h4>
+                    </div>
                     <p className="text-blue-100 text-base mb-6">
                       We chose to launch WalletPup on Snek.fun, a trusted Cardano launchpad that has earned its reputation through successful, fair, and transparent token launches. This platform's commitment to preventing manipulation and ensuring fair distribution aligns perfectly with our community first approach.
                     </p>
                     <div className="space-y-4 text-blue-200 mb-6">
-                      <p className="font-semibold">Why Snek.fun?</p>
-                      <ul className="list-disc list-inside space-y-2 ml-4">
-                        <li>Proven track record of successful launches</li>
-                        <li>Fair distribution mechanisms</li>
-                        <li>Transparent launch process</li>
-                        <li>Established community presence</li>
-                      </ul>
+                      <div className="flex items-center gap-2">
+                        <FaShieldAlt className="text-blue-300" />
+                        <h4 className="text-lg font-semibold text-white">Why Snek.fun?</h4>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-3">
+                          <FaCheckCircle className="text-blue-300" />
+                          <p>Proven track record of successful launches</p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <FaHandshake className="text-blue-300" />
+                          <p>Fair distribution mechanisms</p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <FaEye className="text-blue-300" />
+                          <p>Transparent launch process</p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <FaUsers className="text-blue-300" />
+                          <p>Established community presence</p>
+                        </div>
+                      </div>
                     </div>
                     <p className="text-blue-100 text-base">
                       By launching through Snek.fun, we ensure that our token distribution starts on the right foundation fair, transparent, and accessible to genuine community members. This aligns with our longterm vision of building a sustainable and engaged community around WalletPup.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )
+    },
+    {
+      id: 'track-command',
+      title: 'Project Tracking',
+      icon: <FaBinoculars className="w-6 h-6" />,
+      content: (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-6"
+        >
+          <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
+            <div className="space-y-6 text-blue-100">
+              <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
+                <h3 className="text-xl font-semibold text-white mb-6">Free Project Tracking</h3>
+                
+                <div className="space-y-8">
+                  {/* Overview */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBinoculars className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Track Your Project</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Project owners can now monitor their token's activity directly in their Discord server - completely free, no BONE tokens required! Simply invite WalletPup to your server and use the /track command to start receiving real-time purchase notifications.
+                    </p>
+                  </div>
+
+                  {/* Setup Process */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaCog className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Easy Setup</h4>
+                    </div>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-white">Policy ID</p>
+                        <p className="text-blue-100">Enter your token's policy ID to start tracking</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-white">Image URL (Optional)</p>
+                        <p className="text-blue-100">Add your project's logo to notification embeds</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-white">ADA Threshold</p>
+                        <p className="text-blue-100">Set minimum purchase amount for notifications</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Benefits */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaStar className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Benefits</h4>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <p className="text-blue-100">Real-time purchase notifications</p>
+                      <p className="text-blue-100">Keep your community engaged</p>
+                      <p className="text-blue-100">Monitor market activity</p>
+                      <p className="text-blue-100">Completely free service</p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -21,7 +21,9 @@ import {
   FaDog,
   FaDice,
   FaNetworkWired,
-  FaBullhorn 
+  FaBullhorn,
+  FaShieldAlt,
+  FaBinoculars 
 } from 'react-icons/fa';
 
 const CommandCard = ({ command }: { command: any }) => {
@@ -137,6 +139,18 @@ const CommandCard = ({ command }: { command: any }) => {
           desc: 'Send message to wallet watchers',
           details: "As a verified wallet owner, send an announcement to everyone watching your wallet. Perfect for project owners to communicate important updates, upcoming transactions, or general announcements to their community."
         };
+      case '/track <policy id>':
+        return {
+          title: 'Track Token',
+          desc: 'Monitor token transactions',
+          details: "Project owners can use this command to track their token's transactions in their Discord server. Simply set up the channel and ADA amount threshold, and you'll receive notifications for all purchases meeting your criteria."
+        };
+      case 'admin':
+        return {
+          title: 'Admin Controls',
+          desc: 'System maintenance tools',
+          details: "Our comprehensive admin controls help maintain system health and ensure smooth operation. These tools allow our team to monitor performance, manage resources, and implement updates efficiently to provide the best possible service to our community."
+        };
       default:
         return {
           title: 'Unknown Command',
@@ -184,6 +198,10 @@ const CommandCard = ({ command }: { command: any }) => {
         return <FaNetworkWired className="text-blue-200 text-2xl" />;
       case '/announce <message>':
         return <FaBullhorn className="text-blue-200 text-2xl" />;
+      case '/track <policy id>':
+        return <FaBinoculars className="text-blue-200 text-2xl" />;
+      case 'admin':
+        return <FaShieldAlt className="text-blue-200 text-2xl" />;
       default:
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
     }
@@ -334,6 +352,16 @@ const Commands = () => {
       name: 'Announce',
       cmd: '/announce <message>',
       description: 'Send message to wallet watchers',
+    },
+    {
+      name: 'Track Token',
+      cmd: '/track <policy id>',
+      description: 'Monitor token transactions',
+    },
+    {
+      name: 'Admin Controls',
+      cmd: 'admin',
+      description: 'System maintenance tools',
     },
   ];
 
