@@ -16,7 +16,7 @@ const Home = () => {
         <FloatingBones />
         
         {/* Hero Section */}
-        <div className="w-full bg-blue-900/95 backdrop-blur-sm pb-8 shadow-lg">
+        <div className="w-full bg-blue-900/95 backdrop-sm pb-8 shadow-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const Home = () => {
               className="text-center pt-24 pb-8"
             >
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-[1.02] transition-all duration-300">
-                Your Loyal Cardano Companion
+                Your Loyal Wallet Companion
               </h1>
               <p className="mt-4 max-w-md mx-auto text-lg text-blue-100 sm:text-xl md:text-2xl md:max-w-3xl hover:scale-[1.02] transition-all duration-300">
                 Let our loyal pup fetch your wallet and token updates with entertaining insights
@@ -83,7 +83,7 @@ const Home = () => {
                     transition={{ duration: 0.5, delay: feature.delay }}
                     className="group"
                   >
-                    <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[240px] flex flex-col">
+                    <div className="relative bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[240px] flex flex-col">
                       {/* Icon Background */}
                       <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
                         <div className="text-blue-200">
@@ -126,7 +126,7 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="mt-12 text-center"
               >
-                <div className="inline-block bg-blue-900/30 backdrop-blur-sm rounded-xl px-6 py-3 border border-blue-700/50 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300">
+                <div className="inline-block bg-blue-900/30 backdrop-sm rounded-xl px-6 py-3 border border-blue-700/50 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300">
                   <p className="text-blue-100">
                     Need a helping paw? Check our{' '}
                     <Link 

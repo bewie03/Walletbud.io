@@ -489,7 +489,7 @@ const Doghouse = () => {
               <div className="text-center mb-8">
                 <motion.div 
                   whileHover={{ scale: 1.02 }}
-                  className="inline-block bg-blue-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-blue-600 hover:border-blue-500/50 transition-all duration-300"
+                  className="inline-block bg-blue-800/50 backdrop-sm px-6 py-3 rounded-full border border-blue-600 hover:border-blue-500/50 transition-all duration-300"
                 >
                   <p className="text-blue-200 font-medium">
                     <FaDog className="inline-block mr-2 mb-1" />

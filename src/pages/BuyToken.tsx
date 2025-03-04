@@ -117,7 +117,7 @@ const BONE = () => {
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
             <AnimatedElement animation="fadeIn" delay={0.1}>
-              <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[300px] flex flex-col">
+              <div className="relative bg-blue-900/90 backdrop-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[300px] flex flex-col">
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
                   <FaChartPie className="text-blue-200 text-2xl" />
                 </div>
@@ -151,7 +151,7 @@ const BONE = () => {
             </AnimatedElement>
 
             <AnimatedElement animation="fadeIn" delay={0.2}>
-              <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[300px] flex flex-col">
+              <div className="relative bg-blue-900/90 backdrop-sm rounded-2xl p-6 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-[300px] flex flex-col">
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
                   <FaLayerGroup className="text-blue-200 text-2xl" />
                 </div>
@@ -162,7 +162,7 @@ const BONE = () => {
                     <div className="text-6xl font-bold text-white mb-2">1B</div>
                     <p className="text-xl text-blue-200 mb-8">$BONE Tokens</p>
                   </div>
-                  <div className="bg-blue-800/50 backdrop-blur-sm rounded-lg p-4">
+                  <div className="bg-blue-900/50 backdrop-sm rounded-lg p-4">
                     <h4 className="text-lg font-bold text-white mb-2">Policy ID</h4>
                     <p className="font-mono text-sm text-blue-100 break-all">Updated Soon</p>
                   </div>
@@ -181,7 +181,7 @@ const BONE = () => {
             className="max-w-4xl mx-auto"
           >
             <AnimatedElement animation="fadeIn">
-              <div className="relative bg-blue-900/50 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg">
+              <div className="relative bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg">
                 <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
                   <FaWarehouse className="text-blue-200 text-2xl" />
                 </div>
@@ -203,7 +203,7 @@ const BONE = () => {
                     ].map((stage, index) => (
                       <div 
                         key={index} 
-                        className="bg-blue-800/50 backdrop-blur-sm rounded-xl p-4 border border-blue-600 hover:scale-105 transition-all duration-300"
+                        className="bg-blue-800/50 backdrop-sm rounded-xl p-4 border border-blue-600 hover:scale-105 transition-all duration-300"
                       >
                         <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center gap-1">
@@ -219,7 +219,7 @@ const BONE = () => {
                     ))}
                   </div>
 
-                  <div className="mt-6 bg-blue-800/50 backdrop-blur-sm rounded-xl p-4 border border-blue-600">
+                  <div className="mt-6 bg-blue-800/50 backdrop-sm rounded-xl p-4 border border-blue-600">
                     <p className="text-blue-100 text-sm text-center">
                       Requirement never increases back up
                     </p>

@@ -1,5 +1,5 @@
 import AnimatedElement from '../components/AnimatedElement';
-import { FaBone, FaDiscord, FaWallet, FaCheck, FaPlus, FaChartLine, FaArrowLeft, FaDog, FaStar } from 'react-icons/fa';
+import { FaBone, FaDiscord, FaWallet, FaCheck, FaPlus, FaArrowLeft, FaDog,FaStar, FaBinoculars  } from 'react-icons/fa';
 import FloatingBones from '../components/FloatingBones';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -112,17 +112,19 @@ const Guide = () => {
     },
     {
       number: '07',
-      title: 'Monitor Activity',
-      description: 'Get real time updates on wallet activity.',
-      details: "Watch your wallets in action! Receive instant notifications about transactions, balance changes, and market movements. Our loyal pups provide entertaining insights about your wallet activity.",
-      icon: FaChartLine
+      title: 'Setup Complete',
+      description: 'You\'re all set to start using WalletPup!',
+      details: "Congratulations! You've completed the setup process. Use /help anytime to see all available commands. Join the fun with community features like the /bowl prize pool, check /loyalty rankings, or try your luck with /guess.",
+      icon: FaStar,
+      optional: false
     },
     {
       number: '08',
-      title: 'You\'re All Set!',
-      description: 'Explore commands and community features.',
-      details: "Congratulations, you're ready to go! Use /help to see all available commands. Join the fun with community features like the /bowl prize pool, check /loyalty rankings, or try your luck with /guess. There's always something exciting happening in our community!",
-      icon: FaStar
+      title: 'Track Token',
+      description: 'Monitor token transactions',
+      details: "Project owners can use this command to track their token's transactions in their Discord server. Simply set up the channel and ADA amount threshold, and you'll receive notifications for all purchases meeting your criteria.",
+      icon: FaBinoculars ,
+      optional: true
     }
   ];
 

@@ -26,8 +26,9 @@ import {
   FaBinoculars 
 } from 'react-icons/fa';
 
-const CommandCard = ({ command }: { command: any }) => {
+const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick: () => void }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [] = useState(false);
 
   const getUsageDetails = (cmd: string) => {
     switch (cmd) {
@@ -227,7 +228,19 @@ const CommandCard = ({ command }: { command: any }) => {
             </div>
             
             <div className="ml-6">
-              <h3 className="text-2xl font-bold text-white mb-3">{command.name}</h3>
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-2xl font-bold text-white">{command.name}</h3>
+                {/* Preview Button */}
+                <button 
+                  className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 hover:bg-blue-700/50 transition-colors"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onPreviewClick();
+                  }}
+                >
+                  Preview
+                </button>
+              </div>
               <div className="bg-blue-800 rounded-xl px-4 py-2 mb-4 inline-block border border-blue-700">
                 <code className="text-blue-200 font-mono">{command.cmd}</code>
               </div>
@@ -262,6 +275,7 @@ const CommandCard = ({ command }: { command: any }) => {
 };
 
 const Commands = () => {
+  const [selectedPreview, setSelectedPreview] = useState<string | null>(null);
   const commands = [
     {
       name: 'Add Wallet',
@@ -369,7 +383,7 @@ const Commands = () => {
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
       <FloatingBones />
       {/* Hero Section */}
-      <div className="w-full bg-blue-900 backdrop-blur-sm pb-8">
+      <div className="w-full bg-blue-900 backdrop-sm pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-16">
@@ -393,12 +407,40 @@ const Commands = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {commands.map((command, index) => (
               <AnimatedElement key={index} animation="fadeIn" delay={index * 0.1}>
-                <CommandCard command={command} />
+                <CommandCard 
+                  command={command}
+                  onPreviewClick={() => setSelectedPreview(command.cmd)}
+                />
               </AnimatedElement>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Preview Modal */}
+      {selectedPreview && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center" style={{ zIndex: 9999 }}>
+          <div className="relative w-[800px] max-w-[90vw] max-h-[80vh] flex items-center justify-center">
+            <button
+              onClick={() => setSelectedPreview(null)}
+              className="fixed top-8 right-8 bg-blue-900 text-blue-200 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors z-50 text-xl"
+            >
+              ✕
+            </button>
+            <div className="inline-block rounded-3xl border-2 border-blue-500/50">
+              <img
+                src={`/images/commands/${selectedPreview.replace(/[<>]/g, '').split(' ')[0].substring(1)}${selectedPreview.includes('track') ? '.gif' : '.png'}`}
+                alt={`Preview of ${selectedPreview}`}
+                className="w-full h-auto rounded-3xl object-contain"
+                style={{ maxHeight: '80vh' }}
+                onError={(e) => {
+                  e.currentTarget.src = '/images/commands/default.png';
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

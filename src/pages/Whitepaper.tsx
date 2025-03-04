@@ -1352,7 +1352,7 @@ const Whitepaper = () => {
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
       <FloatingBones />
       <div className="max-w-7xl mx-auto px-4 pt-20">
-        <div className="bg-blue-900/40 backdrop-blur-sm rounded-xl shadow-2xl border border-blue-700/30">
+        <div className="bg-blue-900/40 backdrop-sm rounded-xl shadow-2xl border border-blue-700/30">
           {/* Cover */}
           <div className="bg-[#1e3a8a]/50 rounded-t-xl text-center py-16 px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
