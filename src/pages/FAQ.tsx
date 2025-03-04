@@ -50,6 +50,10 @@ const FAQ = () => {
       answer: "Yes! Unlike subscriptions, BONE tokens remain in your wallet and can be sold at any time."
     },
     {
+      question: "How do I track token transactions in my Discord server?",
+      answer: "Project owners can use the /track command to monitor token transactions in their Discord server. Simply provide your policy ID and set a minimum ADA threshold. WalletPup will notify your server whenever a purchase above that threshold occurs."
+    },
+    {
       question: "How do I get support?",
       answer: "Use /help in bot DMs or join our Discord community for assistance."
     }

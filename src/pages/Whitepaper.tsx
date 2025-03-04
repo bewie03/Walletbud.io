@@ -46,7 +46,8 @@ import {
   FaBullseye,
   FaCheckCircle,
   FaDiscord,
-  FaBinoculars
+  FaBinoculars,
+  FaImage
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -102,19 +103,19 @@ const Whitepaper = () => {
                         <div className="space-y-8">
                           <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                             <p className="text-blue-100">
-                              WalletPup was built to make Cardano wallet tracking more intuitive, engaging, and rewarding.
+                              WalletPup is an advanced Discord bot that revolutionizes how users interact with their blockchain wallets. With over 20 commands, we create a seamless bridge between Discord accounts and wallet addresses in an engaging and user friendly way.
                             </p>
                             <p className="text-blue-100 mt-4">
-                              Blockchain explorers and tracking tools provide the raw data, but they often feel disconnected from how people actually use and interact with their wallets. We saw an opportunity to create a system that not only keeps you informed but also makes the experience more natural and user friendly.
+                              Our mission is to build a global identity and wallet system that projects can leverage to better connect with their communities. Whether you're a project treasury looking to engage with users or a community member wanting to track wallets, WalletPup provides the tools you need. We transform complex blockchain data into clear, easy to understand insights delivered in real time through AI powered pup personalities that you can train yourself.
                             </p>
                             <p className="text-blue-100 mt-4">
-                              At its core, WalletPup transforms complex blockchain data into clear, easy to understand insights delivered in real time through AI powered pup personalities. Whether you're tracking a long term investment or actively managing multiple wallets, our system is designed to keep you updated without the need to constantly check transactions manually.
+                              While Discord integration is our first stepping stone, WalletPup is designed to expand beyond chat platforms. Our community driven approach focuses on creating valuable connections between projects and their users, enabling wallet owners to safely share their activities with followers through private DMs.
                             </p>
                             <p className="text-blue-100 mt-4">
-                              Beyond tracking, WalletPup introduces a new approach to accessibility through the $BONE token. Instead of paying for a subscription, users hold BONE to unlock tracking slots, keeping ownership of their tokens while gaining full access to the platform. As WalletPup grows, the token model ensures that early adopters benefit over time, creating a sustainable and user friendly way to engage with wallet monitoring.
+                              The $BONE token is central to our ecosystem, rewarding long term holders while providing access to platform features. Instead of traditional subscriptions, users hold BONE to unlock tracking capabilities, ensuring they maintain ownership of their tokens while benefiting from the platform's growth.
                             </p>
                             <p className="text-blue-100 mt-4">
-                              With instant notifications, customizable tracking, community driven features, and a sustainable token model, WalletPup brings something fresh to the Cardano ecosystem. Our goal is simple: make wallet tracking smarter, easier, and more engaging while ensuring long term value for our users.
+                              With near instant notifications, customizable tracking, fun AI insights, and a sustainable token model, WalletPup brings innovation to the blockchain ecosystem. Our goal is to make wallet tracking not just functional, but truly engaging while building a global standard for wallet identity and community interaction.
                             </p>
                           </div>
                         </div>
@@ -126,7 +127,7 @@ const Whitepaper = () => {
     },
     {
       id: 'inspiration',
-      title: 'Our Journey',
+      title: 'Inspiration',
       icon: <FaLightbulb className="w-6 h-6" />,
       content: (
         <motion.div 
@@ -138,7 +139,7 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Our Journey</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Where it started</h3>
                 
                 <div className="space-y-8">
                   {/* The Original */}
@@ -170,7 +171,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Adaptation</h4>
                     </div>
                     <p className="text-blue-100">
-                      While others focus on trading speed, WalletPup takes a different path centered on community insights and marketing opportunities. We're building a global identity system where wallet owners can safely share their activities with followers through private DMs, creating valuable connections between projects and their communities. Starting with Discord, users can train their own AI pup personalities to deliver notifications in their preferred style. Project owners can verify their wallets and let their community follow their on chain activity, opening new channels for engagement and insights. While Discord integration is just our first step, we have exciting plans to expand this marketing-focused ecosystem far beyond chat platforms.
+                      While others focus on trading speed, WalletPup takes a different path centered on community insights and marketing opportunities. We're building a global identity system where wallet owners can safely share their activities with followers through private DMs, creating valuable connections between projects and their communities. Starting with Discord, users can train their own AI pup personalities to deliver notifications in their preferred style. Project owners can verify their wallets and let their community follow their on chain activity, opening new channels for engagement and insights. While Discord integration is just our first step, we have exciting plans to expand this community focused ecosystem far beyond chat platforms.
                     </p>
                   </div>
                 </div>
@@ -266,7 +267,7 @@ const Whitepaper = () => {
                         <p className="text-blue-100 mt-1">Track new wallets (up to 25 total)</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/verifywallet</code>
+                        <code className="text-blue-300 font-bold">/verify</code>
                         <p className="text-blue-100 mt-1">Verify ownership of wallet</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
@@ -298,12 +299,12 @@ const Whitepaper = () => {
                         <p className="text-blue-100 mt-1">Check your transaction based ranking</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/stats</code>
-                        <p className="text-blue-100 mt-1">View global community statistics</p>
+                        <code className="text-blue-300 font-bold">/topwatched</code>
+                        <p className="text-blue-100 mt-1">View most tracked wallets</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/loyalty</code>
-                        <p className="text-blue-100 mt-1">View longest BONE holders</p>
+                        <code className="text-blue-300 font-bold">/announce</code>
+                        <p className="text-blue-100 mt-1">Send a message to your watchers</p>
                       </div>
                     </div>
                   </div>
@@ -326,7 +327,7 @@ const Whitepaper = () => {
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <div className="flex items-center gap-2">
                           <FaBell className="text-blue-300" />
-                          <p className="text-blue-100">Almost instant notifications</p>
+                          <p className="text-blue-100">Near instant notifications</p>
                         </div>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
@@ -908,6 +909,28 @@ const Whitepaper = () => {
                 <h3 className="text-xl font-semibold text-white mb-6">Built for Growth</h3>
                 
                 <div className="space-y-8">
+                  {/* Community Growth */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Community Driven Growth</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      By supporting other Cardano projects, we naturally grow our own community. WalletPup aims to unite Discord and Cardano communities through shared wallet tracking and engagement features, creating a network effect that benefits everyone. Regular events, contests, and feeding bowls keep our community engaged and growing.
+                    </p>
+                  </div>
+
+                  {/* Token Economics */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
+                    <div className="flex items-center mb-4">
+                      <FaBone className="w-6 h-6 mr-3 text-blue-300" />
+                      <h4 className="text-lg font-semibold text-white">Sustainable Token Model</h4>
+                    </div>
+                    <p className="text-blue-100">
+                      Our dynamic requirement adjustment system ensures all users pay the same entry price regardless of market conditions. This sustainable approach allows us to accommodate a large user base while maintaining fair access to features. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and community rewards.
+                    </p>
+                  </div>
+
                   {/* Scalable Infrastructure */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
@@ -915,40 +938,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Scalable Infrastructure</h4>
                     </div>
                     <p className="text-blue-100">
-                      Our system is built to handle massive growth, with an infrastructure designed for thousands of users tracking multiple wallets. Through efficient caching and smart rate limiting, we maintain high performance even as we scale.
-                    </p>
-                  </div>
-
-                  {/* Token Economics */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Sustainable Token Model</h4>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaDatabase className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Maintaining robust database infrastructure for reliable wallet tracking</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaDiscord className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Premium Discord server hosting for optimal performance</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaGlobe className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Website hosting and continuous development</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Community Growth */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Growing Community</h4>
-                    </div>
-                    <p className="text-blue-100">
-                      Regular events, contests, and feeding bowls keep our community engaged and growing. Through the Feeding Bowl's prize pool allocation, we maintain a continuous cycle of engagement, token burns, and skill based competitions.
+                      Our infrastructure is built to grow with demand. If the bot experiences high load from user growth, our system can automatically scale up processing power and speed to maintain optimal performance. Through efficient caching and smart rate limiting, we maintain high performance even as we scale to thousands of users tracking multiple wallets.
                     </p>
                   </div>
                 </div>
@@ -1200,43 +1190,114 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Track Your Project</h4>
                     </div>
                     <p className="text-blue-100">
-                      Project owners can now monitor their token's activity directly in their Discord server - completely free, no BONE tokens required! Simply invite WalletPup to your server and use the /track command to start receiving real-time purchase notifications.
+                      Project owners can monitor their token's activity directly in their Discord server - completely free, no BONE tokens required! Simply invite WalletPup to your server, set up admin-only permissions, and start receiving real time purchase notifications in your chosen channel.
                     </p>
                   </div>
 
                   {/* Setup Process */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
+                    <div className="flex items-center mb-6">
                       <FaCog className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Easy Setup</h4>
+                      <h4 className="text-xl font-semibold text-white">Setup Process</h4>
                     </div>
-                    <div className="space-y-4">
-                      <div>
-                        <p className="font-semibold text-white">Policy ID</p>
-                        <p className="text-blue-100">Enter your token's policy ID to start tracking</p>
+                    <div className="grid gap-6">
+                      {/* Server & Channel Setup */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-blue-800/50 p-4 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
+                          <div className="flex items-center gap-2 mb-2">
+                            <FaShieldAlt className="text-blue-300" />
+                            <p className="font-semibold text-white">1. Server Setup</p>
+                          </div>
+                          <p className="text-blue-100">Invite WalletPup and ensure only administrators have access to tracking commands for security.</p>
+                        </div>
+                        <div className="bg-blue-800/50 p-4 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
+                          <div className="flex items-center gap-2 mb-2">
+                            <FaBullhorn className="text-blue-300" />
+                            <p className="font-semibold text-white">2. Channel Selection</p>
+                          </div>
+                          <p className="text-blue-100">Use /track in your chosen notification channel to begin setup.</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="font-semibold text-white">Image URL (Optional)</p>
-                        <p className="text-blue-100">Add your project's logo to notification embeds</p>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-white">ADA Threshold</p>
-                        <p className="text-blue-100">Set minimum purchase amount for notifications</p>
-                      </div>
-                    </div>
-                  </div>
 
-                  {/* Benefits */}
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaStar className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Benefits</h4>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <p className="text-blue-100">Real-time purchase notifications</p>
-                      <p className="text-blue-100">Keep your community engaged</p>
-                      <p className="text-blue-100">Monitor market activity</p>
-                      <p className="text-blue-100">Completely free service</p>
+                      {/* Token Configuration */}
+                      <div className="bg-blue-800/50 p-5 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
+                        <div className="flex items-center gap-2 mb-3">
+                          <FaCoins className="text-blue-300" />
+                          <p className="font-semibold text-white">3. Token Details</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <div className="bg-blue-900/30 p-3 rounded-lg">
+                            <p className="text-white font-medium mb-1">Policy ID</p>
+                            <p className="text-blue-200 text-sm">Enter your token's unique policy ID</p>
+                          </div>
+                          <div className="bg-blue-900/30 p-3 rounded-lg">
+                            <p className="text-white font-medium mb-1">Token Name</p>
+                            <p className="text-blue-200 text-sm">Provide your token's name</p>
+                          </div>
+                          <div className="bg-blue-900/30 p-3 rounded-lg">
+                            <p className="text-white font-medium mb-1">Purchase Threshold</p>
+                            <p className="text-blue-200 text-sm">Minimum: 100 ADA</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Image URL Guide */}
+                      <div className="bg-blue-800/50 p-5 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
+                        <div className="flex items-center gap-2 mb-3">
+                          <FaImage className="text-blue-300" />
+                          <p className="font-semibold text-white">4. Image URL Setup (Optional)</p>
+                        </div>
+                        <div className="space-y-3">
+                          <p className="text-blue-100">Add custom images or GIFs to your notifications:</p>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="bg-blue-900/30 p-3 rounded-lg">
+                              <p className="text-white font-medium mb-2">✓ Compatible Sources</p>
+                              <ul className="text-blue-200 text-sm space-y-1">
+                                <li>• Discord CDN links</li>
+                                <li>• NFT preview URLs</li>
+                                <li>• Direct image/GIF links</li>
+                              </ul>
+                            </div>
+                            <div className="bg-blue-900/30 p-3 rounded-lg">
+                              <p className="text-white font-medium mb-2"> Before Using</p>
+                              <ul className="text-blue-200 text-sm space-y-1">
+                                <li>• Test URL in Discord first</li>
+                                <li>• Ensure it embeds properly</li>
+                                <li>• Link should not be visible</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Notification Preview */}
+                      <div className="bg-blue-800/50 p-5 rounded-lg border border-blue-700/50 hover:border-blue-000 transition-all duration-00">
+                        <div className="flex items-center gap-2 mb-3">
+                          <FaBell className="text-blue-300" />
+                          <p className="font-semibold text-white">5. Notifications</p>
+                        </div>
+                        <div className="bg-blue-900/30 p-4 rounded-lg">
+                          <p className="text-blue-100">You'll receive real time purchase notifications including:</p>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                            <div className="flex items-center gap-2">
+                              <FaCheckCircle className="text-blue-300" />
+                              <p className="text-blue-200">Verified wallet names</p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <FaCheckCircle className="text-blue-300" />
+                              <p className="text-blue-200">Purchase amounts</p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <FaCheckCircle className="text-blue-300" />
+                              <p className="text-blue-200">Transaction details</p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <FaCheckCircle className="text-blue-300" />
+                              <p className="text-blue-200">Custom images/GIFs</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
