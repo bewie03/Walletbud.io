@@ -101,7 +101,7 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
                 transition={{ duration: 0.5, delay: 1.2 }}
                 className="text-white text-lg sm:text-xl"
               >
-                Your Faithful Finance Companion
+                Your Loyal Wallet Companion
               </motion.p>
             </motion.div>
 

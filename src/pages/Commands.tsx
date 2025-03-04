@@ -383,7 +383,7 @@ const Commands = () => {
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
       <FloatingBones />
       {/* Hero Section */}
-      <div className="w-full bg-blue-900 backdrop-sm pb-8">
+      <div className="w-full bg-blue-900 backdrop-sm pb-8 border-b border-blue-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedElement animation="slideDown" delay={0.2}>
             <div className="text-center pt-32 pb-16">

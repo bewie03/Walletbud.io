@@ -277,7 +277,7 @@ const BONE = () => {
       
       <div className="relative">
         {/* Hero Section */}
-        <div className="w-full bg-blue-900/80 pb-8">
+        <div className="w-full bg-blue-900 backdrop-sm pb-8 border-b border-blue-700">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedElement animation="slideDown" delay={0.2}>
               <div className="text-center pt-32 pb-16">
@@ -304,10 +304,10 @@ const BONE = () => {
                   whileHover="hover"
                   whileTap="tap"
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center space-x-2 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 ${
+                  className={`flex items-center space-x-2 px-6 py-3 rounded-xl text-lg font-semibold transition-all duration-300 border ${
                     activeTab === tab.id
-                      ? 'bg-blue-700 text-white shadow-lg scale-105'
-                      : 'bg-blue-900 text-blue-200 hover:bg-blue-700/50'
+                      ? 'bg-blue-700 text-white shadow-lg scale-105 border-blue-500'
+                      : 'bg-blue-900 text-blue-200 hover:bg-blue-700/50 border-blue-700'
                   }`}
                 >
                   <tab.icon className={`${activeTab === tab.id ? 'text-blue-300' : 'text-blue-400'}`} />

@@ -10,13 +10,13 @@ const Home = () => {
     <>
       <MetaTags 
         title="WalletPup"
-        description="Your Loyal Wallet Companion"
+        description="Your Loyal Cardano Companion"
       />
       <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
         <FloatingBones />
         
         {/* Hero Section */}
-        <div className="w-full bg-blue-900/95 backdrop-sm pb-8 shadow-lg">
+        <div className="w-full bg-blue-900/90 backdrop-sm pb-8 shadow-lg border-b border-blue-700">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ const Home = () => {
                 className="text-center mb-10"
               >
                 <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-2 hover:scale-[1.02] transition-all duration-300">
-                  Get Started in 3 Simple Steps
+                Get Started in 3 Simple Steps
                 </h2>
               </motion.div>
 
