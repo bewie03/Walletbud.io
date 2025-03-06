@@ -144,7 +144,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Track Token',
           desc: 'Monitor token transactions',
-          details: "Project owners can use this command to track their token's transactions in their Discord server. Simply set up the channel and ADA amount threshold, and you'll receive notifications for all purchases meeting your criteria."
+          details: "Project owners can track their token in Discord after a simple DM setup with your pup. Configure your wallet with $BONE tokens, /train your pup style, then use /track with your token's Policy ID and ADA threshold in your server channel."
         };
       case 'admin':
         return {
@@ -209,6 +209,24 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
   };
 
   const usage = getUsageDetails(command.cmd);
+  const icon = getCommandIcon(command.cmd);
+
+  // List of commands that shouldn't show preview buttons
+  const noPreviewCommands = [
+    'admin',
+    '/guess',
+    '/purge',
+    '/loyalty',
+    '/uptime',
+    '/rank',
+    '/search <query>',
+    '/topwatched',
+    '/remove <address>',
+    '/add <address>',
+    '/help'
+  ];
+
+  const showPreview = !noPreviewCommands.includes(command.cmd);
 
   return (
     <div 
@@ -224,22 +242,24 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           <div className="relative bg-blue-900 rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] transition-all duration-300 shadow-lg h-full">
             {/* Command Icon Background */}
             <div className="absolute -top-4 -left-4 bg-blue-700 rounded-2xl w-12 h-12 flex items-center justify-center shadow-lg transform -rotate-12">
-              {getCommandIcon(command.cmd)}
+              {icon}
             </div>
             
             <div className="ml-6">
               <div className="flex justify-between items-start mb-3">
                 <h3 className="text-2xl font-bold text-white">{command.name}</h3>
                 {/* Preview Button */}
-                <button 
-                  className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 hover:bg-blue-700/50 transition-colors"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onPreviewClick();
-                  }}
-                >
-                  Preview
-                </button>
+                {showPreview && (
+                  <button 
+                    className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 hover:bg-blue-700/50 transition-colors"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onPreviewClick();
+                    }}
+                  >
+                    Preview
+                  </button>
+                )}
               </div>
               <div className="bg-blue-800 rounded-xl px-4 py-2 mb-4 inline-block border border-blue-700">
                 <code className="text-blue-200 font-mono">{command.cmd}</code>

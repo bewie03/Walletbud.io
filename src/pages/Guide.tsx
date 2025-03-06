@@ -71,7 +71,7 @@ const Guide = () => {
       number: '01',
       title: 'Get BONE Tokens',
       description: 'Purchase $BONE tokens for your primary wallet.',
-      details: "Visit a supported DEX platform to purchase $BONE tokens for your primary wallet. You can start with a smaller amount and grow your slots over time as market cap increases, or get all 25 slots immediately by holding more BONE. The required amount decreases with market cap and never increases once lowered.",
+      details: "Visit a supported DEX to purchase $BONE tokens. The number of wallets you can track (up to 25) depends on your BONE holdings. Required amount decreases with market cap growth.",
       icon: FaBone
     },
     {
@@ -99,7 +99,7 @@ const Guide = () => {
       number: '05',
       title: 'Train Your Pup',
       description: 'Customize your pup personality.',
-      details: "Make your experience unique by using /train to customize your pup's personality. Until you train your own, you'll enjoy updates from one of our 50 default doghouse personalities, each with their own unique style. When you're ready, customize the traits to match your preferences for a truly personalized experience.",
+      details: "Use /train to write a clear prompt describing how you want your pup to interact and communicate. Don't feel like training? Your pup comes with a friendly default personality. Remember its about the trainer not the pup.",
       icon: FaDog,
       optional: true
     },
@@ -121,9 +121,9 @@ const Guide = () => {
     {
       number: '08',
       title: 'Track Token',
-      description: 'Monitor token transactions',
-      details: "Project owners can use this command to track their token's transactions in their Discord server. Simply set up the channel and ADA amount threshold, and you'll receive notifications for all purchases meeting your criteria.",
-      icon: FaBinoculars ,
+      description: 'Monitor token transactions in your Discord server',
+      details: "Once setup is complete, use /track in your server channel where you want purchase notifications. Just set your token's Policy ID and ADA threshold, then submit to start monitoring.",
+      icon: FaBinoculars,
       optional: true
     }
   ];
