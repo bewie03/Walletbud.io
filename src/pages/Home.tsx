@@ -1,8 +1,8 @@
-// Home page - Updated 21 Jan 2025
+// Home page - Updated 05 March 2025
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
-import { FaBone, FaDiscord, FaPaw } from 'react-icons/fa';
+import { FaBone, FaDiscord, FaChartBar } from 'react-icons/fa';
 import { MetaTags } from '../components/MetaTags';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <MetaTags 
         title="WalletPup"
-        description="Your Loyal Cardano Companion"
+        description="Your Cardano Watchdog"
       />
       <div className="min-h-screen bg-[#1e40af] relative overflow-y-auto overflow-x-hidden flex flex-col">
         <FloatingBones />
@@ -25,10 +25,10 @@ const Home = () => {
               className="text-center pt-24 pb-8"
             >
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-[1.02] transition-all duration-300">
-                Your Loyal Wallet Companion
+                Your Cardano Watchdog
               </h1>
               <p className="mt-4 max-w-md mx-auto text-lg text-blue-100 sm:text-xl md:text-2xl md:max-w-3xl hover:scale-[1.02] transition-all duration-300">
-                Fetch your wallet and token updates with entertaining insights
+                Real time updates and community insights for projects and users
               </p>
             </motion.div>
           </div>
@@ -45,7 +45,7 @@ const Home = () => {
                 className="text-center mb-10"
               >
                 <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-2 hover:scale-[1.02] transition-all duration-300">
-                Get Started in 3 Simple Steps
+                  Unleash Your Watchdog in 3 Steps
                 </h2>
               </motion.div>
 
@@ -53,24 +53,24 @@ const Home = () => {
                 {[
                   {
                     icon: <FaBone className="text-2xl" />,
-                    title: "Fetch $BONE Tokens",
-                    description: "Get your paws on some $BONE tokens to join our pack and access all our services.",
+                    title: "Snag $BONE Tokens",
+                    description: "Grab $BONE to unlock premium analytics and join the pack.",
                     link: "/bone",
                     linkText: "Learn More →",
                     delay: 0.3
                   },
                   {
                     icon: <FaDiscord className="text-2xl" />,
-                    title: "Join the Pack",
-                    description: "Come play with us on Discord! Meet our friendly pack and participate in our community",
+                    title: "Join the Kennel",
+                    description: "Hop into Discord to connect and start tracking with us.",
                     link: "https://discord.gg/d99FBA64Qf",
                     linkText: "Join Discord →",
                     delay: 0.4
                   },
                   {
-                    icon: <FaPaw className="text-2xl" />,
-                    title: "Mark Your Territory",
-                    description: "Use the /add command to register your wallets and let our loyal pups keep track of them!",
+                    icon: <FaChartBar className="text-2xl" />,
+                    title: "Track Your Pack",
+                    description: "Use /track to monitor wallets and fetch community insights!",
                     link: "/commands",
                     linkText: "View Commands →",
                     delay: 0.5
@@ -128,14 +128,14 @@ const Home = () => {
               >
                 <div className="inline-block bg-blue-900/30 backdrop-sm rounded-xl px-6 py-3 border border-blue-700/50 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300">
                   <p className="text-blue-100">
-                    Need a help?{' '}
+                    Need a paw?{' '}
                     <Link 
                       to="/faq" 
                       className="text-white hover:text-blue-200 font-medium hover:underline hover:scale-[1.02] transition-all duration-300"
                     >
                       FAQ
                     </Link>
-                    {' '}or join our friendly pack on{' '}
+                    {' '}or sniff around our{' '}
                     <a 
                       href="https://discord.gg/d99FBA64Qf"
                       target="_blank"

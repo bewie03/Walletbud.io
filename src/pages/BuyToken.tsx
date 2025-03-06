@@ -1,4 +1,4 @@
-// BuyToken page - Updated 13 Feb 2025
+// BuyToken page - Updated 05 March 2025
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import Swap from '@dexhunterio/swaps';
@@ -55,19 +55,19 @@ const BONE = () => {
               {
                 title: "Token Utility",
                 icon: FaBone,
-                description: "Access WalletPup's full range of wallet monitoring features",
+                description: "Unlock all features",
                 features: [
                   "Track up to 25 wallets",
-                  "Customize your pup companion",
-                  "Access all bot commands"
+                  "Real time notifications and analytics",
+                  "Customize your pup for fun updates"
                 ]
               },
               {
                 title: "Token Burns",
                 icon: FaFire,
-                description: "Regular token burns increase scarcity and support long term value",
+                description: "Burns boost scarcity and pack value",
                 features: [
-                  "10% of bowl pools used for burns",
+                  "10% of Feeding Bowl pools burned",
                   "Deflationary tokenomics",
                   "Transparent burn tracking"
                 ]
@@ -75,11 +75,11 @@ const BONE = () => {
               {
                 title: "Dynamic Requirements",
                 icon: FaBalanceScale,
-                description: "Token requirements decrease as market cap grows",
+                description: "Fewer tokens needed as we grow",
                 features: [
-                  "Requirements never increase",
-                  "Target value of 50 ADA per entry",
-                  "Early adopter benefits"
+                  "Fixed ~50 ADA entry value",
+                  "requirements drop with market cap",
+                  "Early adopters gain more slots"
                 ]
               }
             ].map((card, index) => (
@@ -189,7 +189,7 @@ const BONE = () => {
                 <div className="ml-6">
                   <h3 className="text-2xl font-bold text-white mb-4">Token Requirements</h3>
                   <p className="text-blue-100 text-base mb-6">
-                    As market cap grows, token requirements decrease to maintain a stable price of 50 ADA per requirement
+                    Start tracking with ~50 ADA worth of $BONE fewer tokens needed as our market cap grows
                   </p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -221,7 +221,7 @@ const BONE = () => {
 
                   <div className="mt-6 bg-blue-800/50 backdrop-sm rounded-xl p-4 border border-blue-600">
                     <p className="text-blue-100 text-sm text-center">
-                      Requirement never increases back up
+                      Requirements only decrease your slots grow with us!
                     </p>
                   </div>
                 </div>
@@ -285,7 +285,7 @@ const BONE = () => {
                   $BONE Token
                 </h1>
                 <p className="mt-3 text-base text-blue-100 sm:text-lg md:mt-5 md:text-xl hover:scale-105 transition-transform duration-300">
-                  Your ticket to joining the pack
+                  Fuel Your Cardano Watchdog
                 </p>
               </div>
             </AnimatedElement>
