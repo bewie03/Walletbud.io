@@ -36,7 +36,7 @@ const BONE = () => {
   const tabs = [
     { id: 'overview', label: 'Overview', icon: FaPaw },
     { id: 'tokenomics', label: 'Tokenomics', icon: FaChartPie },
-    { id: 'requirements', label: 'Requirements', icon: FaWarehouse },
+    { id: 'requirements', label: 'Requirements', icon: FaBone },
     { id: 'buy', label: 'Buy $BONE', icon: FaExchangeAlt }
   ];
 

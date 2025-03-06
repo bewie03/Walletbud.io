@@ -16,7 +16,7 @@ const Home = () => {
         <FloatingBones />
         
         {/* Hero Section */}
-        <div className="w-full bg-blue-900/90 backdrop-sm pb-8 shadow-lg border-b border-blue-700">
+        <div className="w-full bg-blue-900/90 backdrop-sm pb-16 shadow-lg border-b border-blue-700">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -128,7 +128,7 @@ const Home = () => {
               >
                 <div className="inline-block bg-blue-900/30 backdrop-sm rounded-xl px-6 py-3 border border-blue-700/50 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300">
                   <p className="text-blue-100">
-                    Need a helping paw? Check our{' '}
+                    Need a help?{' '}
                     <Link 
                       to="/faq" 
                       className="text-white hover:text-blue-200 font-medium hover:underline hover:scale-[1.02] transition-all duration-300"

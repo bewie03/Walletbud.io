@@ -1190,7 +1190,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Track Your Project</h4>
                     </div>
                     <p className="text-blue-100">
-                      Project owners can monitor their token's activity directly in their Discord server - completely free, no BONE tokens required! Simply invite WalletPup to your server, set up admin-only permissions, and start receiving real time purchase notifications in your chosen channel.
+                      Project owners can monitor their token's activity directly in their Discord server completely free, no BONE tokens required. Simply invite WalletPup to your server, set up admin only permissions, and start receiving real time purchase notifications in your chosen channel.
                     </p>
                   </div>
 
