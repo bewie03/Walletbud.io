@@ -215,7 +215,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">3. Pup Powered Delivery</h4>
                     </div>
                     <p className="text-blue-100">
-                      AI pups analyze the data and deliver insights to Discord channels, Telegram groups, or Twitter posts, styled to match each community’s tone and preferences.
+                      Your trained pup then processes the data, delivering personalized insights straight to your Discord channels and DMs.
                     </p>
                   </div>
                 </div>
@@ -252,11 +252,11 @@ const Whitepaper = () => {
                     <div className="space-y-4">
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/track</code>
-                        <p className="text-blue-100 mt-1">Monitor token activity for projects free for all</p>
+                        <p className="text-blue-100 mt-1">Monitor token activity for projects</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/stats</code>
-                        <p className="text-blue-100 mt-1">Fetch server or global analytics for all users</p>
+                        <p className="text-blue-100 mt-1">Fetch global analytics for all users</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/add</code>
@@ -599,7 +599,7 @@ const Whitepaper = () => {
         </motion.div>
       )
     },
-    // 'ai-personalities' section unchanged - fits with pup driven delivery for all
+    // 'ai-personalities' section updated
     {
       id: 'ai-personalities',
       title: 'Pup Personalities',
@@ -614,7 +614,7 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Meet Our Loyal Pups</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Train your Pup</h3>
                 <div className="space-y-8">
                   {/* Training */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
@@ -624,11 +624,11 @@ const Whitepaper = () => {
                     </div>
                     <div className="space-y-4">
                       <p className="text-blue-100">
-                        The `/train` command lets you customize your pup’s personality to deliver group analytics and notifications in your server’s unique style. The quality of your prompt shapes how effectively your pup communicates:
+                        The /train command lets you customize your pup’s personality to deliver group analytics and notifications in your server’s unique style. The quality of your prompt shapes how effectively your pup communicates:
                       </p>
                       <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
                         <p className="text-blue-100">• Define how group stats should be presented</p>
-                        <p className="text-blue-100">• Set detail levels for server or project insights</p>
+                        <p className="text-blue-100">• Set detail levels for your token or notifcations</p>
                         <p className="text-blue-100">• Choose a tone that fits your community</p>
                         <p className="text-blue-100">• Provide examples for consistent delivery</p>
                       </div>
@@ -660,10 +660,10 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaBone className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Growing the Pack</h4>
+                      <h4 className="text-lg font-semibold text-white">AI Evolution & Cardano Integration</h4>
                     </div>
                     <p className="text-blue-100">
-                      We’re expanding our pup roster with new personalities tailored for community analytics. Top user-created pups may join WalletPup officially, with $BONE rewards for creators, keeping group insights fresh and engaging.
+                      We're committed to continuous AI advancement, regularly updating our pups with better models. Additionally, we're looking at developing a specialized AI trained on the Cardano ecosystem to provide deeper, more nuanced insights for our community.
                     </p>
                   </div>
                 </div>
@@ -696,7 +696,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Bowl</h4>
                     </div>
                     <p className="text-blue-100 text-base mb-6">
-                      The Feeding Bowl is our community prize pool with durations set by project owners. Each entry costs 5 ADA, with longer periods resulting in bigger prize pools. Verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 75% going to the winner, 15% to the treasury, and 10% used to buy and burn $BONE tokens.
+                      The Feeding Bowl is our community prize pool with durations set by Walletpup admins. Each entry costs 5 ADA, with longer periods resulting in bigger prize pools. Verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 75% going to the winner, 15% to the treasury, and 10% used to buy and burn $BONE tokens.
                     </p>
                     <p className="text-blue-100 text-base">
                       The Feeding Bowl boosts server engagement while supporting token value through burns and funding community initiatives.
@@ -724,7 +724,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Benefits</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Feeding Bowl fosters group participation, supports $BONE value, and funds server contests and rewards.
+                      The Feeding Bowl fosters group participation, supports $BONE value, and funds server contests, future development, and rewards.
                     </p>
                   </div>
                   <div className="text-sm text-blue-300/70 mt-4">
