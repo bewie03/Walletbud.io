@@ -32,7 +32,7 @@ const FAQ = () => {
     },
     {
       question: "Can I customize my pup's personality?",
-      answer: "Yes! Use the /train command to shape your pup’s personality for tailored notifications and analytics. No custom setup? Your pup picks from 50+ unique personalities in our doghouse, each with a fun twist on delivering updates."
+      answer: "Yes! Use the /train command to shape your pup’s personality for tailored notifications and analytics."
     },
     {
       question: "What's the Feeding Bowl?",

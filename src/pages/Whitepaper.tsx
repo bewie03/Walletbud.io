@@ -47,7 +47,7 @@ import {
   FaCheckCircle,
   FaDiscord,
   FaBinoculars,
-  FaImage
+  FaWallet
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -447,7 +447,7 @@ const Whitepaper = () => {
                         <div className="text-blue-200">
                           <p>• Entry at ~50 ADA worth of $BONE for basic group analytics</p>
                           <p>• Market cap growth reduces $BONE needed, auto upgrading access</p>
-                          <p>• Early adopters gain more slots (e.g., 50K $BONE = 5 wallets, later 10)</p>
+                          <p>• Early adopters gain more slots</p>
                           <p>• Flexible scaling for projects and servers</p>
                         </div>
                       </div>
@@ -633,7 +633,7 @@ const Whitepaper = () => {
                         <p className="text-blue-100">• Provide examples for consistent delivery</p>
                       </div>
                       <p className="text-blue-100">
-                        A detailed prompt ensures your pup aligns with your group’s vibe. Alternatively, pick from 50+ preset personalities for instant use.
+                        A detailed prompt ensures your pup aligns with your group’s vibe. Alternatively we have the default pup personality avaibable for instant use.
                       </p>
                     </div>
                   </div>
@@ -990,7 +990,7 @@ const Whitepaper = () => {
                     WalletPup starts as a Discord analytics bot but is evolving into a multi platform suite for Cardano communities. Our vision is to deliver group focused insights across Discord, Telegram, and Twitter, with more platforms to follow.
                   </p>
                   <p className="text-blue-100 mt-4">
-                    Two projects are in development: a Telegram bot for group notifications (launching [Q3 2025]) and a Twitter bot for public stats (launching [Q4 2025]). These will enhance community engagement with seamless, pup driven analytics.
+                    Two projects are in development: a Telegram bot for group notifications and a Twitter bot for public stats. These will enhance community engagement with seamless, pup driven analytics.
                   </p>
                   <p className="text-blue-100">
                     Each expansion ties to $BONE, increasing utility and rewarding holders as we grow into Cardano’s analytics backbone.
@@ -1026,7 +1026,7 @@ const Whitepaper = () => {
         </motion.div>
       )
     },
-    // 'launch-platform' section unchanged - Snek.fun fits community focus
+    // 'launch-platform' section updated
     {
       id: 'launch-platform',
       title: 'Launch Platform',
@@ -1045,38 +1045,37 @@ const Whitepaper = () => {
                 <div className="space-y-8">
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
-                      <FaRocket className="w-6 h-6 mr-3 text-blue-300" />
+                      <FaCoins className="w-6 h-6 mr-3 text-blue-300" />
                       <h4 className="text-lg font-semibold text-white">Launching on Snek.fun</h4>
                     </div>
                     <p className="text-blue-100 text-base mb-6">
-                      WalletPup launches on Snek.fun, a trusted Cardano launchpad known for fair and transparent token distributions, aligning with our community first ethos.
+                      WalletPup has chosen Snek.fun as our launch platform, renowned in the Cardano ecosystem for their commitment to fair token distributions and community-driven approach.
                     </p>
-                    <div className="space-y-4 text-blue-200 mb-6">
-                      <div className="flex items-center gap-2">
-                        <FaShieldAlt className="text-blue-300" />
-                        <h4 className="text-lg font-semibold text-white">Why Snek.fun?</h4>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                      <div className="bg-blue-800/20 p-5 rounded-lg">
+                        <div className="flex items-center gap-3 mb-3">
+                          <FaShieldAlt className="text-blue-300 w-5 h-5" />
+                          <h5 className="text-white font-medium">Security First</h5>
+                        </div>
+                        <p className="text-blue-100">
+                          Battle tested platform with a proven track record of secure and successful token launches
+                        </p>
                       </div>
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                          <FaCheckCircle className="text-blue-300" />
-                          <p>Proven track record of successful launches</p>
+                      
+                      <div className="bg-blue-800/20 p-5 rounded-lg">
+                        <div className="flex items-center gap-3 mb-3">
+                          <FaLock className="text-blue-300 w-5 h-5" />
+                          <h5 className="text-white font-medium">Fair Distribution</h5>
                         </div>
-                        <div className="flex items-center gap-3">
-                          <FaHandshake className="text-blue-300" />
-                          <p>Fair distribution mechanisms</p>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <FaEye className="text-blue-300" />
-                          <p>Transparent launch process</p>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <FaUsers className="text-blue-300" />
-                          <p>Established community presence</p>
-                        </div>
+                        <p className="text-blue-100">
+                          Transparent mechanics ensure equal opportunity for all community members
+                        </p>
                       </div>
                     </div>
+
                     <p className="text-blue-100 text-base">
-                      Snek.fun ensures $BONE starts with a fair, accessible launch, setting the stage for our multi platform community analytics mission.
+                      Through Snek.fun's established infrastructure, we're ensuring $BONE's launch aligns with our vision of building a sustainable, community driven analytics ecosystem.
                     </p>
                   </div>
                 </div>
@@ -1086,7 +1085,7 @@ const Whitepaper = () => {
         </motion.div>
       )
     },
-    // 'track-command' section unchanged - free tracking fits all users
+    // 'track-command' section updated
     {
       id: 'track-command',
       title: 'Project Tracking',
@@ -1099,116 +1098,71 @@ const Whitepaper = () => {
           className="space-y-6"
         >
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
-            <div className="space-y-6 text-blue-100">
+            <div className="space-y-6">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Free Project Tracking</h3>
-                <div className="space-y-8">
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaBinoculars className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Track Your Project</h4>
+                <h3 className="text-xl font-semibold text-white mb-6">Project Token Tracking</h3>
+                
+                <div className="space-y-6">
+                  {/* Personal Setup in DMs */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaWallet className="text-blue-300 text-xl" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white">1. DM Setup</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-blue-100">
+                        First, message your pup privately to:
+                      </p>
+                      <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
+                        <li>Set up your primary wallet with $BONE tokens</li>
+                        <li>Train your pup's personality for notifications</li>
+                        <li>Customize how your pup describes token movements</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Server Command */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaServer className="text-blue-300 text-xl" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white">2. Server Setup</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-blue-100">
+                        In your Discord server channel, use the `/track` command with:
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div className="bg-blue-900/30 p-3 rounded-lg">
+                          <p className="text-white font-medium mb-1">Policy ID</p>
+                          <p className="text-blue-200 text-sm">Your token's unique identifier</p>
+                        </div>
+                        <div className="bg-blue-900/30 p-3 rounded-lg">
+                          <p className="text-white font-medium mb-1">Token Name</p>
+                          <p className="text-blue-200 text-sm">The name of your token</p>
+                        </div>
+                        <div className="bg-blue-900/30 p-3 rounded-lg">
+                          <p className="text-white font-medium mb-1">ADA Threshold</p>
+                          <p className="text-blue-200 text-sm">Minimum purchase amount to track</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Community Notifications */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaBell className="text-blue-300 text-xl" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white">3. Automated Notifications</h4>
                     </div>
                     <p className="text-blue-100">
-                      Project owners can monitor token activity in their Discord server for free no $BONE required. Invite WalletPup, set admin permissions, and get real time purchase notifications in your chosen channel.
+                      Your trained pup will automatically notify your community about token purchases and movements, using your personalized notification style from DM training.
                     </p>
-                  </div>
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-6">
-                      <FaCog className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-xl font-semibold text-white">Setup Process</h4>
-                    </div>
-                    <div className="grid gap-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="bg-blue-800/50 p-4 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
-                          <div className="flex items-center gap-2 mb-2">
-                            <FaShieldAlt className="text-blue-300" />
-                            <p className="font-semibold text-white">1. Server Setup</p>
-                          </div>
-                          <p className="text-blue-100">Invite WalletPup and restrict tracking commands to admins.</p>
-                        </div>
-                        <div className="bg-blue-800/50 p-4 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
-                          <div className="flex items-center gap-2 mb-2">
-                            <FaBullhorn className="text-blue-300" />
-                            <p className="font-semibold text-white">2. Channel Selection</p>
-                          </div>
-                          <p className="text-blue-100">Use `/track` in your notification channel to start.</p>
-                        </div>
-                      </div>
-                      <div className="bg-blue-800/50 p-5 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
-                        <div className="flex items-center gap-2 mb-3">
-                          <FaCoins className="text-blue-300" />
-                          <p className="font-semibold text-white">3. Token Details</p>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          <div className="bg-blue-900/30 p-3 rounded-lg">
-                            <p className="text-white font-medium mb-1">Policy ID</p>
-                            <p className="text-blue-200 text-sm">Enter your token’s unique policy ID</p>
-                          </div>
-                          <div className="bg-blue-900/30 p-3 rounded-lg">
-                            <p className="text-white font-medium mb-1">Token Name</p>
-                            <p className="text-blue-200 text-sm">Provide your token’s name</p>
-                          </div>
-                          <div className="bg-blue-900/30 p-3 rounded-lg">
-                            <p className="text-white font-medium mb-1">Purchase Threshold</p>
-                            <p className="text-blue-200 text-sm">Minimum: 100 ADA</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="bg-blue-800/50 p-5 rounded-lg border border-blue-700/50 hover:border-blue-00 transition-all duration-300">
-                        <div className="flex items-center gap-2 mb-3">
-                          <FaImage className="text-blue-300" />
-                          <p className="font-semibold text-white">4. Image URL Setup (Optional)</p>
-                        </div>
-                        <div className="space-y-3">
-                          <p className="text-blue-100">Add custom images or GIFs to notifications:</p>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div className="bg-blue-900/30 p-3 rounded-lg">
-                              <p className="text-white font-medium mb-2">✓ Compatible Sources</p>
-                              <ul className="text-blue-200 text-sm space-y-1">
-                                <li>• Discord CDN links</li>
-                                <li>• NFT preview URLs</li>
-                                <li>• Direct image/GIF links</li>
-                              </ul>
-                            </div>
-                            <div className="bg-blue-900/30 p-3 rounded-lg">
-                              <p className="text-white font-medium mb-2"> Before Using</p>
-                              <ul className="text-blue-200 text-sm space-y-1">
-                                <li>• Test URL in Discord first</li>
-                                <li>• Ensure it embeds properly</li>
-                                <li>• Link should not be visible</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="bg-blue-800/50 p-5 rounded-lg border border-blue-700/50 hover:border-blue-000 transition-all duration-00">
-                        <div className="flex items-center gap-2 mb-3">
-                          <FaBell className="text-blue-300" />
-                          <p className="font-semibold text-white">5. Notifications</p>
-                        </div>
-                        <div className="bg-blue-900/30 p-4 rounded-lg">
-                          <p className="text-blue-100">Real time purchase notifications include:</p>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
-                            <div className="flex items-center gap-2">
-                              <FaCheckCircle className="text-blue-300" />
-                              <p className="text-blue-200">Verified wallet names</p>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <FaCheckCircle className="text-blue-300" />
-                              <p className="text-blue-200">Purchase amounts</p>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <FaCheckCircle className="text-blue-300" />
-                              <p className="text-blue-200">Transaction details</p>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <FaCheckCircle className="text-blue-300" />
-                              <p className="text-blue-200">Custom images/GIFs</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1302,7 +1256,7 @@ const Whitepaper = () => {
           </div>
           <div className="border-t border-blue-700 py-8 text-center rounded-b-xl">
             <p className="text-blue-200 text-sm">
-              © 2025 WalletPup | All rights reserved
+              &copy; 2025 WalletPup | All rights reserved
             </p>
           </div>
         </div>

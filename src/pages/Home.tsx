@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
-import { FaBone, FaDiscord, FaChartBar } from 'react-icons/fa';
+import { FaPaw, FaUsers, FaMagnifyingGlass } from 'react-icons/fa6';
 import { MetaTags } from '../components/MetaTags';
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
               className="text-center pt-24 pb-8"
             >
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-[1.02] transition-all duration-300">
-                Your Cardano Watchdog
+                Your Loyal Cardano Watchdog
               </h1>
               <p className="mt-4 max-w-md mx-auto text-lg text-blue-100 sm:text-xl md:text-2xl md:max-w-3xl hover:scale-[1.02] transition-all duration-300">
                 Real time updates and community insights for projects and users
@@ -52,25 +52,25 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
                   {
-                    icon: <FaBone className="text-2xl" />,
-                    title: "Snag $BONE Tokens",
+                    icon: <FaPaw className="text-2xl" />,
+                    title: "Fetch $BONE Tokens",
                     description: "Grab $BONE to unlock premium analytics and join the pack.",
                     link: "/bone",
                     linkText: "Learn More →",
                     delay: 0.3
                   },
                   {
-                    icon: <FaDiscord className="text-2xl" />,
-                    title: "Join the Kennel",
+                    icon: <FaUsers className="text-2xl" />,
+                    title: "Join the Pack",
                     description: "Hop into Discord to connect and start tracking with us.",
                     link: "https://discord.gg/d99FBA64Qf",
                     linkText: "Join Discord →",
                     delay: 0.4
                   },
                   {
-                    icon: <FaChartBar className="text-2xl" />,
-                    title: "Track Your Pack",
-                    description: "Use /track to monitor wallets and fetch community insights!",
+                    icon: <FaMagnifyingGlass className="text-2xl" />,
+                    title: "Unleash Analytics",
+                    description: "Use /add to verify your $BONE wallet and get started. ",
                     link: "/commands",
                     linkText: "View Commands →",
                     delay: 0.5
