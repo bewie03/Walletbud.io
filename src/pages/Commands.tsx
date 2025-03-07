@@ -22,8 +22,8 @@ import {
   FaDice,
   FaNetworkWired,
   FaBullhorn,
-  FaShieldAlt,
-  FaBinoculars 
+  FaBinoculars,
+  FaCoins
 } from 'react-icons/fa';
 
 const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick: () => void }) => {
@@ -146,11 +146,11 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           desc: 'Monitor token transactions',
           details: "Project owners can track their token in Discord after a simple DM setup with your pup. Configure your wallet with $BONE tokens, /train your pup style, then use /track with your token's Policy ID and ADA threshold in your server channel."
         };
-      case 'admin':
+      case '/leaderboard':
         return {
-          title: 'Admin Controls',
-          desc: 'System maintenance tools',
-          details: "Our comprehensive admin controls help maintain system health and ensure smooth operation. These tools allow our team to monitor performance, manage resources, and implement updates efficiently to provide the best possible service to our community."
+          title: 'Token Leaderboard',
+          desc: 'View top token holders',
+          details: "Project owners can view their Discord members' wallets and see how much of their token they hold. This command displays the top 20 users, helping track community engagement and token distribution."
         };
       default:
         return {
@@ -201,8 +201,8 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return <FaBullhorn className="text-blue-200 text-2xl" />;
       case '/track <policy id>':
         return <FaBinoculars className="text-blue-200 text-2xl" />;
-      case 'admin':
-        return <FaShieldAlt className="text-blue-200 text-2xl" />;
+      case '/leaderboard':
+        return <FaCoins className="text-blue-200 text-2xl" />;
       default:
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
     }
@@ -393,9 +393,9 @@ const Commands = () => {
       description: 'Monitor token transactions',
     },
     {
-      name: 'Admin Controls',
-      cmd: 'admin',
-      description: 'System maintenance tools',
+      name: 'Token Leaderboard',
+      cmd: '/leaderboard',
+      description: 'View top token holders',
     },
   ];
 
