@@ -19,6 +19,21 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
 
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      .mask-fade-bottom {
+        -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+      }
+    `;
+    document.head.appendChild(style);
+    
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <nav className={`fixed w-full top-0 left-0 right-0 z-[100] transition-all duration-300 ${
       scrolled ? 'bg-blue-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
@@ -39,7 +54,7 @@ const Navbar = () => {
               <img
                 src={WalletpupLogo}
                 alt="WalletPup Logo"
-                className="h-12 w-12 relative z-10"
+                className="h-12 w-12 relative z-10 mask-fade-bottom"
               />
             </motion.div>
             <span className="text-2xl font-bold text-white group-hover:text-blue-200 hover:scale-[1.02] transition-all duration-300">WalletPup</span>

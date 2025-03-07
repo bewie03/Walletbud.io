@@ -16,7 +16,7 @@ const FAQ = () => {
   const faqItems: FAQItem[] = [
     {
       question: "What is WalletPup?",
-      answer: "WalletPup is Your Cardano Watchdog a bot delivering real-time notifications and analytics for Cardano wallets. It’s built for projects, solo users, and communities, barking out updates and digging up insights via Discord, with Telegram and Twitter on the way. Customize your pup for fun, actionable data!"
+      answer: "WalletPup is Your Cardano Watchdog a bot delivering real time notifications and analytics for Cardano wallets. It’s built for projects, solo users, and communities, barking out updates and digging up insights via Discord, with Telegram and Twitter on the way. Customize your pup for fun, actionable data!"
     },
     {
       question: "How many wallets can I track?",

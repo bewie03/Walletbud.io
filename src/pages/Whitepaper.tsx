@@ -1049,7 +1049,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Launching on Snek.fun</h4>
                     </div>
                     <p className="text-blue-100 text-base mb-6">
-                      WalletPup has chosen Snek.fun as our launch platform, renowned in the Cardano ecosystem for their commitment to fair token distributions and community-driven approach.
+                      WalletPup has chosen Snek.fun as our launch platform, renowned in the Cardano ecosystem for their commitment to fair token distributions and community driven approach.
                     </p>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
