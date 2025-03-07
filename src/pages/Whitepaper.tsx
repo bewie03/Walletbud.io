@@ -46,8 +46,7 @@ import {
   FaBullseye,
   FaCheckCircle,
   FaDiscord,
-  FaBinoculars,
-  FaWallet
+  FaTools
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -1087,9 +1086,9 @@ const Whitepaper = () => {
     },
     // 'track-command' section updated
     {
-      id: 'track-command',
-      title: 'Project Tracking',
-      icon: <FaBinoculars className="w-6 h-6" />,
+      id: 'project-tools',
+      title: 'Project Tools',
+      icon: <FaTools className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -1100,68 +1099,59 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Project Token Tracking</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Empowering Project Success</h3>
                 
                 <div className="space-y-6">
-                  {/* Personal Setup in DMs */}
+                  {/* Token Tracking */}
                   <div className="bg-blue-800/30 p-6 rounded-lg">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-blue-800 rounded-xl p-3">
-                        <FaWallet className="text-blue-300 text-xl" />
+                        <FaChartLine className="text-blue-300 text-xl" />
                       </div>
-                      <h4 className="text-lg font-semibold text-white">1. DM Setup</h4>
+                      <h4 className="text-lg font-semibold text-white">Token Purchase Tracking</h4>
                     </div>
                     <div className="space-y-3">
                       <p className="text-blue-100">
-                        First, message your pup privately to:
+                        Set up automated token tracking with the /track command. Your trained AI pup will post and comment on all token purchases above your specified threshold, keeping your community engaged with:
                       </p>
                       <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
-                        <li>Set up your primary wallet with $BONE tokens</li>
-                        <li>Train your pup's personality for notifications</li>
-                        <li>Customize how your pup describes token movements</li>
+                        <li>Personalized AI commentary on purchases</li>
+                        <li>Customizable threshold notifications</li>
+                        <li>Real time market activity updates</li>
                       </ul>
                     </div>
                   </div>
 
-                  {/* Server Command */}
+                  {/* Token Leaderboard */}
                   <div className="bg-blue-800/30 p-6 rounded-lg">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-blue-800 rounded-xl p-3">
-                        <FaServer className="text-blue-300 text-xl" />
+                        <FaTrophy className="text-blue-300 text-xl" />
                       </div>
-                      <h4 className="text-lg font-semibold text-white">2. Server Setup</h4>
+                      <h4 className="text-lg font-semibold text-white">Community Leaderboard</h4>
                     </div>
                     <div className="space-y-3">
                       <p className="text-blue-100">
-                        In your Discord server channel, use the `/track` command with:
+                        Showcase your top community members holding your token with the /leaderboard command.
                       </p>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                        <div className="bg-blue-900/30 p-3 rounded-lg">
-                          <p className="text-white font-medium mb-1">Policy ID</p>
-                          <p className="text-blue-200 text-sm">Your token's unique identifier</p>
-                        </div>
-                        <div className="bg-blue-900/30 p-3 rounded-lg">
-                          <p className="text-white font-medium mb-1">Token Name</p>
-                          <p className="text-blue-200 text-sm">The name of your token</p>
-                        </div>
-                        <div className="bg-blue-900/30 p-3 rounded-lg">
-                          <p className="text-white font-medium mb-1">ADA Threshold</p>
-                          <p className="text-blue-200 text-sm">Minimum purchase amount to track</p>
-                        </div>
-                      </div>
+                      <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
+                        <li>Displays top 20 verified token holders</li>
+                        <li>View what your members are holding</li>
+                        <li>Helps track community engagement</li>
+                      </ul>
                     </div>
                   </div>
 
-                  {/* Community Notifications */}
+                  {/* Future Tools */}
                   <div className="bg-blue-800/30 p-6 rounded-lg">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-blue-800 rounded-xl p-3">
-                        <FaBell className="text-blue-300 text-xl" />
+                        <FaRocket className="text-blue-300 text-xl" />
                       </div>
-                      <h4 className="text-lg font-semibold text-white">3. Automated Notifications</h4>
+                      <h4 className="text-lg font-semibold text-white">More Tools Coming</h4>
                     </div>
                     <p className="text-blue-100">
-                      Your trained pup will automatically notify your community about token purchases and movements, using your personalized notification style from DM training.
+                      We're developing more tools focused on boosting Discord communities. These upcoming features will make it even easier for projects to engage, grow, and manage their communities. Please leave suggestions if you have any in our discord channel.
                     </p>
                   </div>
                 </div>
