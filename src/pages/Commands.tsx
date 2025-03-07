@@ -23,7 +23,9 @@ import {
   FaNetworkWired,
   FaBullhorn,
   FaBinoculars,
-  FaCoins
+  FaCoins,
+  FaSmile,
+  FaTools
 } from 'react-icons/fa';
 
 const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick: () => void }) => {
@@ -152,6 +154,18 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           desc: 'View top token holders',
           details: "Project owners can view their Discord members' wallets and see how much of their token they hold. This command displays the top 20 users, helping track community engagement and token distribution."
         };
+      case '/sentiment':
+        return {
+          title: 'Daily Sentiment',
+          desc: 'Server activity report',
+          details: "Get a comprehensive daily report of your server's activity including top 3 active users, total messages sent, and overall community sentiment. Your trained pup delivers this analysis in their unique personality style, making data insights fun and engaging."
+        };
+      case '/admin':
+        return {
+          title: 'Admin Controls',
+          desc: 'Staff management tools',
+          details: "Staff only command suite for maintaining the WalletPup ecosystem. Includes tools for blacklisting wallets, managing events, labeling known addresses (like DEXes), and other administrative functions to ensure a healthy community environment."
+        };
       default:
         return {
           title: 'Unknown Command',
@@ -203,6 +217,10 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return <FaBinoculars className="text-blue-200 text-2xl" />;
       case '/leaderboard':
         return <FaCoins className="text-blue-200 text-2xl" />;
+      case '/sentiment':
+        return <FaSmile className="text-blue-200 text-2xl" />;
+      case '/admin':
+        return <FaTools className="text-blue-200 text-2xl" />;
       default:
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
     }
@@ -223,7 +241,10 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
     '/topwatched',
     '/remove <address>',
     '/add <address>',
-    '/help'
+    '/help',
+    '/leaderboard',
+    '/sentiment',
+    '/admin'
   ];
 
   const showPreview = !noPreviewCommands.includes(command.cmd);
@@ -248,18 +269,23 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
             <div className="ml-6">
               <div className="flex justify-between items-start mb-3">
                 <h3 className="text-2xl font-bold text-white">{command.name}</h3>
-                {/* Preview Button */}
-                {showPreview && (
-                  <button 
-                    className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 hover:bg-blue-700/50 transition-colors"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onPreviewClick();
-                    }}
-                  >
-                    Preview
-                  </button>
-                )}
+                <div className="flex items-center gap-2">
+                  <span className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50">
+                    {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/sentiment' ? 'Project' : command.cmd === '/admin' ? 'Staff' : 'User'}
+                  </span>
+                  {/* Preview Button */}
+                  {showPreview && (
+                    <button 
+                      className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 hover:bg-blue-700/50 transition-colors"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onPreviewClick();
+                      }}
+                    >
+                      Preview
+                    </button>
+                  )}
+                </div>
               </div>
               <div className="bg-blue-800 rounded-xl px-4 py-2 mb-4 inline-block border border-blue-700">
                 <code className="text-blue-200 font-mono">{command.cmd}</code>
@@ -396,6 +422,18 @@ const Commands = () => {
       name: 'Token Leaderboard',
       cmd: '/leaderboard',
       description: 'View top token holders',
+    },
+    {
+      name: 'Daily Sentiment',
+      cmd: '/sentiment',
+      description: 'Server activity report',
+      tag: 'Project'
+    },
+    {
+      name: 'Admin Controls',
+      cmd: '/admin',
+      description: 'Staff management tools',
+      tag: 'Staff'
     },
   ];
 

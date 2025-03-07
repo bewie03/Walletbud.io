@@ -46,7 +46,8 @@ import {
   FaBullseye,
   FaCheckCircle,
   FaDiscord,
-  FaTools
+  FaTools,
+  FaSmile
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -1142,17 +1143,24 @@ const Whitepaper = () => {
                     </div>
                   </div>
 
-                  {/* Future Tools */}
+                  {/* Daily Sentiment Analysis */}
                   <div className="bg-blue-800/30 p-6 rounded-lg">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-blue-800 rounded-xl p-3">
-                        <FaRocket className="text-blue-300 text-xl" />
+                        <FaSmile className="text-blue-300 text-xl" />
                       </div>
-                      <h4 className="text-lg font-semibold text-white">More Tools Coming</h4>
+                      <h4 className="text-lg font-semibold text-white">Daily Sentiment Analysis</h4>
                     </div>
-                    <p className="text-blue-100">
-                      We're developing more tools focused on boosting Discord communities. These upcoming features will make it even easier for projects to engage, grow, and manage their communities. Please leave suggestions if you have any in our discord channel.
-                    </p>
+                    <div className="space-y-3">
+                      <p className="text-blue-100">
+                        Get comprehensive daily reports on your server's activity with the /sentiment command. Your trained pup delivers personalized insights including:
+                      </p>
+                      <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
+                        <li>Top 3 most active community members</li>
+                        <li>Total messages and engagement metrics</li>
+                        <li>Overall community sentiment analysis</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
