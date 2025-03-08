@@ -1155,9 +1155,9 @@ const Whitepaper = () => {
                         Get comprehensive daily reports on your server's activity with the /sentiment command. Your trained pup delivers personalized insights including:
                       </p>
                       <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
-                        <li>Top 3 most active community members</li>
+                        <li>Top 3 most active members</li>
                         <li>Total messages and engagement metrics</li>
-                        <li>Overall community sentiment analysis</li>
+                        <li>Top active communinties and how you rank</li>
                       </ul>
                     </div>
                   </div>
