@@ -62,7 +62,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Global Stats',
           desc: 'View community statistics',
-          details: "Check out the global WalletPup community stats including total users, wallets tracked, ADA won from bowls, and total transactions."
+          details: "Check out WalletPup's ecosystem stats: total tokens tracked by projects, total wallets and users, ADA won from feeding bowls, transaction count, and verified wallet count."
         };
       case '/help':
         return {
@@ -104,7 +104,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Feeding Bowl',
           desc: 'Fill the feeding bowl',
-          details: "Fill the feeding bowl with 5 ADA! The duration is set by project owners, with longer periods resulting in bigger prize pools. 75% of the pool goes to the winner, 15% goes to the treasury, and 10% is buried in $burnsnek."
+          details: "Fill the feeding bowl with 5 ADA! The duration is set by project owners, with longer periods resulting in bigger prize pools. 80% of the pool goes to the winner, 10% goes to the treasury, and 10% is burned."
         };
       case '/notifications':
         return {
@@ -140,13 +140,13 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Announce',
           desc: 'Send message to wallet watchers',
-          details: "As a verified wallet owner, send an announcement to everyone watching your wallet. Perfect for project owners to communicate important updates, upcoming transactions, or general announcements to their community."
+          details: "As a verified wallet owner, broadcast announcements to everyone watching your wallet. Perfect for project owners to share important updates, upcoming transactions, or general news with their community."
         };
       case '/track <policy id>':
         return {
           title: 'Track Token',
           desc: 'Monitor token transactions',
-          details: "Project owners can track their token in Discord after a simple DM setup with your pup. Configure your wallet with $BONE tokens, /train your pup style, then use /track with your token's Policy ID and ADA threshold in your server channel."
+          details: "Set up token tracking in your Discord server. Setup BONE wallet, customize your pup's personality. Perfect for project owners monitoring their community and token purchases."
         };
       case '/leaderboard':
         return {
@@ -158,13 +158,13 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Daily Sentiment',
           desc: 'Server activity report',
-          details: "Get a comprehensive daily report of your server's activity including top 3 active users, total messages sent, and overall community sentiment. Your trained pup delivers this analysis in their unique personality style, making data insights fun and engaging."
+          details: "Get daily insights on server activity, including top active users, message trends, and overall community sentiment. Your trained pup delivers these updates in their unique style, making insights engaging and fun."
         };
       case '/admin':
         return {
           title: 'Admin Controls',
           desc: 'Staff management tools',
-          details: "Staff only command suite for maintaining the WalletPup ecosystem. Includes tools for blacklisting wallets, managing events, labeling known addresses (like DEXes), and other administrative functions to ensure a healthy community environment."
+          details: "Staff-only toolkit for managing the WalletPup ecosystem. Includes wallet blacklisting, event management, address labeling, and other tools to maintain a healthy community environment."
         };
       default:
         return {

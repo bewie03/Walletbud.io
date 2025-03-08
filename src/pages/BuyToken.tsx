@@ -3,7 +3,7 @@ import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import Swap from '@dexhunterio/swaps';
 import '@dexhunterio/swaps/lib/assets/style.css';
-import { FaBone, FaPaw, FaFire, FaBalanceScale, FaExchangeAlt, FaChartPie, FaWarehouse, FaLayerGroup } from 'react-icons/fa';
+import { FaBone, FaPaw, FaBalanceScale, FaExchangeAlt, FaChartPie, FaWarehouse, FaLayerGroup } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import FloatingBones from '../components/FloatingBones';
 
@@ -53,33 +53,33 @@ const BONE = () => {
           >
             {[
               {
-                title: "Token Utility",
-                icon: FaBone,
-                description: "Unlock all features",
+                title: "Wallet & Token Tracking",
+                icon: FaPaw,
+                description: "Automated tracking system",
                 features: [
-                  "Track up to 25 wallets",
-                  "Real time notifications and analytics",
-                  "Customize your pup for fun updates"
+                  "Insight Tools",
+                  "Track token purchases",
+                  "Personalized notifications"
                 ]
               },
               {
-                title: "Token Burns",
-                icon: FaFire,
-                description: "Burns boost scarcity and pack value",
+                title: "Project Helper",
+                icon: FaChartPie,
+                description: "Community engagement tools",
                 features: [
-                  "10% of Feeding Bowl pools burned",
-                  "Deflationary tokenomics",
-                  "Transparent burn tracking"
+                  "Community leaderboard system",
+                  "Your token purchase insights",
+                  "Server Sentiment Updates"
                 ]
               },
               {
                 title: "Dynamic Requirements",
                 icon: FaBalanceScale,
-                description: "Fewer tokens needed as we grow",
+                description: "A service that grows with you",
                 features: [
                   "Fixed ~50 ADA entry value",
-                  "requirements drop with market cap",
-                  "Early adopters gain more slots"
+                  "Requirements drop as we expand",
+                  "Gain more slots as market cap grows"
                 ]
               }
             ].map((card, index) => (
