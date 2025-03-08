@@ -151,7 +151,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Successor</h4>
                     </div>
                     <p className="text-blue-100">
-                      RushLabs’ ZING set new benchmarks with its high speed trading tools, offered free to the Cardano community. While exceptional for traders, it lacks focus on group analytics and community insights areas WalletPup aims to dominate.
+                      Then came RushLabs who have created an amaizing suite of tools. ZING and Frenbot, bringing lightning fast trading tools to the Cardano community. Their focus on speed and trading empowered users with real time data and professional grade tools.
                     </p>
                   </div>
                   {/* The Evolution */}
@@ -161,9 +161,8 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Evolution</h4>
                     </div>
                     <p className="text-blue-100">
-                      WalletPup evolves into Your Cardano Watchdog, blending real time notifications with community analytics. From solo wallet tracking to server wide insights, we’re here for all starting on Discord and growing to Telegram and Twitter with pup driven updates.
-                    </p>
-                  </div>
+                    WalletPup becomes Your Cardano Watchdog, blending real time notifications with AI driven community analytics. We offer wallet and token tracking, usefull commands and tools, server stats across Discord, Telegram, and Twitter, with the bonus of speed and fun.</p>
+                    </div>
                 </div>
               </div>
             </div>
@@ -256,11 +255,11 @@ const Whitepaper = () => {
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/stats</code>
-                        <p className="text-blue-100 mt-1">Fetch global analytics for all users</p>
+                        <p className="text-blue-100 mt-1">Fetch  stats on the walletpup community</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/add</code>
-                        <p className="text-blue-100 mt-1">Track wallets solo or for your community</p>
+                        <p className="text-blue-100 mt-1">Track wallets you have an interest in</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/train</code>
@@ -278,19 +277,19 @@ const Whitepaper = () => {
                     </div>
                     <div className="space-y-4">
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/serverstats</code>
-                        <p className="text-blue-100 mt-1">See your community’s top stats</p>
+                        <code className="text-blue-300 font-bold">/track</code>
+                        <p className="text-blue-100 mt-1">Projects track their tokens</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/rank</code>
-                        <p className="text-blue-100 mt-1">Rank server activity solo or group</p>
+                        <code className="text-blue-300 font-bold">/leaderboad</code>
+                        <p className="text-blue-100 mt-1">See your top verified holders</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/topwatched</code>
-                        <p className="text-blue-100 mt-1">Spot the most tracked wallets</p>
+                        <code className="text-blue-300 font-bold">/sentiment</code>
+                        <p className="text-blue-100 mt-1">Daily AI insights on your server</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/announce</code>
+                        <code className="text-blue-300 font-bold">/announce (dm)</code>
                         <p className="text-blue-100 mt-1">Notify your pack with updates</p>
                       </div>
                     </div>
@@ -522,7 +521,7 @@ const Whitepaper = () => {
                       </div>
                     </h4>
                     <p className="text-blue-100 mb-4">
-                      Buy 200K $BONE today and watch your group tracking slots grow as WalletPup scales:
+                      Buy 200K $BONE today and watch your tracking slots grow as WalletPup scales:
                     </p>
                     <div className="grid grid-cols-1 gap-4">
                       <div className="bg-blue-800/50 p-4 rounded-lg">
@@ -588,7 +587,7 @@ const Whitepaper = () => {
                       </div>
                       <div className="bg-blue-800/50 p-4 rounded-lg">
                         <div className="font-bold text-white mb-2">Flexibility</div>
-                        <p className="text-blue-100">Start small or go big for max group tracking</p>
+                        <p className="text-blue-100">Start small or go big for max tracking slots</p>
                       </div>
                     </div>
                   </div>
@@ -696,7 +695,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Community Bowl</h4>
                     </div>
                     <p className="text-blue-100 text-base mb-6">
-                      The Feeding Bowl is our community prize pool with durations set by Walletpup admins. Each entry costs 5 ADA, with longer periods resulting in bigger prize pools. Verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 75% going to the winner, 15% to the treasury, and 10% used to buy and burn $BONE tokens.
+                      The Feeding Bowl is our community prize pool with durations set by Walletpup admins. Each entry costs 5 ADA, with longer periods resulting in bigger prize pools. Verified wallet holders can participate for a chance to win. Each bowl has a growing prize pool, with 80% going to the winner, 10% to the treasury, and 10% used to buy and burn $BONE tokens.
                     </p>
                     <p className="text-blue-100 text-base">
                       The Feeding Bowl boosts server engagement while supporting token value through burns and funding community initiatives.
@@ -713,8 +712,8 @@ const Whitepaper = () => {
                       <p>• One entry per wallet per bowl</p>
                       <p>• Must have a verified wallet to participate</p>
                       <p className="mt-4">Prize Distribution:</p>
-                      <p>• 75% of pool to winner</p>
-                      <p>• 15% to treasury</p>
+                      <p>• 80% of pool to winner</p>
+                      <p>• 10% to treasury</p>
                       <p>• 10% to buy and burn $BONE tokens</p>
                     </div>
                   </div>
@@ -940,8 +939,8 @@ const Whitepaper = () => {
                       WalletPup scales with community demand:
                     </p>
                     <div className="text-blue-200">
-                      <p>• Up to 25 wallets per group tracking slot</p>
-                      <p>• Supports 250,000+ tracked wallets</p>
+                      <p>• Up to 25 slots per verified user</p>
+                      <p>• Can support 250,000+ tracked wallets</p>
                       <p>• Matches current daily active addresses</p>
                     </div>
                   </div>

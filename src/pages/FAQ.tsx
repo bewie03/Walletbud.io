@@ -1,4 +1,4 @@
-// FAQ - Updated 05 March 2025
+// FAQ - Updated 07 March 2025
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import FloatingBones from '../components/FloatingBones';
@@ -16,47 +16,47 @@ const FAQ = () => {
   const faqItems: FAQItem[] = [
     {
       question: "What is WalletPup?",
-      answer: "WalletPup is Your Cardano Watchdog a bot delivering real time notifications and analytics for Cardano wallets. It’s built for projects, solo users, and communities, barking out updates and digging up insights via Discord, with Telegram and Twitter on the way. Customize your pup for fun, actionable data!"
-    },
-    {
-      question: "How many wallets can I track?",
-      answer: "Track up to 25 Cardano wallets with one verified wallet holding $BONE tokens. Start with a small amount and let market growth boost your slots, or grab all 25 slots right away with enough $BONE perfect for solo tracking or community insights."
+      answer: "WalletPup is Your Cardano Watchdog, a bot delivering real time wallet notifications and analytics for projects, users, and communities on Discord, with Telegram and Twitter coming soon."
     },
     {
       question: "What are $BONE tokens?",
-      answer: "$BONE is our utility token that powers WalletPup. Hold ~50 ADA worth to unlock basic features (2.5 ADA per wallet slot). As our market cap grows, you’ll need fewer $BONE for the same access, scaling up your tracking for projects or personal use."
+      answer: "$BONE powers WalletPup, unlocking premium features. Hold ~50 ADA worth for basic access; as market cap grows, fewer tokens unlock more slots."
     },
     {
-      question: "How is $BONE distributed?",
-      answer: "95% for public distribution (950M $BONE) and 5% for development and partnerships (50M $BONE)."
-    },
-    {
-      question: "Can I customize my pup's personality?",
-      answer: "Yes! Use the /train command to shape your pup’s personality for tailored notifications and analytics."
-    },
-    {
-      question: "What's the Feeding Bowl?",
-      answer: "A community prize pool where verified wallets can win big! Entry is 5 ADA, with 75% to the winner, 15% to the treasury, and 10% burned as $BONE. It’s a fun way to boost server vibes and token value."
-    },
-    {
-      question: "Is WalletPup secure?",
-      answer: "Absolutely! We stick to public wallet data and private Discord DMs or server channels for notifications your info stays safe with the pack."
+      question: "How many wallets can I track?",
+      answer: "Track up to 25 wallets with $BONE. Start small, and slots increase as WalletPup grows."
     },
     {
       question: "How do I start using WalletPup?",
-      answer: "Grab $BONE tokens > Join our Discord > Use /add to track your $BONE wallet > Verify it’s yours with /verifywallet. Start sniffing out updates and insights in no time!"
+      answer: "Buy $BONE, join our Discord, use /add to track your wallet, and verify with /verifywallet."
     },
     {
-      question: "Do $BONE tokens maintain value?",
-      answer: "Yes! Unlike subscriptions, $BONE stays in your wallet and can be traded anytime your key to analytics that grows with you."
+      question: "How do I track token transactions?",
+      answer: "Use /track to monitor token purchases in your server for free. Set policy ID and ADA threshold."
     },
     {
-      question: "How do I track token transactions in my Discord server?",
-      answer: "Project owners can use /track to monitor token transactions in their server no $BONE needed! Set your policy ID and ADA threshold, and WalletPup will bark out purchase alerts in your chosen channel for free."
+      question: "Can I customize my pup?",
+      answer: "Yes, use /train to tailor your pup’s personality for notifications and analytics."
+    },
+    {
+      question: "How is $BONE distributed?",
+      answer: "95% (950M) for public use, 5% (50M) for development and partnerships."
+    },
+    {
+      question: "Do $BONE tokens hold value?",
+      answer: "Yes, $BONE stays tradeable in your wallet, unlike subscriptions."
+    },
+    {
+      question: "What’s the Feeding Bowl?",
+      answer: "A 5 ADA entry prize pool: 80% to the winner, 10% to treasury, 10% burned as $BONE."
+    },
+    {
+      question: "Is WalletPup secure?",
+      answer: "Yes, we use public wallet data and secure Discord notifications."
     },
     {
       question: "How do I get support?",
-      answer: "Drop a /help in bot DMs or join our Discord pack for quick assistance from the community."
+      answer: "Use /help in bot DMs or join our Discord for help."
     }
   ];
 
