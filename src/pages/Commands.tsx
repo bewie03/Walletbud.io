@@ -269,14 +269,14 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
             <div className="ml-6">
               <div className="flex justify-between items-start mb-3">
                 <h3 className="text-2xl font-bold text-white">{command.name}</h3>
-                <div className="flex items-center gap-2">
-                  <span className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50">
+                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-2">
+                  <span className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 whitespace-nowrap">
                     {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/sentiment' ? 'Project' : command.cmd === '/admin' ? 'Staff' : 'User'}
                   </span>
                   {/* Preview Button */}
                   {showPreview && (
                     <button 
-                      className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 hover:bg-blue-700/50 transition-colors"
+                      className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 hover:bg-blue-700/50 transition-colors whitespace-nowrap"
                       onClick={(e) => {
                         e.stopPropagation();
                         onPreviewClick();
