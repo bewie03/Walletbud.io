@@ -1157,7 +1157,7 @@ const Whitepaper = () => {
                       <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
                         <li>Top 3 most active members</li>
                         <li>Total messages and engagement metrics</li>
-                        <li>Top active communinties and how you rank</li>
+                        <li>Top active communities and how you rank</li>
                       </ul>
                     </div>
                   </div>
