@@ -40,7 +40,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           desc: 'Start tracking a Cardano wallet address',
           details: "Use /add to begin tracking. This lets our loyal pups monitor your wallet's activity and provide updates. First wallet must be the one with the BONE tokens."
         };
-      case '/verifywallet <address> <name>':
+      case '/verify <address> <name>':
         return {
           title: 'Verify Ownership',
           desc: 'Prove you own the wallet and give it a name',
@@ -179,7 +179,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
     switch (cmd) {
       case '/add <address>':
         return <FaWallet className="text-blue-200 text-2xl" />;
-      case '/verifywallet <address> <name>':
+      case '/verify <address> <name>':
         return <FaCheck className="text-blue-200 text-2xl" />;
       case '/remove <address>':
         return <FaTimes className="text-blue-200 text-2xl" />;
@@ -330,7 +330,7 @@ const Commands = () => {
     },
     {
       name: 'Verify Wallet',
-      cmd: '/verifywallet <address> <name>',
+      cmd: '/verify <address> <name>',
       description: 'Prove you own the wallet and give it a name',
     },
     {
