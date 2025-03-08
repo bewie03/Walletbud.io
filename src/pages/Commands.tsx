@@ -241,10 +241,11 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
     '/topwatched',
     '/remove <address>',
     '/add <address>',
-    '/help',
     '/leaderboard',
     '/sentiment',
-    '/admin'
+    '/help',
+    '/admin',
+    '/verify <address> <name>'
   ];
 
   const showPreview = !noPreviewCommands.includes(command.cmd);
