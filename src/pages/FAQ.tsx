@@ -32,7 +32,7 @@ const FAQ = () => {
     },
     {
       question: "How do I track token transactions?",
-      answer: "Use /track to monitor token purchases in your server for free. Set policy ID and ADA threshold."
+      answer: "Use /track to monitor token purchases in your server. Set policy ID and ADA threshold."
     },
     {
       question: "Can I customize my pup?",
