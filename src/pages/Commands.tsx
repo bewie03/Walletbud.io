@@ -160,7 +160,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           desc: 'Server activity report',
           details: "Get daily insights on server activity, including top active users, message trends, and overall community sentiment. Your trained pup delivers these updates in their unique style, making insights engaging and fun."
         };
-      case '/admin':
+      case 'admin':
         return {
           title: 'Admin Controls',
           desc: 'Staff management tools',
@@ -219,7 +219,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return <FaCoins className="text-blue-200 text-2xl" />;
       case '/sentiment':
         return <FaSmile className="text-blue-200 text-2xl" />;
-      case '/admin':
+      case 'admin':
         return <FaTools className="text-blue-200 text-2xl" />;
       default:
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
@@ -244,7 +244,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
     '/leaderboard',
     '/sentiment',
     '/help',
-    '/admin',
+    'admin',
     '/verify <address> <name>'
   ];
 
@@ -272,7 +272,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
                 <h3 className="text-2xl font-bold text-white">{command.name}</h3>
                 <div className="flex flex-col sm:flex-row items-end sm:items-center gap-2">
                   <span className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 whitespace-nowrap">
-                    {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/sentiment' ? 'Project' : command.cmd === '/admin' ? 'Staff' : 'User'}
+                    {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/sentiment' ? 'Project' : command.cmd === 'admin' ? 'Staff' : 'User'}
                   </span>
                   {/* Preview Button */}
                   {showPreview && (
@@ -432,7 +432,7 @@ const Commands = () => {
     },
     {
       name: 'Admin Controls',
-      cmd: '/admin',
+      cmd: 'admin',
       description: 'Staff management tools',
       tag: 'Staff'
     },
