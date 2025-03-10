@@ -189,7 +189,7 @@ const BONE = () => {
                 <div className="ml-6">
                   <h3 className="text-2xl font-bold text-white mb-4">Token Requirements</h3>
                   <p className="text-blue-100 text-base mb-6">
-                    Start tracking with ~50 ADA worth of $BONE fewer tokens needed as our market cap grows
+                    Start tracking with ~50 ADA worth of $BONE. Fewer tokens needed as our market cap grows.
                   </p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -217,12 +217,6 @@ const BONE = () => {
                         </div>
                       </div>
                     ))}
-                  </div>
-
-                  <div className="mt-6 bg-blue-800/50 backdrop-sm rounded-xl p-4 border border-blue-600">
-                    <p className="text-blue-100 text-sm text-center">
-                      Requirements only decrease your slots grow with us!
-                    </p>
                   </div>
                 </div>
               </div>

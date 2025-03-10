@@ -164,7 +164,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Admin Controls',
           desc: 'Staff management tools',
-          details: "Staff-only toolkit for managing the WalletPup ecosystem. Includes wallet blacklisting, event management, address labeling, and other tools to maintain a healthy community environment."
+          details: "Staff only toolkit for managing the WalletPup ecosystem. Includes wallet blacklisting, event management, address labeling, and other tools to maintain a healthy community environment."
         };
       default:
         return {
