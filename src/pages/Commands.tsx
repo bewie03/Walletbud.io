@@ -159,7 +159,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Token Market Data',
           desc: 'Get token price and market info',
-          details: "Retrieve current market data for tracked tokens including price, market cap, 24h volume, and price changes. Available to all users for quick market insights."
+          details: "Retrieve current market data for your servers tracked token including price, fully diluted valuation (FDV), age and supply. Available to all users for quick market insights."
         };
       case '/sentiment':
         return {
@@ -172,6 +172,12 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           title: 'Admin Controls',
           desc: 'Staff management tools',
           details: "Staff only toolkit for managing the WalletPup ecosystem. Includes wallet blacklisting, event management, address labeling, and other tools to maintain a healthy community environment."
+        };
+      case 'more':
+        return {
+          title: 'More Coming Soon',
+          desc: 'Stay tuned for updates',
+          details: "We're working on new features and commands. Stay tuned for updates and new releases."
         };
       default:
         return {
@@ -230,6 +236,8 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return <FaSmile className="text-blue-200 text-2xl" />;
       case 'admin':
         return <FaTools className="text-blue-200 text-2xl" />;
+      case 'more':
+        return <FaSmile className="text-blue-200 text-2xl" />;
       default:
         return <FaQuestionCircle className="text-blue-200 text-2xl" />;
     }
@@ -281,7 +289,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
                 <h3 className="text-2xl font-bold text-white">{command.name}</h3>
                 <div className="flex flex-col sm:flex-row items-end sm:items-center gap-2">
                   <span className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 whitespace-nowrap">
-                    {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/sentiment' ? 'Project' : command.cmd === 'admin' ? 'Staff' : 'User'}
+                    {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/sentiment' || command.cmd === '/fetch' ? 'Project' : command.cmd === 'admin' || command.cmd === 'more' ? 'Staff' : 'User'}
                   </span>
                   {/* Preview Button */}
                   {showPreview && (
@@ -437,18 +445,13 @@ const Commands = () => {
       name: 'Token Market Data',
       cmd: '/fetch',
       description: 'Get token price and market info',
+      tag: 'Project'
     },
     {
       name: 'Daily Sentiment',
       cmd: '/sentiment',
       description: 'Server activity report',
       tag: 'Project'
-    },
-    {
-      name: 'Admin Controls',
-      cmd: 'admin',
-      description: 'Staff management tools',
-      tag: 'Staff'
     },
   ];
 
