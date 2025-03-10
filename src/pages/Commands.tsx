@@ -1,4 +1,4 @@
-// Commands page • Updated 21 Jan 2025
+// Commands page • Updated 11 Mar 2025
 import AnimatedElement from '../components/AnimatedElement';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -25,7 +25,8 @@ import {
   FaBinoculars,
   FaCoins,
   FaSmile,
-  FaTools
+  FaTools,
+  FaChartLine
 } from 'react-icons/fa';
 
 const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick: () => void }) => {
@@ -154,6 +155,12 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           desc: 'View top token holders',
           details: "Project owners can view their Discord members' wallets and see how much of their token they hold. This command displays the top 20 users, helping track community engagement and token distribution."
         };
+      case '/fetch':
+        return {
+          title: 'Token Market Data',
+          desc: 'Get token price and market info',
+          details: "Retrieve current market data for tracked tokens including price, market cap, 24h volume, and price changes. Available to all users for quick market insights."
+        };
       case '/sentiment':
         return {
           title: 'Daily Sentiment',
@@ -199,6 +206,8 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return <FaTrophy className="text-blue-200 text-2xl" />;
       case '/purge':
         return <FaTrash className="text-blue-200 text-2xl" />;
+      case '/fetch':
+        return <FaChartLine className="text-blue-200 text-2xl" />;
       case '/bowl':
         return <FaGift className="text-blue-200 text-2xl" />;
       case '/notifications':
@@ -423,6 +432,11 @@ const Commands = () => {
       name: 'Token Leaderboard',
       cmd: '/leaderboard',
       description: 'View top token holders',
+    },
+    {
+      name: 'Token Market Data',
+      cmd: '/fetch',
+      description: 'Get token price and market info',
     },
     {
       name: 'Daily Sentiment',
