@@ -989,7 +989,7 @@ const Whitepaper = () => {
                     WalletPup starts as a Discord analytics bot but is evolving into a multi platform suite for Cardano communities. Our vision is to deliver group focused insights across Discord, Telegram, and Twitter, with more platforms to follow.
                   </p>
                   <p className="text-blue-100 mt-4">
-                    Two projects are in development: a Telegram bot for group notifications and a Twitter bot for public stats. These will enhance community engagement with seamless, pup driven analytics.
+                    Two projects are in development: a Telegram bot for personal notifications and a Twitter bot for public stats with a twist. These will enhance community engagement with seamless, pup driven analytics.
                   </p>
                   <p className="text-blue-100">
                     Each expansion ties to $BONE, increasing utility and rewarding holders as we grow into Cardano’s analytics backbone.
