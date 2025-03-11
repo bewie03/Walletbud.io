@@ -1118,7 +1118,6 @@ const Whitepaper = () => {
                         <li>Personalized AI commentary on purchases</li>
                         <li>Customizable threshold notifications</li>
                         <li>Real time market activity updates</li>
-                        <li>Current holder count and market metrics</li>
                       </ul>
                     </div>
                   </div>
@@ -1159,6 +1158,27 @@ const Whitepaper = () => {
                         <li>Top 3 most active members</li>
                         <li>Total messages and engagement metrics</li>
                         <li>Top active communities and how you rank</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Market Data Analysis */}
+                  <div className="bg-blue-800/30 p-6 rounded-lg">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="bg-blue-800 rounded-xl p-3">
+                        <FaChartBar className="text-blue-300 text-xl" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white">Market Data Analysis</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-blue-100">
+                        Access real time market data for your token with the /fetch command. Get instant insights into your token's performance:
+                      </p>
+                      <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
+                        <li>Current price and market valuation</li>
+                        <li>Total holder count and distribution</li>
+                        <li>Token age and circulating supply</li>
+                        <li>Fully diluted valuation (FDV)</li>
                       </ul>
                     </div>
                   </div>
