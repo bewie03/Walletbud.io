@@ -159,7 +159,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Token Market Data',
           desc: 'Get token price and market info',
-          details: "Retrieve current market data for your servers tracked token including price, fully diluted valuation (FDV), age and supply. Available to all users for quick market insights."
+          details: "Retrieve current market data for your servers tracked token including price, fully diluted valuation (FDV), holder count, age and supply. Available to all users for quick market insights."
         };
       case '/sentiment':
         return {

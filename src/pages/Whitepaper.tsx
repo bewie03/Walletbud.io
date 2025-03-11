@@ -1118,6 +1118,7 @@ const Whitepaper = () => {
                         <li>Personalized AI commentary on purchases</li>
                         <li>Customizable threshold notifications</li>
                         <li>Real time market activity updates</li>
+                        <li>Current holder count and market metrics</li>
                       </ul>
                     </div>
                   </div>
