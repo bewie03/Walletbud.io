@@ -153,13 +153,13 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return {
           title: 'Token Leaderboard',
           desc: 'View top token holders',
-          details: "Project owners can view their Discord members' wallets and see how much of their token they hold. This command displays the top 20 users, helping track community engagement and token distribution."
+          details: "Project owners can view their Discord members wallets and see how much of their token they hold. This command displays the top 20 users, helping track community engagement and token distribution."
         };
       case '/fetch':
         return {
           title: 'Token Market Data',
           desc: 'Get token price and market info',
-          details: "Retrieve current market data for your servers tracked token including price, fully diluted valuation (FDV), holder count, age and supply. Available to all users for quick market insights."
+          details: "Retrieve current market data for your servers tracked token including price,24 change, fully diluted valuation (FDV), holder count, age and supply. Available to all users for quick token insights."
         };
       case '/sentiment':
         return {

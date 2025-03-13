@@ -1175,10 +1175,9 @@ const Whitepaper = () => {
                         Access real time market data for your token with the /fetch command. Get instant insights into your token's performance:
                       </p>
                       <ul className="list-disc list-inside text-blue-100 space-y-2 ml-4">
-                        <li>Current price and market valuation</li>
+                        <li>Current price and daily % change</li>
                         <li>Total holder count and distribution</li>
                         <li>Token age and circulating supply</li>
-                        <li>Fully diluted valuation (FDV)</li>
                       </ul>
                     </div>
                   </div>
