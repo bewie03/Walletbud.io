@@ -56,7 +56,7 @@ const Home = () => {
                     title: "Fetch $BONE Tokens",
                     description: "Grab $BONE to unlock premium analytics and join the pack.",
                     link: "/bone",
-                    linkText: "Learn More →",
+                    linkText: "Learn More",
                     delay: 0.3
                   },
                   {
@@ -64,7 +64,7 @@ const Home = () => {
                     title: "Join the Pack",
                     description: "Hop into Discord to connect and start tracking with us.",
                     link: "https://discord.gg/d99FBA64Qf",
-                    linkText: "Join Discord →",
+                    linkText: "Join Discord",
                     delay: 0.4
                   },
                   {
@@ -72,7 +72,7 @@ const Home = () => {
                     title: "Unleash Analytics",
                     description: "Use /add to verify your $BONE wallet and get started. ",
                     link: "/commands",
-                    linkText: "View Commands →",
+                    linkText: "View Commands",
                     delay: 0.5
                   }
                 ].map((feature) => (

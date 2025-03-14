@@ -151,7 +151,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Successor</h4>
                     </div>
                     <p className="text-blue-100">
-                      Then came RushLabs who have created an amaizing suite of tools. ZING and Frenbot, bringing lightning fast trading tools to the Cardano community. Their focus on speed and trading empowered users with real time data and professional grade tools.
+                      Then came RushLabs who have created an amaZing suite of tools. Bringing lightning fast trading tools to the Cardano community. Their focus on speed and trading empowered users with real time data and professional grade tools.
                     </p>
                   </div>
                   {/* The Evolution */}
@@ -161,8 +161,8 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">The Evolution</h4>
                     </div>
                     <p className="text-blue-100">
-                    WalletPup becomes Your Cardano Watchdog, blending real time notifications with AI driven community analytics. We offer wallet and token tracking, usefull commands and tools, server stats across Discord, Telegram, and Twitter, with the bonus of speed and fun.</p>
-                    </div>
+                    WalletPup is your go to platform for Cardano wallet tracking, starting on Discord and expanding to Twitter and Telegram. We seamlessly link Discord users to their wallets, delivering real time updates and AI driven token analytics with dead simple setup. Beyond the tech, we’re all about fun, think community events that bring people together, while helping projects and users grow with powerful tracking tools. Our sustainable token model keeps the ecosystem thriving, putting the Cardano community front and center.                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,8 +204,7 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">2. Data Processing</h4>
                     </div>
                     <p className="text-blue-100">
-                      Raw blockchain data is transformed into group friendly analytics trade volumes, token flows, and server activity making it actionable for communities.
-                    </p>
+                    Raw blockchain data is transformed into friendly analytics, including trade volumes, token flows, and wallet transaction insights, making it actionable for Cardano communities and users.                    </p>
                   </div>
                   {/* Notification Delivery */}
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
@@ -250,12 +249,12 @@ const Whitepaper = () => {
                     </div>
                     <div className="space-y-4">
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
-                        <code className="text-blue-300 font-bold">/track</code>
-                        <p className="text-blue-100 mt-1">Monitor token activity for projects</p>
+                        <code className="text-blue-300 font-bold">/verify</code>
+                        <p className="text-blue-100 mt-1">Attach your discord name to your wallet</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/stats</code>
-                        <p className="text-blue-100 mt-1">Fetch  stats on the walletpup community</p>
+                        <p className="text-blue-100 mt-1">Fetch stats on the walletpup community</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/add</code>
@@ -273,12 +272,12 @@ const Whitepaper = () => {
                       <div className="bg-blue-800 rounded-xl p-3">
                         <FaSearch className="text-blue-300 text-2xl" />
                       </div>
-                      <h4 className="text-xl font-semibold text-white">Community Features</h4>
+                      <h4 className="text-xl font-semibold text-white">Project Tools</h4>
                     </div>
                     <div className="space-y-4">
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/track</code>
-                        <p className="text-blue-100 mt-1">Projects track their tokens</p>
+                        <p className="text-blue-100 mt-1">Projects track your token purchases</p>
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/leaderboad</code>
@@ -290,7 +289,7 @@ const Whitepaper = () => {
                       </div>
                       <div className="bg-blue-800/50 rounded-lg p-4 border border-blue-800/50 hover:border-blue-500 transition-all duration-300">
                         <code className="text-blue-300 font-bold">/announce (dm)</code>
-                        <p className="text-blue-100 mt-1">Notify your pack with updates</p>
+                        <p className="text-blue-100 mt-1">Notify your watchers with updates</p>
                       </div>
                     </div>
                   </div>
@@ -435,7 +434,7 @@ const Whitepaper = () => {
                     <div className="space-y-6">
                       <div>
                         <p className="text-blue-100 mb-4">
-                          $BONE tokens unlock premium group analytics while remaining tradeable, offering a sustainable alternative to traditional subscriptions. Hold $BONE to access advanced features for your server or project.
+                          $BONE tokens unlock premium group analytics while remaining tradeable, offering a sustainable alternative to traditional subscriptions. Hold $BONE to access advanced features for your server or wallets.
                         </p>
                       </div>
                       <div className="bg-blue-920/50 rounded-lg p-4">
@@ -444,8 +443,8 @@ const Whitepaper = () => {
                           Smart Token Economics
                         </h5>
                         <div className="text-blue-200">
-                          <p>• Entry at ~50 ADA worth of $BONE for basic group analytics</p>
-                          <p>• Market cap growth reduces $BONE needed, auto upgrading access</p>
+                          <p>• Entry at ~50 ADA worth of $BONE for 5 slots and access to all features</p>
+                          <p>• Market cap growth reduces $BONE needed, auto upgrading slots</p>
                           <p>• Early adopters gain more slots</p>
                           <p>• Flexible scaling for projects and servers</p>
                         </div>
@@ -623,10 +622,10 @@ const Whitepaper = () => {
                     </div>
                     <div className="space-y-4">
                       <p className="text-blue-100">
-                        The /train command lets you customize your pup’s personality to deliver group analytics and notifications in your server’s unique style. The quality of your prompt shapes how effectively your pup communicates:
+                        The /train command lets you customize your pup’s personality to deliver analytics and notifications in your server/dms’s with its unique style. The quality of your prompt shapes how effectively your pup communicates:
                       </p>
                       <div className="bg-blue-800/20 p-4 rounded-lg space-y-2">
-                        <p className="text-blue-100">• Define how group stats should be presented</p>
+                        <p className="text-blue-100">• Define how stats should be presented</p>
                         <p className="text-blue-100">• Set detail levels for your token or notifcations</p>
                         <p className="text-blue-100">• Choose a tone that fits your community</p>
                         <p className="text-blue-100">• Provide examples for consistent delivery</p>
