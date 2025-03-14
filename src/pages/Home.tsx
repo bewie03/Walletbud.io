@@ -25,7 +25,7 @@ const Home = () => {
               className="text-center pt-24 pb-8"
             >
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl hover:scale-[1.02] transition-all duration-300">
-                Your Loyal Cardano Watchdog
+                Your Cardano Watchdog
               </h1>
               <p className="mt-4 max-w-md mx-auto text-lg text-blue-100 sm:text-xl md:text-2xl md:max-w-3xl hover:scale-[1.02] transition-all duration-300">
                 Real time updates and community insights for projects and users
