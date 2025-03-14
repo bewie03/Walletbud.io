@@ -13,7 +13,6 @@ import {
   FaChartPie,
   FaCog,
   FaCogs,
-  FaCompass,
   FaCubes,
   FaDatabase,
   FaCoins,
@@ -23,7 +22,6 @@ import {
   FaEye,
   FaFeather,
   FaGift,
-  FaGlobe,
   FaGraduationCap,
   FaHandshake,
   FaHistory,
@@ -44,11 +42,8 @@ import {
   FaBolt,
   FaUsers,
   FaBullseye,
-  FaCheckCircle,
-  FaDiscord,
   FaTools,
-  FaSmile
-} from 'react-icons/fa';
+  FaSmile} from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
 const Whitepaper = () => {
@@ -485,7 +480,7 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-4">Track More Wallets Just By Holding!</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Track More Wallets Just By Holding!</h3>
                 <p className="text-blue-100 mb-6">
                   As WalletPup grows, your $BONE holdings unlock more wallet tracking slots for group analytics without additional purchases. Start small and scale up to 25 wallets as our market cap increases.
                 </p>
@@ -735,7 +730,7 @@ const Whitepaper = () => {
         </motion.div>
       )
     },
-    // 'pup-house' section unchanged - treasury supports all users
+    // 'pup-house' section updated
     {
       id: 'pup-house',
       title: 'Pup House Treasury',
@@ -758,68 +753,26 @@ const Whitepaper = () => {
                       <h4 className="text-lg font-semibold text-white">Treasury Overview</h4>
                     </div>
                     <p className="text-blue-100">
-                      The Pup House treasury fuels WalletPup’s operations and community growth, reinvesting fees to enhance our multi platform analytics ecosystem.
+                      The Pup House Treasury fuels WalletPup's operations and growth through strategic allocation of resources. Our treasury management ensures sustainable development while maintaining premium services for our community. Through careful planning and transparent allocation, we maintain a robust infrastructure that supports our growing ecosystem of tools and services.
                     </p>
                   </div>
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaServer className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Infrastructure & Development</h4>
+                      <h4 className="text-lg font-semibold text-white">Core Infrastructure</h4>
                     </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaDatabase className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Robust servers for real time group analytics</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaDiscord className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Premium Discord hosting for server insights</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaGlobe className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Expansion to Telegram and Twitter bots</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
-                    <div className="flex items-center mb-4">
-                      <FaUsers className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Community Engagement</h4>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaTrophy className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Server contests with analytics based prizes</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaGift className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Rewards for active community members</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaHandshake className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Partnerships with Cardano projects</p>
-                      </div>
-                    </div>
+                    <p className="text-blue-100">Website hosting and database management</p>
+                    <p className="text-blue-100">AI development and computing resources</p>
+                    <p className="text-blue-100">Backend infrastructure and maintenance</p>
                   </div>
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <div className="flex items-center mb-4">
                       <FaChartLine className="w-6 h-6 mr-3 text-blue-300" />
-                      <h4 className="text-lg font-semibold text-white">Platform Growth</h4>
+                      <h4 className="text-lg font-semibold text-white">Growth & Innovation</h4>
                     </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <FaCheckCircle className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Multi platform bot deployments</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaBullhorn className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Marketing to Cardano communities</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <FaShieldAlt className="text-blue-300 mt-1" />
-                        <p className="text-blue-100">Enhanced group analytics features</p>
-                      </div>
-                    </div>
+                    <p className="text-blue-100">Marketing and community outreach</p>
+                    <p className="text-blue-100">Strategic project collaborations</p>
+                    <p className="text-blue-100">Research and feature development</p>
                   </div>
                 </div>
               </div>
@@ -879,7 +832,7 @@ const Whitepaper = () => {
         </motion.div>
       )
     },
-    // 'network-capacity' section unchanged - supports all users
+    // 'network-capacity' section updated
     {
       id: 'network-capacity',
       title: 'Network Capacity Analysis',
@@ -924,35 +877,62 @@ const Whitepaper = () => {
                   <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Network Capacity</h4>
                     <p className="text-blue-100">
-                      Our infrastructure supports Cardano’s growing ecosystem:
+                      Our infrastructure supports Cardano's growing ecosystem:
                     </p>
-                    <div className="text-blue-200">
-                      <p>• Handles 80,000+ daily transactions</p>
-                      <p>• Queues group notifications efficiently</p>
-                      <p>• Ensures high availability across platforms</p>
-                    </div>
+                    <ul className="space-y-2 ml-4">
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Handles 80,000+ daily transactions</span>
+                      </li>
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Queues notifications efficiently</span>
+                      </li>
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Ensures high availability across platforms</span>
+                      </li>
+                    </ul>
                   </div>
                   <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">User Growth</h4>
                     <p className="text-blue-100">
                       WalletPup scales with community demand:
                     </p>
-                    <div className="text-blue-200">
-                      <p>• Up to 25 slots per verified user</p>
-                      <p>• Can support 250,000+ tracked wallets</p>
-                      <p>• Matches current daily active addresses</p>
-                    </div>
+                    <ul className="space-y-2 ml-4">
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Up to 25 slots per verified user</span>
+                      </li>
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Can support 250,000+ tracked wallets</span>
+                      </li>
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Matches current daily active addresses</span>
+                      </li>
+                    </ul>
                   </div>
                   <div className="bg-blue-800/30 p-4 rounded-lg">
                     <h4 className="text-lg font-semibold text-white mb-2">Performance Optimization</h4>
                     <p className="text-blue-100">
                       We maintain speed and reliability with:
                     </p>
-                    <div className="text-blue-200">
-                      <p>• Efficient blockchain data caching</p>
-                      <p>• Optimized API calls for group analytics</p>
-                      <p>• Smart rate limiting across platforms</p>
-                    </div>
+                    <ul className="space-y-2 ml-4">
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Efficient blockchain data caching</span>
+                      </li>
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Optimized API calls for group analytics</span>
+                      </li>
+                      <li className="flex items-center">
+                        <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
+                        <span>Smart rate limiting across platforms</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -985,7 +965,7 @@ const Whitepaper = () => {
                     <h4 className="text-xl font-semibold text-white">Vision & Future Projects</h4>
                   </div>
                   <p className="text-blue-100 mb-4">
-                    WalletPup starts as a Discord analytics bot but is evolving into a multi platform suite for Cardano communities. Our vision is to deliver group focused insights across Discord, Telegram, and Twitter, with more platforms to follow.
+                    WalletPup starts as a Discord analytics bot but is evolving into a multi platform suite for Cardano communities.
                   </p>
                   <p className="text-blue-100 mt-4">
                     Two projects are in development: a Telegram bot for personal notifications and a Twitter bot for public stats with a twist. These will enhance community engagement with seamless, pup driven analytics.
@@ -1057,7 +1037,7 @@ const Whitepaper = () => {
                           <h5 className="text-white font-medium">Security First</h5>
                         </div>
                         <p className="text-blue-100">
-                          Battle tested platform with a proven track record of secure and successful token launches
+                          Tested platform with a proven track record of secure and successful token launches
                         </p>
                       </div>
                       
@@ -1190,7 +1170,7 @@ const Whitepaper = () => {
     {
       id: 'conclusion',
       title: 'Conclusion',
-      icon: <FaCompass className="w-6 h-6" />,
+      icon: <FaPaw className="w-6 h-6" />,
       content: (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -1201,21 +1181,18 @@ const Whitepaper = () => {
           <div className="bg-blue-900 rounded-lg p-8 border border-blue-700 transform hover:scale-[1.01] transition-all duration-300">
             <div className="space-y-6 text-blue-100">
               <div className="bg-blue-900/20 rounded-xl p-6 border border-blue-700/20">
-                <h3 className="text-xl font-semibold text-white mb-6">Looking Forward</h3>
-                <div className="space-y-6">
+                <h3 className="text-xl font-semibold text-white mb-6">Building the Future of Community Analytics</h3>
+                <div className="space-y-8">
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <p className="text-blue-100">
-                      WalletPup, Your Cardano Watchdog, brings real time notifications and analytics to Cardano’s ecosystem for projects, solo users, and communities alike. Starting on Discord, we’re expanding to Telegram and Twitter, uniting the pack with pup driven insights.
+                      WalletPup kicks off a bold new chapter for Cardano community engagement, merging blockchain data with social vibes. We nail seamless wallet connections and deep tracking, linking projects and their communities effortlessly. Our platform pairs sharp analytics with easy commands, opening up blockchain insights to all.
                     </p>
                     <p className="text-blue-100 mt-4">
-                      We’re here to empower everyone project owners tracking token moves, users watching their wallets, and servers buzzing with shared stats. Built with feedback, WalletPup grows with Cardano, keeping it fun and functional.
+                      With AI driven notifications and a community first mindset, we’re more than a transaction tracker, we’re sparking growth and connection. Kicking off on Discord, with Telegram and Twitter next up, our sustainable $BONE token keeps us scaling strong, ready for Cardano’s expanding ecosystem.
                     </p>
                     <p className="text-blue-100 mt-4">
-                      Thanks for joining the pack whether for updates, insights, or $BONE’s potential. This is just the beginning of our watchdog journey.
+                      Jump in and reshape how communities tap into blockchain data. Whether you’re a project rallying your crew or a user keeping tabs, WalletPup’s got your back in the Cardano world. Together, we’re crafting more than a tool, we’re growing a tight knit, switched on community of users and projects.
                     </p>
-                  </div>
-                  <div className="text-sm text-blue-300 mt-4 border-t border-blue-700/20 pt-4">
-                    <p>Note: Features, timelines, and details may evolve based on community feedback and Cardano’s growth.</p>
                   </div>
                 </div>
               </div>
@@ -1224,7 +1201,8 @@ const Whitepaper = () => {
         </motion.div>
       )
     },
-  ];
+    ];
+    
 
   return (
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
