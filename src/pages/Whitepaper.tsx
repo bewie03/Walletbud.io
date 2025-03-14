@@ -1203,7 +1203,6 @@ const Whitepaper = () => {
     },
     ];
     
-
   return (
     <div className="min-h-screen bg-[#1e40af] relative overflow-hidden">
       <FloatingBones />
