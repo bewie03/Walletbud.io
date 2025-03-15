@@ -26,8 +26,8 @@ import {
   FaCoins,
   FaSmile,
   FaTools,
-  FaChartLine
-} from 'react-icons/fa';
+  FaChartLine,
+  FaUsers} from 'react-icons/fa';
 
 const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick: () => void }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -167,11 +167,17 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           desc: 'Server activity report',
           details: "Get daily insights on server activity, including top active users, message trends, and overall community sentiment. Your trained pup delivers these updates in their unique style, making insights engaging and fun."
         };
+      case '/activity':
+        return {
+          title: 'Server Activity',
+          desc: 'View top active users',
+          details: "Display a list of the most active users in the server based on message count. This helps identify engaged community members and track server participation levels."
+        };
       case 'admin':
         return {
           title: 'Admin Controls',
           desc: 'Staff management tools',
-          details: "Staff only toolkit for managing the WalletPup ecosystem. Includes wallet blacklisting, event management, address labeling, and other tools to maintain a healthy community environment."
+          details: "Comprehensive toolkit for WalletPup administrators including: wallet blacklisting, event scheduling, address labeling, user management, and ecosystem monitoring tools. Helps maintain community health and security."
         };
       case 'more':
         return {
@@ -234,6 +240,8 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return <FaCoins className="text-blue-200 text-2xl" />;
       case '/sentiment':
         return <FaSmile className="text-blue-200 text-2xl" />;
+      case '/activity':
+        return <FaUsers className="text-blue-200 text-2xl" />;
       case 'admin':
         return <FaTools className="text-blue-200 text-2xl" />;
       case 'more':
@@ -452,6 +460,16 @@ const Commands = () => {
       cmd: '/sentiment',
       description: 'Server activity report',
       tag: 'Project'
+    },
+    {
+      name: 'Server Activity',
+      cmd: '/activity',
+      description: 'View top active users',
+    },
+    {
+      name: 'Admin Controls',
+      cmd: 'admin',
+      description: 'Staff only toolkit',
     },
   ];
 
