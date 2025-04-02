@@ -16,7 +16,7 @@ const Home = () => {
         <FloatingBones />
         
         {/* Hero Section */}
-        <div className="w-full bg-blue-900/90 backdrop-sm pb-16 shadow-lg border-b border-blue-700">
+        <div className="w-full bg-blue-900/60 backdrop-sm pb-16 shadow-lg border-b border-blue-700">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
