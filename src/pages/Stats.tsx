@@ -3,7 +3,6 @@ import { FaUsers, FaWallet, FaCheckCircle, FaCoins, FaExchangeAlt, FaTrophy, FaC
 import FloatingBones from '../components/FloatingBones';
 import { MetaTags } from '../components/MetaTags';
 import { useState, useEffect } from 'react';
-import { fetchStats } from '../api/stats';
 
 interface StatCardProps {
   icon: React.ReactNode;
@@ -52,19 +51,23 @@ const Stats = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    const loadStats = async () => {
-      try {
-        const data = await fetchStats();
-        setStats(data);
-      } catch (err) {
-        setError('Failed to load statistics');
-        console.error(err);
-      } finally {
-        setLoading(false);
+  const loadStats = async () => {
+    try {
+      const response = await fetch('/api/stats');
+      if (!response.ok) {
+        throw new Error('Failed to fetch statistics');
       }
-    };
+      const data = await response.json();
+      setStats(data);
+    } catch (err) {
+      setError('Failed to load statistics');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     loadStats();
   }, []);
 
