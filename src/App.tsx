@@ -13,7 +13,6 @@ import PageTransition from './components/PageTransition'
 import Guide from './pages/Guide'
 import LoadingScreen from './components/LoadingScreen'
 import Doghouse from './pages/Doghouse'
-import Stats from './pages/Stats'
 import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
@@ -65,7 +64,6 @@ function App() {
                     <Route path="/bone" element={<BONE />} />
                     <Route path="/guide" element={<Guide />} />
                     <Route path="/doghouse" element={<Doghouse />} />
-                    <Route path="/stats" element={<Stats />} />
                     <Route path="*" element={<NotFound />} />
                   </Route>
                 </Routes>
