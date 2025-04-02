@@ -8,9 +8,13 @@ interface StatsResult {
   transactions?: number;
 }
 
+// Log all environment variables to debug
+const allEnvVars = Object.keys(process.env).filter(key => key.includes('POSTGRES'));
+console.log('Available environment variables:', allEnvVars);
+
 // Create the pool outside the handler to enable connection reuse
 const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL,
+  connectionString: process.env.POSTGRES_URL || process.env.POSTGRES_URI,
   ssl: {
     rejectUnauthorized: false
   }
@@ -21,7 +25,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   console.log('Environment:', {
     nodeEnv: process.env.NODE_ENV,
     hasDbUrl: !!process.env.POSTGRES_URL,
-    dbUrlStart: process.env.POSTGRES_URL ? process.env.POSTGRES_URL.substring(0, 20) + '...' : 'not set'
+    hasDbUri: !!process.env.POSTGRES_URI,
+    dbUrlStart: process.env.POSTGRES_URL ? process.env.POSTGRES_URL.substring(0, 20) + '...' : 'not set',
+    dbUriStart: process.env.POSTGRES_URI ? process.env.POSTGRES_URI.substring(0, 20) + '...' : 'not set'
   });
 
   if (req.method !== 'GET') {
@@ -38,12 +44,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       console.error('Database connection failed:', {
         message: dbError.message,
         code: dbError.code,
-        stack: dbError.stack
+        stack: dbError.stack,
+        connectionString: process.env.POSTGRES_URL ? 'Set' : 'Not set'
       });
       return res.status(500).json({
         error: 'Database connection failed',
         details: dbError.message,
-        code: dbError.code
+        code: dbError.code,
+        env: allEnvVars
       });
     }
 
