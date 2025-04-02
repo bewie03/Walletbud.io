@@ -1,6 +1,13 @@
 import { Pool } from 'pg';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
+interface StatsResult {
+  users?: number;
+  wallets?: number;
+  verified?: number;
+  transactions?: number;
+}
+
 // Create the pool outside the handler to enable connection reuse
 const pool = new Pool({
   connectionString: process.env.POSTGRES_URL,
@@ -10,28 +17,38 @@ const pool = new Pool({
 });
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  console.log('API endpoint called');
-  console.log('Database URL:', process.env.POSTGRES_URL ? 'Set' : 'Not set');
+  // Log environment and request info
+  console.log('Environment:', {
+    nodeEnv: process.env.NODE_ENV,
+    hasDbUrl: !!process.env.POSTGRES_URL,
+    dbUrlStart: process.env.POSTGRES_URL ? process.env.POSTGRES_URL.substring(0, 20) + '...' : 'not set'
+  });
 
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
-    // Test database connection first
+    // 1. Test database connection
+    console.log('Testing database connection...');
     try {
-      await pool.query('SELECT NOW()');
-      console.log('Database connection successful');
-    } catch (dbError) {
-      console.error('Database connection error:', dbError);
-      return res.status(500).json({ 
+      const testResult = await pool.query('SELECT NOW()');
+      console.log('Database connection successful:', testResult.rows[0]);
+    } catch (dbError: any) {
+      console.error('Database connection failed:', {
+        message: dbError.message,
+        code: dbError.code,
+        stack: dbError.stack
+      });
+      return res.status(500).json({
         error: 'Database connection failed',
-        details: dbError instanceof Error ? dbError.message : 'Unknown error'
+        details: dbError.message,
+        code: dbError.code
       });
     }
 
-    // Fetch BONE token stats from tracked_tokens
-    console.log('Fetching BONE token stats...');
+    // 2. Get BONE token data
+    console.log('Fetching BONE token data...');
     const boneTokenQuery = await pool.query(`
       SELECT 
         last_price,
@@ -48,47 +65,56 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(404).json({ error: 'BONE token data not found' });
     }
 
-    console.log('BONE token data found:', boneTokenQuery.rows[0]);
+    console.log('BONE data found:', boneTokenQuery.rows[0]);
 
-    // Fetch WalletPup stats
+    // 3. Get WalletPup stats
     console.log('Fetching WalletPup stats...');
-    const [userStats, walletStats, verifiedWalletCount, transactionCount] = await Promise.all([
-      // Total unique users
-      pool.query(`
-        SELECT COUNT(DISTINCT discord_id) as total_users 
-        FROM users
-      `),
-      // Total wallets
-      pool.query(`
-        SELECT COUNT(*) as total_wallets 
-        FROM wallets
-      `),
-      // Verified wallets
-      pool.query(`
-        SELECT COUNT(*) as verified_wallets 
-        FROM wallets 
-        WHERE is_verified = true
-      `),
-      // Total transactions
-      pool.query(`
-        SELECT SUM(total_transactions) as total_transactions 
-        FROM wallets
-      `)
-    ]);
+    const statsPromises: Promise<StatsResult>[] = [
+      pool.query('SELECT COUNT(DISTINCT discord_id) as total_users FROM users')
+        .then(r => ({ users: Number(r.rows[0].total_users) }))
+        .catch(e => {
+          console.error('Error fetching users:', e);
+          return { users: 0 };
+        }),
+      
+      pool.query('SELECT COUNT(*) as total_wallets FROM wallets')
+        .then(r => ({ wallets: Number(r.rows[0].total_wallets) }))
+        .catch(e => {
+          console.error('Error fetching wallets:', e);
+          return { wallets: 0 };
+        }),
+      
+      pool.query('SELECT COUNT(*) as verified_wallets FROM wallets WHERE is_verified = true')
+        .then(r => ({ verified: Number(r.rows[0].verified_wallets) }))
+        .catch(e => {
+          console.error('Error fetching verified wallets:', e);
+          return { verified: 0 };
+        }),
+      
+      pool.query('SELECT SUM(total_transactions) as total_transactions FROM wallets')
+        .then(r => ({ transactions: Number(r.rows[0].total_transactions) }))
+        .catch(e => {
+          console.error('Error fetching transactions:', e);
+          return { transactions: 0 };
+        })
+    ];
 
-    console.log('Stats fetched successfully');
+    const results = await Promise.all(statsPromises);
+    const stats = results.reduce((acc, curr) => ({ ...acc, ...curr }), {} as StatsResult);
+    console.log('Stats fetched:', stats);
 
+    // 4. Process and format data
     const boneToken = boneTokenQuery.rows[0];
     const marketCap = boneToken.last_price * (boneToken.total_supply / Math.pow(10, 6));
     const ageInDays = Math.floor((new Date().getTime() - new Date(boneToken.created_at).getTime()) / (1000 * 60 * 60 * 24));
 
-    const stats = {
+    const responseStats = {
       walletPupStats: {
-        users: userStats.rows[0].total_users.toLocaleString(),
-        wallets: walletStats.rows[0].total_wallets.toLocaleString(),
-        verifiedWallets: verifiedWalletCount.rows[0].verified_wallets.toLocaleString(),
+        users: (stats.users || 0).toLocaleString(),
+        wallets: (stats.wallets || 0).toLocaleString(),
+        verifiedWallets: (stats.verified || 0).toLocaleString(),
         trackedTokens: "1", // BONE token
-        transactions: transactionCount.rows[0].total_transactions?.toLocaleString() || "0",
+        transactions: (stats.transactions || 0).toLocaleString(),
         adaWon: "Coming Soon"
       },
       boneStats: {
@@ -99,16 +125,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
     };
 
-    console.log('Returning stats:', stats);
-    res.status(200).json(stats);
-  } catch (error) {
-    console.error('Error in stats endpoint:', error);
-    res.status(500).json({ 
-      error: 'Failed to fetch statistics',
-      details: error instanceof Error ? error.message : 'Unknown error'
+    console.log('Returning stats:', responseStats);
+    return res.status(200).json(responseStats);
+  } catch (error: any) {
+    // Log the full error details
+    console.error('Fatal error in stats endpoint:', {
+      message: error.message,
+      code: error.code,
+      stack: error.stack
     });
-  } finally {
-    // Don't end the pool as it should be reused
-    console.log('Request completed');
+    
+    return res.status(500).json({
+      error: 'Failed to fetch statistics',
+      details: error.message,
+      code: error.code
+    });
   }
 }
