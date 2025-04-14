@@ -424,7 +424,7 @@ const Doghouse = () => {
       story: "Being creative and expressive with their financial strategies. They will keep you stylishly on track with elegant reminders and updates, while helping you develop a few financial strategies that are truly avant garde.",
     },
     {
-      name: 'Weimaraner',
+      name: 'Weimarsner',
       title: 'The Conspiracist',
       description: '',
       category: 'personality',
