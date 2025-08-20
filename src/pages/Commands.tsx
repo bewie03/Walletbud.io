@@ -27,7 +27,9 @@ import {
   FaSmile,
   FaTools,
   FaChartLine,
-  FaUsers} from 'react-icons/fa';
+  FaUsers,
+  FaImage,
+  FaCog} from 'react-icons/fa';
 
 const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick: () => void }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -173,6 +175,18 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
           desc: 'View top active users',
           details: "Display a list of the most active users in the server based on message count. This helps identify engaged community members and track server participation levels."
         };
+      case '/gif-setup <collection_url>':
+        return {
+          title: 'GIF Setup',
+          desc: 'Attach TENOR or GIPHY collection',
+          details: "Project owners can attach their TENOR or GIPHY collection links to enable the /gif command. Once set up, users can use /gif to post random GIFs from your curated collection, adding fun and engagement to your community."
+        };
+      case '/gif':
+        return {
+          title: 'Random GIF',
+          desc: 'Post random GIF from collection',
+          details: "Users can post a random GIF from the project's attached TENOR or GIPHY collection. This command adds entertainment and engagement to conversations while keeping content curated by project owners."
+        };
       case 'admin':
         return {
           title: 'Admin Controls',
@@ -244,6 +258,10 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
         return <FaUsers className="text-blue-200 text-2xl" />;
       case 'admin':
         return <FaTools className="text-blue-200 text-2xl" />;
+      case '/gif-setup <collection_url>':
+        return <FaCog className="text-blue-200 text-2xl" />;
+      case '/gif':
+        return <FaImage className="text-blue-200 text-2xl" />;
       case 'more':
         return <FaSmile className="text-blue-200 text-2xl" />;
       default:
@@ -271,7 +289,9 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
     '/help',
     'admin',
     '/verify <address> <name>',
-    '/activity'
+    '/activity',
+    '/gif-setup <collection_url>',
+    '/gif'
   ];
 
   const showPreview = !noPreviewCommands.includes(command.cmd);
@@ -298,7 +318,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
                 <h3 className="text-2xl font-bold text-white">{command.name}</h3>
                 <div className="flex flex-col sm:flex-row items-end sm:items-center gap-2">
                   <span className="bg-blue-800/50 text-blue-200 px-4 py-1.5 rounded-xl text-sm border border-blue-700/50 whitespace-nowrap">
-                    {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/activity' || command.cmd === '/sentiment' || command.cmd === '/fetch' ? 'Project' : command.cmd === 'admin' || command.cmd === 'more' ? 'Staff' : 'User' }
+                    {command.cmd === '/track <policy id>' || command.cmd === '/leaderboard' || command.cmd === '/activity' || command.cmd === '/sentiment' || command.cmd === '/fetch' || command.cmd === '/gif-setup <collection_url>' ? 'Project' : command.cmd === 'admin' || command.cmd === 'more' ? 'Staff' : 'User' }
                   </span>
                   {/* Preview Button */}
                   {showPreview && (
@@ -466,6 +486,16 @@ const Commands = () => {
       name: 'Server Activity',
       cmd: '/activity',
       description: 'View top active users',
+    },
+    {
+      name: 'GIF Setup',
+      cmd: '/gif-setup <collection_url>',
+      description: 'Attach TENOR or GIPHY collection for random GIFs',
+    },
+    {
+      name: 'Random GIF',
+      cmd: '/gif',
+      description: 'Post random GIF from project collection',
     },
     {
       name: 'Admin Controls',

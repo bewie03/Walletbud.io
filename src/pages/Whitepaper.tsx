@@ -97,13 +97,13 @@ const Whitepaper = () => {
                 <div className="space-y-8">
                   <div className="bg-blue-800/30 p-6 rounded-lg hover:scale-[1.02] transition-transform duration-300">
                     <p className="text-blue-100">
-                      WalletPup is Your Cardano Watchdog a community driven bot delivering real time notifications and analytics for projects, solo users, and servers. Starting on Discord, our pack hub, it bridges blockchain data to where Cardano thrives, barking out updates and digging up insights with customizable AI pups.
+                    WalletPup is a community driven discord bot that brings the Cardano blockchain to life by seamlessly tying wallet addresses to Discord accounts, delivering real time insights with a playful twist. Designed as a helping tool for solo users, projects, and servers, WalletPup empowers everyone in the Cardano ecosystem with over 20 intuitive commands and a suite of powerful tools, whether you're tracking wallets, analyzing token trends, or rallying your community.
                     </p>
                     <p className="text-blue-100 mt-4">
-                      Our mission is simple: empower everyone on Cardano with wallet tracking and community insights. Projects get token trends and server stats, solo users monitor their wallets, and communities rally around shared data all in real time, all with pup powered fun.
+                    At the heart of WalletPup is our fun, AI driven pup training, letting you customize your very own digital watchdog with a unique personality that matches your vibe. From snappy stats to tailored notifications, your pup barks out insights with charm and precision. Fueled by our innovative $BONE token, WalletPup offers a dual promise: a ticket to premium analytics and engagement tools, plus a tradeable asset that grows with our ecosystem.
                     </p>
                     <p className="text-blue-100 mt-4">
-                      The $BONE token fuels this ecosystem, unlocking premium features while staying tradeable. From Discord to Telegram and Twitter, WalletPup scales with Cardano’s communities, keeping you in the loop and in the know.
+                    More than just a bot, we're a dynamic bridge between blockchain data and community spirit, fostering connection, growth, and a whole lot of fun across Discord and beyond. Train up your own pup and join the pack to unleash your own watchdog.
                     </p>
                   </div>
                 </div>

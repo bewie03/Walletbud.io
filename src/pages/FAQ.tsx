@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import FloatingBones from '../components/FloatingBones';
-import { FaPaw } from 'react-icons/fa';
+import { FaPaw, FaBook } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface FAQItem {
@@ -20,11 +21,23 @@ const FAQ = () => {
     },
     {
       question: "What are $BONE tokens?",
-      answer: "$BONE powers WalletPup, unlocking premium features. Hold ~50 ADA worth for basic access; as market cap grows, fewer tokens unlock more slots."
+      answer: "$BONE is the utility token that powers WalletPup's premium features. It provides automated wallet & token tracking, insight tools, personalized notifications, and community engagement tools for projects."
+    },
+    {
+      question: "What's the total supply of $BONE?",
+      answer: "Total supply is 1 billion $BONE tokens with a fair distribution: 95% (950M tokens) for public distribution and 5% (50M tokens) for development & partnerships."
+    },
+    {
+      question: "How many $BONE tokens do I need?",
+      answer: "You need approximately 50 ADA worth of $BONE to start. Token requirements decrease as market cap grows: 200K tokens at $100K mcap, 100K at $200K mcap, 40K at $500K mcap, 20K at $1M mcap, 10K at $2M mcap, and 4K at $5M mcap."
     },
     {
       question: "How many wallets can I track?",
       answer: "Track up to 25 wallets with $BONE. Start small, and slots increase as WalletPup grows."
+    },
+    {
+      question: "Where can I buy $BONE tokens?",
+      answer: "You can buy $BONE tokens through our integrated DEX swap interface on the website, or through any Cardano DEX that supports the token."
     },
     {
       question: "How do I start using WalletPup?",
@@ -36,18 +49,22 @@ const FAQ = () => {
     },
     {
       question: "Can I customize my pup?",
-      answer: "Yes, use /train to tailor your pup’s personality for notifications and analytics."
+      answer: "Yes, use /train to tailor your pup's personality for notifications and analytics."
     },
     {
-      question: "How is $BONE distributed?",
-      answer: "95% (950M) for public use, 5% (50M) for development and partnerships."
+      question: "What project tools does WalletPup offer?",
+      answer: "WalletPup provides community leaderboard systems, token purchase insights, server sentiment updates, and helps projects track their community engagement and token distribution."
+    },
+    {
+      question: "How are $BONE requirements dynamic?",
+      answer: "WalletPup uses a dynamic requirement system where token entry requirements decrease as the market cap grows. This ensures the service remains accessible while maintaining a fixed ~50 ADA entry value."
     },
     {
       question: "Do $BONE tokens hold value?",
-      answer: "Yes, $BONE stays tradeable in your wallet, unlike subscriptions."
+      answer: "Yes, $BONE stays tradeable in your wallet, unlike subscriptions. You maintain ownership and can trade them anytime while accessing WalletPup features."
     },
     {
-      question: "What’s the Feeding Bowl?",
+      question: "What's the Feeding Bowl?",
       answer: "A 5 ADA entry prize pool: 80% to the winner, 10% to treasury, 10% burned as $BONE."
     },
     {
@@ -88,6 +105,19 @@ const FAQ = () => {
         {/* FAQ Content */}
         <div className="w-full bg-blue-800/30">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            {/* Action Buttons */}
+            <AnimatedElement delay={0.2}>
+              <div className="mb-12 flex justify-center">
+                <Link
+                  to="/whitepaper-v2"
+                  className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                >
+                  <FaBook className="mr-2" />
+                  Read Whitepaper
+                </Link>
+              </div>
+            </AnimatedElement>
+
             <div className="space-y-4">
               {faqItems.map((item, index) => (
                 <AnimatedElement key={index} animation="fadeIn" delay={index * 0.1}>
@@ -137,11 +167,12 @@ const FAQ = () => {
               ))}
             </div>
 
+
             {/* Help Text */}
             <AnimatedElement delay={0.5}>
               <div className="mt-12 text-center">
                 <p className="text-blue-200 text-lg">
-                  Still curious? Our pack’s got your back in{' '}
+                  Still curious? Our pack's got your back in{' '}
                   <a 
                     href="https://discord.com/invite/d99FBA64Qf" 
                     target="_blank" 

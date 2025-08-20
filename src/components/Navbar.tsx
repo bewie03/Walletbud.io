@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import WalletpupLogo from '../assets/Walletpuplogo.png';
+import { useState, useEffect } from 'react';
+import { FaPaw } from 'react-icons/fa';
+
+type NavItem = {
+  to: string;
+  text: string;
+  highlight?: boolean;
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,44 +41,36 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full top-0 left-0 right-0 z-[100] transition-all duration-300 ${
-      scrolled ? 'bg-blue-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed w-full top-0 left-0 right-0 z-[100] bg-blue-900 transition-all duration-300 ${scrolled ? 'border-b border-blue-700 shadow-lg' : 'border-b border-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center space-x-3 group"
+            className="flex items-center group"
           >
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="relative"
+              className="flex items-center gap-2"
             >
-              <div className="absolute inset-0 bg-blue-400 rounded-full blur-md group-hover:blur-lg transition-all duration-300 opacity-0"></div>
-              <img
-                src={WalletpupLogo}
-                alt="WalletPup Logo"
-                className="h-12 w-12 relative z-10 mask-fade-bottom"
-              />
+              <FaPaw className="text-white text-xl group-hover:text-blue-200 transition-colors duration-300" />
+              <span className="text-2xl font-bold text-white group-hover:text-blue-200 hover:scale-[1.02] transition-all duration-300">WalletPup</span>
+              <FaPaw className="text-white text-xl group-hover:text-blue-200 transition-colors duration-300 transform rotate-45" />
             </motion.div>
-            <span className="text-2xl font-bold text-white group-hover:text-blue-200 hover:scale-[1.02] transition-all duration-300">WalletPup</span>
           </Link>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-1">
-            {[
-              { to: '/bone', text: '$BONE' },
+            {([
               { to: '/commands', text: 'Commands' },
               { to: '/guide', text: 'Guide' },
-              { to: '/whitepaper', text: 'Whitepaper' },
               { to: '/faq', text: 'FAQ' }
-            ].map((link) => (
+            ] as NavItem[]).map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className="px-4 py-2 mx-1 rounded-xl text-lg font-medium text-blue-100 hover:text-white hover:bg-blue-800/50 hover:scale-105 transition-all duration-300"
+                className={`px-4 py-2 mx-1 rounded-xl text-lg font-medium ${link.highlight ? 'text-white font-semibold' : 'text-blue-100 hover:text-white'} hover:bg-blue-800/50 hover:scale-105 transition-all duration-300`}
               >
                 {link.text}
               </Link>
@@ -118,17 +116,17 @@ const Navbar = () => {
         className="md:hidden overflow-hidden bg-blue-900/95 backdrop-blur-md border-t border-blue-800/50"
       >
         <div className="px-4 py-2 space-y-1">
-          {[
+          {([
             { to: '/bone', text: '$BONE' },
             { to: '/commands', text: 'Commands' },
             { to: '/guide', text: 'Guide' },
             { to: '/whitepaper', text: 'Whitepaper' },
             { to: '/faq', text: 'FAQ' }
-          ].map((link) => (
+          ] as NavItem[]).map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="block px-4 py-2 text-lg font-medium text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
+              className={`block px-4 py-2 text-lg font-medium ${link.highlight ? 'text-yellow-300 hover:text-yellow-200' : 'text-blue-100 hover:text-white'} hover:bg-blue-800/50 rounded-xl transition-all duration-300`}
               onClick={() => setIsOpen(false)}
             >
               {link.text}

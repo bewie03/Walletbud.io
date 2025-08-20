@@ -6,13 +6,14 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Commands from './pages/Commands'
 import FAQ from './pages/FAQ'
-import Whitepaper from './pages/Whitepaper'
-import BONE from './pages/BuyToken'
 import NotFound from './pages/NotFound'
 import PageTransition from './components/PageTransition'
 import Guide from './pages/Guide'
 import LoadingScreen from './components/LoadingScreen'
 import Doghouse from './pages/Doghouse'
+import Whitepaper from './pages/Whitepaper'
+import WhitepaperV2 from './pages/WhitepaperV2_Fixed'
+import BuyToken from './pages/BuyToken'
 import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
@@ -60,10 +61,11 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/commands" element={<Commands />} />
                     <Route path="/faq" element={<FAQ />} />
-                    <Route path="/whitepaper" element={<Whitepaper />} />
-                    <Route path="/bone" element={<BONE />} />
                     <Route path="/guide" element={<Guide />} />
                     <Route path="/doghouse" element={<Doghouse />} />
+                    <Route path="/whitepaper" element={<Whitepaper />} />
+                    <Route path="/whitepaper-v2" element={<WhitepaperV2 />} />
+                    <Route path="/buy-token" element={<BuyToken />} />
                     <Route path="*" element={<NotFound />} />
                   </Route>
                 </Routes>
