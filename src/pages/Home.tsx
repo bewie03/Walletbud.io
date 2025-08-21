@@ -118,9 +118,9 @@ const Home = () => {
                 </div>
                 <Link
                   to="/rovex-whitepaper"
-                  className="inline-block bg-gray-600 hover:bg-gray-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
+                  className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
-                  Coming Soon
+                  Learn More
                 </Link>
               </motion.div>
 
@@ -145,9 +145,9 @@ const Home = () => {
                 </div>
                 <Link
                   to="/boneboard-whitepaper"
-                  className="inline-block bg-gray-600 hover:bg-gray-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
+                  className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
-                  In Development
+                  Learn More
                 </Link>
               </motion.div>
             </div>
@@ -159,16 +159,16 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
               className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
-              <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.08] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
-                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-110 transition-all duration-500">1B</div>
+              <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
+                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">1B</div>
                 <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">$BONE Supply</div>
               </div>
-              <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.08] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
-                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-110 transition-all duration-500">95%</div>
+              <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
+                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">95%</div>
                 <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">Public Distribution</div>
               </div>
-              <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.08] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
-                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-110 transition-all duration-500">AI</div>
+              <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
+                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">AI</div>
                 <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">Chakra Powered</div>
                 <div className="text-blue-200 text-xs mt-2 opacity-75 group-hover:opacity-100 transition-all duration-300">*GPT for testing - Chakra agents not yet released</div>
               </div>
@@ -185,7 +185,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 1.4, ease: "easeOut" }}
               className="text-center mb-12"
             >
-              <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-4 hover:scale-105 transition-all duration-500 cursor-default">
+              <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-4 hover:scale-105 transition-all duration-300 cursor-default">
                 Get Started with WalletPup
               </h2>
               <p className="text-blue-100 text-lg max-w-3xl mx-auto hover:text-white hover:scale-105 transition-all duration-300 cursor-default">
@@ -231,7 +231,7 @@ const Home = () => {
                       rel="noopener noreferrer"
                       className="block"
                     >
-                      <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] hover:shadow-xl hover:border-blue-500 transition-all duration-300 shadow-lg text-center group">
+                      <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-xl hover:border-blue-500 transition-all duration-300 shadow-lg text-center group">
                         <div className="text-blue-200 mb-4 flex justify-center group-hover:scale-110 group-hover:text-white transition-all duration-300">
                           {feature.icon}
                         </div>
@@ -246,7 +246,7 @@ const Home = () => {
                       to={feature.link}
                       className="block"
                     >
-                      <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.02] hover:shadow-xl hover:border-blue-500 transition-all duration-300 shadow-lg text-center group">
+                      <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-xl hover:border-blue-500 transition-all duration-300 shadow-lg text-center group">
                         <div className="text-blue-200 mb-4 flex justify-center group-hover:scale-110 group-hover:text-white transition-all duration-300">
                           {feature.icon}
                         </div>
@@ -276,7 +276,7 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     to="/whitepaper"
-                    className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-lg rounded-xl shadow-lg hover:scale-110 hover:shadow-2xl transition-all duration-500"
+                    className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-lg rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300"
                   >
                     Learn More
                   </Link>
@@ -284,7 +284,7 @@ const Home = () => {
                     href="https://discord.gg/d99FBA64Qf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-8 py-4 bg-transparent hover:bg-blue-800/50 text-blue-100 hover:text-white font-semibold text-lg rounded-xl border-2 border-blue-400 hover:border-blue-300 hover:scale-110 hover:shadow-2xl transition-all duration-500"
+                    className="inline-flex items-center px-8 py-4 bg-transparent hover:bg-blue-800/50 text-blue-100 hover:text-white font-semibold text-lg rounded-xl border-2 border-blue-400 hover:border-blue-300 hover:scale-105 hover:shadow-2xl transition-all duration-300"
                   >
                     Join Discord
                   </a>
