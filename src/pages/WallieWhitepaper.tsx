@@ -75,7 +75,7 @@ const WallieWhitepaper = () => {
       
       {/* Sidebar Navigation */}
       <nav className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 hidden xl:block">
-        <div className="bg-white/90 backdrop-blur-md rounded-r-2xl p-4 shadow-2xl border-r border-blue-100">
+        <div className="bg-white/90 backdrop-blur-md rounded-r-2xl p-4 shadow-2xl border-r border-blue-100" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'}}>
           <div className="space-y-2">
             {sidebarSections.map((section) => (
               <motion.button
@@ -100,7 +100,7 @@ const WallieWhitepaper = () => {
       {/* Main Content */}
       <div className="min-h-screen pt-20">
         <div className="max-w-6xl mx-auto px-8 py-12">
-          <div className="bg-white rounded-3xl shadow-2xl drop-shadow-2xl overflow-hidden border border-blue-100">
+          <div className="bg-white rounded-3xl shadow-2xl drop-shadow-2xl overflow-hidden border border-blue-100" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'}}>
             
             {/* Header */}
             <header className="bg-blue-900 py-16 text-center -mx-0 rounded-t-3xl border-b-4 border-white">
@@ -129,7 +129,7 @@ const WallieWhitepaper = () => {
                   transition={{ delay: 0.2 }}
                   className="max-w-4xl mx-auto"
                 >
-                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8">
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
                       Wallie is WalletPup's intelligent Discord bot that transforms Cardano blockchain interaction through seamless wallet tracking, real-time analytics, and community engagement tools powered by advanced AI.
                     </p>
@@ -179,7 +179,7 @@ const WallieWhitepaper = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaBell className="text-blue-600" />
@@ -205,7 +205,7 @@ const WallieWhitepaper = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaChartLine className="text-blue-600" />
@@ -241,7 +241,7 @@ const WallieWhitepaper = () => {
                   Available Commands
                 </motion.h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-blue-100">
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <h3 className="text-xl font-semibold text-blue-900 mb-4">User Commands</h3>
                     <div className="space-y-3">
                       <div className="bg-blue-50 rounded-lg p-3">
@@ -267,7 +267,7 @@ const WallieWhitepaper = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-blue-100">
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <h3 className="text-xl font-semibold text-blue-900 mb-4">Project Commands</h3>
                     <div className="space-y-3">
                       <div className="bg-blue-50 rounded-lg p-3">
@@ -321,7 +321,7 @@ const WallieWhitepaper = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
-                  className="bg-white rounded-3xl p-8 border border-blue-100 shadow-lg mb-12"
+                  className="bg-white rounded-3xl p-8 border border-blue-100 shadow-lg mb-12" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                 >
                   <div className="text-center mb-8">
                     <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -391,7 +391,7 @@ const WallieWhitepaper = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mr-4 border border-blue-200">
@@ -423,7 +423,7 @@ const WallieWhitepaper = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mr-4 border border-blue-200">
@@ -469,7 +469,7 @@ const WallieWhitepaper = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center gap-3 mb-6">
                       <div className="bg-blue-100 rounded-xl p-3">
@@ -501,7 +501,7 @@ const WallieWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center gap-3 mb-6">
                       <div className="bg-blue-100 rounded-xl p-3">
@@ -533,7 +533,7 @@ const WallieWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.4 }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center gap-3 mb-6">
                       <div className="bg-blue-100 rounded-xl p-3">
@@ -565,7 +565,7 @@ const WallieWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.6 }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center gap-3 mb-6">
                       <div className="bg-blue-100 rounded-xl p-3">
@@ -619,7 +619,7 @@ const WallieWhitepaper = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100 hover:shadow-2xl transition-shadow duration-300"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-300" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}
                   >
                     <div className="text-center mb-6">
                       <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -647,7 +647,7 @@ const WallieWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100 hover:shadow-2xl transition-shadow duration-300"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-300" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}
                   >
                     <div className="text-center mb-6">
                       <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -675,7 +675,7 @@ const WallieWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.4 }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100 hover:shadow-2xl transition-shadow duration-300"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-300" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}
                   >
                     <div className="text-center mb-6">
                       <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -810,7 +810,7 @@ const WallieWhitepaper = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaNetworkWired className="text-blue-600" />
@@ -836,7 +836,7 @@ const WallieWhitepaper = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaDatabase className="text-blue-600" />
@@ -878,7 +878,7 @@ const WallieWhitepaper = () => {
                   transition={{ delay: 0.2 }}
                   className="max-w-4xl mx-auto"
                 >
-                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8">
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
                       Wallie represents the next evolution in Discord-based blockchain tools, transforming how communities interact with the Cardano ecosystem through intelligent automation, real-time analytics, and AI-powered insights.
                     </p>

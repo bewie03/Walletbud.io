@@ -29,7 +29,7 @@ import {
   FaChartLine,
   FaUsers,
   FaImage,
-  FaCog} from 'react-icons/fa';
+  FaFilm} from 'react-icons/fa';
 
 const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick: () => void }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -259,7 +259,7 @@ const CommandCard = ({ command, onPreviewClick }: { command: any, onPreviewClick
       case 'admin':
         return <FaTools className="text-blue-200 text-2xl" />;
       case '/gif-setup <collection_url>':
-        return <FaCog className="text-blue-200 text-2xl" />;
+        return <FaFilm className="text-blue-200 text-2xl" />;
       case '/gif':
         return <FaImage className="text-blue-200 text-2xl" />;
       case 'more':

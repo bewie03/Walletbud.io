@@ -11,7 +11,6 @@ import {
   FaUsers,
   FaFlag,
   FaCog,
-  FaPaw,
   FaBullhorn,
   FaServer,
   FaBriefcase,
@@ -27,7 +26,7 @@ import {
   FaBuilding,
   FaEye,
   FaWallet,
-  FaLock
+  FaBrain
 } from 'react-icons/fa';
 import FloatingBones from '../components/FloatingBones';
 
@@ -36,7 +35,7 @@ const BoneBoardWhitepaper = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['introduction', 'job-listings', 'freelancer-profiles', 'project-listings', 'wallet-integration', 'marketplace', 'payments', 'tokenomics', 'technical', 'conclusion'];
+      const sections = ['introduction', 'job-listings', 'freelancer-profiles', 'project-listings', 'rovex-integration', 'security-moderation', 'verification', 'privacy-communication', 'smart-contracts', 'ecosystem-funding', 'technical', 'conclusion'];
       
       for (let i = sections.length - 1; i >= 0; i--) {
         const element = document.getElementById(sections[i]);
@@ -67,10 +66,13 @@ const BoneBoardWhitepaper = () => {
     { id: 'job-listings', label: 'Job Listings', icon: FaBriefcase },
     { id: 'freelancer-profiles', label: 'Freelancer Profiles', icon: FaUser },
     { id: 'project-listings', label: 'Project Showcase', icon: FaBuilding },
-    { id: 'wallet-integration', label: 'Wallet Integration', icon: FaWallet },
-    { id: 'payments', label: 'Payment System', icon: FaCoins },
-    { id: 'tokenomics', label: 'Tokenomics', icon: FaBone },
-    { id: 'technical', label: 'Technical Architecture', icon: FaServer },
+    { id: 'rovex-integration', label: 'Rovex Integration', icon: FaBullhorn },
+    { id: 'security-moderation', label: 'Security & Moderation', icon: FaShieldAlt },
+    { id: 'verification', label: 'Authentication & Verification', icon: FaIdCard },
+    { id: 'privacy-communication', label: 'Privacy & Communication', icon: FaEnvelope },
+    { id: 'smart-contracts', label: 'Smart Contract Audits', icon: FaServer },
+    { id: 'ecosystem-funding', label: 'Ecosystem Funding', icon: FaCoins },
+    { id: 'technical', label: 'Technical Architecture', icon: FaCog },
     { id: 'conclusion', label: 'Conclusion', icon: FaFlag }
   ];
 
@@ -80,7 +82,7 @@ const BoneBoardWhitepaper = () => {
       
       {/* Sidebar Navigation */}
       <nav className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 hidden xl:block">
-        <div className="bg-white/90 backdrop-blur-md rounded-r-2xl p-4 shadow-2xl border-r border-blue-100">
+        <div className="bg-white/90 backdrop-blur-md rounded-r-2xl p-4 shadow-2xl border-r border-blue-100" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'}}>
           <div className="space-y-2">
             {sidebarSections.map((section) => (
               <motion.button
@@ -105,7 +107,7 @@ const BoneBoardWhitepaper = () => {
       {/* Main Content */}
       <div className="min-h-screen pt-20">
         <div className="max-w-6xl mx-auto px-8 py-12">
-          <div className="bg-white rounded-3xl shadow-2xl drop-shadow-2xl overflow-hidden border border-blue-100">
+          <div className="bg-white rounded-3xl shadow-2xl drop-shadow-2xl overflow-hidden border border-blue-100" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'}}>
             
             {/* Header */}
             <header className="bg-blue-900 py-16 text-center -mx-0 rounded-t-3xl border-b-4 border-white">
@@ -116,6 +118,26 @@ const BoneBoardWhitepaper = () => {
             {/* Content */}
             <div className="p-8 lg:p-12">
               
+              {/* Under Construction Notice */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="mb-20"
+              >
+                <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <FaCog className="text-3xl text-blue-600 animate-spin" />
+                    </div>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-4">Under Construction</h3>
+                    <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                      BoneBoard is currently under active development. Stay tuned for updates as we build the future of Cardano freelance marketplaces.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
               {/* Introduction Section */}
               <section id="introduction" className="mb-20 bg-blue-50 rounded-3xl p-12 -mx-12">
                 <motion.h2
@@ -134,9 +156,9 @@ const BoneBoardWhitepaper = () => {
                   transition={{ delay: 0.2 }}
                   className="max-w-4xl mx-auto"
                 >
-                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8">
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                      BoneBoard is WalletPup's revolutionary freelance marketplace - a Cardano-native platform that bridges exceptional talent with innovative projects, creating a thriving ecosystem of collaboration and growth.
+                      BoneBoard is WalletPup's revolutionary freelance marketplace - a Cardano native platform that bridges exceptional talent with innovative projects, creating a thriving ecosystem of collaboration and growth.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-center">
@@ -162,7 +184,7 @@ const BoneBoardWhitepaper = () => {
                       </div>
                     </div>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mt-8">
-                      Empowering the Cardano ecosystem with secure, efficient talent matching and dual-currency payment systems.
+                      Empowering the Cardano ecosystem with secure, efficient talent matching and dual currency payment systems.
                     </p>
                   </div>
                 </motion.div>
@@ -187,7 +209,7 @@ const BoneBoardWhitepaper = () => {
                   viewport={{ once: true }}
                   className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
                 >
-                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                         <FaTwitter className="text-xl text-blue-600" />
@@ -197,7 +219,7 @@ const BoneBoardWhitepaper = () => {
                     <p className="text-gray-600 text-sm">Twitter management, Discord moderation, community engagement</p>
                   </div>
                   
-                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                         <FaPalette className="text-xl text-blue-600" />
@@ -207,7 +229,7 @@ const BoneBoardWhitepaper = () => {
                     <p className="text-gray-600 text-sm">Branding, UI/UX design, NFT artwork, logo creation</p>
                   </div>
                   
-                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                         <FaCode className="text-xl text-blue-600" />
@@ -217,7 +239,7 @@ const BoneBoardWhitepaper = () => {
                     <p className="text-gray-600 text-sm">Smart contracts, web development, dApp creation</p>
                   </div>
                   
-                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                         <FaPenNib className="text-xl text-blue-600" />
@@ -227,7 +249,7 @@ const BoneBoardWhitepaper = () => {
                     <p className="text-gray-600 text-sm">Writing, marketing copy, documentation, blog posts</p>
                   </div>
                   
-                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                         <FaChartLine className="text-xl text-blue-600" />
@@ -237,7 +259,7 @@ const BoneBoardWhitepaper = () => {
                     <p className="text-gray-600 text-sm">Data analysis, community metrics, growth tracking</p>
                   </div>
                   
-                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                         <FaBullhorn className="text-xl text-blue-600" />
@@ -452,328 +474,378 @@ const BoneBoardWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="text-center mb-6">
                       <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <FaEye className="text-2xl text-blue-600" />
                       </div>
-                      <h3 className="text-xl font-semibold text-blue-900">Discovery</h3>
+                      <h3 className="text-2xl font-bold text-blue-900">Discovery Tools</h3>
                     </div>
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
-                        <FaFilter className="text-blue-600" />
-                        <span className="text-sm text-gray-700">Category filters</span>
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Advanced search and filtering</span>
                       </div>
-                      <div className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
-                        <FaCog className="text-blue-600" />
-                        <span className="text-sm text-gray-700">Reputation system</span>
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Project showcase gallery</span>
                       </div>
-                      <div className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
-                        <FaUsers className="text-blue-600" />
-                        <span className="text-sm text-gray-700">Follow projects</span>
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Community recommendations</span>
                       </div>
                     </div>
                   </motion.div>
                 </div>
-                
-                {/* Project Types */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4 }}
-                  className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
-                >
-                  <h3 className="text-2xl font-semibold text-blue-900 text-center mb-8">Project Categories</h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <FaCoins className="text-xl text-blue-600" />
-                      </div>
-                      <h4 className="font-medium text-gray-800 mb-1">DeFi</h4>
-                      <p className="text-xs text-gray-600">Decentralized finance</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <FaPalette className="text-xl text-blue-600" />
-                      </div>
-                      <h4 className="font-medium text-gray-800 mb-1">NFTs</h4>
-                      <p className="text-xs text-gray-600">Digital collectibles</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <FaServer className="text-xl text-blue-600" />
-                      </div>
-                      <h4 className="font-medium text-gray-800 mb-1">Infrastructure</h4>
-                      <p className="text-xs text-gray-600">Blockchain tools</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                        <FaUsers className="text-xl text-blue-600" />
-                      </div>
-                      <h4 className="font-medium text-gray-800 mb-1">Community</h4>
-                      <p className="text-xs text-gray-600">Social platforms</p>
-                    </div>
-                  </div>
-                </motion.div>
               </section>
 
-              {/* Wallet Integration Section */}
-              <section id="wallet-integration" className="mb-20 bg-blue-50 rounded-3xl p-12">
+              {/* Rovex Integration Section */}
+              <section id="rovex-integration" className="mb-20 bg-blue-50 rounded-3xl p-12">
                 <motion.h2
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-4xl font-bold text-center mb-8 text-blue-900 flex items-center justify-center gap-3"
+                  className="text-4xl font-bold text-center mb-8 text-gray-900 flex items-center justify-center gap-3"
                 >
-                  <FaWallet className="text-blue-600" />
-                  Wallet Integration & Authentication
+                  <FaBullhorn className="text-blue-600" />
+                  Rovex Integration
                 </motion.h2>
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="max-w-4xl mx-auto"
-                >
-                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8">
-                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                      BoneBoard uses wallet-based authentication for seamless user experience. Simply connect your Cardano wallet to login and all your activities are tied to your wallet address.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <FaWallet className="text-2xl text-blue-600" />
-                        </div>
-                        <h4 className="font-semibold text-gray-800 mb-2">Supported Wallets</h4>
-                        <p className="text-sm text-gray-600">Eternal, Vesper, and Lace wallet integration</p>
-                      </div>
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <FaLock className="text-2xl text-blue-600" />
-                        </div>
-                        <h4 className="font-semibold text-gray-800 mb-2">Secure Login</h4>
-                        <p className="text-sm text-gray-600">No passwords needed - just connect your wallet</p>
-                      </div>
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <FaServer className="text-2xl text-blue-600" />
-                        </div>
-                        <h4 className="font-semibold text-gray-800 mb-2">Data Storage</h4>
-                        <p className="text-sm text-gray-600">All profiles and activities tied to wallet address</p>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </section>
-
-              {/* Marketplace Section */}
-              <section id="marketplace" className="mb-20 bg-blue-50 rounded-3xl p-12">
-                <motion.h2
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="text-4xl font-bold text-center mb-8 text-blue-900 flex items-center justify-center gap-3"
-                >
-                  <FaHandshake className="text-blue-600" />
-                  Marketplace Categories
-                </motion.h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-blue-100 text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <FaCog className="text-2xl text-blue-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-blue-900 mb-3">Development</h3>
-                    <p className="text-gray-600 text-sm">Smart contracts, dApps, web development</p>
-                  </div>
-                  
-                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-blue-100 text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <FaPaw className="text-2xl text-blue-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-blue-900 mb-3">Design</h3>
-                    <p className="text-gray-600 text-sm">UI/UX design, branding, NFT art</p>
-                  </div>
-                  
-                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-blue-100 text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <FaBullhorn className="text-2xl text-blue-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-blue-900 mb-3">Marketing</h3>
-                    <p className="text-gray-600 text-sm">Community management, content creation</p>
-                  </div>
-                </div>
-              </section>
-
-              {/* Payment System Section */}
-              <section id="payments" className="mb-20">
-                <motion.h2
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="text-4xl font-bold text-center mb-8 text-blue-900 flex items-center justify-center gap-3"
-                >
-                  <FaCoins className="text-blue-600" />
-                  Dual Currency Payment System
-                </motion.h2>
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 max-w-4xl mx-auto mb-8"
-                >
-                  <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                    BoneBoard supports both ADA and BONE payments through secure smart contracts. All payments are processed automatically with built-in deflationary mechanics for BONE tokens.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-blue-50 rounded-lg p-6">
-                      <h4 className="font-semibold text-blue-900 mb-4 flex items-center gap-2">
-                        <FaCoins className="text-blue-600" />
-                        ADA Payments
-                      </h4>
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm">Native Cardano currency support</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm">50% of ADA fees used to buy and burn BONE</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm">Dynamic pricing based on ADA market value</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bg-blue-50 rounded-lg p-6">
-                      <h4 className="font-semibold text-blue-900 mb-4 flex items-center gap-2">
-                        <FaBone className="text-blue-600" />
-                        BONE Payments
-                      </h4>
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm">WalletPup ecosystem token support</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm">100% of BONE payments are burned</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm">Deflationary mechanism reduces supply</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-                
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
-                  className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 max-w-5xl mx-auto"
+                  className="max-w-4xl mx-auto"
                 >
-                  <div className="text-center mb-10">
-                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <FaShieldAlt className="text-3xl text-blue-600" />
-                    </div>
-                    <h4 className="text-3xl font-bold text-blue-900 mb-4">Smart Contract Security</h4>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">Secure, automated payment processing with built-in protection for all parties</p>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-                      <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <FaLock className="text-2xl" />
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
+                      Our Twitter bot Rovex monitors and understands all projects, job listings, and freelancer profiles on BoneBoard, promoting opportunities and projects through our Twitter account.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                          <FaBrain className="text-xl text-blue-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-2">AI Powered Understanding</h4>
+                          <p className="text-sm text-gray-600">Rovex analyzes BoneBoard content to understand projects and opportunities for promotion</p>
+                        </div>
                       </div>
-                      <h5 className="text-xl font-semibold text-blue-900 mb-4">Secure Escrow</h5>
-                      <p className="text-gray-700 leading-relaxed">Payments are safely held in smart contracts until work is completed and approved by both parties</p>
-                    </div>
-                    
-                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-                      <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <FaWallet className="text-2xl" />
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                          <FaTwitter className="text-xl text-blue-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-2">Twitter Promotion</h4>
+                          <p className="text-sm text-gray-600">Promotes BoneBoard projects and opportunities through WalletPup's Twitter account</p>
+                        </div>
                       </div>
-                      <h5 className="text-xl font-semibold text-blue-900 mb-4">Wallet Integration</h5>
-                      <p className="text-gray-700 leading-relaxed">Sign contracts directly with your Cardano wallet - Eternal, Vesper, or Lace supported</p>
-                    </div>
-                    
-                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-                      <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <FaCog className="text-2xl" />
-                      </div>
-                      <h5 className="text-xl font-semibold text-blue-900 mb-4">Automated Processing</h5>
-                      <p className="text-gray-700 leading-relaxed">Automatic payment release upon completion and instant BONE token burning mechanism</p>
                     </div>
                   </div>
                 </motion.div>
               </section>
 
-
-              {/* Tokenomics Section */}
-              <section id="tokenomics" className="mb-20">
+              {/* Security & Moderation Section */}
+              <section id="security-moderation" className="mb-20">
                 <motion.h2
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-4xl font-bold text-center mb-12 text-blue-900 flex items-center justify-center gap-3"
+                  className="text-4xl font-bold text-center mb-8 text-gray-900 flex items-center justify-center gap-3"
                 >
-                  <FaBone className="text-blue-600" />
-                  BONE Tokenomics
+                  <FaShieldAlt className="text-blue-600" />
+                  Security & Moderation
                 </motion.h2>
-                
-                <div className="max-w-6xl mx-auto">
-                  <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8"
-                  >
-                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-10">
-                      BoneBoard implements a deflationary mechanism where BONE tokens are permanently removed from circulation, creating scarcity and value for the WalletPup ecosystem.
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="max-w-4xl mx-auto"
+                >
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
+                      BoneBoard maintains the highest security standards with comprehensive moderation to protect our community from scams and fraudulent activities.
                     </p>
-                    
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-center">
-                        <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                          <FaBone className="text-3xl text-blue-600" />
+                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <FaShieldAlt className="text-2xl text-blue-600" />
                         </div>
-                        <h4 className="text-xl font-semibold text-blue-900 mb-4">BONE Burning</h4>
-                        <p className="text-gray-600 leading-relaxed">100% of BONE payments are permanently burned, reducing total supply with every transaction</p>
+                        <h4 className="font-semibold text-gray-800 mb-2">Scam Prevention</h4>
+                        <p className="text-sm text-gray-600">All scam posts and fraudulent job listings are automatically removed</p>
                       </div>
-                      
                       <div className="text-center">
-                        <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                          <FaCoins className="text-3xl text-blue-600" />
+                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <FaFilter className="text-2xl text-blue-600" />
                         </div>
-                        <h4 className="text-xl font-semibold text-blue-900 mb-4">ADA Integration</h4>
-                        <p className="text-gray-600 leading-relaxed">50% of ADA fees are used to buy and burn additional BONE tokens from the market</p>
+                        <h4 className="font-semibold text-gray-800 mb-2">Content Filtering</h4>
+                        <p className="text-sm text-gray-600">Jobs unrelated to Cardano ecosystem are filtered out</p>
                       </div>
-                      
                       <div className="text-center">
-                        <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                          <FaShieldAlt className="text-3xl text-blue-600" />
+                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <FaEye className="text-2xl text-blue-600" />
                         </div>
-                        <h4 className="text-xl font-semibold text-blue-900 mb-4">Pure Utility</h4>
-                        <p className="text-gray-600 leading-relaxed">No staking rewards or governance rights - serves purely as a payment token alongside ADA</p>
+                        <h4 className="font-semibold text-gray-800 mb-2">Active Monitoring</h4>
+                        <p className="text-sm text-gray-600">Continuous monitoring ensures platform integrity</p>
                       </div>
                     </div>
-                    
-                    <div className="bg-blue-50 rounded-2xl p-8 text-center border border-blue-100">
-                      <h4 className="text-2xl font-semibold mb-4 text-blue-900">Deflationary Impact</h4>
-                      <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                        Every job posting, freelancer profile creation, and project listing permanently removes BONE tokens from circulation.
-                      </p>
-                      <div className="inline-flex items-center gap-3 bg-white rounded-full px-8 py-4 shadow-md border border-blue-100">
-                        <FaRocket className="text-blue-600 text-xl" />
-                        <span className="font-semibold text-gray-800">More Usage = Less Supply = Increased Scarcity</span>
+                  </div>
+                </motion.div>
+              </section>
+
+              {/* Authentication & Verification Section */}
+              <section id="verification" className="mb-20 bg-blue-50 rounded-3xl p-12">
+                <motion.h2
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="text-4xl font-bold text-center mb-8 text-gray-900 flex items-center justify-center gap-3"
+                >
+                  <FaIdCard className="text-blue-600" />
+                  Authentication & Verification
+                </motion.h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="max-w-4xl mx-auto"
+                >
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
+                      Projects must authenticate by connecting their X accounts to prevent fake job listings. Users can connect multiple social accounts for verification.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                          <FaTwitter className="text-blue-600" />
+                          Project Authentication
+                        </h4>
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">X account connection required</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Prevents fake job listings</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Verified project badges</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                          <FaUsers className="text-blue-600" />
+                          User Verification
+                        </h4>
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Twitter account linking</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Discord integration</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">LinkedIn profile connection</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </motion.div>
-                </div>
+                  </div>
+                </motion.div>
+              </section>
+
+              {/* Privacy & Communication Section */}
+              <section id="privacy-communication" className="mb-20">
+                <motion.h2
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="text-4xl font-bold text-center mb-8 text-gray-900 flex items-center justify-center gap-3"
+                >
+                  <FaEnvelope className="text-blue-600" />
+                  Privacy & Communication
+                </motion.h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="max-w-4xl mx-auto"
+                >
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
+                      We prioritize user privacy while facilitating secure communication between employers and freelancers.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="bg-blue-50 rounded-2xl p-6">
+                        <h4 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                          <FaShieldAlt className="text-blue-600" />
+                          Privacy Protection
+                        </h4>
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">No resume storage</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">No personal information handling</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Direct employer - employee communication</span>
+                           </div>
+                        </div>
+                      </div>
+                      <div className="bg-blue-50 rounded-2xl p-6">
+                        <h4 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                          <FaEnvelope className="text-blue-600" />
+                          Communication Methods
+                        </h4>
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Email contact links</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Discord integration</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Verified social profiles visible</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </section>
+
+              {/* Smart Contract Audits Section */}
+              <section id="smart-contracts" className="mb-20 bg-blue-50 rounded-3xl p-12">
+                <motion.h2
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="text-4xl font-bold text-center mb-8 text-gray-900 flex items-center justify-center gap-3"
+                >
+                  <FaServer className="text-blue-600" />
+                  Smart Contract Audits
+                </motion.h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="max-w-4xl mx-auto"
+                >
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
+                      All BoneBoard smart contracts undergo rigorous auditing processes to ensure maximum security and reliability for our users.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <FaShieldAlt className="text-2xl text-blue-600" />
+                        </div>
+                        <h4 className="font-semibold text-gray-800 mb-2">Security First</h4>
+                        <p className="text-sm text-gray-600">Comprehensive security audits by leading firms</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <FaCheck className="text-2xl text-blue-600" />
+                        </div>
+                        <h4 className="font-semibold text-gray-800 mb-2">Verified Code</h4>
+                        <p className="text-sm text-gray-600">All smart contracts verified and transparent</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <FaUsers className="text-2xl text-blue-600" />
+                        </div>
+                        <h4 className="font-semibold text-gray-800 mb-2">Community Trust</h4>
+                        <p className="text-sm text-gray-600">Building confidence through transparency</p>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </section>
+
+              {/* Ecosystem Funding Section */}
+              <section id="ecosystem-funding" className="mb-20">
+                <motion.h2
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="text-4xl font-bold text-center mb-8 text-gray-900 flex items-center justify-center gap-3"
+                >
+                  <FaCoins className="text-blue-600" />
+                  Ecosystem Funding
+                </motion.h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="max-w-4xl mx-auto"
+                >
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
+                      All funds generated through BoneBoard operations are reinvested back into the Cardano ecosystem to drive growth and innovation.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6">
+                        <h4 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                          <FaRocket className="text-blue-600" />
+                          Ecosystem Growth
+                        </h4>
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Developer incentives</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Project funding support</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Community initiatives</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6">
+                        <h4 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                          <FaHandshake className="text-blue-600" />
+                          Sustainable Model
+                        </h4>
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Transparent fund allocation</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Community driven decisions</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">Long term ecosystem health</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </section>
 
               {/* Technical Section */}
@@ -782,110 +854,67 @@ const BoneBoardWhitepaper = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-4xl font-bold text-center mb-12 text-blue-900 flex items-center justify-center gap-3"
+                  className="text-4xl font-bold text-center mb-8 text-blue-900 flex items-center justify-center gap-3"
                 >
                   <FaServer className="text-blue-600" />
                   Technical Architecture
                 </motion.h2>
-                
-                <div className="max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8"
-                  >
-                    <div className="text-center mb-8">
-                      <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <FaWallet className="text-3xl text-blue-600" />
-                      </div>
-                      <h3 className="text-3xl font-bold mb-4 text-blue-900">Simple Authentication</h3>
-                      <p className="text-xl text-gray-600 max-w-2xl mx-auto">Connect your wallet and you're ready to go - no passwords, no complex setup</p>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                      <div className="bg-blue-50 rounded-xl p-6 text-center border border-blue-100">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <FaWallet className="text-xl text-blue-600" />
-                        </div>
-                        <h4 className="font-semibold mb-2 text-blue-900">Connect Wallet</h4>
-                        <p className="text-sm text-gray-600">Use your Cardano wallet address</p>
-                      </div>
-                      <div className="bg-blue-50 rounded-xl p-6 text-center border border-blue-100">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <FaUser className="text-xl text-blue-600" />
-                        </div>
-                        <h4 className="font-semibold mb-2 text-blue-900">Auto Profile</h4>
-                        <p className="text-sm text-gray-600">Profile saved to our database</p>
-                      </div>
-                      <div className="bg-blue-50 rounded-xl p-6 text-center border border-blue-100">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <FaRocket className="text-xl text-blue-600" />
-                        </div>
-                        <h4 className="font-semibold mb-2 text-blue-900">Start Working</h4>
-                        <p className="text-sm text-gray-600">Begin posting or applying immediately</p>
-                      </div>
-                    </div>
-                  </motion.div>
-                  
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <motion.div
                       initial={{ opacity: 0, x: -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.2 }}
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                      className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                     >
                       <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                         <FaServer className="text-blue-600" />
                         Blockchain Integration
                       </h3>
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700">Cardano smart contracts for secure payments</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700">Native ADA and BONE token support</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700">Wallet-based identity verification</span>
-                        </div>
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Native Cardano integration</span>
                       </div>
-                    </motion.div>
-                    
-                    <motion.div
-                      initial={{ opacity: 0, x: 30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.4 }}
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
-                    >
-                      <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
-                        <FaCog className="text-blue-600" />
-                        Platform Features
-                      </h3>
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700">Real-time messaging between users</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700">Advanced job and freelancer search</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                          <span className="text-gray-700">Automated payment processing</span>
-                        </div>
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Secure wallet connections</span>
                       </div>
-                    </motion.div>
-                  </div>
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Smart contract automation</span>
+                      </div>
+                    </div>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 }}
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
+                  >
+                    <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
+                      <FaCog className="text-blue-600" />
+                      Platform Features
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Real time messaging between users</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Advanced job and freelancer search</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-700">Automated payment processing</span>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
               </section>
-
 
               {/* Conclusion Section */}
               <section id="conclusion" className="mb-20">
@@ -905,9 +934,9 @@ const BoneBoardWhitepaper = () => {
                   transition={{ delay: 0.2 }}
                   className="max-w-4xl mx-auto"
                 >
-                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8">
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                      BoneBoard represents the future of decentralized freelance marketplaces, combining Cardano's security with innovative dual-currency payments. Our platform will strengthen the entire ecosystem by connecting exceptional talent with groundbreaking projects.
+                      BoneBoard represents the future of decentralized freelance marketplaces, combining Cardano's security with innovative dual currency payments. Our platform will strengthen the entire ecosystem by connecting exceptional talent with groundbreaking projects.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                       <div className="text-center">

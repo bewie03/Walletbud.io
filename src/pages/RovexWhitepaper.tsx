@@ -74,7 +74,7 @@ const RovexWhitepaper = () => {
       
       {/* Sidebar Navigation */}
       <nav className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 hidden xl:block">
-        <div className="bg-white/90 backdrop-blur-md rounded-r-2xl p-4 shadow-2xl border-r border-blue-100">
+        <div className="bg-white/90 backdrop-blur-md rounded-r-2xl p-4 shadow-2xl border-r border-blue-100" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'}}>
           <div className="space-y-2">
             {sidebarSections.map((section) => (
               <motion.button
@@ -99,7 +99,7 @@ const RovexWhitepaper = () => {
       {/* Main Content */}
       <div className="min-h-screen pt-20">
         <div className="max-w-6xl mx-auto px-8 py-12">
-          <div className="bg-white rounded-3xl shadow-2xl drop-shadow-2xl overflow-hidden border border-blue-100">
+          <div className="bg-white rounded-3xl shadow-2xl drop-shadow-2xl overflow-hidden border border-blue-100" style={{boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.1)'}}>
             
             {/* Header */}
             <header className="bg-blue-900 py-16 text-center -mx-0 rounded-t-3xl border-b-4 border-white">
@@ -110,6 +110,26 @@ const RovexWhitepaper = () => {
             {/* Content */}
             <div className="p-8 lg:p-12">
               
+              {/* Under Construction Notice */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="mb-20"
+              >
+                <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <FaCog className="text-3xl text-blue-600 animate-spin" />
+                    </div>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-4">Under Construction</h3>
+                    <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                    Rovex is currently under development and will be completed when Chakra releases their AI agents.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
               {/* Introduction Section */}
               <section id="introduction" className="mb-20 bg-blue-50 rounded-3xl p-12 -mx-12">
                 <motion.h2
@@ -128,7 +148,7 @@ const RovexWhitepaper = () => {
                   transition={{ delay: 0.2 }}
                   className="max-w-4xl mx-auto"
                 >
-                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8">
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
                       Rovex is WalletPup's loyal community advocate - an intelligent Twitter bot that promotes Cardano projects, learns continuously from Discord interactions and transaction data, and connects users with opportunities through BoneBoard integration.
                     </p>
@@ -188,7 +208,7 @@ const RovexWhitepaper = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
@@ -217,7 +237,7 @@ const RovexWhitepaper = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
@@ -308,7 +328,7 @@ const RovexWhitepaper = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="text-center mb-6">
                       <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -341,7 +361,7 @@ const RovexWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="text-center mb-6">
                       <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -374,7 +394,7 @@ const RovexWhitepaper = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.4 }}
-                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100"
+                    className="bg-white rounded-3xl p-8 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <div className="text-center mb-6">
                       <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -463,7 +483,7 @@ const RovexWhitepaper = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaXTwitter className="text-blue-600" />
@@ -489,7 +509,7 @@ const RovexWhitepaper = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaBrain className="text-blue-600" />
@@ -667,7 +687,7 @@ const RovexWhitepaper = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaNetworkWired className="text-blue-600" />
@@ -693,7 +713,7 @@ const RovexWhitepaper = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100"
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100" style={{boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}
                   >
                     <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
                       <FaDatabase className="text-blue-600" />
@@ -806,7 +826,7 @@ const RovexWhitepaper = () => {
                   transition={{ delay: 0.2 }}
                   className="max-w-4xl mx-auto"
                 >
-                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8">
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
                       Rovex represents the future of social media engagement for the Cardano ecosystem, combining advanced AI technology with deep blockchain analytics to create meaningful connections and drive community growth on Twitter.
                     </p>
