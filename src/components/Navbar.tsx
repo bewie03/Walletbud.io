@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { FaPaw } from 'react-icons/fa';
+import { FaPaw, FaChevronDown } from 'react-icons/fa';
 
 type NavItem = {
   to: string;
@@ -12,6 +12,7 @@ type NavItem = {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [whitepaperDropdown, setWhitepaperDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,6 +76,62 @@ const Navbar = () => {
                 {link.text}
               </Link>
             ))}
+            
+            {/* Whitepaper Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setWhitepaperDropdown(!whitepaperDropdown)}
+                className="flex items-center gap-2 px-4 py-2 mx-1 rounded-xl text-lg font-medium text-blue-100 hover:text-white hover:bg-blue-800/50 hover:scale-105 transition-all duration-300"
+              >
+                Whitepapers
+                <FaChevronDown className={`text-sm transition-transform duration-300 ${whitepaperDropdown ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <motion.div
+                initial={false}
+                animate={{
+                  opacity: whitepaperDropdown ? 1 : 0,
+                  y: whitepaperDropdown ? 0 : -10,
+                  scale: whitepaperDropdown ? 1 : 0.95
+                }}
+                transition={{ duration: 0.2 }}
+                className={`absolute top-full left-0 mt-2 w-56 bg-blue-900 rounded-xl shadow-2xl border border-blue-700 overflow-hidden ${whitepaperDropdown ? 'pointer-events-auto' : 'pointer-events-none'}`}
+              >
+                <Link
+                  to="/whitepaper"
+                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200 border-b border-blue-700"
+                  onClick={() => setWhitepaperDropdown(false)}
+                >
+                  <div className="font-semibold">WalletPup Overview</div>
+                  <div className="text-sm text-blue-300">General project overview</div>
+                </Link>
+                <Link
+                  to="/wallie-whitepaper"
+                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200 border-b border-blue-700"
+                  onClick={() => setWhitepaperDropdown(false)}
+                >
+                  <div className="font-semibold">Wallie Whitepaper</div>
+                  <div className="text-sm text-blue-300">Discord bot users/projects</div>
+                </Link>
+                <Link
+                  to="/rovex-whitepaper"
+                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200 border-b border-blue-700"
+                  onClick={() => setWhitepaperDropdown(false)}
+                >
+                  <div className="font-semibold">Rovex Whitepaper</div>
+                  <div className="text-sm text-blue-300">Twitter bot for marketing</div>
+                </Link>
+                <Link
+                  to="/boneboard-whitepaper"
+                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200"
+                  onClick={() => setWhitepaperDropdown(false)}
+                >
+                  <div className="font-semibold">BoneBoard Whitepaper</div>
+                  <div className="text-sm text-blue-300">Job marketplace platform</div>
+                </Link>
+              </motion.div>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -117,10 +174,8 @@ const Navbar = () => {
       >
         <div className="px-4 py-2 space-y-1">
           {([
-            { to: '/bone', text: '$BONE' },
             { to: '/commands', text: 'Commands' },
             { to: '/guide', text: 'Guide' },
-            { to: '/whitepaper', text: 'Whitepaper' },
             { to: '/faq', text: 'FAQ' }
           ] as NavItem[]).map((link) => (
             <Link
@@ -132,6 +187,39 @@ const Navbar = () => {
               {link.text}
             </Link>
           ))}
+          
+          {/* Mobile Whitepaper Links */}
+          <div className="border-t border-blue-800/50 pt-2 mt-2">
+            <div className="px-4 py-2 text-sm font-semibold text-blue-200">Whitepapers</div>
+            <Link
+              to="/whitepaper"
+              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              WalletPup Overview
+            </Link>
+            <Link
+              to="/wallie-whitepaper"
+              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Wallie Whitepaper
+            </Link>
+            <Link
+              to="/rovex-whitepaper"
+              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Rovex Whitepaper
+            </Link>
+            <Link
+              to="/boneboard-whitepaper"
+              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              BoneBoard Whitepaper
+            </Link>
+          </div>
         </div>
       </motion.div>
     </nav>

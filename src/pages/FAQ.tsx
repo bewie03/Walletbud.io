@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import AnimatedElement from '../components/AnimatedElement';
 import FloatingBones from '../components/FloatingBones';
-import { FaPaw, FaBook } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaPaw } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface FAQItem {
@@ -105,18 +104,6 @@ const FAQ = () => {
         {/* FAQ Content */}
         <div className="w-full bg-blue-800/30">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            {/* Action Buttons */}
-            <AnimatedElement delay={0.2}>
-              <div className="mb-12 flex justify-center">
-                <Link
-                  to="/whitepaper-v2"
-                  className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                >
-                  <FaBook className="mr-2" />
-                  Read Whitepaper
-                </Link>
-              </div>
-            </AnimatedElement>
 
             <div className="space-y-4">
               {faqItems.map((item, index) => (
