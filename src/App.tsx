@@ -10,7 +10,6 @@ import NotFound from './pages/NotFound'
 import PageTransition from './components/PageTransition'
 import Guide from './pages/Guide'
 import LoadingScreen from './components/LoadingScreen'
-import Doghouse from './pages/Doghouse'
 import WhitepaperV2 from './pages/WhitepaperV2_Fixed'
 import WallieWhitepaper from './pages/WallieWhitepaper'
 import RovexWhitepaper from './pages/RovexWhitepaper'
@@ -64,7 +63,6 @@ function App() {
                     <Route path="/commands" element={<Commands />} />
                     <Route path="/faq" element={<FAQ />} />
                     <Route path="/guide" element={<Guide />} />
-                    <Route path="/doghouse" element={<Doghouse />} />
                     <Route path="/whitepaper" element={<WhitepaperV2 />} />
                     <Route path="/wallie-whitepaper" element={<WallieWhitepaper />} />
                     <Route path="/rovex-whitepaper" element={<RovexWhitepaper />} />
