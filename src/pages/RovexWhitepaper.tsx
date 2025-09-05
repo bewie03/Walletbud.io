@@ -117,14 +117,14 @@ const RovexWhitepaper = () => {
                 transition={{ duration: 0.6 }}
                 className="mb-20"
               >
-                <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-200" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(107, 114, 128, 0.1)'}}>
                   <div className="text-center">
-                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <FaCog className="text-3xl text-blue-600 animate-spin" />
+                    <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <FaCog className="text-3xl text-gray-600 animate-spin" />
                     </div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4">Under Construction</h3>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-4">Under Development</h3>
                     <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                    Rovex is currently under development and will be completed when Chakra releases their AI agents.
+                      Rovex development has been prioritized and is now actively under construction. The Twitter bot will be completed after BoneBoard's successful launch.
                     </p>
                   </div>
                 </div>

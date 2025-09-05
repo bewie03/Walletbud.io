@@ -62,14 +62,17 @@ const Home = () => {
 
             {/* Three Tools Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-              {/* Wallie Discord Bot */}
+              {/* Wallie Discord Bot - Live */}
               <motion.div
                 initial={{ opacity: 0, y: 50, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                className="bg-blue-900/90 backdrop-sm rounded-3xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group"
+                className="bg-blue-900/90 backdrop-sm rounded-3xl p-8 border border-blue-500 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-400 transition-all duration-500 shadow-lg text-center group relative"
               >
-                <div className="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500">
+                <div className="absolute top-4 right-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+                  LIVE
+                </div>
+                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-blue-500 transition-all duration-500">
                   <FaDiscord className="text-4xl text-white group-hover:scale-110 transition-all duration-500" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">Wallie Discord Bot</h3>
@@ -97,41 +100,17 @@ const Home = () => {
                 </div>
               </motion.div>
 
-              {/* Rovex Twitter Bot */}
+              {/* BoneBoard Marketplace - Live */}
               <motion.div
                 initial={{ opacity: 0, y: 50, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-                className="bg-blue-900/90 backdrop-sm rounded-3xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group"
+                className="bg-blue-900/90 backdrop-sm rounded-3xl p-8 border border-blue-500 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-400 transition-all duration-500 shadow-lg text-center group relative"
               >
-                <div className="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500">
-                  <FaXTwitter className="text-4xl text-white group-hover:scale-110 transition-all duration-500" />
+                <div className="absolute top-4 right-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+                  LIVE
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">Rovex Twitter Bot</h3>
-                <p className="text-blue-100 mb-6 leading-relaxed group-hover:text-white transition-all duration-300">
-                  Loyal Community pup that promotes projects, learns through data and is connected with Wallie and BoneBoard.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <div className="text-blue-200 text-sm group-hover:text-white transition-all duration-300">✓ Cardano project promotion</div>
-                  <div className="text-blue-200 text-sm group-hover:text-white transition-all duration-300">✓ BoneBoard job integration</div>
-                  <div className="text-blue-200 text-sm group-hover:text-white transition-all duration-300">✓ Smart community learning</div>
-                </div>
-                <Link
-                  to="/rovex-whitepaper"
-                  className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
-                >
-                  Learn More
-                </Link>
-              </motion.div>
-
-              {/* BoneBoard Marketplace */}
-              <motion.div
-                initial={{ opacity: 0, y: 50, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
-                className="bg-blue-900/90 backdrop-sm rounded-3xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group"
-              >
-                <div className="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500">
+                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-blue-500 transition-all duration-500">
                   <FaHandshake className="text-4xl text-white group-hover:scale-110 transition-all duration-500" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">BoneBoard Marketplace</h3>
@@ -143,9 +122,47 @@ const Home = () => {
                   <div className="text-blue-200 text-sm group-hover:text-white transition-all duration-300">✓ Secure escrow payments</div>
                   <div className="text-blue-200 text-sm group-hover:text-white transition-all duration-300">✓ Reputation system</div>
                 </div>
+                <div className="flex gap-3 justify-center">
+                  <Link
+                    to="/boneboard-whitepaper"
+                    className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
+                  >
+                    Learn More
+                  </Link>
+                  <a
+                    href="#"
+                    className="inline-block bg-transparent hover:bg-blue-800/50 text-blue-100 hover:text-white px-6 py-3 rounded-xl font-semibold border-2 border-blue-400 hover:border-blue-300 hover:scale-105 hover:shadow-lg transition-all duration-300"
+                  >
+                    Visit Platform
+                  </a>
+                </div>
+              </motion.div>
+
+              {/* Rovex Twitter Bot - Under Development */}
+              <motion.div
+                initial={{ opacity: 0, y: 50, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
+                className="bg-blue-900/90 backdrop-sm rounded-3xl p-8 border border-gray-500 hover:scale-[1.05] hover:shadow-2xl hover:border-gray-400 transition-all duration-500 shadow-lg text-center group relative"
+              >
+                <div className="absolute top-4 right-4 bg-gray-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+                  IN DEVELOPMENT
+                </div>
+                <div className="w-20 h-20 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-gray-500 transition-all duration-500">
+                  <FaXTwitter className="text-4xl text-white group-hover:scale-110 transition-all duration-500" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">Rovex Twitter Bot</h3>
+                <p className="text-blue-100 mb-6 leading-relaxed group-hover:text-white transition-all duration-300">
+                  Loyal Community pup that promotes projects, learns through data and is connected with Wallie and BoneBoard.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <div className="text-gray-300 text-sm group-hover:text-white transition-all duration-300">• Cardano project promotion</div>
+                  <div className="text-gray-300 text-sm group-hover:text-white transition-all duration-300">• BoneBoard job integration</div>
+                  <div className="text-gray-300 text-sm group-hover:text-white transition-all duration-300">• Smart community learning</div>
+                </div>
                 <Link
-                  to="/boneboard-whitepaper"
-                  className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
+                  to="/rovex-whitepaper"
+                  className="inline-block bg-gray-600 hover:bg-gray-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
                   Learn More
                 </Link>

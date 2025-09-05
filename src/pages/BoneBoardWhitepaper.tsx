@@ -20,12 +20,10 @@ import {
   FaPenNib,
   FaChartLine,
   FaFilter,
-  FaUser,
   FaIdCard,
   FaEnvelope,
   FaBuilding,
   FaEye,
-  FaWallet,
   FaBrain
 } from 'react-icons/fa';
 import FloatingBones from '../components/FloatingBones';
@@ -35,7 +33,7 @@ const BoneBoardWhitepaper = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['introduction', 'job-listings', 'freelancer-profiles', 'project-listings', 'rovex-integration', 'security-moderation', 'verification', 'privacy-communication', 'smart-contracts', 'ecosystem-funding', 'technical', 'conclusion'];
+      const sections = ['introduction', 'job-listings', 'project-funding', 'project-listings', 'rovex-integration', 'security-moderation', 'verification', 'privacy-communication', 'smart-contracts', 'ecosystem-funding', 'technical', 'conclusion'];
       
       for (let i = sections.length - 1; i >= 0; i--) {
         const element = document.getElementById(sections[i]);
@@ -64,7 +62,7 @@ const BoneBoardWhitepaper = () => {
   const sidebarSections = [
     { id: 'introduction', label: 'Introduction', icon: FaBookOpen },
     { id: 'job-listings', label: 'Job Listings', icon: FaBriefcase },
-    { id: 'freelancer-profiles', label: 'Freelancer Profiles', icon: FaUser },
+    { id: 'project-funding', label: 'Project Funding', icon: FaCoins },
     { id: 'project-listings', label: 'Project Showcase', icon: FaBuilding },
     { id: 'rovex-integration', label: 'Rovex Integration', icon: FaBullhorn },
     { id: 'security-moderation', label: 'Security & Moderation', icon: FaShieldAlt },
@@ -112,31 +110,12 @@ const BoneBoardWhitepaper = () => {
             {/* Header */}
             <header className="bg-blue-900 py-16 text-center -mx-0 rounded-t-3xl border-b-4 border-white">
               <h1 className="text-5xl font-extrabold text-white tracking-tight mb-6">BoneBoard</h1>
-              <h2 className="text-4xl font-bold text-white">Freelance Marketplace Whitepaper</h2>
+              <h2 className="text-4xl font-bold text-white">Job & Funding Marketplace Whitepaper</h2>
             </header>
             
             {/* Content */}
             <div className="p-8 lg:p-12">
               
-              {/* Under Construction Notice */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="mb-20"
-              >
-                <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <FaCog className="text-3xl text-blue-600 animate-spin" />
-                    </div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4">Under Construction</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                      BoneBoard is currently under active development. Stay tuned for updates as we build the future of Cardano freelance marketplaces.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
 
               {/* Introduction Section */}
               <section id="introduction" className="mb-20 bg-blue-50 rounded-3xl p-12 -mx-12">
@@ -158,15 +137,15 @@ const BoneBoardWhitepaper = () => {
                 >
                   <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                      BoneBoard is WalletPup's revolutionary freelance marketplace - a Cardano native platform that bridges exceptional talent with innovative projects, creating a thriving ecosystem of collaboration and growth.
+                      BoneBoard is WalletPup's revolutionary job and funding marketplace - a Cardano native platform that connects talent with projects while enabling community-driven project funding campaigns.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-center">
                         <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                           <FaUsers className="text-2xl text-blue-600" />
                         </div>
-                        <h4 className="font-semibold text-gray-800 mb-2">Freelancers</h4>
-                        <p className="text-sm text-gray-600">Showcase skills and connect with Cardano projects</p>
+                        <h4 className="font-semibold text-gray-800 mb-2">Professionals</h4>
+                        <p className="text-sm text-gray-600">Find jobs and connect with Cardano projects</p>
                       </div>
                       <div className="text-center">
                         <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -313,117 +292,145 @@ const BoneBoardWhitepaper = () => {
                 </motion.div>
               </section>
 
-              {/* Freelancer Profiles Section */}
-              <section id="freelancer-profiles" className="mb-20">
+              {/* Project Funding Section */}
+              <section id="project-funding" className="mb-20">
                 <motion.h2
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   className="text-4xl font-bold text-center mb-12 text-blue-900 flex items-center justify-center gap-3"
                 >
-                  <FaUser className="text-blue-600" />
-                  Freelancer Profiles
+                  <FaCoins className="text-blue-600" />
+                  Project Funding Campaigns
                 </motion.h2>
                 
-                {/* Profile Creation Flow */}
-                <div className="max-w-4xl mx-auto">
-                  <div className="relative">
-                    {/* Timeline Line */}
-                    <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
-                    
-                    {/* Step 1 */}
-                    <motion.div
-                      initial={{ opacity: 0, x: -50 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      className="relative flex items-start gap-8 mb-12"
-                    >
-                      <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl z-10">
-                        1
+                {/* Funding Campaign Features */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="max-w-4xl mx-auto mb-12"
+                >
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
+                      Projects can create funding campaigns to receive community contributions for development, marketing, or other project needs. All campaigns remain permanently visible for transparency.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="bg-blue-50 rounded-2xl p-6">
+                        <h4 className="text-xl font-semibold text-blue-900 mb-4 flex items-center gap-3">
+                          <FaCoins className="text-blue-600" />
+                          Campaign Features
+                        </h4>
+                        <ul className="space-y-3 text-gray-700">
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Set funding goals and deadlines</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Accept ADA and $BONE contributions</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Detailed project descriptions and roadmaps</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Regular progress updates to contributors</span>
+                          </li>
+                        </ul>
                       </div>
-                      <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 flex-1">
-                        <div className="flex items-center gap-3 mb-4">
-                          <FaWallet className="text-2xl text-blue-600" />
-                          <h3 className="text-xl font-semibold text-blue-900">Connect Wallet</h3>
-                        </div>
-                        <p className="text-gray-600 mb-4">Authenticate securely using your Cardano wallet - no passwords required</p>
-                        <div className="flex gap-4">
-                          <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Eternal</span>
-                          <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Vesper</span>
-                          <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Lace</span>
-                        </div>
+                      <div className="bg-blue-50 rounded-2xl p-6">
+                        <h4 className="text-xl font-semibold text-blue-900 mb-4 flex items-center gap-3">
+                          <FaShieldAlt className="text-blue-600" />
+                          Anti-Fraud Protection
+                        </h4>
+                        <ul className="space-y-3 text-gray-700">
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Wallet verification prevents self-funding</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>IP tracking and device fingerprinting</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Community reporting and moderation</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Transparent contribution history</span>
+                          </li>
+                        </ul>
                       </div>
-                    </motion.div>
-                    
-                    {/* Step 2 */}
-                    <motion.div
-                      initial={{ opacity: 0, x: 50 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.2 }}
-                      className="relative flex items-start gap-8 mb-12"
-                    >
-                      <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl z-10">
-                        2
-                      </div>
-                      <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 flex-1">
-                        <div className="flex items-center gap-3 mb-4">
-                          <FaIdCard className="text-2xl text-blue-600" />
-                          <h3 className="text-xl font-semibold text-blue-900">Build Profile</h3>
-                        </div>
-                        <p className="text-gray-600 mb-4">Showcase your skills, experience, and portfolio work</p>
-                        <div className="grid grid-cols-2 gap-4">
-                          <div className="flex items-center gap-2">
-                            <FaCheck className="text-blue-600" />
-                            <span className="text-sm text-gray-600">Portfolio examples</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <FaCheck className="text-blue-600" />
-                            <span className="text-sm text-gray-600">Skills & experience</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <FaCheck className="text-blue-600" />
-                            <span className="text-sm text-gray-600">Social links</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <FaCheck className="text-blue-600" />
-                            <span className="text-sm text-gray-600">Rate & availability</span>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
-                    
-                    {/* Step 3 */}
-                    <motion.div
-                      initial={{ opacity: 0, x: -50 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.4 }}
-                      className="relative flex items-start gap-8"
-                    >
-                      <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl z-10">
-                        3
-                      </div>
-                      <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 flex-1">
-                        <div className="flex items-center gap-3 mb-4">
-                          <FaEnvelope className="text-2xl text-blue-600" />
-                          <h3 className="text-xl font-semibold text-blue-900">Start Connecting</h3>
-                        </div>
-                        <p className="text-gray-600 mb-4">Apply to jobs and receive direct messages from potential clients looking for work</p>
-                        <div className="flex flex-wrap gap-3">
-                          <div className="flex items-center gap-2 bg-blue-50 px-3 py-2 rounded-lg">
-                            <FaEnvelope className="text-blue-600" />
-                            <span className="text-sm text-blue-800">Direct messaging</span>
-                          </div>
-                          <div className="flex items-center gap-2 bg-blue-50 px-3 py-2 rounded-lg">
-                            <FaEye className="text-blue-600" />
-                            <span className="text-sm text-blue-800">Application tracking</span>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
+
+                {/* Featured Job Listings */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                  className="max-w-4xl mx-auto mb-12"
+                >
+                  <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
+                    <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center gap-3">
+                      <FaBriefcase className="text-blue-600" />
+                      Featured Job Listings
+                    </h3>
+                    <p className="text-lg text-gray-600 mb-8">
+                      Projects can pay to feature their job listings at the top of the listings page for maximum visibility.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="bg-blue-50 rounded-2xl p-6">
+                        <h4 className="text-xl font-semibold text-blue-900 mb-4">Duration Discounts</h4>
+                        <ul className="space-y-3 text-gray-700">
+                          <li className="flex items-center gap-3">
+                            <FaCoins className="text-blue-600" />
+                            <span>2 months: 5% discount</span>
+                          </li>
+                          <li className="flex items-center gap-3">
+                            <FaCoins className="text-blue-600" />
+                            <span>3 months: 10% discount</span>
+                          </li>
+                          <li className="flex items-center gap-3">
+                            <FaCoins className="text-blue-600" />
+                            <span>6 months: 15% discount</span>
+                          </li>
+                          <li className="flex items-center gap-3">
+                            <FaCoins className="text-blue-600" />
+                            <span>12 months: 20% discount</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-50 rounded-2xl p-6">
+                        <h4 className="text-xl font-semibold text-blue-900 mb-4">Admin Panel</h4>
+                        <ul className="space-y-3 text-gray-700">
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Seamless pricing adjustments</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Real-time discount management</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Featured listing controls</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
+                            <span>Revenue analytics dashboard</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </section>
 
               {/* Project Listings Section */}
@@ -520,7 +527,7 @@ const BoneBoardWhitepaper = () => {
                 >
                   <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                      Our Twitter bot Rovex monitors and understands all projects, job listings, and freelancer profiles on BoneBoard, promoting opportunities and projects through our Twitter account.
+                      Our Twitter bot Rovex monitors and understands all projects, job listings, and funding campaigns on BoneBoard, promoting opportunities and projects through our Twitter account.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="flex items-start gap-4">
@@ -683,7 +690,7 @@ const BoneBoardWhitepaper = () => {
                 >
                   <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                      We prioritize user privacy while facilitating secure communication between employers and freelancers.
+                      We prioritize user privacy while facilitating secure communication between employers and professionals, as well as project creators and contributors.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div className="bg-blue-50 rounded-2xl p-6">
@@ -905,7 +912,7 @@ const BoneBoardWhitepaper = () => {
                       </div>
                       <div className="flex items-start gap-3">
                         <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">Advanced job and freelancer search</span>
+                        <span className="text-gray-700">Advanced job and project search</span>
                       </div>
                       <div className="flex items-start gap-3">
                         <FaCheck className="text-blue-600 mt-1 flex-shrink-0" />
@@ -936,7 +943,7 @@ const BoneBoardWhitepaper = () => {
                 >
                   <div className="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 mb-8" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(59, 130, 246, 0.05)'}}>
                     <p className="text-lg text-gray-600 text-center leading-relaxed mb-8">
-                      BoneBoard represents the future of decentralized freelance marketplaces, combining Cardano's security with innovative dual currency payments. Our platform will strengthen the entire ecosystem by connecting exceptional talent with groundbreaking projects.
+                      BoneBoard represents the future of decentralized job and funding marketplaces, combining Cardano's security with innovative dual currency payments. Our platform strengthens the entire ecosystem by connecting exceptional talent with groundbreaking projects while enabling community-driven funding.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                       <div className="text-center">

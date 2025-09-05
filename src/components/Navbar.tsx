@@ -115,20 +115,20 @@ const Navbar = () => {
                   <div className="text-sm text-blue-300">Discord bot users/projects</div>
                 </Link>
                 <Link
-                  to="/rovex-whitepaper"
-                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200 border-b border-blue-700"
-                  onClick={() => setWhitepaperDropdown(false)}
-                >
-                  <div className="font-semibold">Rovex Whitepaper</div>
-                  <div className="text-sm text-blue-300">Twitter bot for marketing</div>
-                </Link>
-                <Link
                   to="/boneboard-whitepaper"
-                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200"
+                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200 border-b border-blue-700"
                   onClick={() => setWhitepaperDropdown(false)}
                 >
                   <div className="font-semibold">BoneBoard Whitepaper</div>
                   <div className="text-sm text-blue-300">Job marketplace platform</div>
+                </Link>
+                <Link
+                  to="/rovex-whitepaper"
+                  className="block px-4 py-3 text-blue-100 hover:bg-blue-800 hover:text-white transition-colors duration-200"
+                  onClick={() => setWhitepaperDropdown(false)}
+                >
+                  <div className="font-semibold">Rovex Whitepaper</div>
+                  <div className="text-sm text-blue-300">Twitter bot for marketing</div>
                 </Link>
               </motion.div>
             </div>
@@ -206,18 +206,18 @@ const Navbar = () => {
               Wallie Whitepaper
             </Link>
             <Link
-              to="/rovex-whitepaper"
-              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Rovex Whitepaper
-            </Link>
-            <Link
               to="/boneboard-whitepaper"
               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
               onClick={() => setIsOpen(false)}
             >
               BoneBoard Whitepaper
+            </Link>
+            <Link
+              to="/rovex-whitepaper"
+              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-800/50 rounded-xl transition-all duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Rovex Whitepaper
             </Link>
           </div>
         </div>
