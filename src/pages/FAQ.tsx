@@ -14,13 +14,18 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqItems: FAQItem[] = [
+    // General WalletPup Ecosystem
     {
       question: "What is WalletPup?",
-      answer: "WalletPup is Your Cardano Watchdog, a bot delivering real time wallet notifications and analytics for projects, users, and communities on Discord, with Telegram and Twitter coming soon."
+      answer: "WalletPup is a comprehensive ecosystem of three interconnected platforms for the Cardano blockchain: Wallie Discord Bot for community management, BoneBoard Marketplace for freelance services, and Rovex Twitter Bot for market analytics. All powered by the $BONE token."
+    },
+    {
+      question: "What are the three WalletPup tools?",
+      answer: "1) Wallie - Discord bot for wallet tracking and community analytics, 2) BoneBoard - Freelance marketplace connecting projects with talent, 3) Rovex - AI-powered Twitter bot for project promotion (in development)."
     },
     {
       question: "What are $BONE tokens?",
-      answer: "$BONE is the utility token that powers WalletPup's premium features. It provides automated wallet & token tracking, insight tools, personalized notifications, and community engagement tools for projects."
+      answer: "$BONE is the utility token that powers the entire WalletPup ecosystem. It provides access to premium features across all three platforms including wallet tracking, marketplace discounts, and AI-powered analytics."
     },
     {
       question: "What's the total supply of $BONE?",
@@ -28,51 +33,99 @@ const FAQ = () => {
     },
     {
       question: "How many $BONE tokens do I need?",
-      answer: "You need approximately 50 ADA worth of $BONE to start. Token requirements decrease as market cap grows: 200K tokens at $100K mcap, 100K at $200K mcap, 40K at $500K mcap, 20K at $1M mcap, 10K at $2M mcap, and 4K at $5M mcap."
-    },
-    {
-      question: "How many wallets can I track?",
-      answer: "Track up to 25 wallets with $BONE. Start small, and slots increase as WalletPup grows."
-    },
-    {
-      question: "Where can I buy $BONE tokens?",
-      answer: "You can buy $BONE tokens through our integrated DEX swap interface on the website, or through any Cardano DEX that supports the token."
-    },
-    {
-      question: "How do I start using WalletPup?",
-      answer: "Buy $BONE, join our Discord, use /add to track your wallet, and verify with /verifywallet."
-    },
-    {
-      question: "How do I track token transactions?",
-      answer: "Use /track to monitor token purchases in your server. Set policy ID and ADA threshold."
-    },
-    {
-      question: "Can I customize my pup?",
-      answer: "Yes, use /train to tailor your pup's personality for notifications and analytics."
-    },
-    {
-      question: "What project tools does WalletPup offer?",
-      answer: "WalletPup provides community leaderboard systems, token purchase insights, server sentiment updates, and helps projects track their community engagement and token distribution."
-    },
-    {
-      question: "How are $BONE requirements dynamic?",
-      answer: "WalletPup uses a dynamic requirement system where token entry requirements decrease as the market cap grows. This ensures the service remains accessible while maintaining a fixed ~50 ADA entry value."
+      answer: "For Wallie Discord Bot: You need roughly 50 ADA worth of $BONE tokens. For BoneBoard Marketplace: You pay $BONE to post job listings, projects, and funding campaigns. All pricing adjusts as market cap grows to maintain accessibility."
     },
     {
       question: "Do $BONE tokens hold value?",
-      answer: "Yes, $BONE stays tradeable in your wallet, unlike subscriptions. You maintain ownership and can trade them anytime while accessing WalletPup features."
+      answer: "Yes, $BONE stays tradeable in your wallet, unlike subscriptions. You maintain ownership and can trade them anytime while accessing WalletPup features across all platforms."
+    },
+
+    // Wallie Discord Bot
+    {
+      question: "What is Wallie Discord Bot?",
+      answer: "Wallie Discord Bot is WalletPup's intelligent Discord bot that provides wallet tracking, real-time analytics, and community engagement tools with over 20 commands. It serves solo users, projects, and communities with AI-powered insights."
     },
     {
-      question: "What's the Feeding Bowl?",
-      answer: "A 5 ADA entry prize pool: 80% to the winner, 10% to treasury, 10% burned as $BONE."
+      question: "How do I start using Wallie Discord Bot?",
+      answer: "For Wallie: Buy $BONE tokens, join our Discord, use /verify to link your wallet, then use /add to track additional wallets. You can track up to 25 wallets total."
     },
     {
-      question: "Is WalletPup secure?",
-      answer: "Yes, we use public wallet data and secure Discord notifications."
+      question: "How does Wallie's token purchase tracking work?",
+      answer: "In Wallie Discord Bot: Use /track to monitor token purchases in your server. Set the policy ID and ADA threshold, and your trained AI pup will post personalized commentary on all purchases above your specified amount."
+    },
+    {
+      question: "What is Wallie's daily sentiment analysis?",
+      answer: "In Wallie Discord Bot: Use /sentiment to get comprehensive daily reports on your server's activity including top 3 most active members, total messages, engagement metrics, and how your community ranks among others."
+    },
+    {
+      question: "What's the Feeding Bowl in Wallie?",
+      answer: "The Feeding Bowl is a feature in Wallie Discord Bot: A 5 ADA entry prize pool game where 80% goes to the winner, 10% to treasury, 10% burned as $BONE. It's a fun community engagement feature."
+    },
+
+    // BoneBoard Marketplace
+    {
+      question: "What is BoneBoard Marketplace?",
+      answer: "BoneBoard Marketplace is WalletPup's Cardano-native freelance marketplace connecting projects with skilled professionals. It features job listings, project funding campaigns, and integrated payment systems supporting both ADA and $BONE."
+    },
+    {
+      question: "What types of jobs are available on BoneBoard Marketplace?",
+      answer: "BoneBoard Marketplace covers all disciplines: Social Media management, Design (UI/UX, NFT art, branding), Development (smart contracts, dApps), Content writing, Analytics, and Marketing. Anyone can post jobs by connecting their wallet."
+    },
+    {
+      question: "How does project funding work on BoneBoard Marketplace?",
+      answer: "On BoneBoard Marketplace: Projects can create funding campaigns with goals and deadlines, accepting ADA and $BONE contributions. All campaigns remain permanently visible for transparency, with anti-fraud protection through wallet verification."
+    },
+    {
+      question: "What are featured job listings on BoneBoard?",
+      answer: "On BoneBoard Marketplace: Projects can pay to feature their job listings at the top of the page for maximum visibility. Duration discounts available: 2 months (5% off), 3 months (10% off), 6 months (15% off), 12 months (20% off)."
+    },
+    {
+      question: "How does BoneBoard prevent fraud?",
+      answer: "BoneBoard tracks wallet addresses connected to campaigns to prevent self-funding, uses community reporting systems, and maintains transparent contribution histories for all campaigns."
+    },
+    {
+      question: "Do project creators get discounts on BoneBoard Marketplace?",
+      answer: "Yes! On BoneBoard Marketplace: Projects that create detailed project profiles receive a 20% discount on all job listing fees, encouraging regular engagement with the platform."
+    },
+
+    // Rovex Twitter Bot
+    {
+      question: "What is Rovex Twitter Bot?",
+      answer: "Rovex Twitter Bot is WalletPup's AI-powered Twitter bot that promotes Cardano projects, learns from Discord interactions and transaction data, and connects users with BoneBoard opportunities. Currently in development, launching when Chakra AI agents are available."
+    },
+    {
+      question: "How does Rovex Twitter Bot promote projects?",
+      answer: "Rovex Twitter Bot uses advanced Chakra AI to analyze BoneBoard content, understand projects and opportunities, then promotes them through WalletPup's Twitter account with intelligent, contextually relevant content."
+    },
+    {
+      question: "What AI technology powers Rovex Twitter Bot?",
+      answer: "Rovex Twitter Bot leverages Chakra AI agents with multi-agent architecture, specialized for blockchain analysis, content creation, and community management. It learns continuously from Discord conversations and transaction patterns."
+    },
+    {
+      question: "What insights will Rovex Twitter Bot provide?",
+      answer: "Rovex Twitter Bot will offer DeFi analytics (TVL tracking, yield farming), NFT market intelligence (floor prices, trending collections), governance tracking (Catalyst proposals, stake pools), and comprehensive network health metrics."
+    },
+    {
+      question: "How does Rovex Twitter Bot integrate with other WalletPup tools?",
+      answer: "Rovex Twitter Bot monitors and understands all projects, job listings, and funding campaigns on BoneBoard Marketplace, then promotes these opportunities through Twitter. It also learns from Wallie Discord Bot interactions to better understand community needs."
+    },
+
+    // Technical & Support
+    {
+      question: "Is the WalletPup ecosystem secure?",
+      answer: "Yes, we use public wallet data, secure Discord notifications, wallet verification systems, and comprehensive anti-fraud measures across all platforms. Your tokens remain in your wallet at all times."
+    },
+    {
+      question: "How do the three platforms work together?",
+      answer: "All platforms are unified under the $BONE token economy. Wallie provides community insights, BoneBoard connects talent with projects, and Rovex promotes opportunities. Data flows between platforms to create a comprehensive Cardano ecosystem experience."
     },
     {
       question: "How do I get support?",
-      answer: "Use /help in bot DMs or join our Discord for help."
+      answer: "Use /help in Wallie bot DMs, join our Discord community, or visit our website. Each platform has dedicated support channels and comprehensive documentation."
+    },
+    {
+      question: "What's the development roadmap?",
+      answer: "Wallie Discord Bot is live and fully operational. BoneBoard Marketplace is launching next with full functionality. Rovex Twitter Bot will be released when Chakra AI agents are fully available, as it's built on that technology."
     }
   ];
 

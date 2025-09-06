@@ -177,17 +177,16 @@ const Home = () => {
               className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
               <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
-                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">1B</div>
-                <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">$BONE Supply</div>
+                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">20+</div>
+                <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">Discord Commands</div>
               </div>
               <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
-                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">95%</div>
-                <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">Public Distribution</div>
+                <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">Native</div>
+                <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">Cardano Marketplace</div>
               </div>
               <div className="bg-blue-900/90 backdrop-sm rounded-2xl p-8 border border-blue-700 hover:scale-[1.05] hover:shadow-2xl hover:border-blue-500 transition-all duration-500 shadow-lg text-center group">
                 <div className="text-5xl font-bold text-white mb-4 group-hover:scale-105 transition-all duration-300">AI</div>
-                <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">Chakra Powered</div>
-                <div className="text-blue-200 text-xs mt-2 opacity-75 group-hover:opacity-100 transition-all duration-300">*GPT for testing - Chakra agents not yet released</div>
+                <div className="text-blue-100 text-xl group-hover:text-white transition-all duration-300">Community Learning</div>
               </div>
             </motion.div>
           </div>

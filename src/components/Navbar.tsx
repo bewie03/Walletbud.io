@@ -64,8 +64,7 @@ const Navbar = () => {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-1">
             {([
-              { to: '/commands', text: 'Commands' },
-              { to: '/guide', text: 'Guide' },
+              { to: '/commands', text: 'Wallie Commands' },
               { to: '/faq', text: 'FAQ' }
             ] as NavItem[]).map((link) => (
               <Link
@@ -174,8 +173,7 @@ const Navbar = () => {
       >
         <div className="px-4 py-2 space-y-1">
           {([
-            { to: '/commands', text: 'Commands' },
-            { to: '/guide', text: 'Guide' },
+            { to: '/commands', text: 'Wallie Commands' },
             { to: '/faq', text: 'FAQ' }
           ] as NavItem[]).map((link) => (
             <Link
